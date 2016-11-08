@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+A:link {color: #0000FF;  text-decoration: none}
+A:visited {color: #800080;  text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline; color: red}
+body {
+	margin-top: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.index_f12_pink {
+	font-size: 12px;
+	color: #f29c9f;
+}
+.index_f12_pink a {
+	color: #f29c9f;
+	text-decoration:none;
+}
+.index_f12_gray {
+	font-size: 12px;
+	color: #666666;
+	line-height: 20px;
+}
+.index_f12_gray a {
+	color: #666666;
+	text-decoration:none;
+}
+.index_f12_gray a:hover {
+	color:#F00;
+}
+.index_f13_gray {
+	font-size: 13px;
+	color: #666;
+	line-height: 20px;
+	text-decoration:none;
+}
+.index_f13_pink {
+	font-size: 13px;
+	color: #eb6877;
+	line-height: 20px;
+	text-decoration:none;
+}
+.index_f13_green {
+	font-size: 13px;
+	color: #690;
+	line-height: 20px;
+	text-decoration:none;
+}
+.index_f15_pink {
+	font-size: 15px;
+	color: #eb6877;
+	line-height: 24px;
+}
+.index_f15_pink a {
+	color: #eb6877;
+	text-decoration:none;
+}
+.index_f12_blue {
+	font-size: 12px;
+	color: #556fb5;
+	line-height: 22px;
+}
+.index_f12_blue a {
+	color: #556fb5;
+	text-decoration:none;
+}
+.index_f12_blue a:hover {
+	text-decoration: underline;
+}
+.index_notice {
+	color:#a3857e;
+}
+.index_notice a {
+	color:#a3857e;
+	text-decoration:none;
+}
+.index_notice a:hover {
+	color: #600;
+
+}
+.index_iwatch {
+	font-size:15px;
+	font-weight:bold;
+	color:#F90;
+}
+.index_iwatch a {
+	color:#F90;
+	text-decoration:none;
+}
+.index_f15_gray {
+	font-size:15px;
+	color:#666;
+	line-height:20px;
+}
+.index_f15_gray a{
+	color:#666;
+	text-decoration:none;
+}
+.index_star {
+	font-size: 12px;
+	color: #000;
+	line-height:18px;
+}
+.index_star a {
+	color: #000;
+	text-decoration:none;
+}
+.index_star a:hover {
+	color: #f60;
+	text-decoration:underline;
+}
+.index_bbgo {
+	font-size:15px;
+	color:#690;
+	line-height:28px;
+	font-weight:bold;
+}
+.index_bbgo a {
+	color:#690;
+	text-decoration:none;
+}
+
+/*2010-07-07 ANDERSON SEARCH START*/
+#search_menu{
+	background-image:url(http://www.babyhome.com.tw/img/m4/index2010/search/index_search_scroll.png); 
+	position:absolute;
+	display: none;
+  margin-left: 0px;
+  width: 112px;
+  height: 84px;			  
+}
+#search_menu ul li{
+  font-size: 12px;
+  line-height: 17px; 
+  border-bottom-color:#CCCCCC;
+	border-bottom-style:dotted;
+	border-width: thin;
+	width: 75px;	
+}
+#search_menu ul li a{
+  color:#666666;
+}
+#search_menu ul{
+	list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 0px 15px;
+}
+#search_text{
+	background-image:url(http://www.babyhome.com.tw/img/m4/index2010/search/index_search_keyin.gif); 
+	position: relative;
+  width: 146px;
+  height: 22px;			
+  margin-right: 10px;  
+}
+/*2010-07-07 ANDERSON SEARCH END*/
