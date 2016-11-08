@@ -1,0 +1,448 @@
+//@import url("http://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+.clearfix() {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@merries-pink: #e84895;
+
+.media {
+  // Proper spacing between instances of .media
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media-object {
+  display: block;
+
+  // Fix collapse in webkit from max-width: 100% and display: table-cell.
+  &.img-thumbnail {
+    max-width: none;
+  }
+}
+
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+  vertical-align: middle;
+}
+
+.media-bottom {
+  vertical-align: bottom;
+}
+
+// Reset margins on headings for tighter default spacing
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+// Media list variation
+//
+// Undo default ul/ol styles
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.feature-event {
+    font-family: "微軟正黑體", "Microsoft Jhenghei", "STHeiti Light", "Microsoft YaHei", Arial, sans-serif;
+    /*font-size: 20px;
+	-webkit-font-smoothing: antialiased;*/
+    background: url("../img/feature-merries-bg.jpg") center 0 repeat-y;
+    font-size: 15px;
+    text-align: left;
+    //padding-bottom: 80px;
+    line-height: 1.5;
+    * {
+        box-sizing: border-box;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    ul,
+    li,
+    dl,
+    dt,
+    dd,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    ul,
+    li,
+    dl,
+    dt,
+    dd {
+        list-style: none;
+    }
+    .feature-header {
+        margin-bottom: 25px;
+    }
+    .navi {
+        .clearfix();
+        >li {
+            float: left;
+            >a {
+                display: block;
+                width: 160px;
+                height: 70px;
+                background: url("../img/feature-merries-navi.png") 160px 0 no-repeat;
+                position: relative;
+                z-index: 6;
+            }
+        }
+        .navi-link01 {
+            >a {
+                background-position: center 0;
+            }
+            &:hover {
+                /*>a {
+                    background-position: center -300px;
+                }*/
+            }
+            &.active {
+                >a {
+                    background-position: center -840px;
+                }
+            }
+        }
+        .navi-link02 {
+            >a {
+                background-position: center -70px;
+            }
+            &:hover {
+                /*>a {
+                    background-position: center -350px;
+                }*/
+            }
+            &.active {
+                >a {
+                    background-position: center -910px;
+                }
+            }
+        }
+        .navi-link03 {
+            >a {
+                background-position: center -140px;
+            }
+            &:hover {
+                /*>a {
+                    background-position: center -400px;
+                }*/
+            }
+            &.active {
+                >a {
+                    background-position: center -980px;
+                }
+            }
+        }
+        .navi-link04 {
+            >a {
+                width: 115px;
+                background-position: center -210px;
+            }
+            &:hover {
+                >a {
+                    background-position: center -630px;
+                }
+            }
+            &.active {
+                >a {
+                    background-position: center -1050px;
+                }
+            }
+        }
+        .navi-link05 {
+            >a {
+                width: 115px;
+                background-position: center -280px;
+            }
+            &:hover {
+                >a {
+                    background-position: center -700px;
+                }
+            }
+            &.active {
+                >a {
+                    background-position: center -1120px;
+                }
+            }
+        }
+        .navi-link06 {
+            >a {
+                width: 115px;
+                background-position: center -350px;
+            }
+            &:hover {
+                >a {
+                    background-position: center -770px;
+                }
+            }
+            &.active {
+                >a {
+                    background-position: center -1190px;
+                }
+            }
+        }
+        [class^="navi-link"] {
+            position: relative;
+            margin-right: 5px;
+            padding-top: 15px;
+            &:after {
+                display: inline-block;
+                content: "";
+                width: 148px;
+                height: 88px;
+                position: absolute;
+                top: 10px;
+                left: -5px;
+                -webkit-transition: opacity .4s linear;
+                -moz-transition: opacity .4s linear;
+                -ms-transition: opacity .4s linear;
+                -o-transition: opacity .4s linear;
+                transition: opacity .4s linear;
+                opacity: 0;
+            }
+            &:hover,
+            &.active {
+                &:after {
+                    z-index: 5;
+                    opacity: 1;
+                }
+            }
+            &:hover {
+                z-index: 6;
+                &:after {
+                    background: url("../img/feature-merries-navi.png") center -1392px;
+                }
+            }
+            &.active {
+                &:after {
+                    background: url("../img/feature-merries-navi.png") center -1480px;
+                }
+            }
+        }
+        .navi-link01,
+        .navi-link02,
+        .navi-link03 {
+            &:after {
+                left: 25px;
+            }
+        }
+        >.merries-logo {
+            float: right;
+            >a {
+                width: 122px;
+                height: 120px;
+                background-position: center -1260px;
+            }
+        }
+    }
+    .feature-content {
+        position: relative;
+        .hero-kv {
+            position: relative;
+            height: 552px;
+            margin-top: -55px;
+        }
+        .title,
+        .sub-title,
+        .kv-baby {
+            position: absolute;
+        }
+        .title {
+            left: 52px;
+        }
+        .sub-title {
+            top: 192px;
+        }
+        .footnote {
+            width: 374px;
+            font-size: 13px;
+            position: absolute;
+            top: 280px;
+            left: 95px;
+            color: #777;
+        }
+        .kv-baby {
+            right: 16px;
+        }
+        .breezy {
+            width: 340px;
+            height: 260px;
+            background: url("../img/breezy.png") left center;
+            position: absolute;
+            right: 16px;
+            bottom: 0px;
+            animation: play 2.75s steps(8) infinite;
+        }
+        @keyframes play {
+            100% {
+                background-position: -2720px;
+            }
+        }
+        .article-content {
+            position: relative;
+            padding: 0 46px;
+            background: url("../img/feature-merries-tracks.png") 0 bottom no-repeat;
+            /*
+            -webkit-border-radius: 15px 15px 0 0;
+            border-radius: 15px 15px 0 0;
+            background: #00a0e9;
+            background: -moz-linear-gradient(top, rgba(0, 160, 233, 0.75) 0%, rgba(20, 65, 153, 0.75) 100%);
+            background: -webkit-linear-gradient(top, rgba(0, 160, 233, 0.75) 0%, rgba(20, 65, 153, 0.75) 100%);
+            background: linear-gradient(to bottom, rgba(0, 160, 233, 0.75) 0%, rgba(20, 65, 153, 0.75) 100%);
+            filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#bf00a0e9', endColorstr='#bf144199', GradientType=0)";
+            */
+            .inner {
+                /*
+                background: #fff;
+				-webkit-border-radius: 12px 12px 0 0;
+                border-radius: 12px 12px 0 0;
+                */
+                padding: 15px 60px 60px;
+            }
+            .inner-slogan {
+                text-align: center;
+                margin-top: -95px;
+            }
+            h3 {
+                color: @merries-pink;
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                background: url("../img/feature-merries-dotted.png") center bottom no-repeat;
+                margin: 0 0 20px 0;
+                padding-bottom: 18px;
+            }
+            .rules {
+                font-size: 22px;
+                margin-bottom: 20px;
+                >li {
+                    margin-bottom: 10px;
+                    padding-left: 210px;
+                    .clearfix();
+                    >span {
+                        font-weight: bold;
+                        color: #fff;
+                        background: @merries-pink;
+                        border-radius: 30px;
+                        text-align: center;
+                        display: inline-block;
+                        width: 200px;
+                        line-height: 34px;
+                        float: left;
+                        margin-left: -210px;
+                    }
+                }
+            }
+            .note {
+                >li {
+                    .clearfix();
+                    padding-left: 20px;
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        background: url("../img/feature-merries-navi.png") 0 -1208px no-repeat;
+                        float: left;
+                        margin-top: 3px;
+                        margin-left: -20px;
+                    }
+                    &:first-child {
+                        font-weight: bold;
+                        padding: 0;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .rules-deco {
+                position: absolute;
+                top: 25px;
+                right: -20px;
+            }
+        }
+        .article-list {
+        	padding-right: 130px;
+            a {
+                color: #333;
+            }
+            >li {
+            	margin-top: -35px;
+            	&:first-child {
+            		margin-top: 0;
+            	}
+            }
+            .media {
+            	background: url("../img/media-txt-bg.png") 0 center no-repeat;
+                .media-heading {
+                    color: #124098;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                .media-body {
+                	
+                } 
+                .media-txt {
+                	height: 3em;
+                	overflow: hidden;
+                }
+            }
+        }
+        .content-footer {
+            height: 111px;
+            background: url("../img/feature-merries-footerbg.png") 0 0;
+            padding: 40px 120px 0;
+            >a {
+                padding: 5px 0 0 358px;
+                display: inline-block;
+                height: 62px;
+                background: url("../img/feature-merries-fbbar.png") 0 0 no-repeat;
+                color: @merries-pink;
+                &:hover {
+                    background-position: 0 -62px;
+                }
+            }
+        }
+    }
+}
