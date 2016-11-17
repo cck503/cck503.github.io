@@ -1,0 +1,79 @@
+body.modal-open {
+    margin-right: 0;
+}
+
+.survey-pop {
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+}
+
+.survey-pop .modal-dialog {
+    //padding: 0;
+}
+
+.survey-pop .modal-content {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.pop-inner {
+    position: relative;
+    background: url("../img/0620_350250.png") 0 0 no-repeat;
+    width: 300px;
+    height: 250px;
+    padding-top: 175px;
+    margin: 0 auto;
+}
+
+.pop-close {
+    position: absolute;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    top: 0;
+    right: 0;
+    background: url("../img/0620_300250_02-mo.png") -54px -110px no-repeat;
+}
+
+.pop-close:hover {
+    background-position: 0 -110px;
+}
+
+.go2survey {
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    background: url("../img/0620_300250_02-mo.png") -20px 0 no-repeat;
+}
+
+.go2survey:hover,
+.go2survey:focus {
+    background-position: -20px -55px;
+}
+
+.go2survey:active {
+    margin-top: 2px;
+}
+
+.modal-backdrop.fade.in {
+    opacity: .65;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .pop-inner {
+        background: url("../img/0620_350250@2x.png") 0 0 no-repeat;
+        background-size: 300px 250px;
+    }
+    .pop-close {
+        background: url("../img/0620_300250_02-mo@2x.png") -54px -110px no-repeat;
+        background-size: 300px 164px;
+    }
+    .go2survey {
+        background: url("../img/0620_300250_02-mo@2x.png") -20px 0 no-repeat;
+        background-size: 300px 164px;
+    }
+}
