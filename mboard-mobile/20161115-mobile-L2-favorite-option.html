@@ -60,7 +60,6 @@
             <div align="center" id="switch"> <a href="javascript:translatePage();" id="translateLink">簡體</a> | <a href="#" id="tour_start">教學導引</a>
             </div>Copyright 2010 BabyHome. All right reserved.</footer>
     </div>
-    <script src="http://m.babyhome.com.tw/mini/js?f=lib/jquery.min,lib/bootstrap/modal,common,lib/bootstrap/transition,lib/bootstrap/carousel,lib/touchSwipe/jquery.touchSwipe.min,portal,lib/bootstrap-tour.min,lib/bootstrap/tooltip,lib/bootstrap/popover,tour&amp;v=1.4.28"></script>
     <script type="text/javascript" src="http://m.babyhome.com.tw/public/js/lib/tw_cn.js" mce_src="http://m.babyhome.com.tw/public/js/lib/tw_cn.js"></script>
     <script src="public/js/selected.js"></script>
     <script type="text/javascript">
@@ -77,5 +76,9 @@
         s.parentNode.insertBefore(ga, s);
     })();
     </script>
-   
+    <script type="text/javascript">
+    $('.fav-unselected').click(function () {
+        $(this).toggleClass('selected');
+    });
+    </script>
 </body>
