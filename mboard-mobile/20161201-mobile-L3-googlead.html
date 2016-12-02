@@ -131,7 +131,7 @@
                             </div>
                             <div class="pannel">
                                 <div class="btn-group pull-right">
-                                    <button type="button" name="btn_reply" class="btn btn-danger _response_btn" id="tour_btn1">回應</button>
+                                    <button type="button" name="btn_reply" class="btn btn-danger _response_btn" id="tour_btn1" data-toggle="modal" data-target=".modal">回應</button>
                                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" id="tour_btn2"> <span class="caret"></span> </button>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="http://www.babyhome.com.tw/board.php?mid=926873&amp;pr=1" name="topic_private_message">悄悄話</a></li>
@@ -486,6 +486,65 @@
             <div align="center" id="switch"> <a href="javascript:translatePage();" id="translateLink">簡體</a> | <a href="#" id="tour_start">教學導引</a>
             </div>Copyright 2010 BabyHome. All right reserved.</footer>
     </div>
+    <div class="modal fade flag-modal" tabindex="-1" role="dialog" aria-hidden="false">
+        <form id="report_form">
+            <input type="hidden" id="reply_id" name="reply_id" value="0">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="rp_title">檢舉：話題</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="col-xs-offset-1 col-xs-10">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rp_reason" id="" value="1" class="opinion"> 廣告推文
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rp_reason" id="" value="2" class="opinion"> 重複張貼
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rp_reason" id="" value="3" class="opinion"> 與分區主題不符
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rp_reason" id="" value="4" class="opinion"> 攻擊謾罵
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rp_reason" id="" value="5" class="other-opinion"> 其他
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 txt-span fade">
+                                    <textarea class="form-control" rows="3" name="rp_reason_other" placeholder="您可輸入檢舉的原因"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <ul class="nav-justified">
+                            <li>
+                                <button type="button" class="btn btn-cancel btn-block" data-dismiss="modal">取消</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-post btn-block report_submit" disabled="disabled">確認</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+        </form>
+        <!-- /.modal-dialog -->
+    </div>
     <script src="http://m.babyhome.com.tw/mini/js?f=lib/jquery.min,lib/bootstrap/modal,common,lib/bootstrap/transition,lib/bootstrap/carousel,lib/touchSwipe/jquery.touchSwipe.min,portal,lib/bootstrap-tour.min,lib/bootstrap/tooltip,lib/bootstrap/popover,tour&amp;v=1.4.28"></script>
     <script type="text/javascript" src="http://m.babyhome.com.tw/public/js/lib/tw_cn.js" mce_src="http://m.babyhome.com.tw/public/js/lib/tw_cn.js"></script>
     <script type="text/javascript">
@@ -501,5 +560,13 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
+    </script>
+    <script type="text/javascript">
+        $(".other-opinion").click(function() {
+        $(".txt-span.fade").addClass("in");
+    });
+    $(".opinion").click(function() {
+        $(".txt-span.fade.in").removeClass("in");
+    });
     </script>
 </body>
