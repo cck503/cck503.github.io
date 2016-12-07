@@ -1,0 +1,401 @@
+<head>
+    <title>首頁 - BabyHome Mobile WEB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="public/css/main.css" rel="stylesheet" media="screen">
+    <link href="public/css/ver-2016-fix.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div id="slide_menu">
+        <ul class="slide_menu_item">
+            <li class="login un-login">
+                <a href="http://m.babyhome.com.tw/login"><img src="public/img/slidemenu_icon01.png">登入</a>
+                <a href="http://member.babyhome.com.tw/register"><img src="public/img/slidemenu_icon02.png">註冊</a>
+            </li>
+            <li class="login">
+                <a href="http://m.babyhome.com.tw/user/subject"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg"><span class="login_profile reduce">毛寶2次方</span></a>
+            </li>
+            <li class="member_tools clearfix">
+                <a href="http://m.babyhome.com.tw/topic/create?"><span class="glyphicon glyphicon-edit"></span>新增話題</a>
+                <a href="#" class="notification active"><span class="glyphicon glyphicon-bell"></span>通知</a>
+                <a href="http://member.babyhome.com.tw/logout"><span class="glyphicon glyphicon-log-out"></span>登出</a>
+            </li>
+            <li class="main-link customized-link">
+                <a href="#">我的最愛專區話題<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="main-link customized-link">
+                <a href="#hide1">尚未發表的草稿<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="main-link customized-link">
+                <a href="#">尚未回應的草稿<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="main-link">
+                <a href="#">熱討論<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="main-link">
+                <a href="#hide1">新發表<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="main-link">
+                <a href="#">分類專區<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="main-link">
+                <a href="#">公告與指南<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="secondary-link">
+                <a href="#">BabyHome 首頁<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="secondary-link">
+                <a href="#hide1">新知大耳朵<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="secondary-link">
+                <a href="#">BabyHome購物<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="secondary-link">
+                <a href="#">BabyHome 粉絲團<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="secondary-link">
+                <a href="#">站務服務區<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+            <li class="secondary-link">
+                <a href="#">會員中心<i class="ion-chevron-right pull-right"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div id="frame">
+        <header id="navbar" class="navbar navbar-inverse -navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div id="st-trigger-effects" class="col-xs-2 col-md-2">
+                        <button data-effect="st-effect-4" type="button" class="navbar-toggle" id="btn_nav_menu"> <i class="ion-navicon-round"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        <a href="http://m.babyhome.com.tw/" class="navbar-brand">
+                            <img src="public/img/bbh_logo_border.svg">
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <button type="button" class="navbar-toggle" id="btn_nav_search"> <i class="ion-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <section id="nav_search">
+                <div class="container">
+                    <div class="-form-group">
+                        <form id="form_search" method="GET" action="/search">
+                            <input type="search" x-webkit-speech="" lang="zh-TW" class="form-control" id="search_input" name="keyword" placeholder="請輸入要搜尋的字詞" value="">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="container wraper">
+            <form id="form_topic_create" class="form-horizontal col-sm-8 col-sm-offset-2 col-xs-12" role="form">
+                <input type="hidden" id="is_identity" value="1">
+                <div class="form-group">
+                    <div class="col-xs-6 section-select">
+                        <label class="list_style">
+                            <select class="form-control">
+                                <option value="">請選擇主專區</option>
+                                <optgroup label="等待送子鳥">
+                                    <option value="27">等待送子鳥</option>
+                                </optgroup>
+                                <optgroup label="婦女生育權益專區">
+                                    <option value="110">婦女生育權益專區</option>
+                                </optgroup>
+                                <optgroup label="寶寶話題">
+                                    <option value="4">寶寶話題</option>
+                                    <option value="5">寶寶趣味拍</option>
+                                    <option value="10">童言童語、寶寶趣味事</option>
+                                    <option value="26">天使寶寶</option>
+                                </optgroup>
+                                <optgroup label="好動寶寶成長專區">
+                                    <option value="111">好動寶寶成長專區</option>
+                                </optgroup>
+                                <optgroup label="養胎補身的小秘訣">
+                                    <option value="lxz">養胎補身的小秘訣</option>
+                                </optgroup>
+                                <optgroup label="送子鳥敲我家門">
+                                    <option value="8">送子鳥敲我家門</option>
+                                </optgroup>
+                                <optgroup label="公益愛心">
+                                    <option value="36">公益愛心</option>
+                                </optgroup>
+                                <optgroup label="母乳哺育">
+                                    <option value="19">母乳哺育</option>
+                                </optgroup>
+                                <optgroup label="教養 教育">
+                                    <option value="11">幼兒學習</option>
+                                    <option value="20">兒童教養</option>
+                                    <option value="15">小學生</option>
+                                    <option value="28">國高中生</option>
+                                    <option value="24">親子共讀</option>
+                                    <option value="38">親職 親師</option>
+                                    <option value="22">家教 課後輔導</option>
+                                </optgroup>
+                                <optgroup label="心事說開 煩惱不再">
+                                    <option value="12">心事說開 煩惱不再</option>
+                                </optgroup>
+                                <optgroup label="保健醫療">
+                                    <option value="34">養生保健</option>
+                                    <option value="37">過敏 醫療</option>
+                                </optgroup>
+                                <optgroup label="生活即時通">
+                                    <option value="2">好康優惠情報</option>
+                                    <option value="23">婦幼活動</option>
+                                    <option value="100">搶千 拉人</option>
+                                </optgroup>
+                                <optgroup label="男人有話要說">
+                                    <option value="103">新手爸爸</option>
+                                    <option value="104">女人不懂</option>
+                                    <option value="105">男人五四三</option>
+                                </optgroup>
+                                <optgroup label="生活風格">
+                                    <option value="41">DIY手作</option>
+                                    <option value="14">家事輕鬆做</option>
+                                    <option value="16">網頁美術作品分享</option>
+                                    <option value="21">寵物寶貝</option>
+                                </optgroup>
+                                <optgroup label="閨房記樂">
+                                    <option value="17">閨房記樂</option>
+                                </optgroup>
+                                <optgroup label="閒聊專區">
+                                    <option value="6">閒聊專區</option>
+                                </optgroup>
+                                <optgroup label="寫小說">
+                                    <option value="109">寫小說</option>
+                                </optgroup>
+                                <optgroup label="美體美顏">
+                                    <option value="35">美容醫美</option>
+                                    <option value="25">產後媽咪私房話</option>
+                                </optgroup>
+                                <optgroup label="工商專區">
+                                    <option value="3">買賣交流</option>
+                                    <option value="18">職場訊息</option>
+                                    <option value="29">家教 課程 活動推廣</option>
+                                    <option value="30">理財 保險</option>
+                                    <option value="31">房市資訊</option>
+                                    <option value="33">撿便宜情報</option>
+                                </optgroup>
+                                <optgroup label="香香美食">
+                                    <option value="13">香香美食</option>
+                                </optgroup>
+                                <optgroup label="留言測試區">
+                                    <option value="99">留言測試區</option>
+                                </optgroup>
+                                <optgroup label="親子趴趴走">
+                                    <option value="9">親子趴趴走</option>
+                                </optgroup>
+                                <optgroup label="站務公告">
+                                    <option value="1">站務公告</option>
+                                </optgroup>
+                                <optgroup label="BabyHomers 專區">
+                                    <option value="996">BabyHomers 專區</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-xs-6 section-select">
+                        <label class="list_style">
+                            <select class="form-control">
+                                <option value="">請選擇子專區</option>
+                                <optgroup label="等待送子鳥">
+                                    <option value="27">等待送子鳥</option>
+                                </optgroup>
+                                <optgroup label="婦女生育權益專區">
+                                    <option value="110">婦女生育權益專區</option>
+                                </optgroup>
+                                <optgroup label="寶寶話題">
+                                    <option value="4">寶寶話題</option>
+                                    <option value="5">寶寶趣味拍</option>
+                                    <option value="10">童言童語、寶寶趣味事</option>
+                                    <option value="26">天使寶寶</option>
+                                </optgroup>
+                                <optgroup label="好動寶寶成長專區">
+                                    <option value="111">好動寶寶成長專區</option>
+                                </optgroup>
+                                <optgroup label="養胎補身的小秘訣">
+                                    <option value="lxz">養胎補身的小秘訣</option>
+                                </optgroup>
+                                <optgroup label="送子鳥敲我家門">
+                                    <option value="8">送子鳥敲我家門</option>
+                                </optgroup>
+                                <optgroup label="公益愛心">
+                                    <option value="36">公益愛心</option>
+                                </optgroup>
+                                <optgroup label="母乳哺育">
+                                    <option value="19">母乳哺育</option>
+                                </optgroup>
+                                <optgroup label="教養 教育">
+                                    <option value="11">幼兒學習</option>
+                                    <option value="20">兒童教養</option>
+                                    <option value="15">小學生</option>
+                                    <option value="28">國高中生</option>
+                                    <option value="24">親子共讀</option>
+                                    <option value="38">親職 親師</option>
+                                    <option value="22">家教 課後輔導</option>
+                                </optgroup>
+                                <optgroup label="心事說開 煩惱不再">
+                                    <option value="12">心事說開 煩惱不再</option>
+                                </optgroup>
+                                <optgroup label="保健醫療">
+                                    <option value="34">養生保健</option>
+                                    <option value="37">過敏 醫療</option>
+                                </optgroup>
+                                <optgroup label="生活即時通">
+                                    <option value="2">好康優惠情報</option>
+                                    <option value="23">婦幼活動</option>
+                                    <option value="100">搶千 拉人</option>
+                                </optgroup>
+                                <optgroup label="男人有話要說">
+                                    <option value="103">新手爸爸</option>
+                                    <option value="104">女人不懂</option>
+                                    <option value="105">男人五四三</option>
+                                </optgroup>
+                                <optgroup label="生活風格">
+                                    <option value="41">DIY手作</option>
+                                    <option value="14">家事輕鬆做</option>
+                                    <option value="16">網頁美術作品分享</option>
+                                    <option value="21">寵物寶貝</option>
+                                </optgroup>
+                                <optgroup label="閨房記樂">
+                                    <option value="17">閨房記樂</option>
+                                </optgroup>
+                                <optgroup label="閒聊專區">
+                                    <option value="6">閒聊專區</option>
+                                </optgroup>
+                                <optgroup label="寫小說">
+                                    <option value="109">寫小說</option>
+                                </optgroup>
+                                <optgroup label="美體美顏">
+                                    <option value="35">美容醫美</option>
+                                    <option value="25">產後媽咪私房話</option>
+                                </optgroup>
+                                <optgroup label="工商專區">
+                                    <option value="3">買賣交流</option>
+                                    <option value="18">職場訊息</option>
+                                    <option value="29">家教 課程 活動推廣</option>
+                                    <option value="30">理財 保險</option>
+                                    <option value="31">房市資訊</option>
+                                    <option value="33">撿便宜情報</option>
+                                </optgroup>
+                                <optgroup label="香香美食">
+                                    <option value="13">香香美食</option>
+                                </optgroup>
+                                <optgroup label="留言測試區">
+                                    <option value="99">留言測試區</option>
+                                </optgroup>
+                                <optgroup label="親子趴趴走">
+                                    <option value="9">親子趴趴走</option>
+                                </optgroup>
+                                <optgroup label="站務公告">
+                                    <option value="1">站務公告</option>
+                                </optgroup>
+                                <optgroup label="BabyHomers 專區">
+                                    <option value="996">BabyHomers 專區</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-xs-12 subject-input">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="主題"> </div>
+                </div>
+                <div class="form-group response-area text-editor">
+                    <div class="upload clearfix">
+                        <button tyoe="button" id="insert_topic_response_img" class="btn btn-primary"><i class="ion-camera"></i>插入圖片</button>
+                        <p>建議使用ios6.0或
+                            <br>android 4.2以上版本</p>
+                    </div>
+                    <textarea name="response_content" id="response_content" class="form-control" rows="5" placeholder="內容"></textarea>
+                    <span class="time-tag">草稿自動儲存：12:30:45</span>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="1" id="readrule" name="readrule"> 我已閱讀本討論區規則﹑我的內容不違反本討論區規則 【<a href="http://m.babyhome.com.tw/topic/?bid=1&amp;sID=4163075">討論區須知</a>】 </label>
+                </div>
+                <div class="form-group" align="center">
+                    <button tyoe="button" class="btn btn-draft">儲存草稿</button>
+                    <button tyoe="button" id="submit_topic_response" class="btn btn-compose" data-toggle="modal" data-target=".modal">回應</button>
+                </div>
+            </form>
+            <div class="channels_02 m_board_tpics list-group">
+                <ul class="media-list">
+                    <li class="media">
+                        <div class="media-body"><a href="#" name="portal_channel" alt="懷孕生產">懷孕生產<span class="description">分類說明......</span></a></div>
+                        <div class="media-right"><a href="#"><i class="ion-chevron-right"></i></a></div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body"><a href="#" name="portal_channel" alt="育兒經驗">育兒經驗<span class="description">分類說明......</span></a></div>
+                        <div class="media-right"><a href="#"><i class="ion-chevron-right"></i></a></div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body"><a href="#" name="portal_channel" alt="教養教育">教養教育<span class="description">分類說明......</span></a></div>
+                        <div class="media-right"><a href="#"><i class="ion-chevron-right"></i></a></div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body"><a href="#" name="portal_channel" alt="心情閒聊">心情閒聊<span class="description">分類說明......</span></a></div>
+                        <div class="media-right"><a href="#"><i class="ion-chevron-right"></i></a></div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body"><a href="#" name="portal_channel" alt="旅遊美食">旅遊美食<span class="description">分類說明......</span></a></div>
+                        <div class="media-right"><a href="#"><i class="ion-chevron-right"></i></a></div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body"><a href="#" name="portal_channel" alt="生活交流">生活交流<span class="description">分類說明......</span></a></div>
+                        <div class="media-right"><a href="#"><i class="ion-chevron-right"></i></a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a id="toTop" href="#top">Top</a>
+        <footer>
+            <div align="center" id="switch"> <a href="javascript:translatePage();" id="translateLink">簡體</a> | <a href="#" id="tour_start">教學導引</a>
+            </div>Copyright 2010 BabyHome. All right reserved.</footer>
+    </div>
+    <div class="modal fade flag-modal keyword-modal" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="rp_title">關鍵字提醒</h4>
+                </div>
+                <div class="modal-body">
+                    <p>您的發言內容內含爭議關鍵字，恐有觸法疑慮！
+                        <br>請至<a href="#" target="_blank">關鍵字說明</a>頁面查看詳細內容</p>
+                </div>
+                <div class="modal-footer">
+                    <ul class="nav-justified">
+                        <li>
+                            <button type="button" class="btn btn-cancel btn-block" data-dismiss="modal">修改發言</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-post btn-block">確認送出</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <script src="http://m.babyhome.com.tw/mini/js?f=lib/jquery.min,lib/bootstrap/modal,common,lib/bootstrap/transition,lib/bootstrap/carousel,lib/touchSwipe/jquery.touchSwipe.min,portal,lib/bootstrap-tour.min,lib/bootstrap/tooltip,lib/bootstrap/popover,tour&amp;v=1.4.28"></script>
+    <script type="text/javascript" src="http://m.babyhome.com.tw/public/js/lib/tw_cn.js" mce_src="http://m.babyhome.com.tw/public/js/lib/tw_cn.js"></script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34465652-1']);
+    _gaq.push(['_setDomainName', 'babyhome.com.tw']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
