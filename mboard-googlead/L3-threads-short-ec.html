@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome討論區</title>
+    <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="public/css/masthead.css" rel="stylesheet">
+    <link href="public/css/mboard-theme.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="masthead">
+        <nav class="navbar common-nav mboard-theme">
+            <div class="container">
+                <ul class="nav navbar-nav main-nav">
+                    <li><a href="#"><i class="nav-icon-home"></i>首頁</a></li>
+                    <li><a href="#"><i class="nav-icon-shop"></i>購物</a></li>
+                    <li><a href="info_ad/20161129_googlead.html"><i class="nav-icon-info"></i>新知大耳朵</a></li>
+                    <li><a href="#"><i class="nav-icon-club"></i>家族</a></li>
+                    <li><a href="L2-threads-list-googlead.html"><i class="nav-icon-mboard"></i>親子討論區</a></li>
+                    <li><a href="#"><i class="nav-icon-blog"></i>愛+部落格</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right nav-additional">
+                    <li class="nav-tools dropdown">
+                        <a id="tools-collection" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>小工具</span></a>
+                        <ul class="dropdown-menu" aria-labelledby="tools-collection">
+                            <li><a href="#"><i class="tool-icon-Ovulation"></i><span>安全期試算</span></a></li>
+                            <li><a href="#"><i class="tool-icon-Week"></i><span>懷孕日曆</span></a></li>
+                            <li><a href="#"><i class="tool-icon-focus"></i><span>孕期焦點</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Q點</a></li>
+                    <li class="nav-social-facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="bbh-header">
+            <div class="container">
+                <div class="brand-logo">
+                    <a href="#" class="bbh-logo"><img src="public/img/logo.svg" alt="BabyHome.com.tw"></a>
+                </div>
+                <div class="search">
+                    <div class="input-group">
+                        <span class="input-group-btn list-select"><select name="classsort" class="form-control"><option value="mboard" selected>討論區</option><option value="info">新知</option><option value="name">作者</option></select></span>
+                        <input type="text" class="form-control" placeholder=""><span class="input-group-btn"> <button class="btn btn-link" type="button"><i class="ion-android-search"></i></button></span>
+                    </div>
+                </div>
+                <div class="user-span"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar mboard-nav" id="nav-Affix">
+        <div class="container">
+            <div class="user-span">
+                <div class="rigth-span profile-item dropdown">
+                    <a id="profile-option" class="profile-pic" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img class="img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="profile-option">
+                        <li><span class="span-control">SieChanel</span></li>
+                        <li class="profile-detail">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>3333</span>發表
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>400</span>關注
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>333</span>粉絲
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">草稿</a></li>
+                        <li><a href="#">話題</a></li>
+                        <li><a href="#">會員中心</a></li>
+                        <li><span class="span-control">隱私設定</span>
+                            <ul>
+                                <li class="settings">
+                                    <div class="question">允許他人關注</div>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-3"></label>
+                                    </div>
+                                </li>
+                                <li class="settings">
+                                    <div class="question">話題列表公開</div>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-4"></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </div>
+                <div class="rigth-span private-message">
+                    <span class="badge"></span>
+                    <a href="#"><i class="ion-ios-email-outline"></i></a>
+                </div>
+                <div class="rigth-span push-note dropdown">
+                    <span class="badge"></span>
+                    <a id="push-notice" class="push-notice" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="ion-ios-bell-outline"></i></a>
+                    <div id="my_notice_last" class="dropdown-menu" role="menu" aria-labelledby="push-notice">
+                        <p class="notice-head">通知</p>
+                        <div class="notice-list">
+                            <div class="media">
+                                <p>目前尚無新通知</p>
+                            </div>
+                            <div id="li_573add2f38d056b1438b4567" class="media unread">
+                                <a href="http://photo.babyhome.com.tw/236111/jeUwdjSYCJ1TcYEK" class="notice-link" name="unread" notice_id="573add2f38d056b1438b4567">
+                                    <img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="毛寶2次方">
+                                    <div class="media-body">
+                                        <p class="notice-content">毛寶2次方喜歡您的照片。</p>
+                                        <p class="timeline">2016-05-17 16:58:23</p>
+                                    </div>
+                                </a>
+                                <p class="notice-option">
+                                    <a href="#573add2f38d056b1438b4567" name="notice_read" title="已閱讀"><i class="ion-checkmark-circled"></i></a>
+                                    <a href="#573add2f38d056b1438b4567" name="notice_delele" title="刪除"><i class="ion-close-circled"></i></a>
+                                </p>
+                            </div>
+                            <div id="li_546ae13339d05606598b4568" class="media ">
+                                <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568">
+                                    <img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                    <div class="media-body">
+                                        <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                        <p class="timeline">2014-11-18 14:03:31</p>
+                                    </div>
+                                </a>
+                                <p class="notice-option">
+                                    <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="ion-close-circled"></i></a>
+                                </p>
+                            </div>
+                            <div id="li_546ae12239d056ec588b4569" class="media ">
+                                <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae12239d056ec588b4569">
+                                    <img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                    <div class="media-body">
+                                        <p class="notice-content">家有毛寶喜歡您的照片</p>
+                                        <p class="timeline">2014-11-18 14:03:14</p>
+                                    </div>
+                                </a>
+                                <p class="notice-option">
+                                    <a href="#546ae12239d056ec588b4569" name="notice_delele" title="刪除"><i class="ion-close-circled"></i></a>
+                                </p>
+                            </div>
+                            <div id="li_546ae11a39d056e5588b4567" class="media ">
+                                <a href="http://photo.babyhome.com.tw/236111/14vyfvT9szaYTtzK" class="notice-link" name="" notice_id="546ae11a39d056e5588b4567">
+                                    <img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                    <div class="media-body">
+                                        <p class="notice-content">家有毛寶喜歡您的照片</p>
+                                        <p class="timeline">2014-11-18 14:03:06</p>
+                                    </div>
+                                </a>
+                                <p class="notice-option">
+                                    <a href="#546ae11a39d056e5588b4567" name="notice_delele" title="刪除"><i class="ion-close-circled"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="http://member.babyhome.com.tw/notice" class="btn btn-primary btn-lg btn-block">查看更多</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav navbar-nav drop-style">
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的最愛</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">最愛專區</a></li>
+                        <li><a href="L2-threads-list-googlead.html">追蹤動態</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">懷孕生產</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">等孕助孕經驗</a></li>
+                        <li><a href="L2-threads-list-googlead.html">孕媽咪私房話</a></li>
+                        <li><a href="L2-threads-list-googlead.html">生育福利權益</a></li>
+                        <li><a href="L2-threads-list-googlead.html">產後月子瘦身</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">育兒經驗</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">寶寶大小事</a></li>
+                        <li><a href="L2-threads-list-googlead.html">天使寶寶</a></li>
+                        <li><a href="L2-threads-list-googlead.html">母乳哺育</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">教養教育</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">幼兒學習</a></li>
+                        <li><a href="L2-threads-list-googlead.html">小學生</a></li>
+                        <li><a href="L2-threads-list-googlead.html">國高中生</a></li>
+                        <li><a href="L2-threads-list-googlead.html">兒童教養</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">旅遊美食</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">親子趴趴走</a></li>
+                        <li><a href="L2-threads-list-googlead.html">美味料理</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">生活交流</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">保健醫療</a>
+                            <ul class="tertiary-nav">
+                                <li><a href="L2-threads-list-googlead.html">養生保健</a></li>
+                                <li><a href="L2-threads-list-googlead.html">過敏與醫療</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="L2-threads-list-googlead.html">美體美顏</a></li>
+                        <li><a href="L2-threads-list-googlead.html">公益愛心</a></li>
+                        <li><a href="L2-threads-list-googlead.html">好康與活動</a>
+                            <ul class="tertiary-nav">
+                                <li><a href="L2-threads-list-googlead.html">好康優惠</a></li>
+                                <li><a href="L2-threads-list-googlead.html">親子活動</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="L2-threads-list-googlead.html">居家與愛好</a>
+                            <ul class="tertiary-nav">
+                                <li><a href="L2-threads-list-googlead.html">家事輕鬆做</a></li>
+                                <li><a href="L2-threads-list-googlead.html">寵物寶貝</a></li>
+                                <li><a href="L2-threads-list-googlead.html">DIY玩手作</a></li>
+                                <li><a href="L2-threads-list-googlead.html">3C電腦攝影</a></li>
+                                <li><a href="L2-threads-list-googlead.html">生活其他</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心情閒聊</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="L2-threads-list-googlead.html">閒聊話題</a></li>
+                        <li><a href="L2-threads-list-googlead.html">心事悄悄說</a></li>
+                        <li><a href="L2-threads-list-googlead.html">閨房情事</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="pre-act" href="L2-threads-list-googlead.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工商消息</a>
+                    <ul class="secondary-nav dropdown-menu">
+                        <li><a href="#">買賣交流</a></li>
+                        <li><a href="#">托育與職場</a></li>
+                        <li><a href="#">課程與活動</a>
+                            <ul class="tertiary-nav">
+                                <li><a href="#">家教媒合</a></li>
+                                <li><a href="#">課程刊登</a></li>
+                                <li><a href="#">活動推廣</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">理財與保險</a></li>
+                        <li><a href="#">房市資訊</a></li>
+                        <li><a href="#">撿便宜情報</a></li>
+                    </ul>
+                </li>
+                <li class="newbie-tour"><a href="#" data-demo class="new-feature" data-toggle="tooltip" data-placement="right" title="新功能教學引導"><span class="dot"></span><i class="ion-ios-help-outline"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right optional-nav">
+                <li><a href="#">公告與指南</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="rapid-menu affix">
+        <ul class="rapid-menu-content" id="tour-1">
+            <li class="rapid-mune-tab tab-reply"><a href="#">回應</a></li>
+            <li class="rapid-mune-tab tab-add" type="button" href="#" id="demo" data-demo><a href="L4-thread-post.html">新增</a></li>
+            <li class="rapid-mune-tab tab-share"><a href="#">分享</a></li>
+            <li class="rapid-mune-tab tab-bookmark"><a href="#">訂閱</span></a></li>
+        </ul>
+        <div class="rapid-mune-tab tab-back2top" id="rapidTop-Affix"><a href="#"><span class="sr-only">到頁首</span></a></div>
+    </div>
+    <div class="container mboard-main">
+        <div class="mboard-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="#">BabyHome首頁</a></li>
+                <li><a href="L1-index-googlead.html">親子討論區</a></li>
+                <li><a href="L2-threads-list-googlead.html">生活交流</a></li>
+                <li><a href="L2-threads-list-googlead.html">生活風格</a></li>
+                <li class="active">家事輕鬆做</li>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 main-span">
+                <div class="ad-span-large">
+                    <a href="#"><img src="http://lorempixel.com/840/100/abstract"></a>
+                </div>
+                <nav class="mboard-pagination clearfix">
+                    <ul class="pagination pull-right">
+                        <li><a href="" class="btn btn-link">返回列表</a></li>
+                        <li>
+                            <a href="#" aria-label="skipbackward">
+                                <i class="ion-ios-skipbackward"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <i class="ion-arrow-left-b"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <i class="ion-arrow-right-b"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="skipforward">
+                                <i class="ion-ios-skipforward"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="section-indication">
+                        <li><a href="L2-threads-list-googlead.html">生活風格</a></li>
+                        <li><a href="L2-threads-list-googlead.html">家事輕鬆做</a></li>
+                    </ul>
+                </nav>
+                <div class="threads-col">
+                    <div class="thread-title">
+                        <div class="media thread-host">
+                            <div class="media-left media-middle">
+                                <p title="小小灃&小小香的娘">
+                                    <img class="media-object img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                                    <span>小小灃&小小香的娘</span>
+                                </p>
+                            </div>
+                            <div class="media-body">
+                                <h1>都覺得誇張之除塵拖</h1></div>
+                        </div>
+                    </div>
+                    <div class="threads-content">
+                        <ul class="media-list threads-list">
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail" id="tour-2">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/default_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>小小灃&小小香的娘</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>版主</span><a href="#" class="eye-only" title="只看板主" id="tour-3"><i class="ion-eye"></i></a></p>
+                                        <p class="thread-author">小小灃&小小香的娘</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵，用的是樂清的<a href="#">除塵拖</a>，自己也上網買了一隻，是真的用起來滿順手的，小朋友也愛拿起來有樣學樣，好處是弄到一種極致的髒後，再去7-11換布，不用再那邊洗半天，洗不乾淨又浪費水XD，不過不是每家7-11都剛好有貨，有興趣的大家可以去上網搜尋。</p>
+                                        <p>
+                                            <img src="http://lorempixel.com/1200/800/nature" alt="...">
+                                            <img src="http://lorempixel.com/1200/800/people" alt="...">
+                                        </p>
+                                        <p>
+                                            <img src="public/img/sticker02.png" alt=""><img src="public/img/sticker05.png" alt=""><img src="public/img/sticker06.png" alt="">
+                                        </p>
+                                        <div class="edited-comment">
+                                            <span class="time-tag">於2015-12-21 16:51:27 重新編輯過</span>
+                                        </div>
+                                        <div class="additional-comment">
+                                            <button class="btn btn-link pull-right"><i class="ion-android-cancel"></i></button>
+                                            <span class="time-tag">於2015-12-21 16:51:27 補充發言</span>
+                                            <p>過年大掃除有好工具了!</p>
+                                        </div>
+                                        <div class="additional-comment">
+                                            <button class="btn btn-link pull-right"><i class="ion-android-cancel"></i></button>
+                                            <span class="time-tag">於2015-12-21 16:51:27 補充發言</span>
+                                            <p>過年大掃除有好工具了!</p>
+                                        </div>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#1</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/banned-profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><span class="alert">帳號停權</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#2</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵，用的是樂清的除塵拖，自己也上網買了一隻，是真的用起來滿順手的，小朋友也愛拿起來有樣學樣，好處是弄到一種極致的髒後，再去7-11換布，不用再那邊洗半天，洗不乾淨又浪費水XD，不過不是每家7-11都剛好有貨，有興趣的大家可以去上網搜尋。</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--
+                            <li class="media thread-individual">
+                                <div class="ad-span-video" style="text-align: right;">
+                                    <div style="background: white;padding: 20px 30px;border: 1px solid #f0b997;border-radius: 5px;width: 720px;display: inline-block;text-align: center;">
+                                        <iframe width="640" height="360" src="https://www.youtube.com/embed/djt_jOfuaT4" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </li>
+                            -->
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#3</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#4</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="ad-span-large">
+                                <div class="gad-lg-container">
+                                    <a href="#"><img src="public/img/728x90.png"></a>
+                                </div>
+                            </div>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#5</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#6</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#7</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#8</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#9</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="media thread-individual">
+                                <div class="media-left">
+                                    <div class="thumbnail">
+                                        <div class="closeup-span">
+                                            <div href="#" class="profile-img">
+                                                <img src="public/img/anonymous_profile.gif" alt="..." class="img-circle">
+                                            </div>
+                                            <div class="profile-card">
+                                                <div class="left-closeup">
+                                                    <div class="caption">
+                                                        <p>SieChanel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-info">
+                                                    <ul class="post-amount-info">
+                                                        <li>3萬多<span><i class="ion-chatbox"></i>話題</span></li>
+                                                        <li>3333<span><i class="ion-android-people"></i>粉絲</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt-center"><a href="#" class="btn btn-follow" role="button"><i class="ion-android-person-add"></i>關注</a><a href="#" class="btn btn-follow btn-cancel" role="button"><i class="ion-android-person-add"></i>取消</a><a href="#" class="btn btn-follow" role="button"><i class="ion-ios-list-outline"></i>話題</a></p>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="time-tag clearfix">
+                                        <p class="floors pull-right">2015-12-10 20:43:09<span>#10</span></p>
+                                        <p class="thread-author">SieChanel</p>
+                                    </div>
+                                    <div class="thread-inner">
+                                        <p>因為上班的地方需要清潔灰塵</p>
+                                        <div class="thread-options">
+                                            <button class="btn btn-link pull-left btn-like active"><i class="ion-ios-heart"></i>125喜歡</button>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-link"><i class="ion-quote"></i>引用</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>修改</button>
+                                                <button class="btn btn-link"><i class="ion-edit"></i>補充</button>
+                                                <button class="btn btn-link" data-toggle="modal" data-target=".flag-modal"><i class="ion-flag"></i>檢舉</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.threads-col -->
+                <nav class="mboard-pagination clearfix btm-pagination">
+                    <ul class="pagination pull-right">
+                        <li><a href="" class="btn btn-link">返回列表</a></li>
+                        <li>
+                            <a href="#" aria-label="skipbackward">
+                                <i class="ion-ios-skipbackward"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <i class="ion-arrow-left-b"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <i class="ion-arrow-right-b"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="skipforward">
+                                <i class="ion-ios-skipforward"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn-span">
+                        <a href="#" class="btn btn-post"><i class="ion-reply"></i>回應</a><a href="#" class="btn btn-post disabled">停止回應</a><a href="#" class="btn btn-post btn-compose"><i class="ion-compose"></i>新增話題</a>
+                    </div>
+                </nav>
+                <div class="ad-span-01"><img src="http://lorempixel.com/840/100/abstract"></div>
+                <div class="relative-topics">
+                    <p class="title-span reltive-title"><span>相關</span>延伸話題</p>
+                    <ul>
+                        <li><a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀">我兒子在學校被嘲笑了，現在的小孩子價值觀</a></li>
+                        <li><a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀">我兒子在學校被嘲笑了，現在的小孩子價值觀</a></li>
+                        <li><a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀">我兒子在學校被嘲笑了，現在的小孩子價值觀</a></li>
+                        <li><a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀">我兒子在學校被嘲笑了，現在的小孩子價值觀</a></li>
+                        <li><a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀">我兒子在學校被嘲笑了，現在的小孩子價值觀</a></li>
+                        <li><a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀">我兒子在學校被嘲笑了，現在的小孩子價值觀</a></li>
+                    </ul>
+                </div>
+                <div class="info-span-01">
+                    <div class="row">
+                        <div class="mbord-info-articles">
+                            <p class="title-span"><span>其他爸媽</span>都在看...一起好好讀</p>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://f.photo.babyhome.com.tw/VMEzkyC0Z83n8nQx_xxl.jpg" alt="...">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="胎夢準不準？夢見蛇、花代表什麼？">胎夢準不準？夢見蛇、花代表什麼？</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://f.photo.babyhome.com.tw/VMEzkyC0Z83n8nQx_xxl.jpg" alt="...">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="胎夢準不準？夢見蛇、花代表什麼？">胎夢準不準？夢見蛇、花代表什麼？</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://f.photo.babyhome.com.tw/VMEzkyC0Z83n8nQx_xxl.jpg" alt="...">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="胎夢準不準？夢見蛇、花代表什麼？">胎夢準不準？夢見蛇、花代表什麼？</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.info-articles -->
+                    </div>
+                </div>
+                <div class="info-span-02">
+                    <div class="row">
+                        <div class="mbord-info-articles">
+                            <p class="title-span"><span>其他爸媽</span>都在看...一起好好讀</p>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://f.photo.babyhome.com.tw/VMEzkyC0Z83n8nQx_xxl.jpg" alt="...">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="胎夢準不準？夢見蛇、花代表什麼？">胎夢準不準？夢見蛇、花代表什麼？</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://f.photo.babyhome.com.tw/VMEzkyC0Z83n8nQx_xxl.jpg" alt="...">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="胎夢準不準？夢見蛇、花代表什麼？">胎夢準不準？夢見蛇、花代表什麼？</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://f.photo.babyhome.com.tw/VMEzkyC0Z83n8nQx_xxl.jpg" alt="...">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="胎夢準不準？夢見蛇、花代表什麼？">胎夢準不準？夢見蛇、花代表什麼？</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.info-articles -->
+                    </div>
+                </div>
+                <div class="info-span-03">
+                    <div class="row">
+                        <div class="mbord-info-articles">
+                            <p class="title-span">
+                                <a href="#" class="more" title="更多"><i class="ion-android-add"></i></a><i class="ion-android-search"></i><span>好物推薦</span>特賣TOP
+                            </p>
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://shop.babyhome.com.tw/files/spmupload/p1105/583e5833efc97_400.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="【耶誕好禮下殺】DF 童趣館 - 推車專用防風保暖毯">【耶誕好禮下殺】DF 童趣館 - 推車專用防風保暖毯</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://shop.babyhome.com.tw/files/spmupload/p64/55ff61a988495_400.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="【特賣】小獅王辛巴 PPSU健康喜悅禮盒(標準口徑)_網路限定款">【特賣】小獅王辛巴 PPSU健康喜悅禮盒(標準口徑)_網路限定款</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://shop.babyhome.com.tw/files/spmupload/p1025/584fb7cd2630a_400.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="Disney迪士尼經典米妮防護保暖靴【MLM248D】">Disney迪士尼經典米妮防護保暖靴【MLM248D】</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <a class="btn-link" href="#">
+                                        <img src="http://shop.babyhome.com.tw/files/spmupload/p348/58259c5fd2520_400.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <p><a href="#" title="【BBH獨家商品】京之寢奈米遠紅外線暖暖被5*7呎/2件(獨家再送面鏽花抱枕2個)">【BBH獨家商品】京之寢奈米遠紅外線暖暖被5*7呎/2件(獨家再送面鏽花抱枕2個)</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.info-articles -->
+                    </div>
+                </div>
+                <div class="ad-span-large">
+                    <div class="gad-lg-container">
+                        <a href="#"><img src="public/img/728x90.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.mboard-main -->
+            <div class="col-xs-3 mboard-sidebar">
+                <div class="ad-span-square"><img src="http://lorempixel.com/300/250/people"></div>
+                <div class="sidebar-span">
+                    <p class="title-span"><a href="#" class="section"><span>商業 </span>快訊</a></p>
+                    <ul>
+                        <li><a href="#" title="" class="txt-ad-link">向傳統尿布說掰掰，留言抽幫寶適向傳統</a></li>
+                        <li><a href="#" title="" class="txt-ad-link">向傳統尿布說掰掰，留言抽幫寶適向傳統</a></li>
+                        <li><a href="#" title="" class="txt-ad-link">向傳統尿布說掰掰，留言抽幫寶適向傳統</a></li>
+                        <li><a href="#" title="" class="txt-ad-link">向傳統尿布說掰掰，留言抽幫寶適向傳統</a></li>
+                        <li><a href="#" title="" class="txt-ad-link">向傳統尿布說掰掰，留言抽幫寶適向傳統</a></li>
+                    </ul>
+                </div>
+                <div class="ad-span-02"><img src="public/img/300x250.png"></div>
+                <div class="sidebar-span">
+                    <p class="title-span"><span>搶 </span>頭香</p>
+                    <ul class="quick-reply">
+                        <li><a href="#" title="寶寶突然吃奶變少"><span>14:12</span>寶寶突然吃奶變少</a></li>
+                        <li><a href="#" title="(轉貼分享)女性助孕穴道按摩"><span>14:10</span>(轉貼分享)女性助孕穴道按摩</a></li>
+                        <li><a href="#" title="中藥浴功效大公開"><span>11:41</span>中藥浴功效大公開</a></li>
+                        <li><a href="#" title="寶寶突然吃奶變少"><span>14:12</span>寶寶突然吃奶變少</a></li>
+                        <li><a href="#" title="(轉貼分享)女性助孕穴道按摩"><span>14:10</span>(轉貼分享)女性助孕穴道按摩</a></li>
+                        <li><a href="#" title="中藥浴功效大公開"><span>11:41</span>中藥浴功效大公開</a></li>
+                        <li><a href="#" title="母奶銜接配方奶"><span>11:33</span>母奶銜接配方奶</a></li>
+                        <li><a href="#" title="痛苦的人生"><span>10:21</span>痛苦的人生</a></li>
+                        <li><a href="#" title="更年期症狀"><span>09:40</span>更年期症狀</a></li>
+                        <li><a href="#" title="臍帶扭轉懷孕31週+2D寶貝去當天使了"><span>23:26</span>臍帶扭轉懷孕31週+2D寶貝去當天使了</a></li>
+                    </ul>
+                </div>
+                <div class="ad-span-square"><img src="http://lorempixel.com/300/150/nature"></div>
+                <div class="sidebar-span">
+                    <p class="title-span"><a href="#" class="section"><span>媽咪 </span>投票趣</a> <a href="#" class="more" title="更多"><i class="ion-android-add"></i></a></p>
+                    <div class="ad-span poll-span">
+                        <p>(投票拿好禮) 成為媽媽後好像變得有「超能力」，但只要遇到下列哪些事情，就會讓你變得「超無力」？</p>
+                        <a href="#" class="btn btn-link pull-right section"><i class="type-poll-icon"></i>前往投票</a>
+                        <a href="#" class="btn btn-link pull-right section"><i class="type-poll-icon"></i>歷史投票</a>
+                        <a href="#" class="btn btn-link pull-right section"><i class="type-poll-icon"></i>投票結果</a>
+                    </div>
+                </div>
+                <div class="ad-span-02"><img src="public/img/300x250.png"></div>
+                <div class="sidebar-span">
+                    <p class="title-span"><span>熱 </span>話題<small>生活交流</small></p>
+                    <ul class="media-list hot-threads">
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="http://lorempixel.com/35/35/people" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#" title="我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ad-span-02"><img src="http://lorempixel.com/300/250/city"></div>
+                <div class="ad-span-02">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/Q3dj9hxWM6E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="sidebar-span">
+                    <p class="title-span"><span>熱 </span>討論</p>
+                    <ul class="hot-threads">
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">天氣驟降要準備什麼保暖用品才夠</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">27+4寶寶無預警的停止心跳了~</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">小孩是我一個人的嗎??????</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">試管嬰兒植入第11天一條線</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">我還滿讚成秒退的阿!!!!!!!!!!!!!!!!!!!!!</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">關於失去生活重心的媽媽</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">頭髮蓬看起來真的比較年輕!</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">2015BabyRun運動會特派記者，精美獎品等你拿！</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">明治『樂樂Q貝EZcube』好用心得大募集，分享心得就有機會獲得樂樂Q貝乙箱!</a></li>
+                        <li><a href="#" class="sub-link">等孕</a><a href="#" title="天氣驟降要準備什麼保暖用品才夠">有人去過金莎巧克力旗艦店了嗎？</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-span">
+                    <p class="title-span"><a href="#" class="section"><span>BabyHome </span>活動</a> <a href="#" class="more" title="更多"><i class="ion-android-add"></i></a></p>
+                    <div class="mkt-event-span">
+                        <a href="#" alt="..."><img src="public/img/300x150-1.jpg" alt="..."></a>
+                    </div>
+                    <ul>
+                        <li><a href="#" title="天氣驟降要準備什麼保暖用品才夠">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a></li>
+                        <li><a href="#" title="天氣驟降要準備什麼保暖用品才夠">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a></li>
+                        <li><a href="#" title="天氣驟降要準備什麼保暖用品才夠">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a></li>
+                        <li><a href="#" title="天氣驟降要準備什麼保暖用品才夠">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a></li>
+                        <li><a href="#" title="天氣驟降要準備什麼保暖用品才夠">我兒子在學校被嘲笑了，現在的小孩子價值觀怎麼了?</a></li>
+                    </ul>
+                </div>
+                <div class="ad-span-02"><img src="public/img/300x250.png"></div>
+            </div>
+            <!-- /.mboard-sidebar -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <footer class="mboard-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="footer-logo">
+                        <a href="#" class="bbh-logo"><img src="public/img/universal-sprite.png" alt="BabyHome.com.tw"></a>
+                        <p>Copyright 2015 BabyHome. All right reserved.</p>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <dl class="footer-link">
+                        <dt>會員中心</dt>
+                        <dd><a href="#">會員註冊</a></dd>
+                        <dd><a href="#">會員登入</a></dd>
+                        <dd><a href="#">Q & A</a></dd>
+                        <dd><a href="#">站務服務區</a></dd>
+                    </dl>
+                    <dl class="footer-link">
+                        <dt>關於BabyHome</dt>
+                        <dd><a href="#">關於我們</a></dd>
+                        <dd><a href="#">服務條款</a></dd>
+                        <dd><a href="#">隱私權政策</a></dd>
+                        <dd><a href="#">客服信箱</a></dd>
+                        <dd><a href="#">合作提案</a></dd>
+                        <dd><a href="#">徵才資訊</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade flag-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ion-android-close"></i></button>
+                    <h4 class="modal-title">檢舉：#1 SieChanel</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-xs-offset-1 col-xs-10">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="" value="option1" class="opinion"> 廣告垃圾
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="" value="option2" class="opinion"> 違規內容
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="" value="option3" class="opinion"> 惡意灌水
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="" value="option4" class="opinion"> 重複發帖
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="" value="option5" class="other-opinion"> 其他
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 txt-span fade">
+                                    <textarea class="form-control" rows="3" placeholder="您可輸入檢舉的原因"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <ul class="nav-justified">
+                        <li>
+                            <button type="button" class="btn btn-cancel btn-block" data-dismiss="modal">取消</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-post btn-block" disabled="">確認</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/bootstrap-tour.js"></script>
+    <script src="public/js/mboard-custom.js"></script>
+    <script src="public/js/mboard-tour3.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="public/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
