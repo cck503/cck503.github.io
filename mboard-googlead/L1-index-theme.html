@@ -266,7 +266,7 @@
                     </ul>
                 </li>
                 <li class="newbie-tour"><a href="#" data-demo class="new-feature" data-toggle="tooltip" data-placement="right" title="新功能教學引導"><span class="dot"></span><i class="ion-ios-help-outline"></i></a></li>
-                <li><a href="#" style="display: inline-block; color: #f28e02;" id="orange"><i class="ion-stop"></i></a><a href="#" style="display: inline-block; color: #f28e02;"><i class="ion-stop"></i></a></li>
+                <li><a href="#" style="display: inline-block; color: #f28e02;" id="orange"><i class="ion-stop"></i></a><a href="#" style="display: inline-block; color: #f08f6a;" id="blend"><i class="ion-stop"></i></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right optional-nav">
                 <li><a href="#">公告與指南</a></li>
@@ -275,7 +275,7 @@
     </nav>
     <div class="rapid-menu affix">
         <ul class="rapid-menu-content">
-            <li class="rapid-mune-tab tab-add"><a type="button" href="L4-thread-post.html" id="tour-2">新增</a></li>
+            <li class="rapid-mune-tab tab-add"><a type="button" href="L4-thread-post-theme.html" id="tour-2">新增</a></li>
         </ul>
         <div class="ad-span-affix">
             <a href=""><img src="http://fakeimg.pl/100x150/"></a>
@@ -313,7 +313,7 @@
                                     <a href="#">
                                         <img src="http://lorempixel.com/480/360/nature/1" alt="別負面解讀孩子行為！用理性的聲音走進孩子的心">
                                         <div class="carousel-caption">
-                                            別負面解讀孩子行為！用理性的聲音走進孩子的心
+                                            <a href="#">別負面解讀孩子行為！用理性的聲音走進孩子的心</a>
                                         </div>
                                     </a>
                                 </div>
@@ -321,7 +321,7 @@
                                     <a href="#">
                                         <img src="http://lorempixel.com/480/360/nature/2" alt="別負面解讀孩子行為！用理性的聲音走進孩子的心">
                                         <div class="carousel-caption">
-                                            別負面解讀孩子行為！用理性的聲音走進孩子的心
+                                            <a href="#">別負面解讀孩子行為！用理性的聲音走進孩子的心</a>
                                         </div>
                                     </a>
                                 </div>
@@ -806,6 +806,11 @@
     <script type="text/javascript">
     $('#orange').click(function() {
         $('link[href="public/css/mboard-theme.css"]').attr('href', 'public/css/mboard-theme-1.css');
+        $('link[href="public/css/mboard-theme-2.css"]').attr('href', 'public/css/mboard-theme-1.css');
+    });
+    $('#blend').click(function() {
+        $('link[href="public/css/mboard-theme.css"]').attr('href', 'public/css/mboard-theme-2.css');
+        $('link[href="public/css/mboard-theme-1.css"]').attr('href', 'public/css/mboard-theme-2.css');
     });
     </script>
 </body>

@@ -266,7 +266,7 @@
                     </ul>
                 </li>
                 <li class="newbie-tour"><a href="#" data-demo class="new-feature" data-toggle="tooltip" data-placement="right" title="新功能教學引導"><span class="dot"></span><i class="ion-ios-help-outline"></i></a></li>
-                <li><a href="#" style="display: inline-block; color: #f28e02;" id="orange"><i class="ion-stop"></i></a><a href="#" style="display: inline-block; color: #f28e02;"><i class="ion-stop"></i></a></li>
+                <li><a href="#" style="display: inline-block; color: #f28e02;" id="orange"><i class="ion-stop"></i></a><a href="#" style="display: inline-block; color: #f08f6a;" id="blend"><i class="ion-stop"></i></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right optional-nav">
                 <li><a href="#">公告與指南</a></li>
@@ -275,8 +275,8 @@
     </nav>
     <div class="rapid-menu affix">
         <ul class="rapid-menu-content" id="tour-1">
-            <li class="rapid-mune-tab tab-reply"><a href="#">回應</a></li>
-            <li class="rapid-mune-tab tab-add" type="button" href="#" id="demo" data-demo><a href="L4-thread-post.html">新增</a></li>
+            <li class="rapid-mune-tab tab-reply"><a href="L4-thread-post-theme.html">回應</a></li>
+            <li class="rapid-mune-tab tab-add" type="button" href="#" id="demo" data-demo><a href="L4-thread-post-theme.html">新增</a></li>
             <li class="rapid-mune-tab tab-share"><a href="#">分享</a></li>
             <li class="rapid-mune-tab tab-bookmark"><a href="#">訂閱</span></a></li>
         </ul>
@@ -1273,6 +1273,11 @@
     <script type="text/javascript">
     $('#orange').click(function() {
         $('link[href="public/css/mboard-theme.css"]').attr('href', 'public/css/mboard-theme-1.css');
+        $('link[href="public/css/mboard-theme-2.css"]').attr('href', 'public/css/mboard-theme-1.css');
+    });
+    $('#blend').click(function() {
+        $('link[href="public/css/mboard-theme.css"]').attr('href', 'public/css/mboard-theme-2.css');
+        $('link[href="public/css/mboard-theme-1.css"]').attr('href', 'public/css/mboard-theme-2.css');
     });
     </script>
 </body>
