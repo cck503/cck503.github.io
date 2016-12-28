@@ -1,7 +1,7 @@
 //tour-index
 $(function() {
   var $mboardtour, duration, remaining, tour;
-  $mboardtour = $("#tour-1");
+  $mboardtour = $("#selector-block");
   tour = new Tour({
     onStart: function() {
       return $mboardtour.addClass("disabled", true);
@@ -18,22 +18,22 @@ $(function() {
   remaining = duration;
   tour.addSteps([
     {
-      element: "#tour-1",
+      element: "#selector-block",
       placement: "right",
       title: "選擇發表分區",
-      content: "可重新選擇話題要發表的分區<br><a href='#' target='_blank'>更多說明</a>"
+      content: "可重新選擇話題要發表的分區"
     },
     {
-      element: "#tour-2",
+      element: "#draft-option",
       placement: "left",
       title: "草稿儲存功能",
       content: "當您新增或回應話題時，若尚未需要送出，可點選儲存草稿功能<br><a href='#' target='_blank'>更多說明</a>"
     },
     {
-      element: "#tour-3",
+      element: "#anonymous-option",
       placement: "right",
       title: "匿名功能",
-      content: "若要至心事悄悄說、閨房情事、天使寶寶、等孕助孕經驗 四個討論區使用匿名功能時，須先完成手機認證<br><a href='#' target='_blank'>更多說明</a>"
+      content: "為保護會員發文隱私，完成手機認證即可於特定區域使用匿名發言功能。<br><a href='#' target='_blank'>更多說明</a>"
     }
   ]);
   tour.init();

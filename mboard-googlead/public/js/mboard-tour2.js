@@ -1,7 +1,7 @@
 //tour-index
 $(function() {
   var $mboardtour, duration, remaining, tour;
-  $mboardtour = $("#profile-option");
+  $mboardtour = $("#range-selector");
   tour = new Tour({
     onStart: function() {
       return $mboardtour.addClass("disabled", true);
@@ -18,10 +18,10 @@ $(function() {
   remaining = duration;
   tour.addSteps([
     {
-      element: "#tour-1",
+      element: "#range-selector",
       placement: "bottom",
       title: "資料區間選擇",
-      content: "資料區間選擇有1年內、3年內、5年內、全部<br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
+      content: "資料區間可選擇:<br>1年內、3年內、5年內、全部"
     }
   ]);
   tour.init();

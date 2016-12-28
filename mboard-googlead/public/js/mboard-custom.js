@@ -38,13 +38,13 @@ jQuery(document).ready(function($) {
             }
         })
         /**/
-        $('.drop-style .dropdown').hover(function() {
-            $(this).find('.pre-act').addClass("active");
-            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
-        }, function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
-            $(this).find('.pre-act').removeClass("active");
-        });
+    $('.drop-style .dropdown').hover(function() {
+        $(this).find('.pre-act').addClass("active");
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
+        $(this).find('.pre-act').removeClass("active");
+    });
     $(".other-opinion").click(function() {
         $(".txt-span.fade").addClass("in");
     });
@@ -57,24 +57,27 @@ jQuery(document).ready(function($) {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
     })
+
 });
 
 
 // Add no-touch class to body for mobile touch events and toggle hover class on elements that need it
-    if ("ontouchstart" in document.documentElement) {
-        document.documentElement.className += " touch";
-    }
-    
-    // Add and remove no-hover class to <li>'s for mobile hover events
-    jQuery('.touch .closeup-span').each(function() {
-        var div = jQuery(this);
-        
-        div.hover(function() {
-            div.removeClass('no-hover');
-        });
-        
-        jQuery('*').not(div).bind('click', function() {
-            div.addClass('no-hover');
-        });
-        
+if ("ontouchstart" in document.documentElement) {
+    document.documentElement.className += " touch";
+}
+
+// Add and remove no-hover class to <li>'s for mobile hover events
+jQuery('.touch .closeup-span').each(function() {
+    var div = jQuery(this);
+
+    div.hover(function() {
+        div.removeClass('no-hover');
     });
+
+    jQuery('*').not(div).bind('click', function() {
+        div.addClass('no-hover');
+    });
+
+});
+
+//

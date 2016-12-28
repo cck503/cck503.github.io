@@ -20,20 +20,20 @@ $(function() {
     {
       element: "#profile-option",
       placement: "bottom",
-      title: "會員設定",
-      content: "會員中心、隱私設定<br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
+      title: "會員資訊",
+      content: "可即時查找草稿、(發表/回應/訂閱)話題及會員中心內容，並可快速設定隱私功能。"
     },
     {
-      element: "#tour-2",
+      element: "#new-topic",
       placement: "left",
       title: "新增話題",
       content: "點選即可快速新增話題<br><a href='L4-thread-post.html' target='_blank'>直接前往</a>"
     },
     {
-      element: "#tour-3",
+      element: "#setup-favorite",
       placement: "bottom",
       title: "自訂最愛專區",
-      content: "請點選設定即可自行設定個人化6個常用專區<br><a href='#' target='_blank'>更多說明</a>"
+      content: "點選設定即可自行選擇個人化6個常用專區，需變更最愛專區，請至編輯功能(參閱更多說明)修改<br><a href='#' target='_blank'>更多說明</a>"
     }/**/
   ]);
   tour.init();

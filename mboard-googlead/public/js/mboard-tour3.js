@@ -1,7 +1,7 @@
 //tour-index
 $(function() {
   var $mboardtour, duration, remaining, tour;
-  $mboardtour = $("#profile-option");
+  $mboardtour = $("#rapid-menu");
   tour = new Tour({
     onStart: function() {
       return $mboardtour.addClass("disabled", true);
@@ -18,22 +18,22 @@ $(function() {
   remaining = duration;
   tour.addSteps([
     {
-      element: "#tour-1",
+      element: "#rapid-menu",
       placement: "left",
-      title: "資料區間選擇",
-      content: "快速回應、分享、訂閱<br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
+      title: "快捷功能列",
+      content: "點選功能鍵可分享話題至fb社群網站，方便訂閱追蹤話題。"
     },
     {
-      element: "#tour-2",
+      element: "#follow-btn",
       placement: "right",
       title: "關注其他會員",
       content: "點選大頭貼下方的關注功能，即可追蹤該會員動態<br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
     },
     {
-      element: "#tour-3",
+      element: "#poster-only",
       placement: "bottom",
       title: "只看板主",
-      content: "點選icon，即可只觀看版主的回應<br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
+      content: "點選此圖示，即可只觀看版主的回應。"
     }
   ]);
   tour.init();
