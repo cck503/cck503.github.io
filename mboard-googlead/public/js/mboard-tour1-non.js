@@ -1,7 +1,7 @@
 //tour-index
 $(function() {
   var $mboardtour, duration, remaining, tour;
-  $mboardtour = $("#range-selector");
+  $mboardtour = $("#profile-option");
   tour = new Tour({
     /*onStart: function() {
       return $mboardtour.addClass("disabled", true);
@@ -18,10 +18,10 @@ $(function() {
   remaining = duration;
   tour.addSteps([
     {
-      element: "#range-selector",
-      placement: "bottom",
-      title: "資料區間選擇",
-      content: "資料區間可選擇:<br>1年內、3年內、5年內、全部"
+      element: "#new-topic",
+      placement: "left",
+      title: "新增話題",
+      content: "點選即可快速新增話題<br><a href='L4-thread-post.html' target='_blank'>直接前往</a>"
     }
   ]);
   tour.init();

@@ -3,12 +3,12 @@ $(function() {
   var $mboardtour, duration, remaining, tour;
   $mboardtour = $("#profile-option");
   tour = new Tour({
-    onStart: function() {
+    /*onStart: function() {
       return $mboardtour.addClass("disabled", true);
     },
     onEnd: function() {
       return $mboardtour.removeClass("disabled", true);
-    },
+    },*/
     backdrop: true,
     backdropContainer: 'body',
     backdropPadding: 20,

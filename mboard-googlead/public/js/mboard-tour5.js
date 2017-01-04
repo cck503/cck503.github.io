@@ -1,7 +1,7 @@
 //tour-index
 $(function() {
   var $mboardtour, duration, remaining, tour;
-  $mboardtour = $("#range-selector");
+  $mboardtour = $("#setup-custom");
   tour = new Tour({
     /*onStart: function() {
       return $mboardtour.addClass("disabled", true);
@@ -18,10 +18,10 @@ $(function() {
   remaining = duration;
   tour.addSteps([
     {
-      element: "#range-selector",
+      element: "#setup-custom",
       placement: "bottom",
-      title: "資料區間選擇",
-      content: "資料區間可選擇:<br>1年內、3年內、5年內、全部"
+      title: "自訂最愛專區",
+      content: "點選編輯，即可重新選擇最愛專區"
     }
   ]);
   tour.init();

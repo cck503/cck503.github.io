@@ -80,4 +80,15 @@ jQuery('.touch .closeup-span').each(function() {
 
 });
 
-//
+/*
+var iScrollPos = 0;
+$(window).scroll(function () {
+    var iCurScrollPos = $(this).scrollTop();
+    if (iCurScrollPos > iScrollPos) {
+        //Scrolling Down
+    } else {
+       //Scrolling Up
+    }
+    iScrollPos = iCurScrollPos;
+});
+*/

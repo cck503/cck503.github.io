@@ -3,12 +3,12 @@ $(function() {
   var $mboardtour, duration, remaining, tour;
   $mboardtour = $("#rapid-menu");
   tour = new Tour({
-    onStart: function() {
+    /*onStart: function() {
       return $mboardtour.addClass("disabled", true);
     },
     onEnd: function() {
       return $mboardtour.removeClass("disabled", true);
-    },
+    },*/
     backdrop: true,
     backdropContainer: 'body',
     backdropPadding: 20,
@@ -27,7 +27,7 @@ $(function() {
       element: "#follow-btn",
       placement: "right",
       title: "關注其他會員",
-      content: "點選大頭貼下方的關注功能，即可追蹤該會員動態<br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
+      content: "點選大頭貼下方的關注功能，即可追蹤該會員動態<br><br><img src='public/img/tour-l3-1.png'></img><br><br><a href='L4-thread-post.html' target='_blank'>更多說明</a>"
     },
     {
       element: "#poster-only",

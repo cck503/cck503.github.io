@@ -1,7 +1,7 @@
 //tour-index
 $(function() {
   var $mboardtour, duration, remaining, tour;
-  $mboardtour = $("#range-selector");
+  $mboardtour = $("#selector-block");
   tour = new Tour({
     /*onStart: function() {
       return $mboardtour.addClass("disabled", true);
@@ -18,10 +18,22 @@ $(function() {
   remaining = duration;
   tour.addSteps([
     {
-      element: "#range-selector",
-      placement: "bottom",
-      title: "資料區間選擇",
-      content: "資料區間可選擇:<br>1年內、3年內、5年內、全部"
+      element: "#selector-block",
+      placement: "right",
+      title: "選擇發表分區",
+      content: "可重新選擇話題要發表的分區"
+    },
+    {
+      element: "#draft-option",
+      placement: "left",
+      title: "草稿儲存功能",
+      content: "當您新增或回應話題時，若尚未需要送出，可點選儲存草稿功能<br><a href='#' target='_blank'>更多說明</a>"
+    },
+    {
+      element: "#anonymous-option",
+      placement: "right",
+      title: "匿名功能",
+      content: "為保護會員發文隱私，完成手機認證即可於特定區域使用匿名發言功能。<br><a href='#' target='_blank'>更多說明</a>"
     }
   ]);
   tour.init();
