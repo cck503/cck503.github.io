@@ -32,12 +32,47 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+    a,
+    button {
+        outline: 0;
+        border: 0;
+        &:focus,
+        &:active {
+            outline: 0;
+            border: 0;
+        }
+    }
     ul {
         margin: 0;
         padding: 0;
     }
     li {
         list-style: none;
+    }
+    #topAffix {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: #ffef0b;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        position: fixed;
+        bottom: 60px;
+        right: 50px;
+        visibility: hidden;
+        
+        &.affix {
+            visibility: visible;
+        }
+        >span {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #07913b transparent;
+        }
     }
     .btn-link {
         display: block;
@@ -114,7 +149,6 @@
             }
         }
     }
-
     //index
     [class^='container'] {
         position: relative;
@@ -184,6 +218,7 @@
             }
             &.columnists-03 {
                 >a {
+                    width: 350px;
                     background-position: -632px 0;
                     &:hover {
                         background-position: -632px -163px;
@@ -269,10 +304,19 @@
         background: url("../img/milo-index-04.png")0 0 no-repeat;
         padding-top: 584px;
     }
-    .btn-shop {
+    .btn-shop,
+    .btn-back {
         width: 319px;
         height: 53px;
         margin: 0 auto;
+        &:hover {
+            padding-top: 6px;
+            >span {
+                box-shadow: none;
+            }
+        }
+    }
+    .btn-shop {
         >span {
             border-radius: 50px;
             background-color: #ffef0b;
@@ -294,181 +338,165 @@
                 border-color: transparent transparent transparent #07913c;
             }
         }
-        &:hover {
-            padding-top: 6px;
-            >span {
-                box-shadow: none;
+    }
+    .btn-back {
+        >span {
+            border-radius: 50px;
+            background-color: #07913b;
+            box-shadow: #ddb63c 2px 6px;
+            color: #fff;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 53px;
+            text-shadow: #fff 0 0;
+            display: inline-block;
+            width: 100%;
+            >i {
+                width: 0;
+                height: 0;
+                display: inline-block;
+                margin-right: 10px;
+                border-style: solid;
+                border-width: 6px 0 6px 10px;
+                border-color: transparent transparent transparent #fff;
             }
         }
     }
 
     //articles
     .article-tile {
-    	padding: 45px 0 45px 222px;
+        padding: 45px 0 45px 222px;
     }
     .article-content {
-    	padding: 0 35px 20px;
-    	font-weight: bold;
-    	line-height: 1.8;
-    	letter-spacing: .05em;
-    	text-align: justify;
-		text-justify:inter-ideograph;
-		-ms-text-justify: inter-ideograph; /*IE9*/
-		color: #666;
-    	p {
-    		margin: 0 0 40px;
-    	}
-    	h4 {
-    		color: #07913b;
-    		text-shadow: #07913b 0 0;
-    		margin-top: 0;
-    	}
-    	.quote-block {
-    		margin-top: -25px;
-    		margin-bottom: 40px;
-    		display: inline-block;
-    		border: 1px solid #07913b;
-    		padding: 20px;
-    		color: #000;
-    		text-shadow: #000 0 0;
-    	}
+        padding: 0 35px 20px;
+        font-weight: bold;
+        line-height: 1.8;
+        letter-spacing: .05em;
+        text-align: justify;
+        text-justify: inter-ideograph;
+        -ms-text-justify: inter-ideograph;
+        /*IE9*/
+        color: #666;
+        p {
+            margin: 0 0 40px;
+        }
+        h4 {
+            color: #07913b;
+            text-shadow: #07913b 0 0;
+            margin-top: 0;
+        }
+        .quote-block {
+            margin-top: -25px;
+            margin-bottom: 40px;
+            display: inline-block;
+            border: 1px solid #07913b;
+            padding: 20px;
+            color: #000;
+            text-shadow: #000 0 0;
+        }
     }
 }
-
-
 
 //featherlight
 @media all {
-	.featherlight {
-		display: none;
-
-		/* dimensions: spanning the background from edge to edge */
-		position:fixed;
-		top: 0; right: 0; bottom: 0; left: 0;
-		z-index: 2147483647; /* z-index needs to be >= elements on the site. */
-
-		/* position: centering content */
-		text-align: center;
-
-		/* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
-		white-space: nowrap;
-
-		/* styling */
-		cursor: pointer;
-		background: #333;
-		/* IE8 "hack" for nested featherlights */
-		background: rgba(0, 0, 0, 0);
-	}
-
-	/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
-	.featherlight:last-of-type {
-		background: rgba(0, 0, 0, 0.8);
-	}
-
-	.featherlight:before {
-		/* position: trick to center content vertically */
-		content: '';
-		display: inline-block;
-		height: 100%;
-		vertical-align: middle;
-	}
-
-	.featherlight .featherlight-content {
-		/* make content container for positioned elements (close button) */
-		position: relative;
-
-		/* position: centering vertical and horizontal */
-		text-align: left;
-		vertical-align: middle;
-		display: inline-block;
-
-		/* dimensions: cut off images */
-		overflow: auto;
-		padding: 25px 25px 0;
-		border-bottom: 25px solid transparent;
-
-		/* dimensions: handling large content */
-		margin-left: 5%;
-		margin-right: 5%;
-		max-height: 95%;
-
-		/* styling */
-		background: #fff;
-		cursor: auto;
-
-		/* reset white-space wrapping */
-		white-space: normal;
-	}
-
-	/* contains the content */
-	.featherlight .featherlight-inner {
-		/* make sure its visible */
-		display: block;
-	}
-
-	.featherlight .featherlight-close-icon {
-		/* position: centering vertical and horizontal */
-		position: absolute;
-		z-index: 9999;
-		top: 0;
-		right: 0;
-
-		/* dimensions: 25px x 25px */
-		line-height: 25px;
-		width: 25px;
-
-		/* styling */
-		cursor: pointer;
-		text-align: center;
-		font-family: Arial, sans-serif;
-		background: #fff; /* Set the background in case it overlaps the content */
-		background: rgba(255, 255, 255, 0.3);
-		color: #000;
-		border: none;
-		padding: 0;
-	}
-
-	/* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
-	.featherlight .featherlight-close-icon::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-	}
-
-	.featherlight .featherlight-image {
-		/* styling */
-		width: 100%;
-	}
-
-
-	.featherlight-iframe .featherlight-content {
-		/* removed the border for image croping since iframe is edge to edge */
-		border-bottom: 0;
-		padding: 0;
-		//-webkit-overflow-scrolling: touch;
-		//overflow-y: scroll;
-	}
-
-	.featherlight iframe {
-		/* styling */
-		border: none;
-	}
-
-	.featherlight * { /* See https://github.com/noelboss/featherlight/issues/42 */
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
+    .featherlight {
+        background: #333333;
+        background: rgba(0, 0, 0, 0);
+        bottom: 0;
+        cursor: pointer;
+        display: none;
+        left: 0;
+        position: fixed;
+        right: 0;
+        text-align: center;
+        top: 0;
+        white-space: nowrap;
+        z-index: 2147483647;
+        &:last-of-type {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .featherlight-content {
+            //background: #fff;
+            border-bottom: 25px solid transparent;
+            cursor: auto;
+            display: inline-block;
+            margin-left: 5%;
+            margin-right: 5%;
+            max-height: 95%;
+            //overflow: auto;
+            padding: 25px 25px 0;
+            position: relative;
+            text-align: left;
+            vertical-align: middle;
+            white-space: normal;
+        }
+        .featherlight-inner {
+            display: block;
+        }
+        .featherlight-close-icon {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            line-height: 50px;
+            padding: 0;
+            position: absolute;
+            text-align: center;
+            right: -30px;
+            top: -30px;
+            width: 50px;
+            font-size: 36px;
+            z-index: 9999;
+            &::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+            outline: 0;
+            &:focus,
+            &:active {
+                outline: 0;
+                border: 0;
+            }
+        }
+        .featherlight-image {
+            width: 100%;
+        }
+        iframe {
+            border: none;
+        }
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    }
+    .featherlight-iframe {
+        .featherlight-content {
+            //-webkit-overflow-scrolling: touch;
+            //overflow-y: scroll;
+            border-bottom: 0;
+            padding: 0;
+        }
+    }
 }
 
-/* handling phones and small screens */
-@media only screen and (max-width: 1024px) {
-	.featherlight .featherlight-content {
-		/* dimensions: maximize lightbox with for small screens */
-		margin-left: 0;
-		margin-right: 0;
-		max-height: 98%;
 
-		padding: 10px 10px 0;
-		border-bottom: 10px solid transparent;
-	}
+/* handling phones and small screens */
+
+@media only screen and (max-width: 1024px) {
+    .featherlight .featherlight-content {
+        /* dimensions: maximize lightbox with for small screens */
+        margin-left: 0;
+        margin-right: 0;
+        max-height: 98%;
+        padding: 10px 10px 0;
+        border-bottom: 10px solid transparent;
+    }
 }
