@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <link href="http://bb5.babyhome.com.tw/style.css" rel="stylesheet" type="text/css">
+    <link href="http://www.babyhome.com.tw/style.css" rel="stylesheet" type="text/css">
+    <link href="http://bb5.babyhome.com.tw/style2010.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    <!-- body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    
+    body,
+    td,
+    th {
+        /*
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+  */
+    }
+    
+    #searchBlock,
+    #searchBlock tr,
+    #searchBlock tr td,
+    #userBlock,
+    #userBlock tr,
+    #userBlock tr td,
+    #index-main,
+    #index-main tr,
+    #index-main tr td {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #666;
+    }
+    
+    #index-main a:link {
+        color: #556FB5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    a:active {
+        text-decoration: none;
+    }
+    
+    .f15 {
+        font-size: 15px;
+        color: #000;
+        text-align: center;
+    }
+    
+    input.search-field {
+        /*input field */
+        float: left;
+        border: 0;
+        margin: 0;
+        font-family: tahoma;
+        font-size: 12px;
+        padding: 5px 0 0 15px;
+        height: 24px;
+        background: url(/img/m4/index2010/index_search_text.gif) no-repeat top left;
+        width: 232px;
+    }
+    
+    -->
+    </style>
+    <link rel="stylesheet" href="public/css/201702-milo-campaign.css">
+</head>
+
+<body>
+    <div class="milo-wrapper" id="milo-top">
+        <div class="milo-navi">
+            <ul class="clearfix">
+                <li class="navi-01"><a href="201702_milo-campaign-index.html" title="首頁" class="txt-sr">首頁</a></li>
+                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr navi-columnists">高品質陪伴法</a></li>
+                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr navi-doctors">孩子的營養必修課</a></li>
+                <li class="navi-04"><a href="#" title="分享「高品質快樂 時光」換美祿" class="txt-sr" target="_blank">分享「高品質快樂 時光」換美祿</a></li>
+                <li class="navi-05"><a href="#" title="分享" class="txt-sr" target="_blank">分享</a></li>
+            </ul>
+        </div>
+        <div class="article-tile">
+            <h3 class="txt-sr">爸媽的陪伴，造就孩子正面的人格特質</h3>
+            <p class="txt-sr">敦南兒童專注力中心技術長 光光老師</p>
+            <img src="public/img/article-author-02.png" alt="">
+        </div>
+        <div class="article-content">
+            
+            <a href="201702_milo-campaign-index.html#columnists" class="btn-link btn-back"><span><i></i>回上一頁</span></a>
+        </div>
+        <a href="#" id="topAffix" class="pagetop" title="到頁首"><span></span></a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/milo-pr.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#video-popup').trigger('click');
+    });
+    $('#topAffix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+    $('.navi-columnists').click(function(){
+        $('html,body').animate({scrollTop:$('#columnists').offset().top}, 500);
+    });
+    $('.navi-doctors').click(function(){
+        $('html,body').animate({scrollTop:$('#doctors').offset().top}, 500);
+    });
+    $('.pagetop').click(function() {
+        $("html, body").animate({scrollTop:$('#milo-top').offset().top}, 500);
+        return false;
+    });
+    </script>
+</body>
+
+</html>
