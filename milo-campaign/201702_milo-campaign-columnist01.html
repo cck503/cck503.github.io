@@ -87,10 +87,10 @@
 		<div class="milo-navi">
 			<ul class="clearfix">
                 <li class="navi-01"><a href="201702_milo-campaign-index.html" title="首頁" class="txt-sr">首頁</a></li>
-                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr">高品質陪伴法</a></li>
-                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr">孩子的營養必修課</a></li>
+                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr navi-columnists">高品質陪伴法</a></li>
+                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr navi-doctors">孩子的營養必修課</a></li>
                 <li class="navi-04"><a href="#" title="分享「高品質快樂 時光」換美祿" class="txt-sr" target="_blank">分享「高品質快樂 時光」換美祿</a></li>
-                <li class="navi-05"><a href="#" title="美祿粉絲頁" class="txt-sr" target="_blank">美祿粉絲頁</a></li>
+                <li class="navi-05"><a href="#" title="分享" class="txt-sr" target="_blank">分享</a></li>
             </ul>
 		</div>
 		<div class="article-tile">
@@ -105,8 +105,35 @@
 			<p>我辭掉媒體工作返家的第一年，雙薪家庭一下減少了一半的收入，日子自然不比從前寬裕。有一次，我帶著五歲的女兒去國父紀念館溜達，途經一家很貴的玩具公司，女兒看到櫥窗裡美麗的新款芭比娃娃，駐足欣賞了半晌，捨不得離開。我陪她看了一會兒之後，蹲下來對她說：「媽媽現在沒有上班，我們不能隨便買昂貴的東西。可是媽媽現在可以陪你來公園玩、盪鞦韆、溜滑梯、騎腳踏車……如果我們要買很貴的玩具，媽媽就必須要回去上班賺錢。那麼，你比較想要漂亮的芭比，還是希望媽媽能多在家裡陪你？」</p>
 			<p>每次我在演講時講到這段往事，所有的家長幾乎都一面倒的猜測孩子會選擇買芭比。可是，當時年僅五歲的女兒，卻毅然決然地牽著我的手立刻離開了櫥窗。她毫不遲疑地抬頭對我說：「媽媽，我們走吧！我不要買芭比，我不要你回去上班。」還記得那一個陽光燦爛的午後，我們母女倆很開心的在國父紀念館裡餵鴿子、看魚，在路邊攤買了小籠包邊走邊吃，度過了快樂的一天。直到多年以後，我都還記得女兒那堅定的眼神，用力把我拉離櫥窗的那隻小手。</p>
 			<p>女兒小五那年，學校出了一篇作文題目：「我最快樂的時候」。她寫「全家一起窩在沙發上看電影」。她形容每到週六晚上，一家四口或坐或臥的擠在沙發上，一邊吃零食、一邊看網路上租來的電影。今年她高一，期中考作文題目「最珍貴的回憶」，她寫她的書桌。那是一張我用過、留給她的舊桌子，側邊有我親手黏貼的裝飾、她畫的圖畫。她寫道：「我小時候在媽媽工作桌旁玩耍，長大之後媽媽坐在桌旁教我寫功課。」這些燦然的金色回憶，那些點點滴滴讓孩子感到快樂的時光，哪一項又是用錢買得到的呢？</p>
+            <a href="201702_milo-campaign-index.html#columnists" class="btn-link btn-back"><span><i></i>回上一頁</span></a>
 		</div>
+        <a href="#" id="topAffix" class="pagetop" title="到頁首"><span></span></a>
 	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/milo-pr.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#video-popup').trigger('click');
+    });
+    $('#topAffix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+    $('.navi-columnists').click(function(){
+        $('html,body').animate({scrollTop:$('#columnists').offset().top}, 500);
+    });
+    $('.navi-doctors').click(function(){
+        $('html,body').animate({scrollTop:$('#doctors').offset().top}, 500);
+    });
+    $('.pagetop').click(function() {
+        $("html, body").animate({scrollTop:$('#milo-top').offset().top}, 500);
+        return false;
+    });
+    </script>
 </body>
 
 </html>

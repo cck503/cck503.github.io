@@ -88,10 +88,10 @@
         <div class="milo-navi">
             <ul class="clearfix">
                 <li class="navi-01"><a href="201702_milo-campaign-index.html" title="首頁" class="txt-sr">首頁</a></li>
-                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr">高品質陪伴法</a></li>
-                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr">孩子的營養必修課</a></li>
+                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr navi-columnists">高品質陪伴法</a></li>
+                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr navi-doctors">孩子的營養必修課</a></li>
                 <li class="navi-04"><a href="#" title="分享「高品質快樂 時光」換美祿" class="txt-sr" target="_blank">分享「高品質快樂 時光」換美祿</a></li>
-                <li class="navi-05"><a href="#" title="美祿粉絲頁" class="txt-sr" target="_blank">美祿粉絲頁</a></li>
+                <li class="navi-05"><a href="#" title="分享" class="txt-sr" target="_blank">分享</a></li>
             </ul>
         </div>
         <div class="article-tile">
@@ -115,8 +115,35 @@
             <p>余醫師語重心長地說「現今商業社會，家庭型態多為雙薪小家庭，一早大家像打仗行軍般地倉促出門，孩子的早餐常常以一個簡單的吐司或者饅頭解決，坦白說這樣只有碳水化合物的早餐，正在削弱他們的成長發育力。」</p>
             <p>其實，屬於正餐的午餐與晚餐也一樣，外食習慣普及下，爸媽絕對不能對三餐便宜行事，每餐務必讓孩子適量攝取鞏固骨骼的鈣質、調節鈣質吸收的維生素D、維護神經系統功能及促進細胞生長的維生素B群、維持代謝功能的礦物質，以及麥芽精華等能提供複合性碳水化合物的營養素。倘若真的太忙，建議爸媽媽在家或者外出包中準備像是美祿的巧克力麥芽營養補給飲品，在小寶貝正餐或者運動後，一次補足上述成長發育所需的多元營養素。</p>
             <p>面對孩子成長發育一役，爸媽絕對應負起最大的責任，無論在飲食、運動以及生活作息上均須注意，然而只要掌握以上幾個余醫師提出的重點與訣竅，孩子的成長怎會落於人後呢？</p>
+            <a href="201702_milo-campaign-index.html#doctors" class="btn-link btn-back"><span><i></i>回上一頁</span></a>
         </div>
+        <a href="#" id="topAffix" class="pagetop" title="到頁首"><span></span></a>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/milo-pr.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#video-popup').trigger('click');
+    });
+    $('#topAffix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+    $('.navi-columnists').click(function(){
+        $('html,body').animate({scrollTop:$('#columnists').offset().top}, 500);
+    });
+    $('.navi-doctors').click(function(){
+        $('html,body').animate({scrollTop:$('#doctors').offset().top}, 500);
+    });
+    $('.pagetop').click(function() {
+        $("html, body").animate({scrollTop:$('#milo-top').offset().top}, 500);
+        return false;
+    });
+    </script>
 </body>
 
 </html>

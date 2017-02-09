@@ -88,10 +88,10 @@
         <div class="milo-navi">
             <ul class="clearfix">
                 <li class="navi-01"><a href="201702_milo-campaign-index.html" title="首頁" class="txt-sr">首頁</a></li>
-                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr">高品質陪伴法</a></li>
-                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr">孩子的營養必修課</a></li>
+                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr navi-columnists">高品質陪伴法</a></li>
+                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr navi-doctors">孩子的營養必修課</a></li>
                 <li class="navi-04"><a href="#" title="分享「高品質快樂 時光」換美祿" class="txt-sr" target="_blank">分享「高品質快樂 時光」換美祿</a></li>
-                <li class="navi-05"><a href="#" title="美祿粉絲頁" class="txt-sr" target="_blank">美祿粉絲頁</a></li>
+                <li class="navi-05"><a href="#" title="分享" class="txt-sr" target="_blank">分享</a></li>
             </ul>
         </div>
         <div class="article-tile">
@@ -117,8 +117,35 @@
             </p>
             <p>從上述各項關鍵營養素的說明，可以試想家長在早上短短的幾十分鐘內，克服瞌睡蟲並準備好營養均衡的早餐給小孩，確實是件勞心勞力的工作。所幸，市面上有麥芽營養補給飲品例如雀巢美祿雙倍牛奶巧克力麥芽飲品，倘若家長擔心小孩的早餐營養攝取不足，早上沖泡一杯補充發育成長關鍵營養素，既省時也安心。天然的麥芽精華更增添飲品的香氣及風味，往往深受小孩的喜愛，可以說是「偏食挑食小孩的剋星」，且鈣質較全脂牛奶高約兩倍又有充足的B群與多樣維生素礦物質，讓孩子快樂的成長，專注認真的學習。</p>
             <p>小孩的成長只有一次，作為家長的豈有漠視的權益。爸爸媽媽應該身體力行「一日之計在於晨」，替處於成長發育期的小孩準備營養均衡、少糖、少鹽、少油的全食物早餐，並此適時補充麥芽營養補給飲品。高營養師說「這樣子吃，小孩發育成長的健康不打折，家長好安心！」</p>
+            <a href="201702_milo-campaign-index.html#doctors" class="btn-link btn-back"><span><i></i>回上一頁</span></a>
         </div>
+        <a href="#" id="topAffix" class="pagetop" title="到頁首"><span></span></a>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/milo-pr.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#video-popup').trigger('click');
+    });
+    $('#topAffix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+    $('.navi-columnists').click(function(){
+        $('html,body').animate({scrollTop:$('#columnists').offset().top}, 500);
+    });
+    $('.navi-doctors').click(function(){
+        $('html,body').animate({scrollTop:$('#doctors').offset().top}, 500);
+    });
+    $('.pagetop').click(function() {
+        $("html, body").animate({scrollTop:$('#milo-top').offset().top}, 500);
+        return false;
+    });
+    </script>
 </body>
 
 </html>

@@ -88,10 +88,10 @@
         <div class="milo-navi">
             <ul class="clearfix">
                 <li class="navi-01"><a href="201702_milo-campaign-index.html" title="首頁" class="txt-sr">首頁</a></li>
-                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr">高品質陪伴法</a></li>
-                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr">孩子的營養必修課</a></li>
+                <li class="navi-02"><a href="201702_milo-campaign-index.html#columnists" title="高品質陪伴法" class="txt-sr navi-columnists">高品質陪伴法</a></li>
+                <li class="navi-03"><a href="201702_milo-campaign-index.html#doctors" title="孩子的營養必修課" class="txt-sr navi-doctors">孩子的營養必修課</a></li>
                 <li class="navi-04"><a href="#" title="分享「高品質快樂 時光」換美祿" class="txt-sr" target="_blank">分享「高品質快樂 時光」換美祿</a></li>
-                <li class="navi-05"><a href="#" title="美祿粉絲頁" class="txt-sr" target="_blank">美祿粉絲頁</a></li>
+                <li class="navi-05"><a href="#" title="分享" class="txt-sr" target="_blank">分享</a></li>
             </ul>
         </div>
         <div class="article-tile">
@@ -115,8 +115,35 @@
             <span class="quote-block">“你們的孩子，並不真的是你們的，<br>乃是生命為其本身所渴望而降臨的。<br>他們是憑藉你們而來，卻不是從你們而來，<br>他們雖和你們同在，卻不屬於你們。<br><br>你們可以給他們愛，卻不能給他們思想。<br>因為他們有自己的思想。<br>你們可以蔭庇他們的身體，卻不能蔭庇他們的靈魂，<br>因為他們的靈魂，住在明日之屋，那是你們在夢中也不能探訪的。”</span>
             
             <p>身為父母的你我，可以提供最好養分來照顧孩子們的身體，而孩子們的心靈，就應該讓他們在探索中飛翔而成長茁壯。</p>
+            <a href="201702_milo-campaign-index.html#columnists" class="btn-link btn-back"><span><i></i>回上一頁</span></a>
         </div>
+        <a href="#" id="topAffix" class="pagetop" title="到頁首"><span></span></a>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/milo-pr.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#video-popup').trigger('click');
+    });
+    $('#topAffix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+    $('.navi-columnists').click(function(){
+        $('html,body').animate({scrollTop:$('#columnists').offset().top}, 500);
+    });
+    $('.navi-doctors').click(function(){
+        $('html,body').animate({scrollTop:$('#doctors').offset().top}, 500);
+    });
+    $('.pagetop').click(function() {
+        $("html, body").animate({scrollTop:$('#milo-top').offset().top}, 500);
+        return false;
+    });
+    </script>
 </body>
 
 </html>
