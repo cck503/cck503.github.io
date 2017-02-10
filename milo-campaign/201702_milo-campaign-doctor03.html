@@ -81,23 +81,6 @@
     -->
     </style>
     <link rel="stylesheet" href="public/css/201702-milo-campaign.css">
-	<script>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'www.fullstory.com';
-window['_fs_org'] = '36YP7';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
-    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
-    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-})(window,document,window['_fs_namespace'],'script','user');
-</script>
 </head>
 
 <body>
@@ -130,7 +113,6 @@ window['_fs_namespace'] = 'FS';
             <p>除了從飲食中獲取成長所需養分，臨床上對於孩童的生長發育，充足的睡眠、適當的運動和保持愉悅的心情，都是孩童健康成長的關鍵。睡眠方面，由於生長激素在夜間熟睡時分泌量較多，尤其是在夜間10點到清晨2點的時候，所以這段時間當中最好是處於熟睡狀態，生長激素的分泌才會足夠。運動方面，適當的運動可以促進發育，例如跳繩，籃球等跳躍運動或是游泳，跳舞等可以促進生長板的發育，有幫助長高的效果。而運動前後飲用巧克力麥芽牛奶，不僅可補充能量，更能強健骨骼。</p>
             <a href="201702_milo-campaign-index.html#doctors" class="btn-link btn-back"><span><i></i>回上一頁</span></a>
         </div>
-        <a href="#" id="topAffix" class="pagetop" title="到頁首"><span></span></a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="public/js/milo-pr.js"></script>
@@ -138,14 +120,9 @@ window['_fs_namespace'] = 'FS';
     $(document).ready(function() {
         $('#video-popup').trigger('click');
     });
-    $('#topAffix').affix({
-        offset: {
-            top: 300,
-            bottom: function() {
-                return (this.bottom = $('.footer').outerHeight(true))
-            }
-        }
-    })
+    $('#topAffix').click(function(){
+        $('html,body').animate({scrollTop: 0}, 500);
+    });
     $('.navi-columnists').click(function(){
         $('html,body').animate({scrollTop:$('#columnists').offset().top}, 500);
     });
