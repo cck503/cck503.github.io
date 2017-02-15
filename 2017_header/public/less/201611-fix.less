@@ -1,0 +1,154 @@
+ul.search_classification {
+    margin: 15px -5px 0;
+    li {
+        border: 0;
+        a {
+            font-size: 13px;
+            border: 1px solid #ddd;
+            padding: 3px 5px;
+            &:link,
+            &:visited,
+            &:active {
+                color: #555;
+            }
+            &:hover {
+                color: #ea82b2;
+            }
+        }
+        &.selected {
+            background: transparent;
+            a {
+                color: #fff;
+                background: #ffbedc;
+                border-color: #ffbedc;
+            }
+        }
+    }
+}
+
+.search-result {
+    margin-top: 20px;
+    .inner {
+        margin: 0 -10px;
+    }
+    .result {
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+        .thumbnail {
+            padding: 0;
+            border: 0;
+            //background: #f8f1f1;
+            .caption {
+                padding: 5px 8px;
+                height: 210px;
+                overflow: hidden;
+                h3,
+                h4 {
+                    margin: 5px 0 10px;
+                    font-size: 18px;
+                    line-height: 1.4;
+                    max-height: 4.2em;
+                    overflow: hidden;
+                }
+            }
+            p {
+                font-size: 15px;
+                height: 2.9em;
+                overflow: hidden;
+            }
+            >a {
+                height: 157px;
+                overflow: hidden;
+                display: block;
+                background: #f8f1f1;
+                position: relative;
+                >img {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+        }
+        .tag-opt {
+            a {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+//公部門
+.time-tag {
+    font-size: .9em;
+    color: #999;
+}
+
+.search-result {
+    .result {
+        .tag-opt {
+            .text-link {
+                margin-right: 15px;
+                font-size: .9em;
+                .link-disable {
+                    cursor: text;
+                    color: #000;
+                    &:hover,
+                    &:focus {
+                        cursor: text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .tag-opt {
+        margin-bottom: 10px;
+        .text-link {
+            margin-right: 15px;
+            font-size: .9em;
+            .link-disable {
+                cursor: text;
+                color: #000;
+                &:hover,
+                &:focus {
+                    cursor: text;
+                }
+            }
+        }
+    }
+}
+.open-data-modal {
+    .modal-header {
+        background-color: #ffd9df;
+        border-bottom: 0;
+        .close {
+            margin-top: 2px;
+            margin-left: 10px;
+            >span {
+                transition: all .15s linear;
+                display: inline-block;
+            }
+            &:hover {
+                >span {
+                    -moz-transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .modal-title {
+            padding-right: 31px;
+        }
+    }
+    
+}
