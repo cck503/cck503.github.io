@@ -1,0 +1,51 @@
+.member_wrap {
+    .tab-content {
+        .tab-pane {
+            .on {
+                &:before {
+                    content:"\f216";
+                    font-family: "ionicons";
+                    margin-right: 5px;
+                }
+            }
+            .closed {
+                &:before {
+                    content:"\f207";
+                    font-family: "ionicons";
+                    margin-right: 5px;
+                }
+            }
+        }
+        .table-bordered {
+            .detail {
+                background: #f9f7e5;
+                >td {
+                    padding: 0;
+                    >table {
+                        td {
+                            border-top: 1px #ddd solid;
+                            padding: 8px 4px;
+                        }
+                        tr {
+                            &:first-child {
+                                td {
+                                    border:0;
+                                }
+                            }
+                        }
+                    }
+                }
+                td {
+                    border: 0;
+                    border-bottom-width:1px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+.push_notice {
+    .th02 {
+        width: 20%;
+    }
+}
