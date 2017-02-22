@@ -1,0 +1,26 @@
+.collap_list {
+	.primary {
+		&.bag-li {
+			>a {
+				color: #dc3c5e;
+				//border-top: 0;
+				&:hover {
+					color: #913115;
+				}
+				&.active {
+					color: #fff;
+				}
+			}
+		}
+		&.bag-sp {
+			>a {
+				background :#f4ea41;
+				border-top: 0;
+				&.active {
+					background: darken(#f4ea41, 10%);
+					color: #dc3c5e;
+				}
+			}
+		}
+	}
+}
