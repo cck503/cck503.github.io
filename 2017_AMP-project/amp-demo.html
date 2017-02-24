@@ -34,11 +34,17 @@
     }
     .info-content {
         padding: 0 10px;
-        background-color: #f8f1f1;
+        line-height: 1.5;
+    }
+    .info-content a {
+        text-decoration: none;
+        color: #4c77c5;
     }
     .info-content h1 {
-        padding-top: .83em;
+        padding-top: .5em;
         margin-top: 0;
+        margin-bottom: .5em;
+        line-height: 1.2;
     }
     
     .info-content figure {
@@ -50,14 +56,9 @@
     }
     
     .logo {
-        background-position: left 16px center;
-        background-repeat: no-repeat;
-        background-image: -webkit-image-set( url(img/ic_menu_white_1x_web_24dp.png) 1x, url(img/ic_menu_white_2x_web_24dp.png) 2x);
         background-color: #edddde;
-        text-align: left;
-        padding: 16px;
-        padding-left: 72px;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        text-align: center;
+        
     }
     
     .logo > a {
@@ -65,6 +66,7 @@
         font-weight: 500;
         color: white;
         text-transform: uppercase;
+        display: block;
     }
     
     .heading {
@@ -72,11 +74,19 @@
     }
     
     .heading > #summary {
-        font-weight: 500;
+        border-top: 1px solid #ddd;
+        padding-top: 1em;
+        font-weight: bold;
     }
     
     .heading > small {
         color: #656565;
+    }
+
+    .heading .article_detail {
+        display: inline-block;
+        margin: 0 8px 0 0;
+        max-width: 300px;
     }
     
     .related {
@@ -119,15 +129,15 @@
     <!-- -->
     <div class="logo">
         <a href="/" alt="BabyHome新知">
-            <amp-img src="img/bbh_logo_info.svg" width="357" height="68" layout="responsive"></amp-img>
+            <amp-img src="img/bbh_logo_info.svg" width="210" height="40"></amp-img>
         </a>
     </div>
     <article class="info-content">
         <div class="heading">
             <h1>養小孩，媽媽壓力大，爸爸樂趣多</h1>
-            <p><small>2017年02月13日</small></p>
-            <p><small>文：陳念怡</small></p>
-            <p><small><a href="http://info.babyhome.com.tw/roster/article/ge1IRAQABAA9st4E?sort=pop">資料來源：親子天下</a></small></p>
+            <p class="article_detail"><small>2017年02月13日</small></p>
+            <p class="article_detail"><small>文：陳念怡</small></p>
+            <p class="article_detail"><small><a href="http://info.babyhome.com.tw/roster/article/ge1IRAQABAA9st4E?sort=pop">資料來源：親子天下</a></small></p>
             <p id="summary">美國康乃爾大學發表了一份父母對不同育兒任務的滿意度調查，雖然與孩子相處的時光，爸爸、媽媽同樣感到快樂，但育兒過程中，媽媽卻承擔了更多的「不怎麼有趣」的家務......</p>
         </div>
         <figure>
