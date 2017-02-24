@@ -34,7 +34,7 @@
     }
     .info-content {
         padding: 0 1em;
-        line-height: 1.5;
+        line-height: 1.6;
     }
     .info-content a {
         text-decoration: none;
@@ -45,6 +45,10 @@
         margin-top: 0;
         margin-bottom: .5em;
         line-height: 1.2;
+    }
+    .info-content .related-headline {
+        margin-top: 0;
+        margin-bottom: .5em;
     }
     .info-content p {
         font-size: 1.1em;
@@ -103,7 +107,7 @@
     
     .related {
         background-color: #f5f5f5;
-        margin: 16px 16px;
+        margin: 0 0 16px 0;
         display: block;
         color: #111;
         height: 110px;
@@ -168,7 +172,7 @@
             <p class="all"><a href="http://search.babyhome.com.tw/?classsort=info&amp;keyword=養小孩 媽媽 壓力 爸爸&amp;utm_source=babyhome&amp;utm_medium=info&amp;utm_campaign=search_slogan&amp;utm_content=15276&amp;utm_term=養小孩+媽媽+壓力+爸爸" target="_blank" class="search_all">搜尋，就從BabyHome開始。</a></p>
         </div>
         <!--延伸閱讀-->
-        <h4>延伸閱讀</h4>
+        <h4 class="related-headline">延伸閱讀</h4>
         <amp-list width="300" height="75" layout="responsive" src="json/related_articles.json">
             <template type="amp-mustache">
                 <a class="card related" href="{{url}}">
