@@ -47,8 +47,16 @@
             <p class="article_detail"><small><a href="http://info.babyhome.com.tw/roster/article/ge1IRAQABAA9st4E?sort=pop">資料來源：親子天下</a></small></p>
             <p id="summary">美國康乃爾大學發表了一份父母對不同育兒任務的滿意度調查，雖然與孩子相處的時光，爸爸、媽媽同樣感到快樂，但育兒過程中，媽媽卻承擔了更多的「不怎麼有趣」的家務......</p>
         </div>
+        <h4 class="related-headline">延伸閱讀</h4>
+        <amp-list width="300" height="75" layout="responsive" src="json/related_articles.json">
+            <template type="amp-mustache">
+                <a class="card related" href="{{url}}">
+                    <amp-img width="65" height="65" src="{{thumbnail}}"></amp-img><span>{{title}}</span></a>
+            </template>
+        </amp-list>
+        <!--
         <h5>Comments</h5>
-        <amp-list layout="container" src="json/comments.json">
+        <amp-list  width="auto" height="200" layout="fixed-height" src="json/comments.json">
             <template type="amp-mustache">
                 <div class="comment-user comments-container">
                     <amp-img width="30" height="30" class="user-avatar" alt="user" src="img/default_profile.gif"></amp-img>
@@ -56,13 +64,13 @@
                         <p>
                             <span class="user">{{user}}</span>
                             <span class="date">{{datetime}}</span>
-                            <span class="floor">{{floor}}</span>
                         </p>
                         <p>{{text}}</p>
                     </div>
                 </div>
             </template>
         </amp-list>
+        -->
         <figure>
             <amp-img src="img/7SutAvDWjZ7hjp9u_xxl.jpg" width="800" height="419" layout="responsive"></amp-img>
             <noscript>
