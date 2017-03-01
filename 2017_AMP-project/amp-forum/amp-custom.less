@@ -1,0 +1,158 @@
+body {
+	font-family: Arial,"微軟正黑體","Microsoft Jhenghei","STHeiti Light","Microsoft YaHei",sans-serif;
+}
+.hidden {
+	display: none;
+}
+.info-content {
+	line-height: 1.6;
+	padding: 0 1em;
+	a {
+		color: #4c77c5;
+		text-decoration: none;
+	}
+	h1 {
+		line-height: 1.2;
+		margin-bottom: .5em;
+		margin-top: 0;
+		padding-top: .5em;
+	}
+	h3 {
+		color: #26a69a;
+		font-size: 1.1em;
+	}
+	h4 {
+		color: #26a69a;
+		margin-bottom: .5em;
+		margin-top: .5em;
+	}
+	.related-headline {
+		color: #26a69a;
+		//margin-bottom: .5em;
+		//margin-top: 0;
+	}
+	p {
+		font-size: 1.1em;
+		margin-bottom: 1.1em;
+	}
+	figure {
+		margin: 0 -1em;
+	}
+	#block {
+		a {
+			color: #26a69a;
+		}
+	}
+	.author {
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		&:after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+		figure {
+			float: left;
+			line-height: 1;
+			margin: 0;
+		}
+		amp-img {
+			border-radius: 50%;
+		}
+		p {
+			margin-top: 0;
+			padding-left: 90px;
+		}
+		.author-name {
+			margin-bottom: 0;
+		}
+		.author-detail {
+			font-size: 1em;
+		}
+	}
+}
+.search_all {
+	font-weight: bold;
+}
+.carousel {
+	.slide>amp-img>img {
+		object-fit: contain;
+	}
+}
+.logo {
+	background-color: #edddde;
+	text-align: center;
+}
+.logo>a {
+	color: white;
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.heading {
+	padding-bottom: 8px;
+	.article_detail {
+		display: inline-block;
+		margin: 0 8px 0 0;
+		max-width: 300px;
+	}
+}
+.heading>#summary {
+	border-top: 1px solid #dddddd;
+	font-weight: bold;
+	padding-top: 1em;
+}
+.heading>small {
+	color: #656565;
+}
+.related {
+	background-color: #f5f5f5;
+	color: #111111;
+	display: block;
+	height: 65px;
+	margin: 0 0 16px 0;
+	padding: 0;
+	position: relative;
+	&:hover {
+		background-color: #cccccc;
+	}
+}
+amp-list {
+	.related {
+		a {
+			color: #111111;
+		}
+	}
+}
+.related>span {
+	bottom: 0;
+	font-size: 16px;
+	line-height: 1.4;
+	margin: auto;
+	max-height: 2.8em;
+	overflow: hidden;
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	vertical-align: top;
+}
+.footer-copyright {
+	background: #dddddd;
+	color: #a0a0a0;
+	padding: 1em 0;
+	text-align: center;
+}
+.footer-copyright>p {
+	margin: 0;
+}
+figcaption {
+	font-size: smaller;
+	padding: 0 1rem;
+}
+amp-user-notification {
+	background: #bbbbbb;
+	color: white;
+	padding: 8px;
+	text-align: center;
+}
