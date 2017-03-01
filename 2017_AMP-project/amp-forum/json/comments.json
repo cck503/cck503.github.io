@@ -1,0 +1,16 @@
+{
+ "items": [
+   {
+     "user": "Bob",
+     "datetime": "20:25:50",
+     "floor": "版主",
+     "text": "This is the first comment"
+   },
+   {
+     "user": "Alice",
+     "datetime": "20:26:50",
+     "floor": "1F",
+     "text": "This is the second comment"
+   }
+ ]
+}
