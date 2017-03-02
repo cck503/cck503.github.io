@@ -4,13 +4,17 @@
      "user": "Bob",
      "datetime": "20:25:50",
      "floor": "版主",
-     "text": "This is the first comment"
+     "text": "對不起 我拉低了平均值 一切都是我的錯
+什麼ˊ?你也遇到了這樣的問題?
+所以 有這樣問題的人請舉手我統計一下....."
    },
    {
      "user": "Alice",
      "datetime": "20:26:50",
-     "floor": "1F",
-     "text": "This is the second comment"
+     "floor": "版主",
+     "text": "我在想~~政府會不會連同資方繳納的勞健保費都計入了？！
+若平均薪資35000，依105年度級距勞健保合計約5200元
+再加上加班費及年終~~是會有51k的喲！！"
    }
  ]
 }
