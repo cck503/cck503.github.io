@@ -93,10 +93,10 @@
         <!--延伸閱讀-->
         <div class="comments-container">
             <h4 class="related-headline">延伸閱讀</h4>
-            <amp-list width="300" height="75" layout="responsive" src="json/related_articles.json">
+            <amp-list width="auto" height="75" layout="fixed-height" src="json/related_articles.json">
                 <template type="amp-mustache">
                     <div>
-                        <a class="card related" href="{{url}}"><span>{{title}}</span></a>
+                        <a class="card related" href="{{url}}">{{title}}</a>
                     </div>                    
                 </template>
             </amp-list>
