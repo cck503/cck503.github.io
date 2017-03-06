@@ -91,13 +91,15 @@
             </div>
         </div>
         <!--延伸閱讀-->
-        <h4 class="related-headline">延伸閱讀</h4>
-        <amp-list width="300" height="75" layout="responsive" src="json/related_articles.json">
-            <template type="amp-mustache">
-                <a class="card related" href="{{url}}">
-                    <amp-img width="65" height="65" src="{{thumbnail}}"></amp-img><span>{{title}}</span></a>
-            </template>
-        </amp-list>
+        <div class="comments-container">
+            <h4 class="related-headline">延伸閱讀</h4>
+            <amp-list width="300" height="75" layout="responsive" src="json/related_articles.json">
+                <template type="amp-mustache">
+                    <a class="card related" href="{{url}}">
+                        <amp-img width="65" height="65" src="{{thumbnail}}"></amp-img><span>{{title}}</span></a>
+                </template>
+            </amp-list>
+        </div>        
     </article>
     <div class="footer-copyright">
         <p><small>Copyright 2015 BabyHome. All right reserved.</small></p>
