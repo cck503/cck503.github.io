@@ -100,7 +100,17 @@
                     </div>                    
                 </template>
             </amp-list>
-        </div>        
+        </div>
+        <div class="comments-container">
+            <h4 class="related-headline">熱 話題</h4>
+            <amp-list width="auto" height="75" layout="fixed-height" src="json/related_forum.json">
+                <template type="amp-mustache">
+                    <div>
+                        <a class="card related" href="{{url}}">{{title}}</a>
+                    </div>                    
+                </template>
+            </amp-list>
+        </div>   
     </article>
     <div class="footer-copyright">
         <p><small>Copyright 2015 BabyHome. All right reserved.</small></p>
