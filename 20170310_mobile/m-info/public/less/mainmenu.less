@@ -1,0 +1,73 @@
+//搜尋
+
+#nav_search input.form-control{
+	border-color:#dbc2c2;
+}
+
+//新聞
+div.news{
+	width:90%;
+	margin:0 5%;
+	height:40px;	
+}
+
+div.news a{
+	color:#000;
+	&:hover{color:@pink;}
+}
+div.news p{
+	line-height: 40px;
+	:before{content:"News";padding-right:10px;font-size:16px;font-weight: 800;color:@seagreen;}
+}
+
+
+
+//主選單
+.info_mainmenu{
+background-color:@seagreen;
+width:100%;
+margin-bottom:20px;
+height:40px;
+
+}
+.info_mainmenu div.btn_left{
+	float:left;
+	width:6%;
+	margin:0 0 0 2%;
+}
+
+.info_mainmenu div.btn_right{
+	float:right;
+		width:6%;
+	margin:0 2% 0 0;
+}
+.info_mainmenu div a{
+	color:@seagreen;
+	width:20px;
+	height:20px;
+margin:10px 0;}
+
+.info_mainmenu .nav{
+	overflow: hidden;
+	float:left;
+	display: inline-block;
+	width:84%;
+	height:40px;
+	margin:0;
+	padding-left:5px;
+}
+
+.info_mainmenu .nav>li>a{
+color:#fff;
+font-size:18px;
+font-weight:400;
+height:40px;
+line-height:40px;
+padding:0 6px;
+text-align: center;
+&:hover, &:active, &:focus{background-color:@seagreen_dark;}
+}
+
+.info_mainmenu .nav>li>a.submenu{
+color:@cream;
+}
