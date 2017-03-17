@@ -5,6 +5,25 @@ body {
         display: flex;
         flex-flow: column;
         min-height: 100vh;
+        .navbar {
+            .navbar-brand {
+                padding: 0;
+                //top: 0;
+                img {
+                    height: 75%;
+                }
+            }
+            .navbar-toggle {
+                i {
+                    font-size: 32px;
+                    &.ion-navicon {
+                        font-size: 36px;
+                    }
+                }
+                background: transparent;
+                color: #6e4733;
+            }             
+        }
     }
 }
 
@@ -19,10 +38,13 @@ footer {
 
 //navbar
 header.navbar {
+    padding-top: 3px;
+    padding-bottom: 3px;    
     >.container {
         >.row {
             display: flex;
             align-items: center;
+            height: 50px;
         }
         p {
             margin: 0;
@@ -78,7 +100,7 @@ body {
         .navbar {
             .toggle-back {
                 background: transparent;
-                color: #333;
+                //color: #333;
                 padding: 5px 0;
                 margin: 0;
                 i {
