@@ -1284,10 +1284,10 @@
             </div>
         </div>
     </footer>
-    <div class="sp-banner affix">
+    <div class="banner-fx sp-banner">
         <div class="sp-banner-inner">
             <span class="trigger" title="免費好孕袋"></span>
-            <a href="http://forum.babyhome.com.tw/topic/4687312" alt="上傳媽媽手冊索取[免費好孕袋]" class="banner-link"></a>
+            <a href="#" alt="上傳媽媽手冊索取[免費好孕袋]" class="banner-link"></a>
         </div>
     </div>
     <!-- /.modal -->
@@ -1300,8 +1300,21 @@
     <script src="public/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
     $(".trigger").click(function() {
-        $(".sp-banner.affix").toggleClass("max-height");
+        $(".banner-fx").toggleClass("max-height");
     });
+    $('.sp-banner').affix({
+        offset: {
+        top: 600,
+            bottom: function () {
+            return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+     setTimeout(function(){
+            $(".banner-fx").removeClass("sp-banner");
+            $(".banner-fx").addClass("sp-banner-2");
+            //....and whatever else you need to do
+    }, 6000);
     </script>
 </body>
 
