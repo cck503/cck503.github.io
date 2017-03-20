@@ -512,5 +512,11 @@
     $(".trigger").click(function() {
         $(".sp-banner.affix").toggleClass("max-height");
     });
+    setTimeout(function(){
+        $(".sp-banner").addClass("max-height");
+    }, 3000);
+    setTimeout(function(){
+        $(".sp-banner").removeClass("max-height");
+    }, 9000);
     </script>
 </body>

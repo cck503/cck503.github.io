@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <!--共同天-->
     <header class="masthead">
         <nav class="navbar common-nav mboard-theme">
             <div class="container">
@@ -59,12 +60,30 @@
                 </div>
                 <div class="user-span drop-style"></div>
             </div>
+            <div class="container">
+                <div class="hot-search">
+                    <span>每日熱搜：</span>
+                    <a href="">教育</a>
+                    <a href="">晚餐食譜</a>
+                    <a href="">蛀牙</a>
+                    <a href="">婆媳</a>
+                    <a href="">夫妻感情</a>
+                    <a href="">晚餐食譜教育</a>
+                    <a href="">蛀牙</a>
+                    <a href="">婆媳</a>
+                    <a href="">夫妻感情</a>
+                </div>
+            </div>
         </div>
     </header>
+    <!--end-->
+    <!--forum_stickymenu-->
     <nav class="navbar mboard-nav" id="nav-Affix">
         <div class="container">
             <div class="user-span">
-                <div class="rigth-span profile-item dropdown">
+                <div class="rigth-span login-span"><a href="http://member.babyhome.com.tw/login?_url=http%3A%2F%2Fforum.babyhome.com.tw%2F" id="login_url"><i class="nav-icon-login"></i>登入</a></div>
+                <div class="rigth-span regist-span"><a href="http://member.babyhome.com.tw/register"><i class="nav-icon-regist"></i>註冊</a></div>
+                <!--<div class="rigth-span profile-item dropdown">
                     <a id="profile-option" class="profile-pic" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <img class="img-circle" src="http://lorempixel.com/35/35/people" alt="...">
                     </a>
@@ -178,7 +197,7 @@
                         </div>
                         <a href="http://member.babyhome.com.tw/notice" class="btn btn-primary btn-lg btn-block">查看更多</a>
                     </div>
-                </div>
+                </div>-->
             </div>
             <ul class="nav navbar-nav drop-style">
                 <li class="dropdown"><a class="pre-act" href="L2-threads-list-theme.html" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的最愛</a>
@@ -273,6 +292,7 @@
             </ul>
         </div>
     </nav>
+    <!--end-->
     <div class="rapid-menu affix">
         <ul class="rapid-menu-content" id="rapid-menu">
             <li class="rapid-mune-tab tab-reply"><a class="btn btn-link disabled" href="L4-thread-post-theme.html">回應</a></li>
@@ -1284,10 +1304,10 @@
             </div>
         </div>
     </footer>
-    <div class="banner-fx sp-banner">
+    <div class="sp-banner affix">
         <div class="sp-banner-inner">
             <span class="trigger" title="免費好孕袋"></span>
-            <a href="#" alt="上傳媽媽手冊索取[免費好孕袋]" class="banner-link"></a>
+            <a href="http://forum.babyhome.com.tw/topic/4687312" alt="上傳媽媽手冊索取[免費好孕袋]" class="banner-link"></a>
         </div>
     </div>
     <!-- /.modal -->
@@ -1300,21 +1320,14 @@
     <script src="public/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
     $(".trigger").click(function() {
-        $(".banner-fx").toggleClass("max-height");
+        $(".sp-banner.affix").toggleClass("max-height");
     });
-    $('.sp-banner').affix({
-        offset: {
-        top: 600,
-            bottom: function () {
-            return (this.bottom = $('.footer').outerHeight(true))
-            }
-        }
-    })
-     setTimeout(function(){
-            $(".banner-fx").removeClass("sp-banner");
-            $(".banner-fx").addClass("sp-banner-2");
-            //....and whatever else you need to do
-    }, 6000);
+    setTimeout(function(){
+        $(".sp-banner").addClass("max-height");
+    }, 3000);
+    setTimeout(function(){
+        $(".sp-banner").removeClass("max-height");
+    }, 9000);
     </script>
 </body>
 
