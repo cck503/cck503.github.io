@@ -1304,7 +1304,7 @@
             </div>
         </div>
     </footer>
-    <div class="sp-banner affix max-height">
+    <div class="sp-banner affix">
         <div class="sp-banner-inner">
             <span class="trigger" title="免費好孕袋"></span>
             <a href="http://forum.babyhome.com.tw/topic/4687312" alt="上傳媽媽手冊索取[免費好孕袋]" class="banner-link"></a>
@@ -1322,6 +1322,10 @@
     $(".trigger").click(function() {
         $(".sp-banner.affix").toggleClass("max-height");
     });
+    setTimeout(function(){
+        $(".sp-banner").addClass("max-height");
+        $(".sp-banner").addClass("min-height");
+    }, 3500);
     setTimeout(function(){
         $(".sp-banner").removeClass("max-height");
     }, 9000);
