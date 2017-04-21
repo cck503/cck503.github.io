@@ -1,0 +1,27 @@
+{
+	"files": {
+		"shop-group-theme.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/shop-group-theme.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"ionicons/_ionicons-font.less",
+				"ionicons/_ionicons-icons.less",
+				"ionicons/_ionicons-variables.less",
+				"ionicons/ionicons.less",
+				"shop-group-style.less"
+			]
+		}
+	}
+}
