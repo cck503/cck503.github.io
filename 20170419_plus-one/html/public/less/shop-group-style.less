@@ -577,6 +577,10 @@ body {
     .h4 {
         font-size: 1.1em;
     }
+    .main-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .header {
         padding-left: 10px;
         padding-right: 10px;
@@ -598,10 +602,22 @@ body {
     }
     .pd-list {
         .order-content {
+            padding: 10px;
+            border-left-width: 0;
+            border-right-width: 0;
+            .pd-img {
+                width: 80px;
+                height: 80px;
+                margin-right: 10px;
+            }
             .pd-spec {
                 margin-top: 10px;
                 padding-left: 90px;
             }
+        }
+        .total-sum {
+            border-left-width: 0;
+            border-right-width: 0;
         }
     }
     .pd-spec {
@@ -631,16 +647,6 @@ body {
     .pd-list {
         >h4 {
             padding: 0 10px;
-        }
-    }
-    .pd-list {
-        .order-content {
-            padding: 10px;
-            .pd-img {
-                width: 80px;
-                height: 80px;
-                margin-right: 10px;
-            }
         }
     }
     .checkout-list {
