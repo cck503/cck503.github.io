@@ -1,0 +1,114 @@
+//.mboard-sidebar
+div[class^="sidebar-span"] {
+    margin-bottom: @block-padding;
+    div[class^="ad-span"] {
+        padding: 15px;
+    }
+}
+
+.sidebar-span {
+    .title-span {
+        .section();
+    }
+    ul {
+        >li {
+            //margin-bottom: 10px;
+            margin-bottom: 5px;
+            a {
+                >span {
+                    &:after {
+                        //content: "  "
+                        content: "\f10a";
+                        font-family: Ionicons;
+                        color: #ccc;
+                        padding: 0 5px;
+                        display: inline-block;
+                        transform: scale(.8);
+                    }
+                }
+                &:visited {
+                    color: @gray-light;
+                }
+                &.sub-link {
+                    &:visited {
+                        color: @key-color-dark;
+                    }
+                }
+            }
+            .txt-ad-link {
+                &:visited {
+                    color: @link-color;
+                }
+                &:hover {
+                    color: @link-hover-color;
+                }
+            }
+        }
+    }
+    /*a {
+        color: @gray-light;
+        &:hover, &:focus {
+            color: @link-hover-color;
+        }
+    }*/
+    .hot-threads {
+        .media {
+            margin-top: 0;
+        }
+    }
+}
+
+.title-span {
+    .section {
+        >span {
+            font-weight: bolder;
+        }
+    }
+    >small {
+        padding-left: 10px;
+    }
+}
+
+.quick-reply {
+    >li {
+        >a {
+            .span_reduce();
+            display: block;
+        }
+    }
+}
+
+.hot-threads {
+    .media-left,
+    .media-body {
+        vertical-align: middle;
+    }
+    .media-object {
+        .sm-object-img();
+    }
+}
+
+.poll-span {
+    &.ad-span {
+        background: url("../img/mboard-poll-bg.png") -25px 90px no-repeat #fff;
+        padding: 10px 10px 10px 150px;
+        height: 200px;
+        .title-span {
+            border: 0;
+            margin: 0;
+        }
+    }
+    i.type-poll-icon {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .btn-link {
+        font-size: @font-size-medium;
+        padding: 0;
+        clear: right;
+    }
+}
+
+.mkt-event-span {
+    margin-bottom: 12px;
+}

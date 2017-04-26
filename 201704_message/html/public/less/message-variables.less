@@ -1,0 +1,161 @@
+@gray-base:            #000;
+@BBH-yellow:           #fac109; 
+@mboard-yellow:        #fbd455;
+@body-bg:              #f2f0ed;
+@key-color: #f08f6a;//theme2
+@key-color-light: #f39e71;//theme2
+@key-color-dark: #6e4733;//theme2
+@border-grey:           lighten(@gray-base, 90%);
+@background-grey:       lighten(@gray-base, 96%);
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 60%); // #999
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-hover:                #f5f5f5;
+@key-pink:               #ffccbc;
+@btn-link:               #5b97d4;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-size-base:          16px;
+@font-size-medium:        ceil((@font-size-base * 1.1 )); // ~18px; 
+@font-size-large:         ceil((@font-size-base * 1.5)); // ~24px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~14px
+@font-size-xs:         ceil((@font-size-base * 0.75)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~42px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~35px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~27px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~20px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~14px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.5; // 24/16
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.3;
+@headings-color:          inherit;
+
+
+a,
+button,
+input,
+textarea,
+.btn {
+    &:focus,
+    &:active,
+    &.focus {
+        outline: 0;
+    }
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            outline: 0;
+        }
+    }
+}
+.btn {
+    &:focus,
+    &:active,
+    &.focus {
+        box-shadow: none;
+    }
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            box-shadow: none;
+        }
+    }
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.layout-f {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+.span_reduce {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+}
+a,
+a.btn-link {
+	transition: all .15s linear;
+  /*&:visited {
+    color: @gray-light;
+  }*/
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear;
+}
+.in {
+    opacity: 1;
+ }
+
+.mr-r10 {
+  margin-right: 10px !important;
+ }
+.em-low {
+    color: @gray-light;
+}
+.em-hi {
+    font-size: @font-size-medium;
+    font-style: normal;
+}
+.focused {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+    position: relative;
+    z-index: 100;
+}
+/*.basic-border {
+    border-color: #ddd;
+    border-style: solid;
+}*/
+.btn-submit {
+    background: @btn-link;
+    color: #fff;
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken(@btn-link, 10%);
+        color: #fff;
+    }
+}
+.link-rotate {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
