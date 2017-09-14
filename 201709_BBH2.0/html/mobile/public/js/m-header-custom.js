@@ -36,6 +36,15 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+
+$(document).ready(function(){
+    $('#nav-expander').click(function(){
+        $(this).toggleClass('tcon-transform ');
+    });
+});
+
+
 $(document).ready(function(){                                               
 
        //Navigation Menu Slider
