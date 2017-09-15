@@ -40,7 +40,10 @@ function hasScrolled() {
 
 $(document).ready(function(){
     $('#nav-expander').click(function(){
-        $(this).toggleClass('tcon-transform ');
+        $(this).toggleClass('tcon-transform');
+    });
+    $('#nav-close').click(function(){
+        $('.tcon').removeClass('tcon-transform');
     });
 });
 
