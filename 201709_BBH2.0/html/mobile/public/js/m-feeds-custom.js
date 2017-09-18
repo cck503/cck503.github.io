@@ -8,22 +8,18 @@ $('.hover-drop.dropdown').hover(function() {
 
 
 // Instantiate the Bootstrap carousel
-$('.multi-item-carousel').carousel({
-  interval: false
-});
-
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  } else {
-  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
+$(".carousel").on("touchstart", function(event){
+        var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function(event){
+        var xMove = event.originalEvent.touches[0].pageX;
+        if( Math.floor(xClick - xMove) > 5 ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -5 ){
+            $(this).carousel('prev');
+        }
+    });
+    $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+    });
 });
