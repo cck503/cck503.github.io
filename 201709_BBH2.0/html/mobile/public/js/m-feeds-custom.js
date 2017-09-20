@@ -7,7 +7,7 @@ $('.hover-drop.dropdown').hover(function() {
 });
 
 
-// Instantiate the Bootstrap carousel
+//Bootstrap carousel swipe
 $(".carousel").on("touchstart", function(event){
         var xClick = event.originalEvent.touches[0].pageX;
     $(this).one("touchmove", function(event){

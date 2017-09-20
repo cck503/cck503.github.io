@@ -39,6 +39,19 @@ function hasScrolled() {
 
 
 $(document).ready(function(){
+    $('.dropdown a').click(function(){
+        $('body').toggleClass('modal-open');
+    });
+    /**/
+    $('.dropdown-menu').click(function(){
+        $('body').removeClass('modal-open');
+    });
+});
+
+
+
+
+$(document).ready(function(){
     $('#nav-expander').click(function(){
         $(this).toggleClass('tcon-transform');
     });
