@@ -40,7 +40,7 @@
                 <ul class="sub-nav">
                     <li><a href="">關於我</a></li>
                     <li><a href="">網誌</a></li>
-                    <li><a href="bbh-connection.html">社交圈</a></li>
+                    <li><a href="bbh-m-connection.html">社交圈</a></li>
                     <li><a href="">相簿</a></li>
                     <li><a href="">行事曆</a></li>
                     <li><a href="">店舖</a></li>
@@ -144,7 +144,7 @@
                                 <li class="bbh-info"><a href="#">新知</a></li>
                                 <li class="bbh-shop"><a href="#">購物</a></li>
                                 <li class="bbh-group"><a href="#">家族</a></li>
-                                <li class="bbh-events"><a href="bbh-events.html">活動</a></li>
+                                <li class="bbh-events"><a href="bbh-m-events.html">活動</a></li>
                                 <li class="bbh-mama"><a href="">動態分享</a></li>
                             </ul>
                         </div>
@@ -216,6 +216,7 @@
                             <li class="dropdown">
                                 <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i></a>
                                 <ul class="dropdown-menu">
+                                    <li><a href="bbh-m-connection.html">社交圈</a></li>
                                     <li><a href="#">店舖</a></li>
                                     <li><a href="#">行事曆</a></li>
                                 </ul>
@@ -270,6 +271,7 @@
                                     <ul class="dropdown-menu">
                                         <li><a href="#">編輯貼文</a></li>
                                         <li><a href="#">刪除</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#searchList">檢舉</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -280,12 +282,12 @@
                                         <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
                                         <p class="tag-span"><a href="bbh-feed-hashtag.html">＃兒歌</a><a href="bbh-feed-hashtag.html">＃蝴蝶</a></p>
                                     </div>
-                                    <div><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
+                                    <div><a href="bbh-m-feed-post.html" class="link-light">看更多</a></div>
                                     <div class="respond-option flex-h">
                                         <div class="dropdown option-action hover-drop">
                                             <a href="" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
                                         </div>
-                                        <div class="option-action"><a href="bbh-feed-post.html" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                        <div class="option-action"><a href="bbh-m-feed-post.html" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
                                         <div class="dropdown option-action">
                                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
                                             <ul class="dropdown-menu">
@@ -635,11 +637,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
-                    <div class="input-group content-width search-span">
-                        <span class="input-group-btn list-select">
+                    <span class="input-group-btn list-select">
                             <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
                         </span>
-                        <input type="text" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"><span class="input-group-btn"><button class="btn btn-link" type="submit"><i class="icon-magnify-glass-line"></i></button></span> </div>
+                    <div class="input-group content-width search-span">
+                        <input type="search" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"></div>
                 </div>
                 <div class="modal-body">
                     <div class="search-history content-width">

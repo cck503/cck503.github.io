@@ -1003,8 +1003,7 @@ ul {
     padding-top: 15px;
     padding-bottom: 15px;
     border-top: 1px solid @seperate-line-light;
-    [class*='link-'],
-    [class^='link-'] {
+    .link-light {
         margin-bottom: 10px;
     }
 }
@@ -1052,6 +1051,8 @@ ul {
         box-shadow: none;
         background: transparent;
         resize: none;
+        max-height: 100px;
+        width: 95%;
         &:focus,
         &:active {
             outline: none;
