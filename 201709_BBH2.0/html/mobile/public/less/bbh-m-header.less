@@ -549,15 +549,18 @@ body {
 
 body.nav-expanded {
     margin-right: 0em;
+    /*
     overflow: hidden;
     height: 100vh;
-    /**/
+    touch-action: none;
+    */
     .slide-nav {
         opacity: 1;
-        left: 0;
+        transform: translateX(0);
         .nav-close {
             opacity: 1;
             visibility: visible;
+            z-index: 1;
         }
     }
     &:after {
@@ -582,16 +585,14 @@ body.nav-expanded {
 
 .slide-nav {
     height: 100vh;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
     opacity: 0;
-    width: 80vw; //background: @bbh-body-bg;
+    width: 100vw; //background: @bbh-body-bg;
     display: block;
     overflow: auto;
     position: fixed;
-    left: -80vw;
     font-size: 15px;
     top: 0;
+    transform: translateX(-100%);
     z-index: 2000;
     transition: all 0.5s ease-in-out 0s;
     -webkit-transition: all 0.5s ease-in-out 0s;
@@ -599,15 +600,27 @@ body.nav-expanded {
     -o-transition: all 0.5s ease-in-out 0s;
     .nav-close {
         //background: rgba(0, 0, 0, 0.8);
-        position: fixed;
+        position: absolute;
         opacity: 0;
+        right: 0;
+        width: 20vw;
         visibility: hidden;
-        width: 200vw;
         height: 100vh;
-        transition: all 0.4s ease-in-out 0s;
-        -webkit-transition: all 0.4s ease-in-out 0s;
-        -moz-transition: all 0.4s ease-in-out 0s;
-        -o-transition: all 0.4s ease-in-out 0s;
+    }
+    .nav-content {
+        /*overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;*/
+        background: #f0f1e9;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding: @padding-base;
+        .span-profile {
+            height: 10vh;
+            margin-bottom: 0;
+            text-align: left;
+            padding-bottom: @padding-base;
+        }
     }
     .cover-btn-holder {
         justify-content: space-between;
@@ -649,12 +662,12 @@ body.nav-expanded {
 }
 
 .main-menu {
-    padding: 10px;
-    background: #f0f1e9;
+    //padding: 10px;
+    height: 90vh;
     position: relative;
-    /*height: 100vh;
+    /*height: 100vh;*/
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;*/
+    -webkit-overflow-scrolling: touch;
     .span-profile {
         text-align: left;
     }
