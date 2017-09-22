@@ -175,6 +175,7 @@
                             <!--他人-->
                             <div class="cover-btn-holder flex-h">
                                 <button class="btn btn-key">關注</button>
+                                <button class="btn btn-key-alt hidden">已關注</button>
                                 <button class="btn btn-key-line">訊息</button>
                             </div>
                             <!--本人-->
@@ -269,9 +270,10 @@
                                 <div class="dropdown more-option">
                                     <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">編輯貼文</a></li>
+                                        <li><a href="bbh-m-compose.html">編輯貼文</a></li>
                                         <li><a href="#">刪除</a></li>
-                                        <li><a href="#" data-toggle="modal" data-target="#searchList">檢舉</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
+                                        <li><a href="#">隱藏貼文</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -291,15 +293,27 @@
                                         <div class="dropdown option-action">
                                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="#">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
+                                                <li><a href="bbh-m-social-share.html">分享至···</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <!--刪除貼文-->
+                    <div class="alert alert-info" role="alert">
+                        <p>確定要從 Facebook 永久移除這則貼文？</p>
+                        <div class="cover-btn-holder flex-h">
+                            <button class="btn btn-key-line">取消</button>
+                            <button class="btn btn-key">確定送出</button>
+                        </div>
+                    </div>
+                    <!--隱藏貼文-->
+                    <div class="alert alert-info flex-h" role="alert">
+                        <p>您已隱藏此則貼文。</p>
+                        <button class="btn btn-key-alt">復原</button>
                     </div>
                     <!--單張照片-->
                     <div class="card-span">
@@ -343,7 +357,7 @@
                                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="#">分享至My Home</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
                                                 <li><a href="#">複製連結</a></li>
                                             </ul>
                                         </div>
@@ -431,7 +445,7 @@
                                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="#">分享至My Home</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
                                                 <li><a href="#">複製連結</a></li>
                                             </ul>
                                         </div>
@@ -533,7 +547,7 @@
                                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="#">分享至My Home</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
                                                 <li><a href="#">複製連結</a></li>
                                             </ul>
                                         </div>
@@ -618,7 +632,7 @@
                                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="#">分享至My Home</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
                                                 <li><a href="#">複製連結</a></li>
                                             </ul>
                                         </div>
@@ -641,7 +655,8 @@
                             <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
                         </span>
                     <div class="input-group content-width search-span">
-                        <input type="search" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"></div>
+                        <input type="search" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword">
+                    </div>
                 </div>
                 <div class="modal-body">
                     <div class="search-history content-width">
@@ -668,6 +683,48 @@
                             <li><a href="">國中會考</a></li>
                             <li><a href="">國中會考</a></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal flag-modal fade" id="flagModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="content-heading flex-h">
+                        <div class="backward">
+                            <a href="bbh-m-myhome.html" class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="icon-arrow-left"></i></a>
+                        </div>
+                        <div class="heading-inner">檢舉貼文</div>
+                        <div class="compose-btn invisible">
+                            <button class="btn btn-key-line">發表</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="radio custum-box">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                            <label for="optionsRadios1">違反法令規定</label>
+                        </div>
+                        <div class="radio custum-box">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            <label for="optionsRadios2">色情貼文</label>
+                        </div>
+                        <div class="radio custum-box">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            <label for="optionsRadios3">其他，請填入原因</label>
+                        </div>
+                        <div class="respond-inner">
+                            <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="檢舉原因"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-line">取消</button>
+                        <button class="btn btn-key">確定送出</button>
                     </div>
                 </div>
             </div>

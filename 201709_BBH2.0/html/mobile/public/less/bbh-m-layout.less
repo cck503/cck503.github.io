@@ -11,6 +11,16 @@
     white-space: nowrap;
 }
 
+
+.alert-info {
+    border: 1px solid #80c1ff;
+    background: #f8f8f5;
+    color: #3b3b3b;
+    border-radius: 2px;
+}
+
+
+
 @padding-base:      10px;
 
 /*
@@ -38,6 +48,8 @@ body {
     background: @bbh-body-bg;
     -webkit-font-smoothing: antialiased;
 }
+
+
 
 //type
 .list-heading {
@@ -86,6 +98,9 @@ body {
     -webkit-overflow-scrolling: touch;
     padding-top: 110px;*/
     overflow-x: hidden;
+    .form-control {
+        color: @gray-dark;
+    }
 }
 
 //index
@@ -446,6 +461,24 @@ body {
 }
 
 //myHome
+.alert {
+    &.alert-info {
+        .cover-btn-holder {
+            &.flex-h {
+                margin-top: 15px;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+.alert-info {
+    &.flex-h {
+        >p {
+            flex: 1 1 0;
+        }
+    }
+}
+
 .personal-cover {
     .edit-mode {
         position: relative;
@@ -478,14 +511,14 @@ body {
 
 .cover-inner {
     position: relative;
-    &:after {
+    /*&:after {
         content: "";
         height: 120px;
         width: 100%;
         .caption-gradient();
         position: absolute;
         bottom: 0;
-    }
+    }*/
     .edit-img {
         position: absolute;
         top: 10px;
@@ -686,6 +719,61 @@ body {
         }
     }
 }
+
+
+//compose 
+
+.card-input-full {
+    .card-share {
+        margin-top: 20px;
+        .quotes-inner {
+            .alert-info();
+            margin: 0;
+            padding: 5px;
+            .img-holder {
+                width: 30%;
+                margin: 0;
+                padding: 5px;
+            }
+            .body-inner {
+                flex: 1 1 0;
+                padding-left: 10px;
+            }
+            .card-heading {
+                margin-bottom: 5px;
+            }
+            .txt-holder {
+                height: 3em;
+                overflow: hidden;
+            }
+        }
+    }
+    
+}
+
+
+//share 
+
+.share-span {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .cover-btn-holder {
+        &.flex-h {
+            justify-content: space-evenly;
+        }
+    }
+    .form-group {
+        margin-top: 30px;
+        padding: 30px 20px;
+        border-top: 1px solid @seperate-line-light;
+        .well {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+}
+
+
 
 
 //feed

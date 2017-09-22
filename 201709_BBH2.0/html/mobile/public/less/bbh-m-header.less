@@ -23,6 +23,9 @@
 
 
 
+
+
+
 /*.navbar-header {
     margin-top: 16px;
 }*/
@@ -279,6 +282,9 @@
 }
 
 
+
+
+
 /*
 .dropdown-menu {
     //margin-top: -10px;
@@ -327,7 +333,7 @@
 }
 
 
-//search
+//modal
 .list-select {
     width: 35%;
     display: block;
@@ -349,14 +355,64 @@
     }
 }
 
+.flag-modal,
 .search-list {
+    .modal-header {
+        padding: 0;
+    }
+
     .modal-dialog {
         width: 100vw;
         margin: 0;
     }
+
     .modal-content {
         height: 100vh;
         border-radius: 0;
+        border: 0;
+        background: @bbh-body-bg;
+    }
+
+    .modal-body {
+        font-size: @font-size-h4;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: white;
+        .custum-box {
+            margin-top: 20px;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+        .radio [type="radio"]:not(:checked)+label:before {
+            top: 6px;
+        }
+        .radio [type="radio"]:checked+label:before {
+            top: 6px;
+        }
+        .radio [type="radio"]:not(:checked)+label:after,
+        .radio [type="radio"]:checked+label:after {
+            top: 10px;
+        }
+        .respond-inner {
+            margin: 0 30px;
+            border: 1px solid @seperate-line-light;
+        }
+    }
+
+    .modal-footer {
+        .cover-btn-holder {
+            justify-content: space-around;
+        }
+    }
+}
+
+
+.search-list {
+    .modal-header {
+        padding: @padding-base;
+    }
+    .modal-content {
         background: @BBH-pink;
     }
     .content-width {
@@ -414,6 +470,7 @@
     }
     .modal-body {
         background: @info-bg;
+        padding: 15px;
     }
     .search-history {
         ul {
@@ -454,6 +511,9 @@
         cursor: pointer;
     }
 }
+
+
+
 
 
 
