@@ -1,3 +1,5 @@
+@padding-base:      10px;
+
 .nav-up {
     top: -80px;
 }
@@ -263,6 +265,10 @@
 
 .head-universal {
     .dropdown-menu {
+        .list-heading {
+            padding: 3px 20px;
+            font-weight: 500;
+        }
         >li {
             >a {
                 &:before {
@@ -277,8 +283,23 @@
             top: -7px;
             right: 15px;
         }
+        .profile-detail {
+            margin: @padding-base 0;
+            padding: @padding-base;
+            background: lighten(@BBH-pink, 10%)
+        }
+        .detail-inner {
+            font-weight: 300;
+            span {
+                font-size: .9em;
+            }
+            .number {
+                font-size: 1.1em;
+            }
+        }
     }
 }
+
 
 
 

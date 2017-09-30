@@ -792,6 +792,11 @@ select.form-control:focus+.form-control-placeholder {
     background-color: @notify-red;
     font-size: 12px;
     padding: 1px 5px;
+    min-height: 10px;
+    min-width: 10px;
+    &:empty {
+        display: block;
+    }
 }
 
 .badge {
@@ -911,6 +916,9 @@ select.form-control:focus+.form-control-placeholder {
         }
     }
     */
+    >li {
+        position: relative;
+    }
     &:before {
         background: rgba(0,0,0,0.6);
         width: 100vw;
