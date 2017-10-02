@@ -1442,7 +1442,28 @@ body {
     }
 }
 
-
+.addon {
+    margin: 0 -25px 10px;
+    padding: 5px 25px;
+    background: @bbh-body-bg;
+    &.fade {
+        height: 0;
+        &.in {
+            height: auto;
+        }
+    }
+    .kids-data {
+        border-bottom: 1px solid @seperate-line;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+        .flex-form-fix {
+            .custum-box {
+                margin-bottom: -20px;
+            }
+        }
+    }
+}
 
 
 
