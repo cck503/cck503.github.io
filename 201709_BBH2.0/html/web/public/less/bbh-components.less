@@ -1,6 +1,7 @@
 /*img {
     background: @seperate-line-light;
 }*/
+@padding-base:          10px;
 
 a,
 button,
@@ -111,6 +112,17 @@ ul {
     font-weight: 500;
 }
 
+.btn {
+    &[class*='link-'],
+    &[class^='link-'] {
+        background: transparent;
+        &:active,
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
 .link-blue {
     color: @link-blue;
     &:hover,
@@ -137,7 +149,7 @@ ul {
     margin-bottom: 20px;
     border-bottom: 1px solid @link-key;
     li {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid transparent;
         >a {
             padding: 10px 20px;
             .badge {
@@ -180,6 +192,9 @@ ul {
     text-align: center;
     line-height: 24px;
     margin-right: 5px;
+    &.holder-pink {
+        background: @BBH-pink;
+    }
 }
 
 [class*='seperate-line'],
@@ -516,7 +531,7 @@ ul {
         }
     }
     img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
     i {
@@ -562,7 +577,7 @@ ul {
 .navbar-nav {
     .dropdown {
         .badge-notify {
-            right: 10px;
+            right: 100px;
         }
     }
 } 

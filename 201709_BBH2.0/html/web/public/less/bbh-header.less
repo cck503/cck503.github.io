@@ -55,6 +55,7 @@
     .navbar-default {
         border-color: #fcdf7e;
         background-color: white;
+        border-bottom-width: 2px;
     }
     .navbar-nav {
         >li {
@@ -252,6 +253,9 @@
         border-color: transparent transparent #ffffff transparent;
         position: absolute;
     }
+    .list-heading {
+        font-size: @font-size-h5;
+    }
 }
 
 .navbar-nav {
@@ -285,11 +289,17 @@
         }
         .profile-detail {
             margin: @padding-base 0;
-            padding: @padding-base;
-            background: lighten(@BBH-yellow, 45%)
+            padding: @padding-base 0;
+            background: lighten(@BBH-yellow, 10%);
+            
         }
         .detail-inner {
-            font-weight: 300;
+            //font-weight: 300;
+            color: white;
+            border-color: white;
+            a {
+                color: white;
+            }
             span {
                 font-size: .9em;
             }
