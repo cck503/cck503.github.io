@@ -42,6 +42,14 @@
     margin-top: 20px;
 }
 
+.flex-h {
+    .btn-block+.btn-block {
+        margin-top: 0;
+        margin-left: @padding-base;
+    }
+}
+
+
 /*
 .container {
     padding-left: 0;
@@ -249,6 +257,7 @@ body {
         background-color: lighten(@BBH-events, 20%);
     }
 }
+
 
 
 
@@ -495,8 +504,7 @@ body {
         }
     }
     &.feature-sponsored {
-        &:before {
-            content: "贊助廣告";
+        .featuring-tag {
             padding: 0 @padding-base;
             display: block;
             border-radius: 20px;
@@ -507,6 +515,18 @@ body {
             top: 10px;
             right: 10px;
         }
+        /*&:before {
+            content: "贊助廣告";
+            padding: 0 @padding-base;
+            display: block;
+            border-radius: 20px;
+            font-size: @font-size-small;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }*/
     }
 }
 
@@ -721,6 +741,7 @@ body {
         box-shadow: rgba(0, 0, 0, .05) 0 2px 6px;
     }
 }
+
 
 
 
@@ -1704,6 +1725,7 @@ body {
         text-align: center;
     }
 }
+
 .croppie-result {
     position: relative;
     overflow: hidden;
@@ -1711,6 +1733,7 @@ body {
         position: absolute;
     }
 }
+
 .cr-slider {
     -webkit-appearance: none;
     width: 300px;
@@ -1787,6 +1810,7 @@ body {
         margin-top: 1px;
     }
 }
+
 .cr-rotate-controls {
     position: absolute;
     bottom: 5px;
@@ -1805,6 +1829,7 @@ body {
         }
     }
 }
+
 .cr-rotate-l {
     i {
         &:before {
@@ -1812,6 +1837,7 @@ body {
         }
     }
 }
+
 .cr-rotate-r {
     i {
         &:before {
