@@ -648,6 +648,8 @@ body {
 }
 
 
+
+
 //feed
 .alert-info {
     &.flex-h {
@@ -944,6 +946,15 @@ body {
             padding-bottom: 5px;
         }
     }
+    &.copy-content {
+        .card-inner {
+            padding: 0 20px 40px;
+            min-height: 60vh;
+        }
+        .card-tab {
+            justify-content: space-between;
+        }
+    }
 }
 
 //photoupload
@@ -1077,6 +1088,13 @@ body {
 
 .card-title {
     font-weight: 500;
+    margin-bottom: @padding-base;
+    &.flex-h {
+        justify-content: space-between;
+    }
+    p {
+        margin-bottom: 0;
+    }
 }
 
 .carousel {
@@ -1096,6 +1114,10 @@ body {
     .respond-inner {
         margin: 0 30px;
         border: 1px solid @seperate-line-light;
+        textarea {
+            width: 100%;
+            max-height: 16em;
+        }
     }
     .modal-body {
         font-size: @font-size-h4;

@@ -27,81 +27,107 @@
     <nav class="slide-nav">
         <a href="#" id="nav-close" class="nav-close"></a>
         <div class="nav-content">
-            <div class="span-profile flex-h hidden">
-                <div class="profile-avator-xs">
-                    <a href="bbh-myhome.html"><i class="icon-avator-full"></i><span class="sr-only">未登入</span></a>
-                </div>
-                <div class="profile-caption">
-                    <p><a href="#">請登入</a></p>
-                </div>
-            </div>
-            <div class="span-profile flex-h">
-                <div class="profile-avator-xs">
-                    <a href="bbh-m-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                </div>
-                <div class="profile-caption">
-                    <p><a href="bbh-m-myhome.html">Hi~ 小寶真是可愛</a></p>
-                </div>
-            </div>
-            <ul class="list-unstyled main-menu">
-                <li><a href="#"><span class="icon"></span></a></li>
-                <li>
-                    <ul class="sub-nav">
-                        <li><a href="">關於我</a></li>
-                        <li><a href="">網誌</a></li>
-                        <li><a href="bbh-m-connection.html">社交圈</a></li>
-                        <li><a href="">相簿</a></li>
-                        <li><a href="">行事曆</a></li>
-                        <li><a href="">店舖</a></li>
-                        <li><a href="">家族</a></li>
-                    </ul>
-                </li>
-                <li>
+            <div class="fixed-top">
+                <div class="span-profile hidden">
+                    <div class="flex-h">
+                        <div class="profile-avator-xs">
+                            <a href="bbh-m-login.html"><i class="icon-avator-full"></i><span class="sr-only">Hello，您好</span></a>
+                        </div>
+                        <div class="profile-caption">
+                            <p><a href="bbh-m-login.html">Hello，您好</a></p>
+                        </div>
+                    </div>
                     <div class="cover-btn-holder flex-h">
-                        <button class="btn btn-key hidden">登入</button>
-                        <button class="btn btn-key">登出</button>
-                        <button class="btn btn-key-line">設定</button>
+                        <a href="bbh-m-index-login.html" class="btn btn-block btn-key">登入</a>
+                        <a href="bbh-m-register.html" class="btn btn-block btn-key-line">註冊</a>
                     </div>
-                </li>
-                <li class="nav-footer">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <ul class="secondary-info">
-                                <li><a href="bbh-m-about.html">關於我們</a></li>
-                                <li><a href="bbh-m-tos.html">服務條款</a></li>
-                                <li><a href="bbh-m-policy.html">隱私權政策</a></li>
-                                <li><a href="">客服信箱</a></li>
-                                <li><a href="">合作提案</a></li>
-                                <li><a href="">徵才資訊</a></li>
-                            </ul>
+                </div>
+                <div class="span-profile">
+                    <div class="flex-h">
+                        <div class="profile-avator-xs">
+                            <a href="bbh-m-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
                         </div>
-                        <div class="col-xs-6">
-                            <ul class="secondary-info">
-                                <li><a href="">Q&A</a></li>
-                                <li><a href="">站務服務區</a></li>
-                                <li><a href="">客服信箱</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul class="secondary-info">
-                                <li><a href="">會員註冊</a></li>
-                                <li><a href="">會員登入</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul class="secondary-info">
-                                <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12">
-                            <ul class="secondary-info">
-                                <li>Copyright © 2017 BabyHome. All right reserved.</li>
-                                <li>客服時間：週一至週五 9:00 ~ 18:00</li>
-                            </ul>
+                        <div class="profile-caption">
+                            <p><a href="bbh-m-myhome.html">Hi~ 小寶真是可愛</a></p>
                         </div>
                     </div>
-                </li>
-            </ul>
+                    <div class="profile-detail flex-h">
+                        <div class="detail-inner"><span class="number">20</span><span>貼文</span></div>
+                        <div class="detail-inner"><span class="number">331</span><span>話題</span></div>
+                        <div class="detail-inner"><span class="number">1.1K</span><span>關注我</span></div>
+                        <div class="detail-inner"><span class="number">10K</span><span>Ｑ點</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu">
+                <ul class="span-personal-nav">
+                    <li class="channel-list hidden">
+                        <ul>
+                            <li><a href="">討論區</a></li>
+                            <li><a href="">新知</a></li>
+                            <li><a href="">購物</a></li>
+                            <li><a href="">活動</a></li>
+                        </ul>
+                    </li>
+                    <li class="channel-list">
+                        <ul>
+                            <li><span class="badge badge-notify"></span><a href="#">動態消息</a></li>
+                            <li><a href="">相簿</a></li>
+                        </ul>
+                    </li>
+                    <li class="channel-list channel-diff">
+                        <ul>
+                            <li class="list-heading">我的最愛</li>
+                            <li><a href="">討論專區</a></li>
+                            <li class="list-heading">我的討論話題</li>
+                            <li><a href="">我的發表</a></li>
+                            <li><a href="">我的回應</a></li>
+                            <li><a href="">我的訂閱</a></li>
+                            <li><a href="">話題草稿</a></li>
+                        </ul>
+                    </li>
+                    <li class="channel-list">
+                        <ul>
+                            <li><a href="#">部落格(舊)</a></li>
+                            <li><a href="bbh-m-member.html">管理中心</a></li>
+                            <li><a href="bbh-m-index.html">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="nav-footer">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <ul class="secondary-info">
+                                    <li><a href="bbh-m-about.html">關於我們</a></li>
+                                    <li><a href="bbh-m-tos.html">服務條款</a></li>
+                                    <li><a href="bbh-m-policy.html">隱私權政策</a></li>
+                                    <li><a href="">客服信箱</a></li>
+                                    <li><a href="">合作提案</a></li>
+                                    <li><a href="">徵才資訊</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="secondary-info">
+                                    <li><a href="">Q&A</a></li>
+                                    <li><a href="">公告與指南</a></li>
+                                    <li><a href="">客服信箱</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="secondary-info">
+                                    <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <ul class="secondary-info">
+                                    <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="main-wrapper">
@@ -217,7 +243,7 @@
                             <li><span class="v-seperate-line"></span></li>
                             <li><a href="">動態</a></li>
                             <li><span class="v-seperate-line"></span></li>
-                            <li><a href="">關於我</a></li>
+                            <li><a href="bbh-m-myhome-about.html">關於我</a></li>
                             <li><span class="v-seperate-line"></span></li>
                             <li><a href="">網誌</a></li>
                             <li><span class="v-seperate-line"></span></li>
