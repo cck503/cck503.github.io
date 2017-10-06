@@ -430,6 +430,17 @@ body {
 }
 
 //myHome
+.card-heading {
+    .featuring-tag {
+        padding: 0 10px;
+        display: block;
+        border-radius: 20px;
+        font-size: @font-size-small;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
 .personal-cover {
     .edit-mode {
         position: relative;
@@ -566,7 +577,7 @@ body {
     }
     .cover-btn-holder {
         width: 300px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 }
 
@@ -695,6 +706,7 @@ body {
 .body-inner {
     .img-holder {
         margin: 0 -10px 10px;
+        text-align: center;
     }
 }
 
@@ -1031,6 +1043,8 @@ body {
             margin-bottom: 20px;
             li {
                 margin-bottom: 5px;
+                margin-right: 5px;
+                display: inline-block;
                 &:not(.list-heading) {
                     font-size: @font-size-small;
                     color: @gray-light;
