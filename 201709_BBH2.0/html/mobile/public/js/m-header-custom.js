@@ -37,6 +37,35 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
+$(document)
+    .one('focus.autoExpand', 'textarea.autoExpand', function() {
+        var savedValue = this.value;
+        this.value = '';
+        this.baseScrollHeight = this.scrollHeight;
+        this.value = savedValue;
+    })
+    .on('input.autoExpand', 'textarea.autoExpand', function() {
+        var minRows = this.getAttribute('data-min-rows') | 0,
+            rows;
+        this.rows = minRows;
+        rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
+        this.rows = minRows + rows;
+    });
+
+
+
+$(document).ready(function(){
+    $('.dropdown a').click(function(){
+        $('body').toggleClass('modal-open');
+    });
+    /**/
+    $('.dropdown-menu').click(function(){
+        $('body').removeClass('modal-open');
+    });
+});
+
+
+
 
 $(document).ready(function(){
     $('#nav-expander').click(function(){
@@ -54,27 +83,13 @@ $(document).ready(function(){
         $('#nav-expander').on('click',function(e){
             e.preventDefault();
             $('body').toggleClass('nav-expanded');
+            
         });
         $('#nav-close').on('click',function(e){
             e.preventDefault();
             $('body').removeClass('nav-expanded');
         });
 
-        // Initialize navgoco with default options
-        $(".main-menu").navgoco({
-            caret: '<span class="caret"></span>',
-            accordion: false,
-            openClass: 'open',
-            save: true,
-            cookie: {
-                name: 'navgoco',
-                expires: false,
-                path: '/'
-            },
-            slide: {
-                duration: 300,
-                easing: 'swing'
-            }
-        });
+       
 
       });
