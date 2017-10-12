@@ -27,3 +27,16 @@ $(".carousel").on("touchstart", function(event) {
         $(this).off("touchmove");
     });
 });
+
+
+$(document).ready(function() {
+    $('.subcategories').click(function() {
+        $(this).next("ul").addClass("active");
+        $(".qa-nav").addClass("active");
+    });
+    /**/
+    $('.qa-nav .backward').click(function() {
+        $('.qa-nav').removeClass('active');
+        $('.leftnav-group').removeClass('active');
+    });
+});
