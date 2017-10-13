@@ -31,7 +31,7 @@ $(".carousel").on("touchstart", function(event) {
 
 $(document).ready(function() {
     $('.subcategories').click(function() {
-        $(this).next("ul").addClass("active");
+        $(this).next(".leftnav-group").addClass("active");
         $(".qa-nav").addClass("active");
     });
     /**/

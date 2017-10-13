@@ -75,7 +75,17 @@ ul {
     position: relative;
     z-index: 100;
 }
-
+.select-style {
+    position: relative;
+    display: block;
+    &:after {
+            content: "\e900";
+            font-family: 'bbhiocn';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+}
 
 //icon-transtorming
 .tcon {
@@ -1351,10 +1361,16 @@ select.form-control:focus+.form-control-placeholder {
 
 .post-detail {
     font-size: @font-size-small;
-    color: @secondary-grey;
+    //color: @secondary-grey;
     .flex-h();
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
     .time-tage {
         margin-right: 10px;
+    }
+    &.shorten {
+        max-height: 3em;
+        overflow: hidden;
     }
 }
 
@@ -1365,6 +1381,11 @@ select.form-control:focus+.form-control-placeholder {
     border-top: 1px solid @seperate-line-light;
     .link-light {
         margin-bottom: 10px;
+    }
+    .post-detail {
+        .link-light {
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -436,7 +436,9 @@ ul {
 
 .flex-h {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
 }
 
 .padding-fix {
@@ -610,7 +612,8 @@ ul {
         height: 18px;
         border-radius: 50%;
         position: absolute;
-        right: 1px;
+        right: 3px;
+        top: 3px;
     }
     i {
         z-index: 5;
@@ -1040,7 +1043,7 @@ ul {
 
 .txt-holder {
     &.shorten {
-        height: 5.6em;
+        max-height: 12.6em;
         overflow: hidden;
     }
 }
@@ -1052,6 +1055,7 @@ ul {
     margin-top: 10px;
     &.flex-h {
         justify-content: space-around;
+        -webkit-justify-content: space-around;
     }
 }
 
@@ -1064,10 +1068,17 @@ ul {
 
 .post-detail {
     font-size: @font-size-small;
-    color: @secondary-grey;
-    .flex-h();
+    //color: @secondary-grey;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
     .time-tage {
         margin-right: 10px;
+    }
+    &.shorten {
+        max-height: 3em;
+        overflow: hidden;
     }
 }
 
@@ -1079,6 +1090,11 @@ ul {
     .link-light {
         margin-bottom: 10px;
     }
+    .profile-caption {
+        .link-light {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .feed-comment {
@@ -1088,6 +1104,7 @@ ul {
     }
     .flex-h();
     align-items: flex-start;
+    -webkit-align-items: flex-start;
     font-size: @font-size-small;
     .more-option {
         align-self: flex-start;

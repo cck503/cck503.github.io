@@ -132,6 +132,24 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            var _h = $('.alert-info').outerHeight();
+            //open
+            $('.sub-nav li ul.leftnav-group').on('click','.collap',function(){
+                console.log(1);
+                var h = $('.collapse-list li',$(this).parent()).height()+300;
+                //var h = 700;
+                console.log(h);
+                $('.alert-info').animate({height:h},300);
+            });
+            //close
+            $('.sub-nav li ul.leftnav-group').on('click','.collap-active',function(){
+                console.log(2);
+                $('.alert-info').animate({height:_h},300);
+            });
+        });
+    </script>
 </body>
 
 </html>

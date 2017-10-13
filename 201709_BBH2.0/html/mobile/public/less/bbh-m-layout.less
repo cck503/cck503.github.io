@@ -899,6 +899,7 @@ body {
     padding-right: @padding-base;
     .tags-sapn {
         border-top: 1px solid @seperate-line-light;
+        padding-top: 15px;
     }
     .btn-compose-white {
         min-width: 0;
@@ -1108,13 +1109,17 @@ body {
 }
 
 .tags-sapn {
-    margin: 10px -10px 5px;
-    padding: 10px 10px 5px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    margin: 10px -10px 0;
+    padding: 10px 10px 0;
+    /*overflow-x: auto;
+    overflow-y: hidden;*/
     -webkit-overflow-scrolling: touch;
+    &.flex-h {
+        display: block;
+    }
     .tag-kids {
         margin-right: @padding-base;
+        margin-bottom: @padding-base;
         display: inline-block;
         &:last-of-type {
             margin-right: 0;
@@ -1735,7 +1740,9 @@ body {
         }
     }
 }
-
+.main-wrapper {
+    
+}
 
 
 
