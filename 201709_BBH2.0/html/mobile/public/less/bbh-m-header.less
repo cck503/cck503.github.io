@@ -66,6 +66,7 @@
     .container {
         .flex-h {
             justify-content: flex-start;
+            -webkit-justify-content: flex-start;
             margin-left: -10px;
             margin-right: -10px;
             padding-bottom: 5px;
@@ -98,6 +99,7 @@
     }
     .navbar-header {
         flex: 1 1 0;
+        -webkit-flex: 1 1 0;
         margin: 0;
         svg {
             fill: currentColor;
@@ -375,6 +377,8 @@
         border-radius: 0;
         border: 0;
         background: @bbh-body-bg;
+        word-wrap: break-word;
+        word-break: break-word;
     }
 
     .modal-body {
@@ -382,6 +386,12 @@
         padding-top: 30px;
         padding-bottom: 30px;
         background: white;
+        a {
+            color: @link-blue;
+        }
+        .lead {
+            font-weight: bold;
+        }
         .custum-box {
             margin-top: 20px;
             &:first-of-type {
@@ -563,6 +573,9 @@ body.nav-expanded {
     .slide-nav {
         opacity: 1;
         transform: translateX(0);
+        -o-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
         .nav-close {
             opacity: 1;
             visibility: visible;
@@ -599,6 +612,9 @@ body.nav-expanded {
     //font-size: 15px;
     top: 0;
     transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     z-index: 2000;
     transition: all 0.5s ease-in-out 0s;
     -webkit-transition: all 0.5s ease-in-out 0s;
