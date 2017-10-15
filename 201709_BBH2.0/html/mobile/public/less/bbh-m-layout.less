@@ -1519,16 +1519,27 @@ body {
                 top: 0;
                 display: none;
                 width: 100%;
+                margin-top: 0;
+                border-top: 0;
+                >li {
+                    margin-left: 0;
+                }
                 &.active {
                     display: block;
                     transition: display 0s linear 0.5s;
+                    margin-left: 15px;
                 }
             }
             &.active {
                 left: -100%; //transition: left 0.5s ease-in;
+                margin-left: -15px;
+                margin-right: 15px;
             }
         }
     }
+}
+.qa-info {
+    overflow: hidden;
 }
 
 .card-inner {
@@ -1851,7 +1862,7 @@ body {
         overflow: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        max-height: 50vh;
+        max-height: 70vh;
         li {
             border-bottom: 1px solid #f0f0f0;
             padding: 15px 0;
@@ -1863,6 +1874,11 @@ body {
                 white-space: nowrap;
             }
         }
+        .list-container {
+            max-height: 50vh;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
     }
     &.fade {
         .modal-dialog {
@@ -1870,6 +1886,13 @@ body {
             -ms-transform: translate(0, 0);
             -o-transform: translate(0, 0);
             transform: translate(0, 0);
+        }
+    }
+    .cover-btn-holder {
+        margin: 5px @padding-base;
+        &.flex-h {
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
         }
     }
 }
