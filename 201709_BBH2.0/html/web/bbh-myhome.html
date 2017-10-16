@@ -621,6 +621,8 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#">隱藏貼文</a></li>
                                     <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#editpostModal">編輯貼文</a></li>
+                                    <li><a href="#">刪除</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1815,6 +1817,235 @@
                     <div class="cover-btn-holder flex-h">
                         <button class="btn btn-key-line">取消</button>
                         <button class="btn btn-key">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal favorit-list post-modal fade" id="editpostModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card-inner card-input-full">
+                        <div class="card-heading">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                            </div>
+                            <div class="profile-caption">
+                                <p><a href="" class="link-profile">小寶真是可愛</a></p>
+                                <div class="post-detail">
+                                    <div class="flex-h dropdown">
+                                        <a href="" class="link-blue flex-h" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>公開</span><i class="icon-earth-full flex-h"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">公開</a></li>
+                                            <li><a href="#">私密</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="body-inner">
+                                <div class="respond-inner">
+                                    <textarea class="form-control autoExpand" id="message_content" rows='5' data-min-rows='5' placeholder="媽年70獨居台北，實在是因為她不太好相處，對外人還好，但對我，個人覺得是權威及不受尊重他不自知，所以和他相處久了會有口角。她好幾次暗示明示我帶孩子回台北陪伴他，週末再先生北上，然後他會給我看護費(這點很怪，基於很多原因我不想也不敢拿錢)。但現在他已在我居住附近租房。不知道为什麼，簽約的今天我失眠了。。。。深層感覺是很害怕。。。。"></textarea>
+                                    <div class="card-share">
+                                        <div class="quotes-inner flex-h">
+                                            <div class="img-holder single-img">
+                                                <a href=""><img class="img-responsive" src="http://lorempixel.com/600/400/city"></a>
+                                            </div>
+                                            <div class="body-inner">
+                                                <div class="card-heading">
+                                                    <div class="profile-caption">
+                                                        <p><a href="" class="link-profile">小寶真是可愛</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="txt-holder">
+                                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="photo-upload clearfix">
+                                        <div class="no-wrap">
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <div class="loader-span">
+                                                        <div class="typing-loader"></div>
+                                                    </div>
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upload-inner">
+                                                <a href="" class="icon-close"><i class="icon-close-full"></i></a>
+                                                <div class="upload-holder">
+                                                    <img src="http://lorempixel.com/900/750/city" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tags-sapn">
+                                        <div class="tag-kids"><span>大寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="respond-span flex-h">
+                                <div class="respond-inner flex-h">
+                                    <div class="dropdown respond-drop">
+                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">標註寶寶</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="checkbox custum-box">
+                                                    <input type="checkbox" id="box-style-01" name="agree">
+                                                    <label for="box-style-01">大寶</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox custum-box">
+                                                    <input type="checkbox" id="box-style-02" name="agree">
+                                                    <label for="box-style-02">大寶</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox custum-box">
+                                                    <input type="checkbox" id="box-style-03" name="agree">
+                                                    <label for="box-style-03">大寶</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="" class="btn btn-compose-white">照片</a>
+                                    <div class="dropdown respond-drop">
+                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">表情符號</a>
+                                        <div class="dropdown-menu emoji-menu menu-wide" aria-labelledby="emoji-btn">
+                                            <div class="dropdown-menu-inner">
+                                                <div class="layout-f">
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-submit btn-compose" type="submit">發表</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
