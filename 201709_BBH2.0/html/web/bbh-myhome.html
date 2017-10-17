@@ -507,27 +507,7 @@
                             <div class="respond-span flex-h">
                                 <div class="respond-inner flex-h">
                                     <div class="dropdown respond-drop">
-                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">標註寶寶</a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <div class="checkbox custum-box">
-                                                    <input type="checkbox" id="box-style-01" name="agree">
-                                                    <label for="box-style-01">大寶</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox custum-box">
-                                                    <input type="checkbox" id="box-style-02" name="agree">
-                                                    <label for="box-style-02">大寶</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox custum-box">
-                                                    <input type="checkbox" id="box-style-03" name="agree">
-                                                    <label for="box-style-03">大寶</label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#babyModal">標註寶寶</a>
                                     </div>
                                     <a href="" class="btn btn-compose-white">照片</a>
                                     <div class="dropdown respond-drop">
@@ -1741,12 +1721,12 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <div class="img-holder single-img">
-                                    <a href=""><img class="img-responsive" src="http://lorempixel.com/900/750/city"></a>
+                                    <a href=""><img class="img-responsive" src="http://lorempixel.com/400/600/city"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="img-holder single-img">
-                                    <a href=""><img class="img-responsive" src="http://lorempixel.com/900/750/people"></a>
+                                    <a href=""><img class="img-responsive" src="http://lorempixel.com/1200/750/people"></a>
                                 </div>
                             </div>
                         </div>
@@ -1776,6 +1756,71 @@
         </div>
     </div>
     <footer class="footer-universal"></footer>
+    <!--baby Modal -->
+    <div class="modal favorit-list fade" id="babyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">選擇寶寶</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="dropdown-fake flex-v">
+                        <ul class="list-container">
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-10" name="agree01">
+                                    <label for="box-style-10">大寶</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-11" name="agree01">
+                                    <label for="box-style-11">大寶</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-12" name="agree01">
+                                    <label for="box-style-12">大寶</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-13" name="agree01">
+                                    <label for="box-style-13">大寶</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-14" name="agree01">
+                                    <label for="box-style-14">大寶</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-15" name="agree01">
+                                    <label for="box-style-15">大寶</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox custum-box">
+                                    <input type="checkbox" id="box-style-16" name="agree01">
+                                    <label for="box-style-16">大寶</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-line">全選</button>
+                        <button class="btn btn-key">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
     <div class="modal favorit-list fade" id="albumModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-sm" role="document">
@@ -2246,11 +2291,6 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>
     <script src="public/js/feeds-custom.js"></script>
-    <script>
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-    </script>
 </body>
 
 </html>

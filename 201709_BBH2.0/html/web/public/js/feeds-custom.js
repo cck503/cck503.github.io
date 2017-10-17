@@ -9,7 +9,7 @@ $('.hover-drop.dropdown').hover(function() {
 
 // Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
-  interval: false
+  interval: 6000
 });
 
 // for every slide in carousel, copy the next slide's item in the slide.

@@ -1,5 +1,12 @@
 @padding-base: 10px;
 
+body {
+    padding-top: 76px;
+    padding-bottom: 30px;
+    font-family: @font-family-sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 .nav-up {
     top: -80px;
 }
@@ -52,6 +59,11 @@
 
 
 .head-universal {
+    .container {
+        width: 1180px !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .navbar-default {
         border-color: #fcdf7e;
         background-color: white;
@@ -625,6 +637,9 @@
             &.form-control {
                 border: 0;
             }
+            option {
+                color: @gray-base;
+            }
         }
         input {
             &.form-control {
@@ -692,4 +707,112 @@
             margin: 30px 0;
         }
     }
+}
+
+
+
+//mboard 
+
+.mboard-nav {
+    border-bottom: 1px solid #fcdf7e;
+    border-top: 0;
+    .container {
+        width: 1180px !important;
+    }
+}
+.drop-style {
+    >li {
+       >a {
+            padding-right: 30px;
+            padding-left: 0;
+       }
+    }
+    
+}
+.optional-nav {
+    >li {
+        >a {
+            border-right-color: #fcdf7e;
+            border-left-color: #fcdf7e;
+            border-bottom: 0;
+            border-top: 0; 
+        }
+    }
+}
+
+//info 
+.info-nav {
+    background: white;
+    margin-bottom: 0;
+    .container {
+        width: 1180px !important;
+        padding: 0;
+    }
+    border-bottom: 1px solid #fcdf7e;
+}
+.sp-topic {
+    font-size: @font-size-small;
+    >a {
+        img {
+            height: 100%;
+            display: block;
+            float: left;
+        }
+        span {
+            display: block;
+            float: left;
+            line-height: 1;
+            width: 60px;
+            margin-left: 3px;
+        }
+    }
+}
+.drop-style {
+    >li {
+       >a {
+            color: @BBH-info;
+            font-size: 18px;
+            padding-right: 30px;
+            padding-left: 0;
+            &:hover,
+            &:active,
+            &:focus {
+                color: @BBH-info;
+                font-weight: bold; 
+                background: transparent;
+            }
+       }
+    }
+    .alt-list {
+        >a {
+            color: @BBH-pink;
+            &:hover,
+            &:active,
+            &:focus {
+                color: @BBH-pink;
+            }
+        }
+    }
+}
+.navbar-default {
+    .navbar-nav {
+        >.sp-topic {
+            >a {
+                color: #ea82b2;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: darken(#ea82b2, 10%)
+                }
+            }
+        }
+    }
+}
+
+
+.info_breadcrumb {
+    padding-left: 15px;
+}
+.info_mainmenu {
+    margin-top: 20px;
 }
