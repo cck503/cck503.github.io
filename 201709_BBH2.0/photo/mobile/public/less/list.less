@@ -1,0 +1,512 @@
+/*
+ *	upload photos lists
+ */
+ul#upload_photos_list{
+	//display:none;
+	list-style-type:none;
+	margin:10px 0;
+	//min-height: 400px;
+	padding:0;
+
+	li{
+		//border: 1px solid #dddddd;
+		background: #fcfcfc;
+		float:left;
+		margin: 0 3px 8px 0;
+		padding:3px;
+		//width:160px;
+		////height:75px;
+		text-align: center;
+		position:relative;
+		//cursor : move;
+		z-index: 11;
+        height: 171px;
+        width: 171px;
+        overflow: hidden;
+		img{
+			//height:75px;
+			//filter:alpha(opacity=30);opacity:0.3;zoom:1;
+			z-index: 1;
+			width: 165px;
+			height: auto;
+		}
+
+		canvas{
+			//filter:alpha(opacity=30);opacity:0.3;zoom:1;
+			z-index: 1;
+		}
+
+		.remove_multipe{
+			background: #ffffff;
+			color: :#333;
+			top: 10px;
+			left: 140px;
+			margin: 0;
+			//padding:0 5px;
+			width: 20px;
+			height: 20px;
+			border-radius: @radius-circle;
+			font-weight: bold;
+			position:absolute;
+			z-index: 2;
+		}
+
+		.percent{
+			/*background: #ffffff;
+			color: :#333;
+			font-weight: bold;
+			
+			width: 100%;
+			margin:0;
+			//text-align: center;
+			left:0;*/
+
+			display: none;
+			filter:alpha(opacity=50);opacity:0.5;zoom:1;
+
+			position:absolute;
+			bottom:1%;
+			right:1%;
+			z-index: 3;
+
+			img{
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+
+/*
+ *	user albums list
+ */
+.albumList{
+	//margin:0 auto;
+	
+	.album{
+		&:nth-child(3n){
+			margin:0 0 20px 0;
+		}
+		position: relative;
+
+		border: 1px solid #dddddd;
+		//background: #ffffff;
+		//display: inline;
+		float:left;
+		font-size: 11px;
+		margin:0 15px 20px 0;
+		padding:10px;
+		width:290px;
+		//height:290px;
+		list-style-type:none;
+		
+		a.wrap{
+			display: block;
+
+			div.cover{
+				text-align: center;
+				min-height: 268px;
+				overflow: hidden;
+				
+				img{
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+			
+			div.last{
+				margin:10px 0;
+				min-height: 75px;
+
+				img{
+					width: 75px;
+					height: 75px;
+					margin: 0 10px 0 0;
+				}
+			}
+
+			z-index:0;
+		}
+		
+		a.title{
+			color:#111;
+			font-size: 15px;
+			font-weight:bold;
+			display:block;
+			//text-align:center;
+			//margin: 0 0 3px 0;
+			//width:290px;
+			//overflow:hidden;
+			position: absolute;
+
+			top:1%;
+			left:1%;
+
+			z-index:10;
+		}
+		
+		a.edit{
+			color:#111;
+			font-size: 15px;
+			font-weight:bold;
+			display:none;
+			//text-align:center;
+			//margin: 0 0 3px 0;
+			//width:290px;
+			//overflow:hidden;
+			position: absolute;
+
+			top:1%;
+			right:1%;
+
+			z-index:10;
+		}
+
+		/*ul.cover_photos{
+			border: 1px solid #333;
+			background: #ffffff;
+			margin: 0;
+			padding:5px 0 0 5px;
+			height:215px;
+			
+			li{
+				list-style-type:none;
+				float:left;
+				margin :0 4px 5px 0;
+				width:90px;
+				height:67px;
+				overflow:hidden;
+				text-align:center;
+				
+				img{
+					//border: 1px solid #dddddd;
+					padding:0;
+					//width:80px;
+					//height:52px;
+					//width:auto;
+					
+					//margin:0 auto;
+				}
+			}
+		}*/
+		
+		/*a.btn{
+			border-radius: 0;
+			border-top: 0;
+			margin: 0;
+			padding:5px 0;
+			width:290px;
+		}*/
+	}
+}
+
+/*
+ *	user file list
+ */
+.files-container{
+	width: 1170px; 
+	//width: 100%; 
+	//opacity: 1; 
+	//visibility: visible;
+	margin:0 auto;
+
+	.file{
+		&:nth-child(5n){
+			margin:0 0 20px 0;
+		}
+
+		//border: 1px solid #dddddd;
+		background: #ffffff;
+		display: inline-block;
+		float:left;
+		margin:0 25px 30px 0;
+		//padding: 5px;
+		overflow: hidden;
+		height: 270px;
+	    width: 210px;
+	    position: relative;
+		
+		div.wrap{
+			border: 1px solid #d5d5d5;
+			background: #ffffff;
+			height: 210px;
+	  		width: 210px;
+			padding: 5px;
+
+			a.cover{
+				display: block;
+				text-align: center;
+				
+
+				.cover{
+					//height: 210px;
+		  			//width: 210px;
+
+					//width: 100%; 
+					//margin: 0 auto;
+					max-width:100%;
+					max-height: 100%;
+				}
+
+				p.title{
+					display: none;
+					color: #333;
+					font-size: 12px;
+					margin:5px 0;
+				}
+			}
+		}
+
+		
+	}
+}
+
+/*
+ *	file manage
+ */
+ul.file-manage{
+	//width: 1170px; 
+	margin: 5px 0 5px -10px;
+	padding:0;
+	list-style-type:none;
+	
+	li.ui-selected,
+	li.ui-selecting { 
+		background: @body-bg; 
+		color: white;
+		transition: border 0.5s ease;
+	}
+    li.ui-selectee {
+        .play_video {
+            top: 40%;
+        }
+    }
+	li {
+		background: #ffffff;
+		border: #fff 0 solid;
+		display: inline-block;
+		float: left;
+		margin: 0 0 20px 20px;
+		//padding: 10px;
+		overflow: hidden;
+		height: 220px;
+	    width: 220px;
+	    position: relative;
+		cursor: move;
+		transition: border 0.5s ease;
+		text-align: center;
+		.cover {
+		    width: auto;
+		    height: 220px;
+		    position: relative;
+            left: 100%;
+            margin-left: -200%;
+		}
+	}
+	li.ui-selected,
+	li.ui-selecting {
+	    border: 10px solid #fff;
+	    img {
+	        opacity: .6;
+	        filter: alpha(opacity=100);
+	    }
+	}
+}
+
+
+/*
+ *	modal 內容條列
+ */
+.modal-body-list{
+	margin: -10px 0 0 0;
+	padding:0;
+	list-style-type:none;
+
+	.item{
+	    //border-top: 1px solid #EEEEEE;
+		//margin-top: 3px;
+		&:hover{
+	        background: @item-hover;
+		}
+		.name{
+			p.address{
+				font-size:11px;
+				margin:0;
+				padding:0;
+			}
+		}
+
+		.meta{
+			float:right;
+			margin: 0; 
+		}
+	}
+
+	.this{
+		//background: #fbf7bd;
+	}
+}
+
+/*
+ * modal - 
+ */
+ul.modal-file-edit-list{
+	margin: -10px 0 0 0;
+	padding:0;
+	list-style-type:none;
+    max-height: 500px;
+    overflow-y: auto;
+	li{
+	    padding: 10px 20px;
+		.image{
+			float:left;
+			margin:0 10px 0 0;
+			text-align: center;
+            overflow: hidden;
+            width: 165px;
+            img {
+                width: auto;
+                height: 165px;
+                position: relative;
+                left: 100%;
+                margin-left: -200%;
+            }
+		}
+
+		.content{
+			float:left;
+			width: 65%;
+
+			input{
+				width:100%;
+			}
+
+			textarea{
+				width:100%;
+			}
+		}
+	}
+}
+
+/*
+ *	modal - 地點選擇列表
+.venueList{
+	margin: -10px 0 0 0;
+	padding:0;
+	list-style-type:none;
+
+	.item{
+		&:first-child{
+			border-top:0;
+			margin: 0;
+		}
+
+		&:hover{
+			background: #f5f5f5;
+		}
+
+		border-top: 1px solid #EEEEEE;
+		//margin-top: 3px;
+		padding: 8px;
+
+		.name{
+			float:left;
+
+			p.address{
+				font-size:11px;
+				margin:0;
+				padding:0;
+			}
+		}
+
+		.meta{
+			float:right;
+			margin: 0; 
+		}
+	}
+
+	.this{
+		background: #fbf7bd;
+	}
+}*/
+
+/*
+ *	回應列表
+ */
+ul.comment-list{
+	margin: 10px 0;
+	padding:0;
+	list-style-type:none;
+
+	li{
+		&:hover{
+			background: #f5f5f5;
+		}
+	
+		&:first-child{
+			border-top:0;
+			margin: 0;
+		}
+
+		border-top: 1px solid #EEEEEE;
+		//margin-top: 3px;
+		padding: 8px;
+
+		a.avatar{
+			display: block;
+			float:left;
+			margin: 0 10px 0 0;
+
+			img{
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		div.body{
+			float:left;
+			width:91%;
+
+			.input{
+				width: 80%;
+			}
+		}
+	}
+}
+
+/*
+ *	資料夾列表
+ */
+ul.folder-list{
+	margin: 0;
+	padding:0;
+	list-style-type:none;
+
+	li{
+		&:hover{
+			background: #f5f5f5;
+		}
+	
+		&:first-child{
+			border-top:0;
+			margin: 0;
+		}
+
+		border-top: 1px solid #EEEEEE;
+		//margin-top: 3px;
+		padding: 3px;
+
+	}
+}
+//cover_star
+.album_cover {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: @font-size-large;
+    color: @body-bg;
+    padding: 2px;
+    border-radius: @border-radius-base;
+    background: @bbh-pink;
+}

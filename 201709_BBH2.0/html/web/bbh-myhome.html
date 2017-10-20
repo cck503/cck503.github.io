@@ -11,6 +11,7 @@
     <link id="theme" href="public/css/non-responsive.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-main.css" rel="stylesheet">
+    <link href="public/css/member_task.css" rel="stylesheet" type="text/css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -580,7 +581,8 @@
                 <div class="card-span"></div>
                 <!--未發文-->
                 <div class="alert alert-info" role="alert">
-                    <p class="h2">親愛的會員，您好！您還未建立貼文喔，<br>快來使用新功能吧！</p>
+                    <p class="h2">親愛的會員，您好！您還未建立貼文喔，
+                        <br>快來使用新功能吧！</p>
                     <img src="public/img/post-illustration.png" alt="還未建立貼文" class="img-responsive">
                 </div>
                 <!--無公開貼文-->
@@ -1664,6 +1666,81 @@
                         <li class="pull-left"><a href="" class="link-blue">＃晚餐食譜</a></li>
                     </ul>
                 </div>
+                <!--任務清單-->
+                <div class="exitfrom affix fade">
+                    <div class="tittle">
+                        <button class="btn minify"></button>
+                        <p>任務清單</p>
+                    </div>
+                    <ul class="text">
+                        <li>任務完成後，立即發送點數；單項任務完成即呈現<img src="public/img/tick.png" width="24" height="25">狀態。</li>
+                        <li>任務所得Q點可至我的Q點查詢</li>
+                        <li>任務活動時間：2017/10/31~11/30</li>
+                    </ul>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/tick.png" width="38" height="40"></div>
+                            <div class="SS">設定會員生日</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">設定會員大頭貼</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">設定寶寶生日</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">設定寶寶大頭貼</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">編輯封面</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">設定關於我介紹詞</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">發表10則公開貼文並使用#功能</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">回應他人貼文20次</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="list">
+                            <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                            <div class="SS">至他人貼文按喜歡30次</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -2203,6 +2280,14 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>
     <script src="public/js/feeds-custom.js"></script>
+    <script type="text/javascript">
+    $(".exitfrom .minify").click(function() {
+        $(".exitfrom.affix").toggleClass("min-height");
+    });
+    setTimeout(function() {
+        $(".exitfrom").addClass("in");
+    }, 3500);
+    </script>
 </body>
 
 </html>

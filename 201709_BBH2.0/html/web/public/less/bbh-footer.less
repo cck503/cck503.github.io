@@ -2,7 +2,7 @@ footer {
     ul {
         list-style: none;
         a {
-            display: inline-block;
+            
         }
     }
     .span-footer {
@@ -19,9 +19,22 @@ footer {
             margin-bottom: 10px;
         }
     }
+    a {
+        display: inline-block;
+        color: @gray-dark;
+        &:hover,
+        &:active,
+        &:focus {
+            color: @gray-base;
+        }
+    }
 }
 
 .footer-universal {
+    background: transparent;
+    .container {
+        background: transparent;
+    }
     .footer-inner,
     .span-footer {
         display: flex;
@@ -43,5 +56,15 @@ footer {
     .secondary-info {
         padding-left: 0;
         font-size: @font-size-xs;
+    }
+}
+
+
+//ec
+.footer {
+    .footer-universal {
+        .footer-inner {
+            border: 0;
+        }
     }
 }
