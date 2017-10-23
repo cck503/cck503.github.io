@@ -11,7 +11,7 @@
     <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
-    <link href="public/css/member_task.css" rel="stylesheet" type="text/css">
+    <link href="public/css/m-member_task.css" rel="stylesheet" type="text/css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -963,6 +963,19 @@
             </div>
         </div>
     </div>
+    <!--intro-->
+    <div class="modal intro-list fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="intro-inner">
+                        <img src="public/img/m-myhome-intro.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--任務清單-->
     <div class="exitfrom affix fade">
         <div class="tittle">
@@ -1038,6 +1051,7 @@
             </div>
         </div>
     </div>
+    <div class="exitfrom-dropback affix fade"></div>
     <!-- Modal -->
     <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -1128,14 +1142,23 @@
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
     <script type="text/javascript">
+    $(document).ready(function () {
+        $('#introModal').modal('show');
+    });    
     $(".exitfrom .minify").click(function() {
         $(".exitfrom.affix").toggleClass("min-height");
+        $(".exitfrom-dropback").removeClass("in");
+    });$(".exitfrom-dropback").click(function() {
+        $(".exitfrom.affix").toggleClass("min-height");
+        $(".exitfrom-dropback").removeClass("in");
     });
     $(".calling").click(function() {
         $(".exitfrom.affix").removeClass("min-height");
+        $(".exitfrom-dropback").addClass("in");
     });
     setTimeout(function() {
         $(".exitfrom").addClass("in");
+        $(".exitfrom-dropback").addClass("in");
     }, 3500);
     </script>
 </body>

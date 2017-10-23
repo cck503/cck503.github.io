@@ -8,7 +8,21 @@
 	border-radius: 20px 20px 0 0;
 	border: 2px solid #FFFFFF;
 	background-color:#FFFFFF;
-  position: 
+}
+.exitfrom-dropback.fade {
+    visibility: hidden;
+    background: rgba(0, 0, 0, .8);
+}
+.exitfrom-dropback.affix {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.exitfrom-dropback.fade.in {
+  visibility: visible;
+  z-index: 99900;
 }
 
 .exitfrom.affix {
@@ -36,6 +50,7 @@
   -o-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+  z-index: 99901;
 }
 .exitfrom.fade.in.min-height {
   -moz-transform: translateY(610px);

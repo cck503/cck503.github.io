@@ -1510,3 +1510,37 @@ body {
         }
     }
 }
+
+
+
+//intro
+.intro-list {
+    .modal-dialog {
+        width: 1220px;
+        margin: 0 auto;
+    }
+    .modal-content {
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+    }
+    .modal-body {
+        padding: 0;
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: @font-size-h1;
+            opacity: 1;
+        }
+    }
+    &.fade {
+        .modal-dialog {
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+    }
+}

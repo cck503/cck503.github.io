@@ -1745,6 +1745,19 @@
         </div>
     </div>
     <footer class="footer-universal"></footer>
+    <!--intro-->
+    <div class="modal intro-list fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="intro-inner">
+                        <img src="public/img/myhome-intro.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--baby Modal -->
     <div class="modal favorit-list fade" id="babyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-sm" role="document">
@@ -2287,6 +2300,9 @@
     setTimeout(function() {
         $(".exitfrom").addClass("in");
     }, 3500);
+    $(document).ready(function () {
+        $('#introModal').modal('show');
+    });
     </script>
 </body>
 
