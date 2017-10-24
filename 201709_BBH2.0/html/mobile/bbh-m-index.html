@@ -480,6 +480,22 @@
             </div>
         </div>
     </div>
+    <!--intro-->
+    <div class="modal intro-list fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="intro-inner">
+                        <img src="public/img/m-index-intro.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="cover-btn-holder text-center">
+                        <a href="" class="btn btn-lg btn-key" data-dismiss="modal" aria-label="Close">開始使用</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
     <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -527,6 +543,11 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#introModal').modal('show');
+    });
+    </script>
 </body>
 
 </html>

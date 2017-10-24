@@ -230,7 +230,6 @@
             </div>
         </nav>
     </header>
-    <div></div>
     <div class="sec-row sec-hero">
         <div class="container">
             <div class="row">
@@ -286,7 +285,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3">
-                    <div class="card-profile">
+                    <div class="card-profile hidden">
                         <form role="form" data-toggle="validator">
                             <div class="span-login">
                                 <p class="lead">登入BabyHome</p>
@@ -310,7 +309,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="card-profile hidden">
+                    <div class="card-profile">
                         <div class="span-profile">
                             <div class="profile-avator">
                                 <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
@@ -325,7 +324,7 @@
                             <div class="detail-inner"><span class="number">10</span><span>關注我</span></div>
                         </div>
                         <div class="optional-info">
-                            <p><a href="" class="btn btn-link"><i class="icon-close-outline"></i></a>尚未設定寶寶，立即<a href="" class="link-blue">前往設定</a></p>
+                            <p>貼文標註寶寶就可以同步紀錄寶貝的成長過程唷！<a href="bbh-myhome.html" class="link-blue">去發表貼文</a></p>
                         </div>
                     </div>
                 </div>
@@ -612,6 +611,22 @@
             </div>
         </div>
     </footer>
+    <!--intro-->
+    <div class="modal intro-list fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="intro-inner">
+                        <img src="public/img/index-intro.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="cover-btn-holder text-center">
+                        <a href="" class="btn btn-lg btn-key" data-dismiss="modal" aria-label="Close">開始使用</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
     <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -660,7 +675,9 @@
     <script src="public/js/feeds-custom.js"></script>
     <script src="public/js/validator.js"></script>
     <script>
-        $('body').chardinJs('start')
+        $(document).ready(function () {
+            $('#introModal').modal('show');
+        });
     </script>
 </body>
 
