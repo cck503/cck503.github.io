@@ -1149,14 +1149,15 @@
         $('#introModal').modal('show');
     });    
     $(".exitfrom .minify").click(function() {
-        $(".exitfrom.affix").toggleClass("min-height");
+        $(".exitfrom.affix").removeClass("in");
         $(".exitfrom-dropback").removeClass("in");
-    });$(".exitfrom-dropback").click(function() {
-        $(".exitfrom.affix").toggleClass("min-height");
+    });
+    $(".exitfrom-dropback").click(function() {
+        $(".exitfrom.affix").removeClass("in");
         $(".exitfrom-dropback").removeClass("in");
     });
     $(".calling").click(function() {
-        $(".exitfrom.affix").removeClass("min-height");
+        $(".exitfrom.affix").addClass("in");
         $(".exitfrom-dropback").addClass("in");
     });
     </script>
