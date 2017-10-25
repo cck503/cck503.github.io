@@ -181,8 +181,17 @@ body {
         font-size: 22px;
         font-weight: 100;
         &:before {
-            content: "●";
+            content: "";
             margin-right: -10px;
+            display: block;
+            width: 9px;
+            height: 9px;
+            position: absolute;
+            background: @gray-dark;
+            margin: auto;
+            top: 5px;
+            bottom: 0;
+            border-radius: 50%;
         }
         >a {
             display: inline-block;
@@ -214,6 +223,7 @@ body {
     .bbh-forum {
         &:before {
             color: @BBH-forum;
+            background: @BBH-forum;
         }
         &.active {
             >a {
@@ -229,6 +239,7 @@ body {
     .bbh-info {
         &:before {
             color: @BBH-info;
+            background: @BBH-info;
         }
         &.active {
             >a {
@@ -244,6 +255,7 @@ body {
     .bbh-mama {
         &:before {
             color: @BBH-mama;
+            background: @BBH-mama;
         }
         &.active {
             >a {
@@ -259,6 +271,7 @@ body {
     .bbh-group {
         &:before {
             color: @BBH-group;
+            background: @BBH-group;
         }
         &.active {
             >a {
@@ -274,6 +287,7 @@ body {
     .bbh-events {
         &:before {
             color: @BBH-events;
+            background: @BBH-events;
         }
         &.active {
             >a {
@@ -289,6 +303,7 @@ body {
     .bbh-shop {
         &:before {
             color: @BBH-shop;
+            background: @BBH-shop;
         }
         &.active {
             >a {

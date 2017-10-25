@@ -1224,6 +1224,29 @@ body {
         padding: 0 @padding-base;
     }
 }
+#link_preview_block {
+    .alert-info();
+    margin: 0 !important;
+    padding: 5px;
+    .link-description {
+        margin: 0;
+        border: 0;
+        width: 100%;
+        >a {
+            display: flex;
+            display: -webkit-flex;
+            -webkit-flex-direction: row;
+            align-items: flex-start;
+            -webkit-align-items: flex-start;
+        }
+        img {
+            width: 30%;
+            height: auto;
+            margin: 0;
+            padding: 5px;
+        }
+    }
+}
 
 
 //connection
