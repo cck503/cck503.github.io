@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome討論區</title>
+    <!-- Bootstrap core CSS -->
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template 
+    <link href="public/css/masthead.css" rel="stylesheet">
+    <link href="public/css/masthead-message-theme.css" rel="stylesheet">-->
+    <link href="public/css/message-theme.css" rel="stylesheet">
+    <link href="public/css/bbh-header-footer-alt.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="public/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="slide-nav">
+        <a href="#" id="nav-close" class="nav-close"></a>
+        <div class="nav-content">
+            <div class="fixed-top">
+                <div class="span-profile hidden">
+                    <div class="flex-h">
+                        <div class="profile-avator-xs">
+                            <a href="bbh-m-login.html"><i class="icon-avator-full"></i><span class="sr-only">Hello，您好</span></a>
+                        </div>
+                        <div class="profile-caption">
+                            <p><a href="bbh-m-login.html">Hello，您好</a></p>
+                        </div>
+                    </div>
+                    <div class="cover-btn-holder flex-h">
+                        <a href="bbh-m-index-login.html" class="btn btn-block btn-key">登入</a>
+                        <a href="bbh-m-register.html" class="btn btn-block btn-key-line">註冊</a>
+                    </div>
+                </div>
+                <div class="span-profile">
+                    <div class="flex-h">
+                        <div class="profile-avator-xs">
+                            <a href="bbh-m-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                        </div>
+                        <div class="profile-caption">
+                            <p><a href="bbh-m-myhome.html">Hi~ 小寶真是可愛</a></p>
+                        </div>
+                    </div>
+                    <div class="profile-detail flex-h">
+                        <div class="detail-inner"><span class="number">20</span><span>貼文</span></div>
+                        <div class="detail-inner"><span class="number">331</span><span>話題</span></div>
+                        <div class="detail-inner"><span class="number">1.1K</span><span>關注我</span></div>
+                        <div class="detail-inner"><span class="number">10K</span><span>Ｑ點</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-menu">
+                <ul class="span-personal-nav">
+                    <li class="channel-list hidden">
+                        <ul>
+                            <li><a href="">討論區</a></li>
+                            <li><a href="">新知</a></li>
+                            <li><a href="">購物</a></li>
+                            <li><a href="">活動</a></li>
+                        </ul>
+                    </li>
+                    <li class="channel-list">
+                        <ul>
+                            <li><span class="badge badge-notify"></span><a href="#">動態消息</a></li>
+                            <li><a href="">相簿</a></li>
+                        </ul>
+                    </li>
+                    <li class="channel-list channel-diff">
+                        <ul>
+                            <li class="list-heading">我的最愛</li>
+                            <li><a href="">討論專區</a></li>
+                            <li class="list-heading">我的討論話題</li>
+                            <li><a href="">我的發表</a></li>
+                            <li><a href="">我的回應</a></li>
+                            <li><a href="">我的訂閱</a></li>
+                            <li><a href="">話題草稿</a></li>
+                        </ul>
+                    </li>
+                    <li class="channel-list">
+                        <ul>
+                            <li><a href="#">部落格(舊)</a></li>
+                            <li><a href="bbh-m-member.html">管理中心</a></li>
+                            <li><a href="bbh-m-index.html">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="nav-footer">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <ul class="secondary-info">
+                                    <li><a href="bbh-m-about.html">關於我們</a></li>
+                                    <li><a href="bbh-m-tos.html">服務條款</a></li>
+                                    <li><a href="bbh-m-policy.html">隱私權政策</a></li>
+                                    <li><a href="">客服信箱</a></li>
+                                    <li><a href="">合作提案</a></li>
+                                    <li><a href="">徵才資訊</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="secondary-info">
+                                    <li><a href="">Q&A</a></li>
+                                    <li><a href="">公告與指南</a></li>
+                                    <li><a href="">客服信箱</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="secondary-info">
+                                    <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <ul class="secondary-info">
+                                    <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="head-universal">
+        <nav class="navbar navbar-default navbar-fixed-top nav-down">
+            <div class="container">
+                <button id="nav-expander" type="button" class="tcon tcon-menu-minus nav-expander" aria-label="toggle menu">
+                    <span class="tcon-menu-lines" aria-hidden="true"></span>
+                    <span class="tcon-visuallyhidden">toggle menu</span>
+                </button>
+                <div class="navbar-header">
+                    <a class="navbar-brand bbh-logo-new" href="bbh-index.html"><img src="public/img/bbh-logo-new.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="bbh-forum"><a href="#">討論</a></li>
+                        <li class="bbh-info"><a href="#">新知</a></li>
+                        <!--
+                        <li class="bbh-mama"><a href="#">媽媽力</a></li>
+                        -->
+                        <li class="bbh-shop"><a href="#">購物</a></li>
+                        <li class="bbh-group"><a href="#">家族</a></li>
+                        <li class="bbh-events"><a href="bbh-events.html">活動</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
+                        <li><span class="badge badge-notify">5</span><a href="#" title="訊息"><i class="icon-message-outline"></i><span class="sr-only">訊息</span></a></li>
+                        <li class="push-note dropdown">
+                            <a href="#" title="通知" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="push-notice">
+                                <p class="notice-head">通知</p>
+                                <div class="notice-list">
+                                    <div class="media">
+                                        <p>目前尚無新通知</p>
+                                    </div>
+                                    <div id="li_573add2f38d056b1438b4567" class="media unread">
+                                        <a href="http://photo.babyhome.com.tw/236111/jeUwdjSYCJ1TcYEK" class="notice-link" name="unread" notice_id="573add2f38d056b1438b4567"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="毛寶2次方">
+                                            <div class="media-body">
+                                                <p class="notice-content">毛寶2次方喜歡您的照片。</p>
+                                                <p class="timeline">2016-05-17 16:58:23</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#573add2f38d056b1438b4567" name="notice_read" title="已閱讀"><i class="icon-check-full-circle"></i></a>
+                                            <a href="#573add2f38d056b1438b4567" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="http://member.babyhome.com.tw/notice" class="btn btn-primary btn-lg btn-block">查看更多</a>
+                            </div>
+                        </li>
+                        <li class="avator hidden">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html">
+                                    <i class="icon-avator-full"></i><span class="sr-only">未登入</span>
+                                 </a>
+                            </div>
+                        </li>
+                        <li class="avator">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""><span class="sr-only">Hi~ 小寶真是可愛</span></a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle nav-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i><span class="sr-only">更多</span></a>
+                            <!--general-->
+                            <ul class="dropdown-menu">
+                                <li class="profile-detail flex-h">
+                                    <div class="detail-inner"><a href=""><span class="number">20</span><span>貼文</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">331</span><span>話題</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">1.1K</span><span>關注我</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">10K</span><span>Ｑ點</span></a></div>
+                                </li>
+                                <li><a href="#">管理中心</a></li>
+                                <li><a href="#">登出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--end-->
+    <div class="container message-main">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 layout-f message-stage">
+                <div class="layout-f flex-col chat-list">
+                    <div class="layout-f list-heading">
+                        <em class="em-hi">BabyHome訊息</em>
+                        <ul class="layout-f">
+                            <li class="act-chat">
+                                <a href="#" data-toggle="modal" data-target="#chatlistModal" title="聊天" alt="聊天"><i class="ion-chatbubble-working"></i></a>
+                            </li>
+                            <li class="act-bbcall">
+                                <span class="blinking-red"></span>
+                                <a href="#">BBCall</a>
+                            </li>
+                            <li class="act-setup">
+                                <a href="#" title="設定" alt="設定"><i class="ion-ios-gear"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-search">
+                        <div class="search-group"><span class="input-group-btn"><button class="btn btn-default" type="button"><i class="ion-android-search"></i></button></span>
+                            <input type="text" class="form-control search-contact" placeholder="搜尋聊天列表" name="keyword">
+                        </div>
+                    </div>
+                    <div class="list-listing" id="chat-list-t">
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item" data-demo2>
+                                <div class="profile-holder"><span class="user-status active" title="上線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">米米魯將米米魯將米米魯將米米魯將</span>
+                                        <div class="time-stamp">4:12 PM</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰左左右右等你來挑戰！</span>
+                                        <span><i class="blinking-red"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group active">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">4:12 PM</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <div class="time-stamp">2017-4-3</div>
+                                    </div>
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-f flex-col chat-content">
+                    <div class="layout-f content-heading">
+                        <div class="min-back visible-xs">
+                            <a href="#" class="btn btn-back"><i class="ion-ios-arrow-left"></i></a>
+                        </div>
+                        <div class="heading-inner">
+                            <h4>yuiyuime<span class="user-status active" title="上線中"><i class="ion-ios-bolt"></i></span><span class="name-note">不同於前一場苦拼至最後一刻至終目，由於柯潔第二戰失誤較多，在棋局第三個小時時就棄子認輸了。</span></h4>
+                        </div>
+                        <div class="dropdown">
+                            <a id="option-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn link-btn option-btn">
+                                <i class="ion-android-more-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="option-drop">
+                                <li><a data-toggle="modal" data-target=".contact-block-modal">加到通訊錄</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal">封鎖訊息</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal">刪除訊息</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-dialogue">
+                        <div class="dialogue-inner">
+                            <p class="text-center time-tag">
+                                <time>2017/4/7(五)</time>
+                            </p>
+                            <div class="chat-bubble-list">
+                                <div class="bubble-container msg-received">
+                                    <div class="bubble-body">
+                                        <p>從小就是被媽媽情緒化打大的孩子，現在即便我的孩子都上小學了，還是常為了小到不能再小的事來教訓我，昨晚又來了，想說久久回家看她一次，果然隔天又因為她看不順眼我跟我兒子，打電話來罵。</p>
+                                    </div>
+                                    <div class="bubble-footer">
+                                        <div class="status-option">
+                                            <p>4:12 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center time-tag">
+                                <time>4/7(五)</time>
+                            </p>
+                            <div class="chat-bubble-list">
+                                <div class="bubble-container msg-received">
+                                    <div class="img-container">
+                                        <div class="bubble-body">
+                                            <!--loader-->
+                                            <div class="loader-span">
+                                                <div class="typing-loader"></div>
+                                            </div>
+                                            <a href="#" data-toggle="modal" data-target="#imgModal">
+                                                <img src="public/img/wallpaper-53960.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="bubble-footer">
+                                            <div class="status-option">
+                                                <p>4:12 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center time-tag">
+                                <time>今天</time>
+                            </p>
+                            <div class="chat-bubble-list">
+                                <div class="bubble-container msg-sent">
+                                    <div class="bubble-body">
+                                        <p>從小就是被媽媽情緒化打大的孩子，現在即便我的孩子都上小學了，還是常為了小到不能再小的事來教訓我，昨晚又來了，想說久久回家看她一次，果然隔天又因為她看不順眼我跟我兒子，打電話來罵。</p>
+                                    </div>
+                                    <div class="bubble-footer">
+                                        <div class="status-option">
+                                            <p>4:12 PM<span class="read-status">已讀</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-bubble-list">
+                                <div class="bubble-container msg-sent">
+                                    <div class="emoji-container">
+                                        <div class="bubble-body">
+                                            <p><img src="public/img/sticker06.png" alt="" class="emoji-bbh"></p>
+                                        </div>
+                                        <div class="bubble-footer">
+                                            <div class="status-option">
+                                                <p>4:12 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-bubble-list msg_from_text">
+                                <div class="bubble-container msg-sent">
+                                    <div class="bubble-body">
+                                        <p>
+                                            <a href="https://info.babyhome.com.tw/article/16081" target="_blank" class="btn-link">https://info.babyhome.com.tw/article/16081</a>
+                                            <div class="link-description">
+                                                <a href="https://info.babyhome.com.tw/article/16081" target="_blank">
+                                                    <img class="img-responsive" src="https://d1tuuacv99jvh2.cloudfront.net/YsinFJl66oJCfrBe_xxl.jpg" alt="">
+                                                    <h5>讓孩子專心吃飯　從拿湯匙吃副食品開始 - BabyHome 新知大耳朵</h5>
+                                                </a>
+                                                <div>很多媽咪都有這樣的經驗，很難讓孩子專心吃飯，不是吃飯時要玩玩具，就...</div>
+                                            </div>
+                                        </p>
+                                    </div>
+                                    <div class="bubble-footer">
+                                        <div class="status-option">
+                                            <p>下午 5:53<span class="read-status"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-bubble-list msg_from_text">
+                                <div class="bubble-container msg-sent">
+                                    <div class="bubble-body">
+                                        <p>
+                                            <a href="https://info.babyhome.com.tw/article/16081" target="_blank" class="btn-link">https://info.babyhome.com.tw/article/16081</a> 讓孩子專心吃飯　從拿湯匙吃副食品開始
+                                            <br>
+                                            <a href="https://info.babyhome.com.tw/article/16081" target="_blank" class="btn-link">https://info.babyhome.com.tw/article/16081</a> 讓孩子專心吃飯　從拿湯匙吃副食品開始
+                                        </p>
+                                    </div>
+                                    <div class="bubble-footer">
+                                        <div class="status-option">
+                                            <p>下午 5:53<span class="read-status"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-f content-inputer">
+                        <div class="layout-f inputer-option">
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-link" id="emoji-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ion-android-happy"></i></a>
+                                <div class="dropdown-menu emoji-menu" aria-labelledby="emoji-btn">
+                                    <!--<div class="dropdown-menu-inner">
+                                        <div class="layout-f flex-col">
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                            </div>
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                            </div>
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                            </div>
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/sticker06.png" alt="..." title="..."></span>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                    <div class="dropdown-menu-inner">
+                                        <div class="layout-f flex-col">
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                            </div>
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                            </div>
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                            </div>
+                                            <div class="layout-f">
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="emoji-option">
+                                        <a href="#" class="btn btn-link active"><img src="public/img/sticker06.png" alt="..." title="..."></a>
+                                        <a href="#" class="btn btn-link"><img src="public/img/1f60a.png" alt="..." title="..."></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-link"><i class="ion-images"></i></a>
+                        </div>
+                        <div class="input-innner">
+                            <div class="input-group">
+                                <!--<input type="text" class="form-control" placeholder="留個話吧‧‧‧" name="">-->
+                                <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea><span class="input-group-btn"><button class="btn btn-submit" type="submit">送出</button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!--contact-list-modal-->
+    <div class="modal fade modal-list" tabindex="-1" role="dialog" id="chatlistModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a type="button" class="btn btn-back" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ion-ios-arrow-left"></i></span></a>
+                    <p class="h4">選擇好友</p>
+                    <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ion-ios-close-empty"></i></span></a>
+                </div>
+                <div class="modal-body">
+                    <div class="list-listing">
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">米米魯將米米魯將米米魯將米米魯將</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group active">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="#" class="layout-f list-group-item">
+                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
+                                <div class="list-txt-holder">
+                                    <div class="layout-f list-text">
+                                        <span class="list-group-item-heading">yuiyuime</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-submit">確定</a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!--flag-modal-->
+    <div class="modal fade flag-modal contact-block-modal" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="text-center message-span">確定要封鎖此會員？
+                        <br>您將不會再收到來自他的私訊</p>
+                </div>
+                <div class="modal-footer">
+                    <ul class="nav-justified">
+                        <li>
+                            <button type="button" class="btn btn-cancel btn-block" data-dismiss="modal">取消</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-post btn-block" id="btn_contact_block">確認</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- Modal -->
+    <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="input-group content-width search-span">
+                        <span class="input-group-btn list-select">
+                            <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
+                        </span>
+                        <input type="text" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"><span class="input-group-btn"><button class="btn btn-link" type="submit"><i class="icon-magnify-glass-line"></i></button></span> </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-history content-width">
+                        <ul>
+                            <li class="list-heading">熱門搜尋</li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">月子中心</a></li>
+                            <li><a href="">懷孕初期</a></li>
+                            <li><a href="">免費索取</a></li>
+                            <li><a href="">會考成績</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                        </ul>
+                        <span class="seperate-line-light"></span>
+                        <ul>
+                            <li class="list-heading">搜尋紀錄</li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">月子中心</a></li>
+                            <li><a href="">懷孕初期</a></li>
+                            <li><a href="">免費索取</a></li>
+                            <li><a href="">會考成績</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <!--<script src="public/js/bootstrap-tour.js"></script>
+    <script src="public/js/bootstrap-tour2.js"></script>
+    <script src="public/js/message-tour1.js"></script>
+    mobile-ver
+    <script src="public/js/message-tour1-mobile.js"></script>
+    <script src="public/js/message-tour2-mobile.js"></script>-->
+    <script src="public/js/header-custom.js"></script>
+    <script src="public/js/message-custom.js"></script>
+    <script src="public/js/m-header-custom.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="public/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

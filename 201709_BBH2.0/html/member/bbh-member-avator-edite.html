@@ -29,9 +29,10 @@
     <header class="head-universal">
         <nav class="navbar navbar-default navbar-fixed-top nav-down">
             <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand bbh-logo-new" href="bbh-index.html"><img src="../web/public/img/bbh-logo-new.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
+                <!---->
+                <div class="navbar-header"><a class="navbar-brand bbh-logo-new" href="bbh-index.html"><img src="../web/public/img/bbh-logo-new.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
                 </div>
+                
                 <div id="navbar">
                     <ul class="nav navbar-nav">
                         <li class="bbh-forum"><a href="#">討論</a></li>
@@ -45,7 +46,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
-                        <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
+                        <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-message-outline"></i><span class="sr-only">訊息</span></a></li>
                         <li class="push-note dropdown">
                             <a href="#" title="通知" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a>
                             <div class="dropdown-menu" role="menu" aria-labelledby="push-notice">
@@ -148,13 +149,30 @@
                                 <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""><span class="sr-only">Hi~ 小寶真是可愛</span></a>
                             </div>
                         </li>
-                        <li class="dropdown"><span class="badge badge-notify"></span><a href="#" class="dropdown-toggle nav-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i><span class="sr-only">更多</span></a>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle nav-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i><span class="sr-only">更多</span></a>
+                            <!--general
                             <ul class="dropdown-menu">
                                 <li class="profile-detail flex-h">
-                                    <div class="detail-inner"><span class="number">20</span><span>貼文</span></div>
-                                    <div class="detail-inner"><span class="number">331</span><span>話題</span></div>
-                                    <div class="detail-inner"><span class="number">1.1K</span><span>關注我</span></div>
-                                    <div class="detail-inner"><span class="number">10K</span><span>Ｑ點</span></div>
+                                    <div class="detail-inner"><a href=""><span class="number">20</span><span>貼文</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">331</span><span>話題</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">1.1K</span><span>關注我</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">10K</span><span>Ｑ點</span></a></div>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><a href="#">管理中心</a></li>
+                                        <li><a href="#">登出</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            -->
+                            <!--討論區
+                            <ul class="dropdown-menu">
+                                <li class="profile-detail flex-h">
+                                    <div class="detail-inner"><a href=""><span class="number">20</span><span>貼文</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">331</span><span>話題</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">1.1K</span><span>關注我</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">10K</span><span>Ｑ點</span></a></div>
                                 </li>
                                 <li class="list-heading">討論區</li>
                                 <li><a href="">最愛專區</a></li>
@@ -162,141 +180,662 @@
                                 <li><a href="">我的話題</a></li>
                                 <li><a href="">話題草稿</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><span class="badge badge-notify"></span><a href="#">動態消息</a></li>
                                 <li><a href="#">管理中心</a></li>
                                 <li><a href="#">登出</a></li>
                             </ul>
-                        </li>
+                            -->
+                            <!--購物
+                            <ul class="dropdown-menu">
+                                <li class="profile-detail flex-h">
+                                    <div class="detail-inner"><a href=""><span class="number">20</span><span>貼文</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">331</span><span>話題</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">1.1K</span><span>關注我</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">10K</span><span>Ｑ點</span></a></div>
+                                </li>
+                                <li class="list-heading channel-list">購物
+                                    <ul>
+                                        <li><a href="">訂單明細查詢</a></li>
+                                        <li><a href="">個人優惠查詢</a></li>
+                                        <li><a href="">追蹤清單</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><a href="#">管理中心</a></li>
+                                        <li><a href="#">登出</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            -->
+                            <!--myhome-->
+                            <ul class="dropdown-menu">
+                                <li class="profile-detail flex-h">
+                                    <div class="detail-inner"><a href=""><span class="number">20</span><span>貼文</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">331</span><span>話題</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">1.1K</span><span>關注我</span></a></div>
+                                    <div class="detail-inner"><a href=""><span class="number">10K</span><span>Ｑ點</span></a></div>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><a href="">相簿</a>
+                                    </ul>
+                                    </li>
+                                    <li class="list-heading">
+                                        <ul>
+                                            <li><a href="#">管理中心</a></li>
+                                            <li><a href="#">登出</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                            </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <div class="container member-page">
-        <div class="modal modal_profile" id="profile_setting" style="display: block;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">更換個人照片</h4>
+    <div class="row member-center">
+        <div class="col-side">
+            <div class="dashboard">
+    <div class="media">
+        <div class="pull-left">
+
+        <a class="avatar new_member_avatar" href="https://member.babyhome.com.tw/avatar/iframe/frame">
+                        <img class="media-object" src="https://f-member.babyhome.com.tw/avatar/41/749341.jpg?59">
+        </a>
+        <a href="https://member.babyhome.com.tw/avatar/iframe/frame" class="avatar-opt new_member_avatar">更換大頭貼</a>
+        </div>
+        <div class="media-body">
+            <p class="nickname">小寶真是可愛</p>
+                            <p class="rank-lvl"><span class="rank-01"></span>普通會員<a href="http://www.babyhome.com.tw/main/member/vip.php" class="origin-link">升級</a></p>
+                        
+                            <a href="https://member.babyhome.com.tw/setting/mobile_identity" class="btn btn-default btn-verification"><i class="ion-iphone"></i>手機認證</a>
                     </div>
-                    <div class="modal-body">
-                        <div class="modal-control">
-                            <ul class="nav nav-tabs col-xs-3">
-                                <li class="active"><a href="#upload_album" data-toggle="tab">從相簿選擇</a></li>
-                                <li><a href="#upload_local" data-toggle="tab">上傳照片</a></li>
-                            </ul>
-                            <div class="tab-content col-xs-9">
-                                <div class="tab-pane fade in active" id="upload_album">
-                                    <div class="form-group clearfix">
-                                        <label for="album_describe" class="col-xs-2 control-label">選擇相簿</label>
-                                        <div class="col-xs-5">
-                                            <select class="form-control" name="folder_id" id="folder_id">
-                                                <option value="">請選擇</option>
-                                                <option value="all">所有相簿</option>
-                                                <option value="87713">123</option>
-                                                <option value="87715">345</option>
-                                                <option value="6791">高小毛就是我 - 家庭相簿分類</option>
-                                                <option value="36893">123</option>
-                                                <option value="282">private</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xs-5">
-                                            <select class="form-control" name="album_id" id="album_id">
-                                                <option value="">請選擇</option>
-                                                <option value="402">car_show</option>
-                                                <option value="406">family_trip</option>
-                                                <option value="723">other</option>
-                                                <option value="868">檸檬巷</option>
-                                                <option value="98359">我的相簿</option>
-                                                <option value="98363">小寶</option>
-                                                <option value="176747">BabyHome Familyday</option>
-                                                <option value="668775">2014母親節活動</option>
-                                                <option value="750691">桃源仙谷</option>
-                                                <option value="1195123">APP上傳</option>
-                                                <option value="1800305">母親節活動</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <ul class="file-manage clearfix ui-sortable ui-sortable-disabled ui-selectable" id="wall_photos">
-                                        <li id="ZaNx0z7yEZnlBZRC" class="ui-selectee" name="check_photo"><img src="http://f.photo.babyhome.com.tw/ZaNx0z7yEZnlBZRC_xxl.jpg" class="cover ui-selectee"></li>
-                                        <li id="7UDvCN45m4VCeqC8" class="ui-selectee" name="check_photo"><img src="http://f.photo.babyhome.com.tw/7UDvCN45m4VCeqC8_xxl.jpg" class="cover ui-selectee"></li>
-                                        <li id="UbN1gX6NWrhAlkJQ" class="ui-selectee" name="check_photo"><img src="http://f.photo.babyhome.com.tw/UbN1gX6NWrhAlkJQ_xxl.jpg" class="cover ui-selectee"></li>
-                                        <li id="OnbJK1BWzr8ib9vU" class="ui-selectee" name="check_photo"><img src="http://f.photo.babyhome.com.tw/OnbJK1BWzr8ib9vU_xxl.jpg" class="cover ui-selectee"></li>
-                                        <li id="oIMa0VT4i8I6phxG" class="ui-selectee" name="check_photo"><img src="http://f.photo.babyhome.com.tw/oIMa0VT4i8I6phxG_xxl.jpg" class="cover ui-selectee"></li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane fade" id="upload_local">
-                                    <form id="upload_form" method="post" enctype="multipart/form-data">
-                                        <div class="upload-f">
-                                            <input type="file" id="avatar_img" name="avatar_img">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn cancle_btn" data-dismiss="modal">取消</button>
-                        <button type="button" class="btn submit_btn" id="submit_folder_create" data-toggle="modal" data-target="#profile_editing">下一步</button>
-                    </div>
-                </div>
-                <div class="modal-content hidden">
-                    <div class="modal-header">
-                        <h4 class="modal-title">更換個人照片</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-control" style="height: 480px;">
-                            <!--#cropimage width=#cropbox-->
-                            <div id="cropimage" class="crop_holder"><img id="cropbox" src="http://f.photo.babyhome.com.tw/gIavOvct27wc7A7p_xxl.jpg?756" style="display: none; visibility: hidden; width: 533px; height: 400px;">
-                                <div class="jcrop-holder" style="width: 533px; height: 400px; position: relative; background-color: black;">
-                                    <div style="position: absolute; z-index: 600; width: 160px; height: 160px; top: 0px; left: 0px;">
-                                        <div style="width: 100%; height: 100%; z-index: 310; position: absolute; overflow: hidden;"><img src="http://f.photo.babyhome.com.tw/gIavOvct27wc7A7p_xxl.jpg?756" style="border: none; visibility: visible; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; width: 533px; height: 400px;">
-                                            <div class="jcrop-hline" style="position: absolute; opacity: 0.4;"></div>
-                                            <div class="jcrop-hline bottom" style="position: absolute; opacity: 0.4;"></div>
-                                            <div class="jcrop-vline right" style="position: absolute; opacity: 0.4;"></div>
-                                            <div class="jcrop-vline" style="position: absolute; opacity: 0.4;"></div>
-                                            <div class="jcrop-tracker" style="cursor: move; position: absolute; z-index: 360;"></div>
-                                        </div>
-                                        <div style="width: 100%; height: 100%; z-index: 320; display: block;">
-                                            <div class="ord-n jcrop-dragbar" style="cursor: n-resize; position: absolute; z-index: 370;"></div>
-                                            <div class="ord-s jcrop-dragbar" style="cursor: s-resize; position: absolute; z-index: 371;"></div>
-                                            <div class="ord-e jcrop-dragbar" style="cursor: e-resize; position: absolute; z-index: 372;"></div>
-                                            <div class="ord-w jcrop-dragbar" style="cursor: w-resize; position: absolute; z-index: 373;"></div>
-                                            <div class="ord-n jcrop-handle" style="cursor: n-resize; position: absolute; z-index: 374; opacity: 0.5;"></div>
-                                            <div class="ord-s jcrop-handle" style="cursor: s-resize; position: absolute; z-index: 375; opacity: 0.5;"></div>
-                                            <div class="ord-e jcrop-handle" style="cursor: e-resize; position: absolute; z-index: 376; opacity: 0.5;"></div>
-                                            <div class="ord-w jcrop-handle" style="cursor: w-resize; position: absolute; z-index: 377; opacity: 0.5;"></div>
-                                            <div class="ord-nw jcrop-handle" style="cursor: nw-resize; position: absolute; z-index: 378; opacity: 0.5;"></div>
-                                            <div class="ord-ne jcrop-handle" style="cursor: ne-resize; position: absolute; z-index: 379; opacity: 0.5;"></div>
-                                            <div class="ord-se jcrop-handle" style="cursor: se-resize; position: absolute; z-index: 380; opacity: 0.5;"></div>
-                                            <div class="ord-sw jcrop-handle" style="cursor: sw-resize; position: absolute; z-index: 381; opacity: 0.5;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="jcrop-tracker" style="width: 537px; height: 404px; position: absolute; top: -2px; left: -2px; z-index: 290; cursor: crosshair;"></div>
-                                    <input type="radio" class="jcrop-keymgr" style="position: fixed; left: -1000px; width: 12px;"><img src="http://f.photo.babyhome.com.tw/gIavOvct27wc7A7p_xxl.jpg?756" style="display: block; visibility: visible; width: 533px; height: 400px; border: none; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; opacity: 0.6;"></div>
-                            </div>
-                            <!-- <div id="previewbox" style="width:90px;height:90px;overflow:hidden;margin-left:5px;"> -->
-                            <!-- <img src="" id="preview" /> -->
-                            <div class="instruction">
-                                <span class="title">
-                        選取區塊說明:
-                    </span>
-                                <p>滑鼠點選圖片，再拖拉想要的區塊大小或移動區塊到想要的位置，再點選
-                                    <span class="submit_btn">設定完成</span>按鈕
-                                </p>
-                                <!-- This is the form that our event handler fills -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn cancle_btn" data-dismiss="modal">上一步，重新選擇照片</button>
-                        <button type="button" class="btn submit_btn" id="submit_avatar_create">設定完成</button>
-                    </div>
+    </div>
+    <div>
+        <a href="http://www.babyhome.com.tw/babymain.php" type="button" class="btn btn-default btn-blog btn-mem-yellow"><i class="ion-edit"></i>我的部落格</a>
+        <a href="http://photo.babyhome.com.tw" class="btn btn-default btn-photo btn-mem-yellow"><i class="ion-image"></i>我的相簿</a>
+    </div>
+</div>
+
+<div class="sidebar-nav" id="">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#account_manage" class="manage">會員帳戶管理</a>
+            </div>
+            <div id="account_manage" class="panel-collapse collapse in">
+                <div class="panel-body list-group">
+                    <a href="https://member.babyhome.com.tw/setting?" class="list-group-item active">會員資料修改</a>
+                    <a href="https://member.babyhome.com.tw/setting/account" class="list-group-item ">密碼修改</a>
+                    <a href="https://member.babyhome.com.tw/personal" class="list-group-item ">個人專屬網址 </a>
+                    <a href="https://member.babyhome.com.tw/setting/baby?" class="list-group-item ">寶寶設定</a>
+                    <a href="https://member.babyhome.com.tw/setting/privacy?" class="list-group-item ">隱私設定</a>
+                    <a href="https://member.babyhome.com.tw/setting/vip" class="list-group-item ">VIP</a>
+                    <a href="https://member.babyhome.com.tw/setting/eletter" class="list-group-item ">電子報訂閱</a>
                 </div>
             </div>
         </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                                <a target="_blank" data-parent="#accordion" href="https://forum.babyhome.com.tw/my/topic" class="notice">討論區話題</a>
+            </div>
+                    </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a target="_blank" data-parent="#accordion" href="http://member.babyhome.com.tw/notice" class="notice">通知</a>
+            </div>
+            <!--<div id="" class="panel-collapse collapse">
+                <div class="panel-body list-group">
+
+                </div>
+            </div>-->
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#message_manage" class="topics" id="message-t">訊息</a>
+            </div>
+            <div id="message_manage" class="panel-collapse collapse ">
+                <div class="panel-body list-group">
+                    <a href="#" onclick="javascript:window.open('https://message.babyhome.com.tw','BBHMSG');" class="list-group-item">聊天列表</a>
+                    <a href="https://member.babyhome.com.tw/message/contact" class="list-group-item ">通訊錄</a>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#ban" class="topics" id="message-t">封鎖管理</a>
+            </div>
+            <div id="ban" class="panel-collapse collapse ">
+                <div class="panel-body list-group">
+                    <a href="https://member.babyhome.com.tw/message/block" class="list-group-item ">封鎖訊息名單</a>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a target="_blank" data-parent="#accordion" href="http://www.babyhome.com.tw/bbcc.php" class="bbcall">BBCall</a>
+            </div>
+            <!--<div id="" class="panel-collapse collapse">
+                <div class="panel-body list-group">
+                
+                </div>
+            </div>-->
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-parent="#accordion" href="https://member.babyhome.com.tw/order" class="bbhinvoice">BBH訂單</a>
+            </div>                            
+        </div>
+
+                <div class="panel panel-default">
+            <div class="panel-heading">
+                <a target="_blank" data-parent="#accordion" href="http://www.babyhome.com.tw/mycontact.php?mid=756648" class="friends">我的好友</a>
+            </div>
+            <!--<div id="" class="panel-collapse collapse">
+                <div class="panel-body list-group">
+                
+                </div>
+            </div>-->
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a target="_blank" data-parent="#accordion" href="http://www.babyhome.com.tw/qpoint/?MYQPOINT" class="qpoint">我的Q點</a>
+            </div>
+            <!--<div id="" class="panel-collapse collapse">
+                <div class="panel-body list-group">
+                
+                </div>
+            </div>-->
+        </div>
+        <!-- <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#topic-manage" class="activity">活動紀錄</a>
+            </div> -->
+            <!--<div id="" class="panel-collapse collapse">
+                <div class="panel-body list-group">
+                
+                </div>
+            </div>-->
+        <!-- </div> -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a target="_blank" data-parent="#accordion" href="https://member.babyhome.com.tw/qa" class="qa">Q&amp;A</a>
+            </div>
+            <!--<div id="" class="panel-collapse collapse">
+                <div class="panel-body list-group">
+                
+                </div>
+            </div>-->
+        </div>
+
     </div>
+</div>
+
+
+                    </div>
+        <div class="col-main">
+            <div class="form-list">
+                <p class="heading">會員資料修改</p>
+                <form name="frm_edit" id="frm_edit" method="post" class="form-horizontal"> 
+                    <div class="form-group">
+                       <label for="name">Email</label><span class="account-name">cck503@yahoo.com.tw</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="name"><span class="reqired">*</span>姓名</label>
+                        <input type="text" class="form-control input-lg" name="name" id="name" placeholder="請輸入您的姓名" value="robert">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender"><span class="reqired">*</span>性別</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" value="female">女
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" value="male" checked="">男
+                        </label>
+                    </div>
+                    <!--輸入錯誤 class="has-error"-->
+                    <div class="form-group">
+                        <label for="nickname"><span class="reqired">*</span>暱稱</label>
+                        <input type="text" class="form-control input-lg" name="nickname" id="nickname" placeholder="請輸入您的暱稱" value="小寶真是可愛">
+                        <p class="alert alert-danger">於留言時顯示，請勿使用跟其他人類似的暱稱，以免造成困擾。</p>
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group select-spacing">
+                            <label for="birthday">
+                                <span class="reqired">*</span>生日</label>
+                            <select class="form-control" id="birthday_year" name="birthday_year">
+                                <option value="">請選擇</option>
+                                                                    <option value="2018">2018</option>
+                                                                    <option value="2017">2017</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="2015">2015</option>
+                                                                    <option value="2014">2014</option>
+                                                                    <option value="2013">2013</option>
+                                                                    <option value="2012">2012</option>
+                                                                    <option value="2011">2011</option>
+                                                                    <option value="2010">2010</option>
+                                                                    <option value="2009">2009</option>
+                                                                    <option value="2008">2008</option>
+                                                                    <option value="2007">2007</option>
+                                                                    <option value="2006">2006</option>
+                                                                    <option value="2005">2005</option>
+                                                                    <option value="2004">2004</option>
+                                                                    <option value="2003">2003</option>
+                                                                    <option value="2002">2002</option>
+                                                                    <option value="2001">2001</option>
+                                                                    <option value="2000">2000</option>
+                                                                    <option value="1999">1999</option>
+                                                                    <option value="1998">1998</option>
+                                                                    <option value="1997">1997</option>
+                                                                    <option value="1996">1996</option>
+                                                                    <option value="1995">1995</option>
+                                                                    <option value="1994">1994</option>
+                                                                    <option value="1993">1993</option>
+                                                                    <option value="1992">1992</option>
+                                                                    <option value="1991">1991</option>
+                                                                    <option value="1990">1990</option>
+                                                                    <option value="1989">1989</option>
+                                                                    <option value="1988">1988</option>
+                                                                    <option value="1987">1987</option>
+                                                                    <option value="1986">1986</option>
+                                                                    <option value="1985">1985</option>
+                                                                    <option value="1984">1984</option>
+                                                                    <option value="1983">1983</option>
+                                                                    <option value="1982">1982</option>
+                                                                    <option value="1981">1981</option>
+                                                                    <option value="1980">1980</option>
+                                                                    <option value="1979">1979</option>
+                                                                    <option value="1978">1978</option>
+                                                                    <option value="1977">1977</option>
+                                                                    <option value="1976">1976</option>
+                                                                    <option value="1975">1975</option>
+                                                                    <option value="1974">1974</option>
+                                                                    <option value="1973">1973</option>
+                                                                    <option value="1972">1972</option>
+                                                                    <option value="1971">1971</option>
+                                                                    <option value="1970">1970</option>
+                                                                    <option value="1969">1969</option>
+                                                                    <option value="1968">1968</option>
+                                                                    <option value="1967">1967</option>
+                                                                    <option value="1966">1966</option>
+                                                                    <option value="1965">1965</option>
+                                                                    <option value="1964">1964</option>
+                                                                    <option value="1963">1963</option>
+                                                                    <option value="1962">1962</option>
+                                                                    <option value="1961">1961</option>
+                                                                    <option value="1960">1960</option>
+                                                                    <option value="1959">1959</option>
+                                                                    <option value="1958">1958</option>
+                                                                    <option value="1957">1957</option>
+                                                                    <option value="1956">1956</option>
+                                                                    <option value="1955">1955</option>
+                                                                    <option value="1954">1954</option>
+                                                                    <option value="1953">1953</option>
+                                                                    <option value="1952">1952</option>
+                                                                    <option value="1951">1951</option>
+                                                                    <option value="1950">1950</option>
+                                                                    <option value="1949">1949</option>
+                                                                    <option value="1948">1948</option>
+                                                                    <option value="1947">1947</option>
+                                                                    <option value="1946">1946</option>
+                                                                    <option value="1945">1945</option>
+                                                                    <option value="1944">1944</option>
+                                                                    <option value="1943">1943</option>
+                                                                    <option value="1942">1942</option>
+                                                                    <option value="1941">1941</option>
+                                                                    <option value="1940">1940</option>
+                                                                    <option value="1939">1939</option>
+                                                                    <option value="1938">1938</option>
+                                                                    <option value="1937">1937</option>
+                                                                    <option value="1936">1936</option>
+                                                                    <option value="1935">1935</option>
+                                                                    <option value="1934">1934</option>
+                                                                    <option value="1933">1933</option>
+                                                                    <option value="1932">1932</option>
+                                                                    <option value="1931">1931</option>
+                                                                    <option value="1930">1930</option>
+                                                            </select>年
+                            <select class="form-control" id="birthday_month" name="birthday_month">
+                                <option value="">請選擇</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                            </select>月
+                            <select class="form-control" id="birthday_day" name="birthday_day">
+                                <option value="">請選擇</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="31">31</option>
+                                                            </select>日
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">聯絡電話</label>
+                        <input type="tel" class="form-control input-lg" name="telephone" id="telephone" placeholder="範例：02-12345678" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><span class="reqired">*</span>行動電話</label>
+                                                    <a href="https://member.babyhome.com.tw/setting/mobile_identity" class="btn btn-default btn-verification"><i class="ion-iphone"></i>手機認證</a>
+                                                
+                        <input type="text" class="form-control input-lg" name="phone" id="phone" placeholder="範例：0912345678" value="0999999999">
+                        <p class="alert alert-danger">更改手機號碼須重新進行認證。</p>
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="address"><span class="reqired">*</span>地址</label>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <select class="form-control" id="city" name="city">
+                                        <option value="">請選擇</option>
+                                                                                                                                    <optgroup label="台灣地區">
+                                                                                                            <option selected="" value="1">台北市</option>
+                                                                                                            <option value="2">基隆市</option>
+                                                                                                            <option value="3">新北市</option>
+                                                                                                            <option value="4">宜蘭縣</option>
+                                                                                                            <option value="5">新竹市</option>
+                                                                                                            <option value="6">新竹縣</option>
+                                                                                                            <option value="7">桃園市</option>
+                                                                                                            <option value="8">苗栗縣</option>
+                                                                                                            <option value="9">台中市</option>
+                                                                                                            <option value="11">彰化縣</option>
+                                                                                                            <option value="12">南投縣</option>
+                                                                                                            <option value="13">雲林縣</option>
+                                                                                                            <option value="14">嘉義市</option>
+                                                                                                            <option value="15">嘉義縣</option>
+                                                                                                            <option value="16">台南市</option>
+                                                                                                            <option value="18">高雄市</option>
+                                                                                                            <option value="20">屏東縣</option>
+                                                                                                            <option value="21">花蓮縣</option>
+                                                                                                            <option value="22">台東縣</option>
+                                                                                                            <option value="23">澎湖縣</option>
+                                                                                                            <option value="24">金門縣</option>
+                                                                                                            <option value="25">連江縣</option>
+                                                                                                    </optgroup>
+                                                                                            <optgroup label="海外地區">
+                                                                                                            <option value="26">大陸地區</option>
+                                                                                                            <option value="27">港澳地區</option>
+                                                                                                            <option value="28">加拿大</option>
+                                                                                                            <option value="29">美國</option>
+                                                                                                            <option value="30">中南美洲</option>
+                                                                                                            <option value="31">日本</option>
+                                                                                                            <option value="32">英國</option>
+                                                                                                            <option value="33">法國</option>
+                                                                                                            <option value="34">歐洲地區</option>
+                                                                                                            <option value="35">亞洲地區</option>
+                                                                                                            <option value="36">非洲地區</option>
+                                                                                                            <option value="37">澳洲</option>
+                                                                                                            <option value="38">其它地區</option>
+                                                                                                    </optgroup>
+                                                                                                                        </select>
+                                </div> 
+                                <input type="hidden" name="area_value" id="area_value" value="100">
+                                <div class="col-xs-6">
+                                    <select class="form-control" id="area" name="area"><option value="">請選擇</option><option value="100">中正區</option><option value="103">大同區</option><option value="104">中山區</option><option value="105">松山區</option><option value="106">大安區</option><option value="108">萬華區</option><option value="110">信義區</option><option value="111">士林區</option><option value="112">北投區</option><option value="114">內湖區</option><option value="115">南港區</option><option value="116">文山區</option></select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                <label class="sr-only" for="zipcode">郵遞區號</label>
+                                <input type="text" readonly="" class="form-control" name="zipcode" id="zipcode" placeholder="郵遞區號" value="100">
+                            </div>
+                            <div class="col-xs-9">
+                                <label class="sr-only" for="address2">地址</label>
+                                <input type="text" class="form-control" name="address" id="address" placeholder="輸入地址" value="忠孝東路">
+                            </div>
+                            </div>                                
+                        </div>
+                    </div>
+                                        <div class="form-group">
+                        <label for="idno">身分證字號</label>
+                        <input type="text" class="form-control input-lg" name="pid" id="pid" placeholder="身分證字號" value="">
+                        <p class="alert alert-danger">如遇贈獎活動或討論區匿名發言時，需填寫身份證字號；設定後無法再更改。</p>
+                    </div>
+                                        <div class="form-inline">
+                        <div class="form-group select-spacing">
+                            <label for="marry">結婚紀念日</label>
+                            <select class="form-control" id="marry_year" name="marry_year">
+                                <option value="">請選擇</option>
+                                                                    <option value="2018">2018</option>
+                                                                    <option value="2017">2017</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="2015">2015</option>
+                                                                    <option value="2014">2014</option>
+                                                                    <option value="2013">2013</option>
+                                                                    <option value="2012">2012</option>
+                                                                    <option value="2011">2011</option>
+                                                                    <option value="2010">2010</option>
+                                                                    <option value="2009">2009</option>
+                                                                    <option value="2008">2008</option>
+                                                                    <option value="2007">2007</option>
+                                                                    <option value="2006">2006</option>
+                                                                    <option value="2005">2005</option>
+                                                                    <option value="2004">2004</option>
+                                                                    <option value="2003">2003</option>
+                                                                    <option value="2002">2002</option>
+                                                                    <option value="2001">2001</option>
+                                                                    <option value="2000">2000</option>
+                                                                    <option value="1999">1999</option>
+                                                                    <option value="1998">1998</option>
+                                                                    <option value="1997">1997</option>
+                                                                    <option value="1996">1996</option>
+                                                                    <option value="1995">1995</option>
+                                                                    <option value="1994">1994</option>
+                                                                    <option value="1993">1993</option>
+                                                                    <option value="1992">1992</option>
+                                                                    <option value="1991">1991</option>
+                                                                    <option value="1990">1990</option>
+                                                                    <option value="1989">1989</option>
+                                                                    <option value="1988">1988</option>
+                                                                    <option value="1987">1987</option>
+                                                                    <option value="1986">1986</option>
+                                                                    <option value="1985">1985</option>
+                                                                    <option value="1984">1984</option>
+                                                                    <option value="1983">1983</option>
+                                                                    <option value="1982">1982</option>
+                                                                    <option value="1981">1981</option>
+                                                                    <option value="1980">1980</option>
+                                                                    <option value="1979">1979</option>
+                                                                    <option value="1978">1978</option>
+                                                                    <option value="1977">1977</option>
+                                                                    <option value="1976">1976</option>
+                                                                    <option value="1975">1975</option>
+                                                                    <option value="1974">1974</option>
+                                                                    <option value="1973">1973</option>
+                                                                    <option value="1972">1972</option>
+                                                                    <option value="1971">1971</option>
+                                                                    <option value="1970">1970</option>
+                                                                    <option value="1969">1969</option>
+                                                                    <option value="1968">1968</option>
+                                                                    <option value="1967">1967</option>
+                                                                    <option value="1966">1966</option>
+                                                                    <option value="1965">1965</option>
+                                                                    <option value="1964">1964</option>
+                                                                    <option value="1963">1963</option>
+                                                                    <option value="1962">1962</option>
+                                                                    <option value="1961">1961</option>
+                                                                    <option value="1960">1960</option>
+                                                                    <option value="1959">1959</option>
+                                                                    <option value="1958">1958</option>
+                                                                    <option value="1957">1957</option>
+                                                                    <option value="1956">1956</option>
+                                                                    <option value="1955">1955</option>
+                                                                    <option value="1954">1954</option>
+                                                                    <option value="1953">1953</option>
+                                                                    <option value="1952">1952</option>
+                                                                    <option value="1951">1951</option>
+                                                                    <option value="1950">1950</option>
+                                                                    <option value="1949">1949</option>
+                                                                    <option value="1948">1948</option>
+                                                                    <option value="1947">1947</option>
+                                                                    <option value="1946">1946</option>
+                                                                    <option value="1945">1945</option>
+                                                                    <option value="1944">1944</option>
+                                                                    <option value="1943">1943</option>
+                                                                    <option value="1942">1942</option>
+                                                                    <option value="1941">1941</option>
+                                                                    <option value="1940">1940</option>
+                                                            </select>年
+                            <select class="form-control" id="marry_month" name="marry_month">
+                                <option value="">請選擇</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                            </select>月
+                            <select class="form-control" id="marry_day" name="marry_day">
+                                <option value="">請選擇</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="31">31</option>
+                                                            </select>日
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 float-non">
+                        <label for="industry"><span class="reqired">*</span>公司產業類別</label>
+                        <select class="form-control input-lg" id="industry" name="industry">
+                                                            <option value="0" selected="">請選擇</option>
+                                                            <option value="1">全職爸爸/媽媽</option>
+                                                            <option value="2">資訊、電腦</option>
+                                                            <option value="3">娛樂/出版</option>
+                                                            <option value="4">金融/保險</option>
+                                                            <option value="5">房地產</option>
+                                                            <option value="6">政府機關</option>
+                                                            <option value="7">軍警</option>
+                                                            <option value="8">教育/研究</option>
+                                                            <option value="9">經商、貿易</option>
+                                                            <option value="10">建築/營造</option>
+                                                            <option value="11">服務</option>
+                                                            <option value="12">醫療</option>
+                                                            <option value="13">法律相關行業</option>
+                                                            <option value="14">流通/零售</option>
+                                                            <option value="15">交通/運輸/旅遊</option>
+                                                            <option value="16">傳播/公共關係/廣告/行銷</option>
+                                                            <option value="17">藝術</option>
+                                                            <option value="18">農漁牧</option>
+                                                            <option value="19">學生</option>
+                                                            <option value="20">其他</option>
+                                
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-6 float-non">
+                        <label for="company">職務類別</label>
+                        <select class="form-control input-lg" id="job" name="job">
+                                                            <option value="0" selected="">請選擇</option>
+                                                            <option value="1">全職爸爸/媽媽</option>
+                                                            <option value="2">人資</option>
+                                                            <option value="3">業務</option>
+                                                            <option value="4">客服</option>
+                                                            <option value="5">行銷</option>
+                                                            <option value="6">生產</option>
+                                                            <option value="7">企劃</option>
+                                                            <option value="8">經營管理</option>
+                                                            <option value="9">採購</option>
+                                                            <option value="10">行政總務</option>
+                                                            <option value="11">幕僚</option>
+                                                            <option value="12">財務</option>
+                                                            <option value="13">品管</option>
+                                                            <option value="14">研發</option>
+                                                            <option value="15">資訊</option>
+                                                            <option value="16">法務</option>
+                                                            <option value="17">稅務</option>
+                                                            <option value="18">稽核</option>
+                                                            <option value="19">其他</option>
+                                                    </select>
+                    </div>
+                    <div class="form-group col-xs-6 float-non">
+                        <label for="company">家庭月收入</label>
+                        <select class="form-control input-lg" id="income" name="income">
+                                                            <option value="0" selected="">請選擇</option>
+                                                            <option value="1">30,000元及以下</option>
+                                                            <option value="2">30,001~50,000元</option>
+                                                            <option value="3">50,001~70,000元</option>
+                                                            <option value="4">70,001~90,000元</option>
+                                                            <option value="5">90,001~150,000元</option>
+                                                            <option value="6">150,001~200,000元</option>
+                                                            <option value="7">200,001元及以上</option>
+                                                    </select>
+                    </div>
+                    <button id="btn_edit_member" type="button" class="btn btn-default btn-lg btn-block form-submit">確&nbsp;&nbsp;定</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
     <footer class="footer-universal">
         <div class="container">
             <div class="footer-inner">

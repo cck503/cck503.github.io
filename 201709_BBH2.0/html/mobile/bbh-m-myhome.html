@@ -11,7 +11,7 @@
     <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
-    <link href="public/css/m-member_task.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="public/css/m-member_task.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -164,8 +164,13 @@
                             </div>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
-                                <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
-                                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
+                                <li><span class="badge badge-notify">55</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                                <li>
+                                    <div class="profile-avator-xs">
+                                        <a href="bbh-m-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -234,8 +239,11 @@
                             <div class="profile-avator">
                                 <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="三寶三寶10個月"><img src="http://lorempixel.com/80/80/people" alt=""></a>
                             </div>
-                            <div class="optional-info">
+                            <div class="alert alert-info optional-info">
+                                <!--寶寶設定提示-->
                                 <p>尚未設定寶寶，立即<a href="" class="link-blue">前往設定</a></p>
+                                <!--更換大頭貼提示-->
+                                <p>更換<a href="" class="link-blue">寶貝大頭貼</a></p>
                             </div>
                         </div>
                         <div class="span-detail flex-h">
@@ -270,7 +278,8 @@
                 <div class="row">
                     <div class="alert alert-info" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <p>哈囉~歡迎回來！今天發貼文了嗎？趕快來分享你的即時動態，別忘了標註寶寶同步紀錄寶貝的成長過程，<br>設定最愛相簿時時重溫美好時光！想知道新版個人專頁還有那些你尚未使用的新功能嗎？<a href="https://forum.babyhome.com.tw/topic/4740276" class="link-blue" target="_blank">→立即前往</a>」
+                        <p>哈囉~歡迎回來！今天發貼文了嗎？趕快來分享你的即時動態，別忘了標註寶寶同步紀錄寶貝的成長過程，
+                            <br>設定最愛相簿時時重溫美好時光！想知道新版個人專頁還有那些你尚未使用的新功能嗎？<a href="https://forum.babyhome.com.tw/topic/4740276" class="link-blue" target="_blank">→立即前往</a>」
                         </p>
                     </div>
                     <div class="mkt-banner mrb-20 calling">
@@ -1146,9 +1155,9 @@
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#introModal').modal('show');
-    });    
+    });
     $(".exitfrom .minify").click(function() {
         $(".exitfrom.affix").removeClass("in");
         $(".exitfrom-dropback").removeClass("in");

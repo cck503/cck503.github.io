@@ -769,7 +769,8 @@ body {
     }
     .profile-avator {
         margin-bottom: 8px;
-        margin-left: 8px;
+        margin-left: 6px;
+        vertical-align: top;
     }
     .profile-caption {
         padding-left: 10px;
@@ -893,9 +894,20 @@ body {
     width: 90%;
     margin: 0 auto 15px;
     border: 1px solid @seperate-line-light;
+    >a {
+        display: block;
+    }
+    .img-responsive {
+        width: 100%;
+        max-width: none;
+    }
     h5 {
         padding: 0 10px;
     }
+}
+
+.btn_more_content {
+    padding: @padding-base 0; 
 }
 
 
@@ -1009,8 +1021,11 @@ body {
             color: @notify-red;
         }
     }
-    padding-bottom: 40px;
-    background: url("../img/mboard-poll-bg.png") -25px 90px no-repeat white;
+    
+    &.card-span {
+        background: url("../img/mboard-poll-bg.png") -25px 90px no-repeat white;
+        padding-bottom: 40px;
+    }
 }
 
 .card-span {
@@ -1156,6 +1171,11 @@ body {
         .bbh-logo-footer {
             width: 150px;
             height: auto;
+        }
+    }
+    .span-profile {
+        .alert-info {
+            margin-bottom: 0;
         }
     }
 }
