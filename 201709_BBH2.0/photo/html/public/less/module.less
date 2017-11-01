@@ -1,38 +1,38 @@
-div.loading{
-	clear:both;
-	text-align:center;
-	margin:0 auto;
+div.loading {
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
 }
 
-div.modal{
-	display:none;
-	.name {
-	    i {
-	        margin-right: 15px;
-	    }
-	    .ion-locked,
-	    .ion-unlocked,
-	    .ion-link {
-	        color: @body-bg;
-	        text-align: center;
+div.modal {
+    display: none;
+    .name {
+        i {
+            margin-right: 15px;
+        }
+        .ion-locked,
+        .ion-unlocked,
+        .ion-link {
+            color: @body-bg;
+            text-align: center;
             line-height: 20px;
             background: @link-color;
             border-radius: 50%;
             margin-left: 5px;
             opacity: .6;
             filter: alpha(opacity=60);
-	    }
-	}
-	i {
-	    margin-right: 5px;
-	}
-	.ion-ios7-close-empty {
-	    margin-right: 0;
-	}
+        }
+    }
+    i {
+        margin-right: 5px;
+    }
+    .ion-ios7-close-empty {
+        margin-right: 0;
+    }
 }
 
-.hidden{
-	display:none;
+.hidden {
+    display: none;
 }
 
 //modale style
@@ -43,12 +43,15 @@ div.modal{
         filter: alpha(opacity=70);
     }
 }
+
 .modal-dialog {
     padding-top: 150px;
 }
+
 .modal-content {
     border-radius: 0;
 }
+
 .modal-header {
     background: @modal-red;
     border-bottom: 0;
@@ -82,6 +85,7 @@ div.modal{
         }
     }
 }
+
 .modal-title {
     color: @body-bg;
     font-size: @nav-font-size;
@@ -89,6 +93,7 @@ div.modal{
     width: 90%;
     padding: 10px 15px;
 }
+
 .modal-body {
     i {
         vertical-align: middle;
@@ -101,12 +106,14 @@ div.modal{
         font-size: @font-size-folder-title;
     }
 }
+
 .modal-footer {
     margin-top: 0;
     padding: 0 20px 20px;
     text-align: center;
     border: 0;
 }
+
 .modal-footer .btn {
     border-radius: 0;
     //padding: 8px 26px;
@@ -116,9 +123,11 @@ div.modal{
         margin-left: 0;
     }
 }
+
 .modal-footer .btn+.btn {
     margin-left: 20px;
 }
+
 .submit_btn,
 .cancle_btn,
 .delete_btn {
@@ -130,6 +139,7 @@ div.modal{
         color: @body-bg;
     }
 }
+
 .submit_btn {
     background: @link-hover-color;
     &:hover,
@@ -137,6 +147,7 @@ div.modal{
         background: #f06c6c;
     }
 }
+
 .cancle_btn {
     background: #b1b1b1;
     &:hover,
@@ -144,6 +155,7 @@ div.modal{
         background: #aaaaaa;
     }
 }
+
 .delete_btn {
     background: #ffb321;
     &:hover,
@@ -151,6 +163,7 @@ div.modal{
         background: #f0a81f;
     }
 }
+
 .social_option {
     text-align: center;
     a {
@@ -196,6 +209,7 @@ div.modal{
         }
     }
 }
+
 .privacy_setting {
     .radio {
         padding-top: 14px;
@@ -211,6 +225,7 @@ div.modal{
         margin-left: 5px;
     }
 }
+
 //organize
 .organize_modal,
 .location_modal,
@@ -219,9 +234,10 @@ div.modal{
         padding: 20px 0;
     }
 }
+
 .modal-body {
     word-break: break-word;
-    .photo_list_option{
+    .photo_list_option {
         margin-top: -15px;
         margin-bottom: 10px;
         padding: 0 20px;
@@ -234,28 +250,29 @@ div.modal{
     .item {
         transition: all 0.5s ease;
         .upload_btn {
-                display: none;
-                font-size: inherit;
-                margin-right: 0;
-                &:hover,
-                &:focus {
-                    background: @link-hover-color;
-                    color: #b25151;
-                }
+            display: none;
+            font-size: inherit;
+            margin-right: 0;
+            &:hover,
+            &:focus {
+                background: @link-hover-color;
+                color: #b25151;
             }
-            &:hover {
-                background: @item-hover;
-                padding: 0 25px;
-               .upload_btn {
-                    display: inline-block;
-                } 
+        }
+        &:hover {
+            background: @item-hover;
+            padding: 0 25px;
+            .upload_btn {
+                display: inline-block;
             }
+        }
         .name {
             padding: 8px 25px 8px 35px;
             width: 85%;
         }
     }
 }
+
 //location
 .location_modal {
     .form-inline {
@@ -270,61 +287,62 @@ div.modal{
         }
     }
 }
+
 .location_modal {
-.venueList {
-    &>p {
-        margin-left: 35px;
-        font-weight: bold;
-    }
-    max-height: 400px;
-    overflow-y: auto;
-    .item>a {
-        visibility: hidden;
-    }
-    .item:hover>a {
-        visibility: visible;
-    }
-    .item {
-        .pull-right.tooltip_show {
-            color: #B23F3F;
-            background: #fff;
-            padding: 2px 4px;
-            margin-left: 10px;
-            margin-right: 25px;
-            border-radius: 3px;
-            &:hover,
-            &:focus {
-                color: @link-hover-color;　
-            }
+    .venueList {
+        &>p {
+            margin-left: 35px;
+            font-weight: bold;
         }
-        .name {
-            width: 100%;
-            a {
-                color: @text-color;
+        max-height: 400px;
+        overflow-y: auto;
+        .item>a {
+            visibility: hidden;
+        }
+        .item:hover>a {
+            visibility: visible;
+        }
+        .item {
+            .pull-right.tooltip_show {
+                color: #B23F3F;
+                background: #fff;
+                padding: 2px 4px;
+                margin-left: 10px;
+                margin-right: 25px;
+                border-radius: 3px;
                 &:hover,
                 &:focus {
                     color: @link-hover-color;
                 }
             }
-            p {
-                    color: @gray-light; 
+            .name {
+                width: 100%;
+                a {
+                    color: @text-color;
+                    &:hover,
+                    &:focus {
+                        color: @link-hover-color;
+                    }
                 }
+                p {
+                    color: @gray-light;
+                }
+            }
+            &:hover {
+                padding: 0 0 0 25px;
+            }
+            .tooltip_show {
+                margin: 8px 0 0;
+            }
+            i.ion-location {
+                font-size: @nav-font-size;
+                vertical-align: middle;
+            }
         }
-        &:hover {
-            padding: 0 0 0 25px;
-        }
-        .tooltip_show {
-            margin: 8px 0 0;
-        }
-        i.ion-location {
-            font-size: @nav-font-size;
-            vertical-align: middle;
+        .this {
+            background: #fbf7bd;
         }
     }
-    .this{
-		background: #fbf7bd;
-	}
-}
 }
 
 //edit_file
@@ -343,7 +361,7 @@ div.modal{
             width: 50%;
             border: 0;
             border-bottom: 1px solid @btn-default-border;
-            background: @body-bg url("../img/calendar.png") right center no-repeat;
+            background: @body-bg url("/public/img/calendar.png") right center no-repeat;
             color: #4086d6;
             padding: 0 5px;
         }
@@ -357,28 +375,30 @@ div.modal{
 .survey_active {
     position: fixed;
     right: 0;
-    z-index:999;
+    z-index: 999;
     .activated_btn {
         display: inline-block;
         width: 130px;
         height: 120px;
-        background: url("../img/my_album_btn.png") 0 0 no-repeat;
+        background: url("/public/img/my_album_btn.png") 0 0 no-repeat;
         &:hover,
         &:focus {
-            background: url("../img/my_album_btn.png") 0 -120px no-repeat;
+            background: url("/public/img/my_album_btn.png") 0 -120px no-repeat;
         }
         &:active {
-            background: url("../img/my_album_btn.png") 0 0 no-repeat;
+            background: url("/public/img/my_album_btn.png") 0 0 no-repeat;
         }
     }
 }
+
 .survey {
     .modal-dialog {
         width: 70%;
     }
 }
+
 .survey_head {
-    background: url("../img/survey_cherry.png") 0 0 no-repeat;
+    background: url("/public/img/survey_cherry.png") 0 0 no-repeat;
     p {
         font-size: @font-size-folder-title;
         padding: 30px 25px 0 125px;
@@ -389,21 +409,25 @@ div.modal{
         }
     }
 }
+
 .q_cap {
     font-size: @nav-font-size;
     color: #f3aecc;
     margin-right: 10px;
-}   
+}
+
 .survey_txt {
     padding-left: 46px;
     label {
         color: #e4007f;
     }
 }
+
 .sur_q {
     color: #e4007f;
     width: 35%;
 }
+
 .mission_head {
     p {
         text-align: center;
@@ -411,6 +435,7 @@ div.modal{
         font-weight: bold;
     }
 }
+
 .mission_step {
     width: 460px;
     display: block;
@@ -422,7 +447,7 @@ div.modal{
         height: 204px;
         float: left;
         margin: 15px;
-        background: url("../img/survey_mission.gif") 200px 204px no-repeat;
+        background: url("/public/img/survey_mission.gif") 200px 204px no-repeat;
         a {
             display: block;
             width: 200px;
@@ -442,6 +467,7 @@ div.modal{
         background-position: -600px 0;
     }
 }
+
 .modal-body {
     .mission_step {
         .step_01.non_actived {
@@ -458,10 +484,11 @@ div.modal{
         }
     }
 }
+
 //old_transform
 .survey_mission {
     .modal-content {
-        background: url("../img/sticker17.png") right bottom no-repeat #fff;
+        background: url("/public/img/sticker17.png") right bottom no-repeat #fff;
     }
     .modal-body>ul {
         font-size: @font-size-folder-title;

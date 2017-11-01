@@ -47,12 +47,23 @@
 
 // Utility classes
 @import "bootstrap/utilities.less";
-//@import "bootstrap/responsive-utilities.less";
+@import "bootstrap/responsive-utilities.less";
 
-@import "frame.less";
-@import "module.less";
-@import "album-photo.less";
-@import "nav.less";
-@import "list.less";
-@import "depot.less";
-@import "bootstrap-tour.less";
+@media screen and (min-width: 768px) {
+    @import "frame.less";
+    @import "module.less";
+    @import "album-photo.less";
+    @import "nav.less";
+    @import "list.less";
+    @import "depot.less";
+    @import "bootstrap-tour.less";
+}
+
+@media screen and (max-width: 767px) {
+    @import "mobile/frame.less";
+    @import "mobile/module.less";
+    @import "mobile/album-photo.less";
+    @import "mobile/list.less";
+    @import "mobile/bootstrap-tour.less";
+    @import "mobile/20161018-fix.less";
+}

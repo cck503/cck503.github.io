@@ -902,6 +902,12 @@ body {
         >a {
             padding-right: 30px;
             padding-left: 0;
+
+        }
+    }
+    .open {
+        >a {
+            background: transparent;
         }
     }
 }
@@ -1025,8 +1031,52 @@ div[class^="info-span-"] {
     margin-top: 20px;
 }
 
+.article_submenu {
+    top: 110px;
+}
 
 //shop
+.navbar {
+    .navbar-nav {
+        .open {
+            .dropdown-menu {
+                -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, .175);
+                box-shadow: 0 2px 20px rgba(0,0,0,0.175);
+                border-width: 0;
+                border-radius: 4px;
+                /*
+                >li {
+                    >a {
+                        &:hover {
+                            color: #2e2e2e !important;
+                            background-color: #f5f5f5 !important;
+                        }
+                        &:focus {
+                            color: #2e2e2e !important;
+                            background-color: #f5f5f5 !important;
+                        }
+                    }
+                }
+                >.active {
+                    >a {
+                        color: #2e2e2e !important;
+                        background-color: #f5f5f5 !important;
+                        &:hover {
+                            color: #2e2e2e !important;
+                            background-color: #f5f5f5 !important;
+                        }
+                        &:focus {
+                            color: #2e2e2e !important;
+                            background-color: #f5f5f5 !important;
+                        }
+                    }
+                }
+                */
+            }
+        }
+    }
+}
+
 .ec-nav {
     background: white;
     margin-bottom: 0;
@@ -1072,6 +1122,9 @@ div[class^="info-span-"] {
             }
         }
     }
+    .dropdown-menu {
+        font-size: initial;
+    }
     .nav {
         >li {
             >a {
@@ -1087,7 +1140,7 @@ div[class^="info-span-"] {
 }
 
 
-//mmember 
+//member 
 .login-page {
     &.container {
         padding: 15px;

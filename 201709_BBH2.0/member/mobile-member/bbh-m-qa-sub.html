@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes,shrink-to-fit=no" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome</title>
+    <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="content-container flex-v">
+            <div class="content-heading flex-h">
+                <div class="backward">
+                    <a href="bbh-m-member.html" class="btn btn-link"><i class="icon-arrow-left"></i></a>
+                </div>
+                <div class="heading-inner">Q &#38 A</div>
+                <div class="compose-btn">
+                    <button class="btn btn-key invisible">發表</button>
+                </div>
+            </div>
+            <div class="content-body card-inner">
+                <form action=".">
+                    <div class="list-search">
+                        <div class="search-group"><span class="input-group-btn"><button class="btn btn-default" type="button"><i class="icon-magnify-glass-line"></i></button></span>
+                            <input type="search" class="form-control search-contact" placeholder="想問什麼問題？" name="keyword">
+                        </div>
+                    </div>
+                </form>
+                <div class="alert alert-info mrt-20 qa-info">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="">問答集</option>
+                            <option value="" selected>常見問題</option>
+                            <option value="">部落格</option>
+                            <option value="">相簿</option>
+                            <option value="">BabyHome購物</option>
+                            <option value="">Q點相關</option>
+                            <option value="">家族聚樂部</option>
+                            <option value="">討論區</option>
+                            <option value="">訊息功能相關</option>
+                        </select>
+                    </div>
+                    <ul class="sub-nav qa-nav">
+                        <li>
+                            <a href="bbh-m-qa-sub-1.html" class="flex-h subcategories"><span>會員權益與設定</span><i class="icon-arrow-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="bbh-m-qa-sub-1.html" class="flex-h subcategories"><span>會員註冊與登入問題</span><i class="icon-arrow-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="bbh-m-qa-sub-1.html" class="flex-h subcategories"><span>活動相關</span><i class="icon-arrow-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <p>需要更多資訊？<a href="" class="link-blue">客服信箱</a></p>
+                    <p>客服時間：週一至週五 9:00 ~ 18:00</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/m-header-custom.js"></script>
+    <script src="public/js/m-feeds-custom.js"></script>
+    <!--
+    <script>
+        $(document).ready(function(){
+            var _h = $('.alert-info').outerHeight();
+            //open
+            $('.sub-nav li ul.leftnav-group').on('click','.collap',function(){
+                console.log(1);
+                var h = $('.collapse-list li',$(this).parent()).height()+300;
+                //var h = 700;
+                console.log(h);
+                $('.alert-info').animate({height:h},300);
+            });
+            //close
+            $('.sub-nav li ul.leftnav-group').on('click','.collap-active',function(){
+                console.log(2);
+                $('.alert-info').animate({height:_h},300);
+            });
+        });
+    </script>
+    -->
+</body>
+
+</html>

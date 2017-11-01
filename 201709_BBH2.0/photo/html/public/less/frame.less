@@ -6,7 +6,7 @@ body{
 	font-size: 14px;
 	line-height: 1.428571429;
 	color: #333;
-	background: @body-bg url("../img/cross_scratches_@2X.png") 0 0;
+	background: @body-bg url("/public/img/cross_scratches_@2X.png") 0 0;
 	padding-top: 40px;
 	/*
 	background: #f7f7f7;
@@ -267,6 +267,7 @@ select {
     .btn-inner-border;
     border: 1px solid @btn-border;
     padding: 2px 7px;
+    display: inline-block !important;
     &:hover {
         .btn_hover_bg;
     }
@@ -280,6 +281,10 @@ select {
          height: @avatar-width;
     }
 }
+.hidden-xs {
+    display: inline-block !important;
+}
+
 //avatar-card
 .navbar-nav {
     li {
@@ -332,6 +337,24 @@ select {
             }
         }
     }
+    // notification
+    li.notice {
+        a {
+            text-align: right;
+        }
+        .list_notice_block {
+            padding: 0;
+            border: @avatar-pic-border;
+            background-color: @avatar-pic-bg;
+            li {
+                padding: @avatar-pic-padding;
+                border-top: @avatar-pic-border;
+            }
+            li:first-child {
+                border-top: none;
+            }
+        }
+    }
 }
 
 
@@ -376,7 +399,7 @@ select {
   height: 33px;
   width: 138px;
   display: inline-block;
-  background: url("../img/bbh_logo_black.svg") 0 0 no-repeat;
+  background: url("/public/img/bbh_logo_black.svg") 0 0 no-repeat;
   background-size: 138px 33px;
   line-height: @line-height-computed;
   text-indent: -999999px;
@@ -591,7 +614,7 @@ select {
   .custumize_wall {
     
     .wall_content {
-        //background: url("../img/headder.jpg") 0 0 no-repeat;
+        //background: url("/public/img/headder.jpg") 0 0 no-repeat;
         height: 330px;
         img {
             float: left;
@@ -633,11 +656,20 @@ select {
 			a {
 			    line-height: @nav-optopn;
 			    font-size: @font-size-h3;
+			    color: @nav-link-color;
+			    &:hover,
+			    &:focus {
+			        color: @link-hover-color;
+			    }
 			}
 			.upload_btn {
 			    padding: 0 15px;
 			    font-size: @nav-font-size;
 			    display: inline-block;
+			}
+			.navbar-default {
+			    background-color: transparent;
+			    border-color: transparent;
 			}
 		}
 	} 
@@ -831,6 +863,9 @@ select {
         .default_show {
             width: 220px;
             height: 220px;
+            &.add_album_txt {
+                height: 46px;
+            }
         }
         .hover_show {
             position: absolute;

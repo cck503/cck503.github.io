@@ -1346,6 +1346,16 @@ body {
     .cover-btn-holder {
         justify-content: space-between;
         -webkit-justify-content: space-between;
+        &.flex-space {
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+            .btn {
+                margin-right: @padding-base;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
     }
     .more-option {
         font-size: @font-size-h3;
@@ -1498,6 +1508,7 @@ body {
 
 //member
 .member-cover {
+    .mrt-20();
     .span-profile {
         border-bottom: 0;
     }
@@ -2349,9 +2360,6 @@ body {
 
 //iphone-5
 @media (max-width: 340px) {
-    .bbh-logo-new {
-        width: 90%;
-    }
     .marketing-feature {
         margin-left: -10px;
         margin-right: -10px;
