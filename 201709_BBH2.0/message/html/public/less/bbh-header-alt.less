@@ -86,6 +86,11 @@ body {
             >li {
                 >a {
                     color: @gray;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: @gray-base;
+                    }
                 }
             }
             &:not(.navbar-right) {
