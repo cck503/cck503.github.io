@@ -523,6 +523,7 @@ body {
     }
 }
 
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -562,7 +563,7 @@ body {
         z-index: 100;
         top: 174px;
         left: 220px;
-        text-shadow: 0 0 6px rgba(0,0,0,.5);
+        text-shadow: 0 0 6px rgba(0, 0, 0, .5);
         p:not(.h3) {
             height: 3em;
             overflow: hidden;
@@ -889,7 +890,11 @@ body {
         }
     }
 }
-
+.card-heading {
+    .post-detail {
+        color: @seperate-line;
+    }
+}
 .link-description {
     width: 90%;
     margin: 0 auto 15px;
@@ -901,14 +906,70 @@ body {
         width: 100%;
         max-width: none;
     }
-    h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
         padding: 0 10px;
+    }
+    .post-detail {
+        padding: 0 10px;
+        color: @seperate-line;
+        .flex-h {
+            margin-right: 10px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    .shorten {
+        max-height: 7.2em;
+        overflow: hidden;
+    }
+    .show-more {
+        margin: 0 10px 10px;
     }
 }
 
 .btn_more_content {
-    padding: @padding-base 0; 
+    padding: @padding-base 0;
 }
+
+.option-action {
+    .dropdown-menu {
+        &.dir-top {
+            &.menu-wide {
+                left: -15px;
+                min-width: auto; //max-width: 440px;
+                white-space: nowrap;
+                &:before {
+                    left: 15px;
+                }
+            }
+        }
+        a {
+            .more {
+                transition: all .15s linear;
+                display: block;
+                &:before {
+                    vertical-align: text-top;
+                }
+            }
+            &:hover {
+                .more {
+                    -moz-transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
 
 
 //connection
@@ -1021,7 +1082,7 @@ body {
             color: @notify-red;
         }
     }
-    
+
     &.card-span {
         background: url("../img/mboard-poll-bg.png") -25px 90px no-repeat white;
         padding-bottom: 40px;
@@ -1530,6 +1591,27 @@ body {
         }
     }
 }
+
+
+//blog
+.col-main-card {
+    .breadcrumb {
+        margin: 10px 0;
+        background: transparent;
+    }
+}
+
+.full-content {
+    background: white;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+    .bbh-main-container {
+        margin-top: 0;
+    }
+}
+
+
 
 
 
