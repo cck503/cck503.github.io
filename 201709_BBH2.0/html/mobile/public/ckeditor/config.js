@@ -33,5 +33,5 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeDialogTabs = 'link:advanced';
 
 	//autogrow
-	//config.extraPlugins = 'autogrow';
+	config.extraPlugins = 'autogrow';
 };
