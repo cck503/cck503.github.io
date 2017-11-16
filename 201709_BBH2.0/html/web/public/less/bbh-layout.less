@@ -980,12 +980,16 @@ body {
     width: 90%;
     margin: 0 auto 15px;
     border: 1px solid @seperate-line-light;
+    padding: @padding-base;
     >a {
         display: block;
+        margin: 0 -@padding-base 0;
     }
     .img-responsive {
         width: 100%;
         max-width: none;
+        margin-top: -@padding-base;
+        margin-bottom: @padding-base;
     }
     h1,
     h2,
@@ -993,13 +997,14 @@ body {
     h4,
     h5,
     p {
-        padding: 0 10px;
+        padding: 0 @padding-base;
+        margin-top: 0;
     }
     .post-detail {
-        padding: 0 10px;
+        padding: 0 @padding-base;
         color: @seperate-line;
         .flex-h {
-            margin-right: 10px;
+            margin-right: @padding-base;
             &:last-of-type {
                 margin-right: 0;
             }
@@ -1010,7 +1015,7 @@ body {
         overflow: hidden;
     }
     .show-more {
-        margin: 0 10px 10px;
+        margin: 0 0 10px;
     }
 }
 
@@ -1845,6 +1850,12 @@ body {
     .privacy-tip {
         margin-left: 5px;
     }
+    opacity: .7;
+}
+.comments-list {
+    .post-detail {
+        opacity: 1;
+    }
 }
 
 .pager-btn {
@@ -2006,6 +2017,7 @@ body {
     figcaption {
         font-size: @font-size-small;
         opacity: .5;
+        margin-top: 5px;
     }
     img,
     .img-responsive {
