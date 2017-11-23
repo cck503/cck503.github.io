@@ -27,15 +27,21 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('.navbar-fixed-top').removeClass('nav-down').addClass('nav-up');
+        $('.my-sticky-element').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('.navbar-fixed-top').removeClass('nav-up').addClass('nav-down');
+            $('.my-sticky-element').removeClass('nav-up').addClass('nav-down');
         }
     }
     
     lastScrollTop = st;
 }
+
+
+
+
 
 $(document)
     .one('focus.autoExpand', 'textarea.autoExpand', function() {

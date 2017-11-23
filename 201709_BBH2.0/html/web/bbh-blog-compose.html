@@ -11,7 +11,10 @@
     <link href="public/css/non-responsive.css" rel="stylesheet">
     <link href="public/css/bbh-header-footer.css" rel="stylesheet">
     <link href="public/css/bbh-main.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/bootstrap-datetimepicker.css">
+    <!--
     <link rel="stylesheet" href="public/css/bootstrap-datepicker3.css">
+    -->
     <link rel="stylesheet" href="public/ckeditor/neo.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -208,7 +211,7 @@
                                                 <li><a href="#">私密</a></li>
                                                 <li><a href="#">不公開</a></li>
                                             </ul>
-                                            <p class="privacy-tip">小提醒：選擇「不公開」只有取得連結的人看得到，發表後，請至文章頁「複製共用連結」。</p>   
+                                            <p class="privacy-tip">小提醒：選擇「不公開」只有取得連結的人看得到，發表後，請至文章頁「複製共用連結」。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -219,8 +222,8 @@
                                         <input type="text" class="form-control" placeholder="文章標題">
                                     </div>
                                     <div class="post-date">
-                                        <div class="input-group date">
-                                            <input type="text" class="form-control" value="2017年11月13日">
+                                        <div class='input-group date'>
+                                            <input type='text' id='datetimepicker1' class="form-control" value="11/20/2017 3:12 PM" />
                                         </div>
                                     </div>
                                     <div class="post-editor">
@@ -471,21 +474,27 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/moment.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>
     <script src="public/js/feeds-custom.js"></script>
     <script src="public/ckeditor/ckeditor.js"></script>
     <script src="public/ckeditor/sample.js"></script>
-    <script src="public/js/bootstrap-datepicker.min.js"></script>
-    <script src="public/js/locales/bootstrap-datepicker.zh-TW.min.js"></script>
-    <script>
+    <script src="public/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
     initSample();
-    $('.input-group.date input').datepicker({
-        todayBtn: true,
-        language: "zh-TW",
-        keyboardNavigation: false,
-        autoclose: true,
-        todayHighlight: true
+    $(function() {
+        $('#datetimepicker1').datetimepicker({
+            icons: {
+                time: "icon-clock-line",
+                date: "icon-calendar-full",
+                up: "icon-arrow-up",
+                down: "icon-arrow-down",
+                previous: 'icon-arrow-left',
+                next: 'icon-arrow-right'
+            },
+            keepOpen: true
+        });
     });
     </script>
 </body>

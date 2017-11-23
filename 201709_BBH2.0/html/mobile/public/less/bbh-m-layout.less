@@ -142,6 +142,7 @@ ul {
 
 
 
+
 /*
 .container {
     padding-left: 0;
@@ -367,6 +368,7 @@ body {
 
 
 
+
 /*login*/
 
 .card-inner {
@@ -405,6 +407,8 @@ body {
         .form-control {
             border-color: #a94442;
             box-shadow: none;
+            position: relative;
+            z-index: 10;
             &:focus {
                 box-shadow: none;
             }
@@ -784,6 +788,7 @@ body {
 
 
 
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -905,6 +910,7 @@ body {
         box-shadow: rgba(0, 0, 0, .05) 0 2px 6px;
     }
 }
+
 
 
 
@@ -1067,6 +1073,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -2427,6 +2434,7 @@ body {
         }
     }
 }
+
 .blog-inner {
     height: 378px;
     overflow: hidden;
@@ -2439,6 +2447,7 @@ body {
         overflow: hidden;
     }
 }
+
 .post-img {
     display: block;
     overflow: hidden;
@@ -2465,6 +2474,7 @@ body {
     }
     opacity: .7;
 }
+
 .comments-list {
     .post-detail {
         opacity: 1;
@@ -2565,9 +2575,10 @@ body {
         font-size: 1.3em;
     }
 }
+
 h3,
 h3 {
-    &.post-title  {
+    &.post-title {
         font-size: 1.3em;
     }
 }
@@ -2582,15 +2593,34 @@ h3 {
     &.date {
         input {
             background: transparent;
+            padding-right: 45px;
         }
         &:after {
             content: "\e92d";
             font-family: 'bbhiocn';
-            font-size: @font-size-h4;
+            font-size: @font-size-h2;
             color: @link-key;
             position: absolute;
-            top: 3px;
-            right: 30px;
+            top: -5px;
+            right: 20px;
+        }
+        .dropdown-menu {
+            &:after {
+                display: none;
+            }
+            &.bootstrap-datetimepicker-widget {
+                position: fixed !important;
+                top: auto !important;
+                bottom: 0 !important;
+                width: 100%;
+                border: 0;
+                box-shadow: rgba(0, 0, 0, 0.5) 0 -300px 0;
+                border-radius: 0;
+                [class^="icon-"],
+                [class*=" icon-"] {
+                    font-size: 1.4em;
+                }
+            }
         }
     }
 }
