@@ -263,23 +263,21 @@
                 <img src="public/img/default-bg.jpg" alt="">
             </div>
         </div>
-        <div class="cover-nav affix" id="covernav-fix">
+        <div class="cover-nav">
             <div class="container">
                 <div class="col-xs-12">
-                    <!--title加入暱稱-->
-                    <div class="cover-profile" title="小寶真是可愛小寶真是可愛小寶真是可愛">
+                    <div class="cover-profile">
                         <div class="span-profile text-left flex-h">
                             <div class="profile-avator-lg">
-                                <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a>
-                                <img src="http://lorempixel.com/200/200/people" alt="">
+                                <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a><img src="http://lorempixel.com/200/200/people" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="cover-nav-inner flex-h">
                         <div class="cover-nav-holder">
                             <ul class="sub-nav flex-h">
-                                <li><a href="bbh-myhome-about.html">關於我</a></li>
-                                <li><a href="bbh-blog-list.html">網誌</a></li>
+                                <li class="active"><a href="bbh-myhome-about.html">關於我</a></li>
+                                <li><a href="">網誌</a></li>
                                 <li><a href="bbh-connection.html">社交圈</a></li>
                                 <li><a href="">相簿</a></li>
                                 <li><a href="">行事曆</a></li>
@@ -291,6 +289,7 @@
                         <div class="cover-btn-holder flex-h hidden">
                             <button class="btn btn-key">關注</button>
                             <button class="btn btn-key-line">訊息</button>
+                            <button class="btn btn-key-line">編輯個人資料</button>
                         </div>
                     </div>
                 </div>
@@ -320,7 +319,6 @@
                         </a>
                     </div>
                     <div class="alert alert-info optional-info">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
                         <!--寶寶設定提示-->
                         <p>尚未設定寶寶，立即<a href="" class="link-blue">前往設定</a></p>
                         <!--更換大頭貼提示-->
@@ -2453,16 +2451,19 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>
     <script src="public/js/feeds-custom.js"></script>
-    <script>
-    $('#covernav-fix').affix({
-        offset: {
-            top: 300,
-            bottom: function() {
-                return (this.bottom = $('.footer').outerHeight(true))
-            }
-        }
-    })
+    <!--
+    <script type="text/javascript">
+    $(".exitfrom .minify").click(function() {
+        $(".exitfrom.affix").toggleClass("min-height");ß
+    });
+    setTimeout(function() {
+        $(".exitfrom").addClass("in");
+    }, 3500);
+    $(document).ready(function () {
+        $('#introModal').modal('show');
+    });
     </script>
+    -->
 </body>
 
 </html>

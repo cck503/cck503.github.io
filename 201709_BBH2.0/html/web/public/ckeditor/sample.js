@@ -10,7 +10,7 @@ if ( CKEDITOR.env.ie && CKEDITOR.env.version < 9 )
 
 // The trick to keep the editor in the sample quite small
 // unless user specified own height.
-CKEDITOR.config.height = 150;
+CKEDITOR.config.height = 'auto';
 CKEDITOR.config.width = 'auto';
 
 var initSample = ( function() {
@@ -23,8 +23,7 @@ var initSample = ( function() {
 		// :(((
 		if ( isBBCodeBuiltIn ) {
 			editorElement.setHtml(
-				'Hello world!\n\n' +
-				'I\'m an instance of [url=http://ckeditor.com]CKEditor[/url].'
+				'請輸入文字或將相片拖曳到這裡'
 			);
 		}
 
