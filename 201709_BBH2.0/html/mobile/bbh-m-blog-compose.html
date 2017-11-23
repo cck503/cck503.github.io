@@ -207,13 +207,15 @@
     initSample();
     $(function() {
         $('#datetimepicker1').datetimepicker({
+            showClose: true,
             icons: {
                 time: "icon-clock-line",
                 date: "icon-calendar-full",
                 up: "icon-arrow-up",
                 down: "icon-arrow-down",
                 previous: 'icon-arrow-left',
-                next: 'icon-arrow-right'
+                next: 'icon-arrow-right',
+                close: 'icon-close-full'
             }
         });
     });
