@@ -27,6 +27,11 @@ ul {
     padding: 0;
 }
 
+hr {
+    border-color: @seperate-line-light;
+    margin: @padding-base*2 0;
+}
+
 .caption-gradient {
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
     background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -69,7 +74,6 @@ a {
     }
 }
 
-<<<<<<< HEAD
 .flex-between {
     justify-content: space-between;
     -webkit-justify-content: space-between;
@@ -186,8 +190,6 @@ a {
 }
 
 
-=======
->>>>>>> parent of 0217ce8... 20171114-01
 //
 body {
     background: @bbh-body-bg;
@@ -393,8 +395,7 @@ body {
         .holder-inner {
             margin-top: 4px;
             font-size: @font-size-small;
-            justify-content: space-between;
-            -webkit-justify-content: space-between;
+            .flex-between();
         }
     }
 }
@@ -643,19 +644,13 @@ body {
 }
 
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
 
 
 
 
 
-=======
->>>>>>> parent of 29d4db4... 20171116-01
-=======
->>>>>>> parent of 0217ce8... 20171114-01
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -716,7 +711,6 @@ body {
 
 .cover-nav {
     background: white; //padding: 10px 0;
-<<<<<<< HEAD
     //position: relative;
     &.affix {
         top: 77px;
@@ -754,9 +748,6 @@ body {
     .col-xs-12 {
         position: relative;
     }
-=======
-    position: relative;
->>>>>>> parent of 29d4db4... 20171116-01
 }
 
 .cover-profile {
@@ -890,8 +881,7 @@ body {
 //feed
 .alert-info {
     &.flex-h {
-        justify-content: space-between;
-        -webkit-justify-content: space-between;
+        .flex-between();
         padding: 15px @padding-base;
     }
     .h1,
@@ -920,6 +910,10 @@ body {
         &.col-xs-7 {
             width: 680px;
         }
+        /*.row {
+            margin-right: -20px;
+            margin-left: -20px;
+        }*/
     }
     .col-right {
         &.col-xs-3 {
@@ -927,12 +921,39 @@ body {
             width: 300px;
         }
     }
+    h1,
+    .h1 {
+        font-size: @font-size-h2;
+    }
+    h2,
+    .h2 {
+        font-size: @font-size-h3;
+        font-weight: normal;
+    }
+    h3,
+    .h3 {
+        font-size: @font-size-h4;
+        font-weight: normal;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+        line-height: 1.3;
+    }
 }
 
 .col-left {
     ul {
         list-style: none;
         padding-left: 0;
+    }
+    select {
+        -webkit-appearance: none;
     }
 }
 
@@ -1062,21 +1083,27 @@ body {
         }
     }
 }
+
 .card-heading {
     .post-detail {
         color: @seperate-line;
     }
 }
+
 .link-description {
     width: 90%;
     margin: 0 auto 15px;
     border: 1px solid @seperate-line-light;
+    padding: @padding-base;
     >a {
         display: block;
+        margin: 0 -@padding-base 0;
     }
     .img-responsive {
         width: 100%;
         max-width: none;
+        margin-top: -@padding-base;
+        margin-bottom: @padding-base;
     }
     h1,
     h2,
@@ -1084,13 +1111,14 @@ body {
     h4,
     h5,
     p {
-        padding: 0 10px;
+        padding: 0 @padding-base;
+        margin-top: 0;
     }
     .post-detail {
-        padding: 0 10px;
+        padding: 0 @padding-base;
         color: @seperate-line;
         .flex-h {
-            margin-right: 10px;
+            margin-right: @padding-base;
             &:last-of-type {
                 margin-right: 0;
             }
@@ -1101,7 +1129,7 @@ body {
         overflow: hidden;
     }
     .show-more {
-        margin: 0 10px 10px;
+        margin: 0 0 10px;
     }
 }
 
@@ -1146,9 +1174,7 @@ body {
 
 //connection
 .col-xs-10 {
-    .card-span {
-        min-height: 80vh;
-    }
+    min-height: 70vh;
 }
 
 .card-span {
@@ -1198,8 +1224,7 @@ body {
     padding-left: 15px;
     margin-bottom: 0;
     .cover-btn-holder {
-        justify-content: space-between;
-        -webkit-justify-content: space-between;
+        .flex-between();
     }
     .more-option {
         font-size: @font-size-h3;
@@ -1282,8 +1307,7 @@ body {
             min-height: 60vh;
         }
         .card-tab {
-            justify-content: space-between;
-            -webkit-justify-content: space-between;
+            .flex-between()
         }
     }
 }
@@ -1407,15 +1431,12 @@ body {
         }
     }
     .span-profile {
-        .alert-info {
+        .optional-info {
             margin-bottom: 0;
-<<<<<<< HEAD
             padding: @padding-base; //border-color: @seperate-line;
             .close {
                 right: -5px;
             }
-=======
->>>>>>> parent of 29d4db4... 20171116-01
         }
     }
 }
@@ -1433,8 +1454,7 @@ body {
     font-weight: 500;
     margin-bottom: @padding-base;
     &.flex-h {
-        justify-content: space-between;
-        -webkit-justify-content: space-between;
+        .flex-between();
     }
     p {
         margin-bottom: 0;
@@ -1744,8 +1764,7 @@ body {
                 left: 0;
                 right: 0;
                 margin: auto;
-                justify-content: space-between;
-                -webkit-justify-content: space-between;
+                .flex-between();
             }
             .cover-holder {
                 cursor: move;
@@ -1773,7 +1792,6 @@ body {
 
 
 //blog
-<<<<<<< HEAD
 
 /*
 .card-span {
@@ -1784,11 +1802,18 @@ body {
 }
 */
 
-=======
->>>>>>> parent of 29d4db4... 20171116-01
 .col-main-card {
+    &.col-xs-10 {
+        .breadcrumb {
+            margin: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
     .breadcrumb {
         margin: 10px 0;
+        padding-left: @padding-base*2;
+        padding-right: @padding-base*2;
         background: transparent;
     }
 }
@@ -1802,7 +1827,6 @@ body {
         margin-top: 0;
     }
 }
-<<<<<<< HEAD
 
 .body-inner {
     h1,
@@ -1949,15 +1973,12 @@ body {
         margin-left: 5px;
         opacity: .7;
     }
-<<<<<<< HEAD
 }
 
 .comments-list {
     .post-detail {
         opacity: 1;
     }
-=======
->>>>>>> parent of 38f3417... 20171116-02
 }
 
 .pager-btn {
@@ -1975,10 +1996,9 @@ body {
         vertical-align: middle;
     }
 }
-=======
->>>>>>> parent of 29d4db4... 20171116-01
 
-<<<<<<< HEAD
+
+//edite
 .blog-editor {
     padding-top: 20px;
     color: @gray-dark;
@@ -1988,33 +2008,44 @@ body {
         padding-right: 0;
         padding-left: 0;
     }
-    .card-footer {
-        background: transparent;
-        padding-top: 0;
-        border-top: 0;
-        .dropdown-menu {
-            &.dir-top {
-                padding-bottom: 0;
-                &:before {
-                    border-color: @info-bg transparent transparent transparent;
-                }
-            }
-            li {
-                >a {
-                    display: block;
-                    padding: 6px 20px;
-                    clear: both;
-                    font-weight: normal;
-                    line-height: 1.42857143;
-                    color: #3b3b3b;
-                    white-space: nowrap;
-                    &:hover,
-                    &:focus {
-                        text-decoration: none;
-                        color: #2e2e2e;
-                        background-color: #f5f5f5;
+    .card-body {
+        .card-footer {
+            padding-top: 0;
+            .dropdown-menu {
+                &.dir-top {
+                    padding-bottom: 0;
+                    &:before {
+                        border-color: @info-bg transparent transparent transparent;
                     }
                 }
+                li {
+                    >a {
+                        display: block;
+                        padding: 6px 20px;
+                        clear: both;
+                        font-weight: normal;
+                        line-height: 1.42857143;
+                        color: #3b3b3b;
+                        white-space: nowrap;
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            color: #2e2e2e;
+                            background-color: #f5f5f5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card-footer {
+        background: transparent;
+        border-top: 0;
+        .respond-inner {
+            box-shadow: inset @seperate-line 0 0 1px;
+            .form-control {
+                padding-left: 12px;
+                padding-right: 12px;
             }
         }
     }
@@ -2037,15 +2068,12 @@ body {
 }
 
 
-<<<<<<< HEAD
 
 
 
 
 
 
-=======
->>>>>>> parent of 29d4db4... 20171116-01
 /**/
 
 .post-title {
@@ -2055,6 +2083,10 @@ body {
         font-size: @font-size-h2;
         font-weight: bold;
         height: auto;
+    }
+    .more-option {
+        font-size: 16px;
+        vertical-align: top;
     }
 }
 
@@ -2096,6 +2128,7 @@ body {
 .post-editor {
     min-height: 30vh;
     position: relative;
+    margin-top: @padding-base;
     .alert-info {
         &.alert-editor {
             padding: 5px;
@@ -2106,11 +2139,43 @@ body {
             font-size: @font-size-small;
         }
     }
+    h1,
+    h2,
+    h3,
+    h4,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+        margin-bottom: 1.5em;
+        margin-top: 0;
+    }
+    p {
+        margin-bottom: 1.5em;
+    }
+    figure {
+        margin-bottom: 1.5em;
+        &.image {
+            padding: 0;
+        }
+    }
+    figcaption {
+        font-size: @font-size-small;
+        opacity: .5;
+        margin-top: 5px;
+    }
+    img,
+    .img-responsive {
+        max-height: 600px;
+        margin: 0 auto;
+    }
 }
+
 .folder-list {
     max-width: 250px;
     overflow-y: auto;
 }
+
 .creat-new {
     background: @info-bg;
     padding: @padding-base;
@@ -2123,9 +2188,6 @@ body {
         margin-right: @padding-base;
     }
 }
-=======
-
->>>>>>> parent of 0217ce8... 20171114-01
 
 
 

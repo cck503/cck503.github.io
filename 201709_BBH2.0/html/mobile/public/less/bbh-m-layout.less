@@ -58,6 +58,13 @@ ul {
         margin-left: -@padding-base;
         margin-right: -@padding-base;
         margin-bottom: 0;
+        &.optional-info {
+            margin-bottom: 0;
+            padding: @padding-base; //border-color: @seperate-line;
+            .close {
+                right: -5px;
+            }
+        }
     }
 }
 
@@ -90,6 +97,11 @@ ul {
         margin-top: 0;
         margin-left: @padding-base;
     }
+}
+
+.flex-between {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .padding-in10 {
@@ -128,15 +140,9 @@ ul {
 
 
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of 38f3417... 20171116-02
-=======
->>>>>>> parent of 0217ce8... 20171114-01
+
 /*
 .container {
     padding-left: 0;
@@ -360,15 +366,9 @@ body {
 
 
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of 38f3417... 20171116-02
-=======
->>>>>>> parent of 0217ce8... 20171114-01
+
 /*login*/
 
 .card-inner {
@@ -455,6 +455,30 @@ body {
 .content-body {
     .span-login {
         margin-bottom: 40px;
+    }
+    h1,
+    .h1 {
+        font-size: 1.7em;
+    }
+    h2,
+    .h2 {
+        font-size: @font-size-h4;
+        font-weight: normal;
+    }
+    h3,
+    .h3 {
+        font-size: @font-size-h5;
+        font-weight: normal;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+        line-height: 1.3;
     }
 }
 
@@ -762,15 +786,9 @@ body {
 }
 
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of 38f3417... 20171116-02
-=======
->>>>>>> parent of 0217ce8... 20171114-01
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -907,15 +925,9 @@ body {
 
 
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of 38f3417... 20171116-02
-=======
->>>>>>> parent of 0217ce8... 20171114-01
+
 /*
 .cover-nav-inner {
     .cover-nav-holder {
@@ -1003,6 +1015,11 @@ body {
         border-top: 1px solid @seperate-line-light;
         padding-top: 15px;
     }
+    .folder-span {
+        border-top: 1px solid @seperate-line-light;
+        padding: @padding-base;
+        margin: 0 -@padding-base;
+    }
     .btn-compose-white {
         min-width: 0;
         padding: 5px;
@@ -1057,15 +1074,9 @@ body {
     }
 }
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 
 
-=======
->>>>>>> parent of 38f3417... 20171116-02
-=======
->>>>>>> parent of 0217ce8... 20171114-01
+
 /*.content-footer {
     flex: 1 1 0;
     -webkit-flex: 1 1 0;
@@ -1175,6 +1186,17 @@ body {
 .body-inner {
     .img-holder {
         margin: 0 -10px 10px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+        margin-bottom: 11px;
+        margin-top: 0;
     }
 }
 
@@ -1286,8 +1308,45 @@ body {
     width: 90%;
     margin: 0 auto 15px;
     border: 1px solid @seperate-line-light;
-    h5 {
+    padding: @padding-base;
+    &.blog-description {
+        width: 100%;
+    }
+    >a {
+        display: block;
+        margin: 0 -@padding-base 0;
+    }
+    .img-responsive {
+        width: 100%;
+        max-width: none;
+        margin-top: -@padding-base;
+        margin-bottom: @padding-base;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
         padding: 0 @padding-base;
+        margin-top: 0;
+    }
+    .post-detail {
+        padding: 0 @padding-base;
+        color: @seperate-line;
+        .flex-h {
+            margin-right: @padding-base;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    .shorten {
+        max-height: 7.2em;
+        overflow: hidden;
+    }
+    .show-more {
+        margin: 0 0 10px;
     }
 }
 
@@ -2033,6 +2092,11 @@ body {
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
         }
+        .privacy-tip {
+            color: @seperate-line;
+            padding: 0 @padding-base*2;
+            font-size: @font-size-small;
+        }
     }
     &.fade {
         .modal-dialog {
@@ -2358,9 +2422,7 @@ body {
 
 
 
-<<<<<<< HEAD
 //blog
-<<<<<<< HEAD
 .section-heading {
     padding: @padding-base;
     .lead {
@@ -2437,8 +2499,6 @@ body {
 }
 
 
-=======
->>>>>>> parent of 38f3417... 20171116-02
 .blog-editor {
     color: @gray-dark;
     .form-control {
@@ -2499,15 +2559,13 @@ body {
 }
 
 .post-title {
-    font-size: @font-size-h2;
+    font-size: 1.7em;
     font-weight: bold;
-    border-bottom: 1px solid @seperate-line-light;
     .form-control {
-        font-size: @font-size-h2;
+        font-size: 1em;
         font-weight: bold;
         height: auto;
     }
-<<<<<<< HEAD
     h1,
     .h1 {
         font-size: 1em;
@@ -2529,8 +2587,6 @@ h3 {
     .post-title {
         border-bottom: 1px solid @seperate-line-light;
     }
-=======
->>>>>>> parent of 38f3417... 20171116-02
 }
 .post-date {
     .form-group {
@@ -2590,6 +2646,7 @@ h3 {
 .post-editor {
     min-height: 30vh;
     position: relative;
+    margin-top: @padding-base;
     .alert-info {
         &.alert-editor {
             padding: 5px;
@@ -2600,15 +2657,44 @@ h3 {
             font-size: @font-size-small;
         }
     }
+    h1,
+    h2,
+    h3,
+    h4,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+        margin-bottom: 1.5em;
+        margin-top: 0;
+    }
+    p {
+        margin-bottom: 1.5em;
+    }
+    figure {
+        margin-bottom: 1.5em;
+        &.image {
+            padding: 0;
+        }
+    }
+    figcaption {
+        font-size: @font-size-small;
+        opacity: .5;
+        margin-top: 5px;
+    }
+    img,
+    .img-responsive {
+        max-height: 600px;
+        margin: 0 auto;
+    }
 }
+
 .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
     z-index: 200 !important;
 }
 
 
 
-=======
->>>>>>> parent of 0217ce8... 20171114-01
 //intro
 .intro-list {
     z-index: 99999;
