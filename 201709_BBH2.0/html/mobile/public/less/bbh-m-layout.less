@@ -2588,14 +2588,21 @@ h3 {
         border-bottom: 1px solid @seperate-line-light;
     }
 }
-
+.post-date {
+    .form-group {
+        margin-bottom: 0;
+        .form-control {
+            background: transparent;
+        }
+    }
+}
 .input-group {
     &.date {
         input {
             background: transparent;
             padding-right: 45px;
         }
-        &:after {
+        /*&:after {
             content: "\e92d";
             font-family: 'bbhiocn';
             font-size: @font-size-h2;
@@ -2603,6 +2610,17 @@ h3 {
             position: absolute;
             top: -5px;
             right: 20px;
+        }*/
+        .input-group-addon {
+            border: 0;
+            background: transparent;
+            color: @link-key;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: @font-size-h2;
+            &:hover {
+                color: darken(@link-key, 10%);
+            }
         }
         .dropdown-menu {
             &:after {
