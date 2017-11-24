@@ -2602,6 +2602,7 @@ h3 {
             background: transparent;
             padding-right: 45px;
         }
+        margin-bottom: -10px;
         /*&:after {
             content: "\e92d";
             font-family: 'bbhiocn';
@@ -2615,8 +2616,7 @@ h3 {
             border: 0;
             background: transparent;
             color: @link-key;
-            padding-top: 0;
-            padding-bottom: 0;
+            padding: 0 10px 0 34px;
             font-size: @font-size-h2;
             &:hover {
                 color: darken(@link-key, 10%);
@@ -2629,11 +2629,12 @@ h3 {
             &.bootstrap-datetimepicker-widget {
                 position: fixed !important;
                 top: 0 !important;
-                bottom: 0 !important;
+                bottom: auto !important;
                 width: 100%;
                 border: 0;
-                //box-shadow: rgba(0, 0, 0, 0.5) 0 -300px 0;
+                box-shadow: rgba(0, 0, 0, 0.5) 0 300px 0;
                 border-radius: 0;
+                z-index: 2000;
                 [class^="icon-"],
                 [class*=" icon-"] {
                     font-size: 1.4em;
