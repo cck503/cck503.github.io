@@ -56,17 +56,20 @@
                             <input type="text" class="form-control" placeholder="文章標題">
                         </div>
                         <div class="post-date">
+                            <a href="" data-toggle="modal" data-target="#datetimepicker-modal" class="btn btn-key-line"><i class="icon-calendar-line"></i></a>
                             <!--
                             <div class='input-group date'>
                                 <input type='text' id='datetimepicker1' class="form-control" value="11/20/2017 3:12 PM" />
                             </div>
                             -->
+                            <!--
                             <div class="form-group">
                                 <div class='input-group date' id='datetimepicker1'>
                                     <input type='text' class="form-control" value="11/20/2017 3:12 PM"/>
                                     <span class="input-group-addon"><span class="icon-calendar-line"></span></span>
                                 </div>
                             </div>
+                            -->
                         </div>
                         <div class="post-editor">
                             <!--ckeditor-->
@@ -98,6 +101,22 @@
         </div>
     </div>
     <!-- Modal -->
+    <div class="modal drop-modal fade datetimepicker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="datetimepicker-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div style="overflow:hidden;">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="datetimepicker"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal drop-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="folder-modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -117,6 +136,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal drop-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="privacy-modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -135,6 +155,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal drop-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="tag-kids-modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -204,6 +225,25 @@
     <script src="public/ckeditor/sample.js"></script>
     <script src="public/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript">
+    $(function() {
+        $('#datetimepicker').datetimepicker({
+            inline: true,
+            sideBySide: false,
+            showClose: true,
+            icons: {
+                time: "icon-clock-line",
+                date: "icon-calendar-full",
+                up: "icon-arrow-up",
+                down: "icon-arrow-down",
+                previous: 'icon-arrow-left',
+                next: 'icon-arrow-right',
+                close: 'icon-close-full'
+            }
+        });
+    });
+    </script>
+    <!--
+    <script type="text/javascript">
     initSample();
     $(function() {
         $('#datetimepicker1').datetimepicker({
@@ -221,6 +261,7 @@
         });
     });
     </script>
+    -->
 </body>
 
 </html>
