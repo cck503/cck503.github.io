@@ -2453,6 +2453,7 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>
     <script src="public/js/feeds-custom.js"></script>
+    <script src="public/js/imagesloaded.pkgd.min.js"></script>
     <script>
     $('#covernav-fix').affix({
         offset: {
@@ -2462,6 +2463,9 @@
             }
         }
     })
+    $('body').imagesLoaded( function() {
+    // images have loaded
+    });
     </script>
 </body>
 

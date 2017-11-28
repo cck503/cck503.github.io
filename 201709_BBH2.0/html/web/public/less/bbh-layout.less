@@ -651,6 +651,7 @@ body {
 
 
 
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1854,6 +1855,10 @@ body {
         margin-bottom: 11px;
         margin-top: 0;
     }
+    h3,
+    .h3 {
+        font-size: @font-size-h3;
+    }
 }
 
 .blog-list {
@@ -1864,12 +1869,44 @@ body {
         }
     }
     .txt-holder {
-        &.shorten {
-            height: 4.8em;
+        .shorten {
+            height: 4.2em;
+            overflow: hidden;
         }
     }
 }
 
+//masonry-layout
+.col-xs-10 {
+    .masonry {
+        /*
+        padding: @padding-base;
+        -moz-column-count: 3;
+        -moz-column-gap: @padding-base*2;
+        -webkit-column-count: 3;
+        -webkit-column-gap: @padding-base*2;
+        column-count: 3;
+        column-gap: @padding-base*2;
+        */
+    }
+}
+
+.masonry-column {
+    padding: @padding-base;
+    display: inline-block;
+    margin-bottom: @padding-base;
+    width: 33.33%;
+    .blog-list {
+        //margin: -@padding-base -@padding-base 0;
+        padding: 0;
+        .txt-holder {
+            padding: @padding-base;
+        }
+    }
+}
+
+
+/*fixed-height
 .blog-inner {
     height: 377px;
     overflow: hidden;
@@ -1898,6 +1935,7 @@ body {
         margin: auto;
     }
 }
+*/
 
 .more-option {
     &.folder-edit {
@@ -1972,6 +2010,23 @@ body {
     .privacy-tip {
         margin-left: 5px;
         opacity: .7;
+    }
+    .dropdown-menu {
+        .privacy-tip {
+            margin-left: 0;
+            margin-bottom: @padding-base/2;
+            border-bottom: 1px solid @seperate-line-light;
+            padding: 0 @padding-base*2 @padding-base;
+            font-size: @font-size-small;
+        }
+        >li {
+            &:last-child {
+                .privacy-tip {
+                    border: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 
@@ -2074,6 +2129,7 @@ body {
 
 
 
+
 /**/
 
 .post-title {
@@ -2094,16 +2150,16 @@ body {
     &.date {
         input {
             background: transparent;
-            padding-right: 45px;
+            padding-left: 45px;
         }
-        &:after {
+        &:before {
             content: "\e92d";
             font-family: 'bbhiocn';
             font-size: @font-size-h2;
             color: @link-key;
             position: absolute;
             top: -5px;
-            right: 20px;
+            left: 0;
         }
         /*.input-group-addon {
             border: 0;
@@ -2117,7 +2173,7 @@ body {
             }
         }*/
         .bootstrap-datetimepicker-widget {
-            [class^="icon-"], 
+            [class^="icon-"],
             [class*=" icon-"] {
                 font-size: 1.4em;
             }
