@@ -508,30 +508,6 @@ body {
     }
 }
 
-.sec-feeds {
-    .sec-heading {
-        color: @BBH-feed;
-        i {
-            display: inline-block;
-            margin-top: 10px;
-            transform: scale(1.5);
-            margin-right: 10px;
-        }
-    }
-    .card-inner {
-        .profile-caption {
-            >p {
-                .reduce();
-            }
-        }
-        .img-holder {
-            width: 380px;
-            height: 258px;
-            overflow: hidden;
-        }
-    }
-}
-
 .feature-story {
     .media-heading {
         height: 3em;
@@ -609,20 +585,45 @@ body {
 }
 
 .sec-feeds {
+    .sec-heading {
+        color: @BBH-feed;
+        i {
+            display: inline-block;
+            margin-top: 10px;
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
+    }
+    .card-inner {
+        .profile-caption {
+            >p {
+                .reduce();
+            }
+        }
+        .img-holder {
+            /*col-xs-4
+            width: 380px;
+            height: 258px;
+            */
+            width: 280px;
+            height: 190px;
+            overflow: hidden;
+        }
+    }
     .card-span {
         margin-bottom: 0;
         .img-holder {
             >a {
-                height: 254px;
+                height: 190px;
                 overflow: hidden;
                 width: 100%;
                 position: relative;
                 img {
                     position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
+                    left: -100%;
+                    right: -100%;
+                    top: -100%;
+                    bottom: -100%;
                     margin: auto;
                 }
             }
@@ -632,6 +633,11 @@ body {
             overflow: hidden;
         }
     }
+    [class*='col-xs'],
+    [class^='col-xs'] {
+        padding-top: @padding-base*1.5;
+        padding-bottom: @padding-base*1.5;
+    }
 }
 
 .footer-inner {
@@ -639,17 +645,32 @@ body {
 }
 
 .sec-motherhood {
+    .sec-heading {
+        margin-bottom: @padding-base;
+        color: @BBH-pink;
+    }
     .category-nav {
         /*.cover-btn-holder {
             margin-top: 0;
         }*/
     }
+    [class*='col-xs'],
+    [class^='col-xs'] {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .card-border {
         height: 135px;
+        border-color: transparent;
         .span-profile {
-            margin: 0;
+            margin: @padding-base 0;
             align-items: flex-start;
             -webkit-align-items: flex-start;
+        }
+        .txt-holder {
+            &.shorten {
+                max-height: 2.9em;
+            }
         }
     }
 }
@@ -1038,6 +1059,11 @@ body {
 }
 
 .card-input-full {
+    .card-heading {
+        border-bottom: 1px solid @seperate-line-light;
+        padding: 0 0 @padding-base;
+        margin: 0 0 @padding-base/2;
+    }
     .respond-inner {
         background: transparent;
         border-radius: 0;
@@ -1095,6 +1121,17 @@ body {
             left: auto;
         }
     }
+    .tag-menu {
+        &:before {
+            right: 50px;
+            left: auto;
+        }
+    }
+}
+.tag-menu {
+    right: 0;
+    left: auto;
+    min-width: 360px;
 }
 
 .emoji-dropdown {
@@ -1259,10 +1296,10 @@ body {
         margin-bottom: 0;
     }
     .profile-caption {
-        margin-bottom: 15px;
+        margin-bottom: @padding-base;
         padding-left: 0;
         padding-right: 0;
-        max-height: 3em;
+        max-height: 2.9em;
         overflow: hidden;
     }
 }
@@ -1964,6 +2001,12 @@ body {
             margin-left: -@padding-base;
             margin-right: -@padding-base;
         }
+        &.blog-list {
+            .respond-option {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
     }
     .blog-list {
         //margin: -@padding-base -@padding-base 0;
@@ -1971,11 +2014,16 @@ body {
         .txt-holder {
             padding: @padding-base;
         }
+        .post-img {
+            margin: 0;
+        }
     }
     .post-img {
         display: block;
         border-radius: 2px 2px 0 0;
         overflow: hidden;
+        margin-right: -@padding-base;
+        margin-left: -@padding-base;
         .img-responsive {
             margin: 0 auto;
         }
@@ -1998,6 +2046,33 @@ body {
 
 //媽媽力
 .category-nav {
+    .category-list {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    .cover-btn-holder {
+        background: white;
+        padding: @padding-base*1.5;
+        border-radius: 0;
+        margin-top: @padding-base*2;
+        box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0,0,0,.15);
+        border-radius: 2px;
+    }
+    .motherhood-btn {
+        font-size: @font-size-h4;
+        a {
+            color: @BBH-pink;
+        }
+        
+    }
+    .v-seperate-line {
+        margin: 0 @padding-base*2;
+        min-height: 80px;
+        opacity: .7;
+        background: @seperate-line-light;
+    }
+}
+.category-list {
     .btn-key-line {
         margin-bottom: @padding-base;
         padding-left: @padding-base;
@@ -2019,10 +2094,6 @@ body {
             }
         }
     }
-    .category-list {
-        -webkit-flex: 1;
-        flex: 1;
-    }
     .line-blue {
         &.active {
             color: @gray-dark;
@@ -2031,22 +2102,6 @@ body {
                 color: @gray-dark;
             }
         }
-    }
-    .cover-btn-holder {
-        background: white;
-        padding: @padding-base*1.5;
-        border-radius: 0;
-        margin-top: @padding-base*2;
-        box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0,0,0,.15);
-        border-radius: 2px;
-    }
-    .motherhood-btn {
-        font-size: @font-size-h4;
-    }
-    .v-seperate-line {
-        margin: 0 @padding-base*2;
-        min-height: 80px;
-        opacity: .7;
     }
 }
 
@@ -2137,6 +2192,7 @@ body {
         width: 100%;
         background: white; //box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
         padding: 0;
+        border-color: transparent;
         .span-profile {
             text-align: center;
             width: 220px;
