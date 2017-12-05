@@ -74,6 +74,10 @@ a {
     }
 }
 
+ .bbh-pink {
+    color: @BBH-pink;
+ }
+
 .btn-more {
     i {
         vertical-align: text-top;
@@ -96,6 +100,7 @@ a {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+
 .padding-hreset {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -222,6 +227,12 @@ body {
     margin-top: 0;
     font-size: @font-size-h2;
     position: relative;
+}
+
+[class*='icon-'],
+[class^='icon-'] {
+    position: relative;
+    top: 2px;
 }
 
 //grid
@@ -644,6 +655,8 @@ body {
     margin-top: -1px;
 }
 
+
+
 .sec-motherhood {
     .sec-heading {
         margin-bottom: @padding-base;
@@ -654,11 +667,13 @@ body {
             margin-top: 0;
         }*/
     }
+
     [class*='col-xs'],
     [class^='col-xs'] {
         padding-top: 0;
         padding-bottom: 0;
     }
+    /*
     .card-border {
         height: 135px;
         border-color: transparent;
@@ -670,6 +685,35 @@ body {
         .txt-holder {
             &.shorten {
                 max-height: 2.9em;
+            }
+        }
+    }
+    */
+    .motherhood-list {
+        [class*='col-xs'],
+        [class^='col-xs'] {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .span-profile {
+            padding: 0;
+            border: @padding-base solid white;
+            margin-bottom: 0;
+            background: white;
+            height: 253px;
+            overflow: hidden;
+        }
+        .span-inner {
+            padding-left: 0;
+            .profile-caption {
+                max-height: 2.9em;
+                overflow: hidden;
+                margin-bottom: @padding-base;
+            }
+            .txt-holder {
+                &.shorten {
+                    max-height: 7em;
+                }
             }
         }
     }
@@ -708,6 +752,8 @@ body {
         width: 100%;
     }
 }
+
+
 
 
 
@@ -1128,6 +1174,7 @@ body {
         }
     }
 }
+
 .tag-menu {
     right: 0;
     left: auto;
@@ -2055,7 +2102,7 @@ body {
         padding: @padding-base*1.5;
         border-radius: 0;
         margin-top: @padding-base*2;
-        box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0,0,0,.15);
+        box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0, 0, 0, .15);
         border-radius: 2px;
     }
     .motherhood-btn {
@@ -2063,7 +2110,6 @@ body {
         a {
             color: @BBH-pink;
         }
-        
     }
     .v-seperate-line {
         margin: 0 @padding-base*2;
@@ -2072,6 +2118,7 @@ body {
         background: @seperate-line-light;
     }
 }
+
 .category-list {
     .btn-key-line {
         margin-bottom: @padding-base;
@@ -2187,6 +2234,11 @@ body {
     .card-profile {
         text-align: center;
     }
+    .span-profile {
+        .profile-avator {
+            margin-left: 0;
+        }
+    }
     .card-border {
         height: 290px;
         width: 100%;
@@ -2237,6 +2289,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -2456,6 +2510,8 @@ body {
         }
     }
 }
+
+
 
 
 
