@@ -491,6 +491,42 @@ body {
 }
 
 
+.sec-row {
+    .sec-heading {
+        color: @BBH-pink;
+        position: relative;
+        margin: 0 auto @padding-base;
+        width: 5em;
+        &:first-letter {
+            color: white;
+        }
+        .bordering {
+            letter-spacing: .5em;
+            position: relative;
+            z-index: 10;
+        }
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+        }
+        &:before {
+            background: @BBH-pink;
+            top: -3px;
+            left: -10px;
+        }
+        &:after {
+            border: 1px solid @BBH-pink;
+            top: 0;
+            left: 27px;
+        }
+    }
+}
+
 
 
 //marketing-event
@@ -557,38 +593,17 @@ body {
 
 
 
+
+/**/
 .sec-featuring {
     .sec-heading {
         color: @BBH-pink;
-        position: relative;
-        margin: 0 auto @padding-base;
-        width: 125px;
-        &:first-letter {
-            color: white;
-        }
-        .bordering {
-            letter-spacing: .5em;
-            position: relative;
-            z-index: 10;
-        }
-        &:before,
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            z-index: 1;
-        }
         &:before {
             background: @BBH-pink;
-            top: -3px;
-            left: -10px;
+            
         }
         &:after {
             border: 1px solid @BBH-pink;
-            top: 0;
-            left: 27px;
         }
     }
     >.container {
@@ -684,8 +699,6 @@ body {
 
 .sec-feeds {
     .sec-heading {
-        color: @BBH-feed;
-        text-align: center;
         margin-bottom: @padding-base;
         margin-top: -@padding-base;
         i {
@@ -723,10 +736,9 @@ body {
 
 .sec-motherhood {
     .sec-heading {
-        color: @BBH-pink;
-        text-align: center;
         margin-bottom: @padding-base;
         margin-top: -@padding-base*4;
+        width: 6em;
     }
     .feature-story-img {
         margin-left: 0;

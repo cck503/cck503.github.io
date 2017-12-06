@@ -67,7 +67,9 @@ body {
     .navbar-default {
         border-color: #fcdf7e;
         background-color: white;
-        border-bottom-width: 2px;
+        border-bottom-width: 3px;
+        //border-bottom-width: 2px;
+        //box-shadow: rgba(250, 193, 9, .5) 0 2px 10px;
         .navbar-nav {
             >li {
                 >a {
@@ -461,6 +463,8 @@ body {
         .dropdown-menu {
             margin-top: -10px;
             border-radius: 4px;
+            min-width: 140px;
+            top: 100%;
         }
     }
 }
@@ -746,6 +750,7 @@ body {
     .content-width {
         width: 900px;
         margin: 60px auto;
+        border-color: transparent;
     }
     ul {
         color: @gray-dark;
@@ -758,6 +763,16 @@ body {
             margin: 20px;
             transform: scale(1.4);
             -webkit-transform: scale(1.4);
+            background: transparent;
+            color: @gray-base;
+            opacity: .2;
+            text-shadow: none;
+            font-size: 24px;
+            line-height: 1;
+            width: auto;
+            &:hover {
+                opacity: .6;
+            }
         }
         select,
         .form-control {
@@ -810,6 +825,7 @@ body {
     }
     .modal-body {
         background: @info-bg;
+        padding: @padding-base*1.5;
         a {
             color: @gray-dark;
             &:hover,
