@@ -144,6 +144,8 @@ ul {
 
 
 
+
+
 /*
 .container {
     padding-left: 0;
@@ -170,12 +172,24 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.bbh-pink {
+    color: @BBH-pink;
+}
+
 
 
 //type
 .list-heading {
     margin-top: 0; //font-size: @font-size-h2;
 }
+
+/*
+[class*='icon-'],
+[class^='icon-'] {
+    position: relative;
+    top: 2px;
+}
+*/
 
 //grid
 [class*='col-'],
@@ -279,6 +293,14 @@ body {
 }
 */
 
+.sec-heading,
+.section-heading {
+    i {
+        position: relative;
+        top: 2px;
+    }
+}
+
 .sec-login {
     background: @link-key;
     color: white;
@@ -351,22 +373,6 @@ body {
         background-color: lighten(@BBH-events, 20%);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -595,7 +601,6 @@ body {
 }
 
 
-
 .feature-story {
     .media-heading {
         height: 3em;
@@ -624,6 +629,9 @@ body {
     background: @seperate-line-light;
     margin-left: -@padding-base;
     margin-right: -@padding-base;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
     a {
         display: block;
     }
@@ -712,6 +720,59 @@ body {
     }
 }
 
+
+.sec-motherhood {
+    .sec-heading {
+        color: @BBH-pink;
+        text-align: center;
+        margin-bottom: @padding-base;
+        margin-top: -@padding-base*2;
+    }
+    .feature-story-img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .motherhood-list {
+        [class*='col-xs'],
+        [class^='col-xs'] {
+            margin-bottom: @padding-base;
+        }
+        .card-span {
+            margin-bottom: @padding-base;
+        }
+        .span-profile {
+            padding: 0;
+            //border: @padding-base solid white;
+            margin-bottom: 0;
+            background: white;
+            //height: 253px;
+            overflow: hidden;
+            .profile-avator {
+                margin-left: 0;
+            }
+        }
+        .span-inner {
+            .profile-caption {
+                max-height: 2.9em;
+                overflow: hidden;
+                margin-bottom: @padding-base;
+            }
+            .txt-holder {
+                &.shorten {
+                    max-height: 7em;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .category-nav {
+        margin-bottom: 0;
+    }
+}
+
+
 //myHome
 .card-heading {
     .featuring-tag {
@@ -786,6 +847,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -913,6 +976,8 @@ body {
         box-shadow: rgba(0, 0, 0, .05) 0 2px 6px;
     }
 }
+
+
 
 
 
@@ -1077,6 +1142,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -1967,7 +2034,6 @@ body {
     }
 }
 
-.main-wrapper {}
 
 
 
@@ -2437,8 +2503,11 @@ body {
 //blog
 .section-heading {
     padding: @padding-base;
+    .profile-avator-xs {
+        margin-right: @padding-base;
+    }
     .lead {
-        margin: 0 0 0 @padding-base;
+        margin: 0;
     }
     .select-style {
         .form-control {
@@ -2725,6 +2794,210 @@ h3 {
 
 .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
     z-index: 200 !important;
+}
+
+
+.masonry {
+    &.m-4 {
+        .masonry-column {
+            width: 25%;
+        }
+    }
+    &.m-2 {
+        .masonry-column {
+            width: 50%;
+        }
+    }
+    .card-inner {
+        [class*='card-'],
+        [class^='card-'] {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.masonry-column {
+    padding: @padding-base;
+    display: inline-block;
+    //margin-bottom: @padding-base;
+    width: 33.33%;
+    .card-span {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .respond-option {
+            margin-left: -@padding-base;
+            margin-right: -@padding-base;
+        }
+        &.blog-list {
+            .respond-option {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+    .blog-list {
+        //margin: -@padding-base -@padding-base 0;
+        padding: 0;
+        .txt-holder {
+            padding: @padding-base;
+        }
+        .post-img {
+            margin: 0;
+        }
+    }
+    .post-img {
+        display: block;
+        border-radius: 2px 2px 0 0;
+        overflow: hidden;
+        margin-right: -@padding-base;
+        margin-left: -@padding-base;
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+    .txt-holder {
+        .shorten {
+            height: 4.2em;
+            overflow: hidden;
+        }
+        &.shorten {
+            height: 4.6em;
+            overflow: hidden;
+        }
+    }
+    .link-description {
+        width: 100%;
+    }
+}
+
+
+
+//媽媽力
+.col-motherhood {
+    .txt-holder {
+        .shorten {
+            height: 4.2em;
+            overflow: hidden;
+        }
+        &.shorten {
+            height: 4.6em;
+            overflow: hidden;
+        }
+    }
+}
+.section-heading {
+    .btn-compose {
+        min-width: auto;
+        height: 54px;
+        padding: 12px;
+        width: 54px;
+        opacity: .8;
+        z-index: 1200;
+        transition: bottom ease-in .2s;
+        i {
+            margin: 0;
+            font-size: @font-size-h2;
+            top: 0;
+        }
+        &.affix {
+            position: fixed;
+            top: auto;
+            right: @padding-base;
+            bottom: 100px;
+            transition: all ease-in .2s;
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+}
+.category-nav {
+    .category-list {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    .cover-btn-holder {
+        background: white;
+        padding: @padding-base*1.5;
+        border-radius: 0; //margin-top: @padding-base*2;
+        box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0, 0, 0, .15);
+        border-radius: 2px;
+    }
+    .motherhood-btn {
+        font-size: @font-size-h4;
+        a {
+            color: @BBH-pink;
+        }
+    }
+    .v-seperate-line {
+        margin: 0 @padding-base*2;
+        min-height: 80px;
+        opacity: .7;
+        background: @seperate-line-light;
+    }
+}
+
+.category-list {
+    .btn-key-line {
+        margin-bottom: @padding-base;
+        padding-left: @padding-base;
+        padding-right: @padding-base;
+        border-color: transparent;
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: @link-key;
+        }
+        &.active {
+            background: @BBH-pink;
+            color: white;
+            cursor: default;
+            box-shadow: none;
+            font-weight: bold;
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
+    .line-blue {
+        &.active {
+            color: @gray-dark;
+            cursor: default;
+            &:hover {
+                color: @gray-dark;
+            }
+        }
+    }
+}
+
+.dropdown-fake {
+    .category-list {
+        padding: @padding-base*2;
+    }
+}
+
+.motherhood-list {
+    .alert-info {
+            position: relative;
+            margin: @padding-base 0 0;
+            padding: @padding-base/2;
+            .shorten {
+                max-height: 2.9em;
+                overflow: hidden;
+                a {
+                    display: inline;
+                }
+            }
+        }
+        .featuring-info {
+            padding: 1px 5px;
+            float: left;
+            font-size: @font-size-xs;
+            color: white;
+            background-color: @BBH-info;
+        }
 }
 
 
