@@ -105,7 +105,28 @@ a {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
-
+/*
+[class*='profile-avator'],
+[class^='profile-avator'] {
+    a {
+        &:hover {
+            position: relative;
+        }
+    }
+    a[title]:hover:after {
+        content: attr(title);
+        padding: 2px 5px;
+        background: @gray-dark;
+        color: white;
+        font-size: @font-size-small;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        white-space: nowrap;
+        z-index: 20;
+    }
+}
+*/
 .heart-beat {
     position: relative;
     i {
@@ -231,6 +252,7 @@ body {
 
 
 
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -273,6 +295,7 @@ body {
 {
     background-color: white;
 }
+
 
 
 
@@ -841,6 +864,7 @@ body {
 
 
 
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1087,7 +1111,7 @@ body {
     margin-top: 20px;
     &.affix {
         position: relative;
-        .col-left{
+        .col-left {
             &.col-xs-2 {
                 position: fixed;
                 top: 130px;
@@ -2191,7 +2215,11 @@ body {
             color: @BBH-pink;
             i {
                 position: relative;
-                top: 2px;
+                top: 4px;
+                font-size: 32px;
+            }
+            &:hover {
+                color: darken(@BBH-pink, 10%)
             }
         }
     }
@@ -2383,6 +2411,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -2612,6 +2641,7 @@ body {
         }
     }
 }
+
 
 
 

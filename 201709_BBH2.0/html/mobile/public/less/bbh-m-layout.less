@@ -146,6 +146,7 @@ ul {
 
 
 
+
 /*
 .container {
     padding-left: 0;
@@ -182,6 +183,7 @@ body {
 .list-heading {
     margin-top: 0; //font-size: @font-size-h2;
 }
+
 
 /*
 [class*='icon-'],
@@ -373,6 +375,7 @@ body {
         background-color: lighten(@BBH-events, 20%);
     }
 }
+
 
 
 
@@ -594,13 +597,14 @@ body {
 
 
 
+
 /**/
+
 .sec-featuring {
     .sec-heading {
         color: @BBH-pink;
         &:before {
             background: @BBH-pink;
-            
         }
         &:after {
             border: 1px solid @BBH-pink;
@@ -753,11 +757,9 @@ body {
             margin-bottom: @padding-base;
         }
         .span-profile {
-            padding: 0;
-            //border: @padding-base solid white;
+            padding: 0; //border: @padding-base solid white;
             margin-bottom: 0;
-            background: white;
-            //height: 253px;
+            background: white; //height: 253px;
             overflow: hidden;
             .profile-avator {
                 margin-left: 0;
@@ -859,6 +861,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -988,6 +991,7 @@ body {
         box-shadow: rgba(0, 0, 0, .05) 0 2px 6px;
     }
 }
+
 
 
 
@@ -1154,6 +1158,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -2830,8 +2835,7 @@ h3 {
 
 .masonry-column {
     padding: @padding-base;
-    display: inline-block;
-    //margin-bottom: @padding-base;
+    display: inline-block; //margin-bottom: @padding-base;
     width: 33.33%;
     .card-span {
         margin-bottom: 0;
@@ -2897,6 +2901,7 @@ h3 {
         }
     }
 }
+
 .section-heading {
     .btn-compose {
         min-width: auto;
@@ -2924,7 +2929,16 @@ h3 {
             }
         }
     }
+    .btn {
+        &.bbh-pink {
+            margin-right: -@padding-base;
+            i {
+                font-size: 1.2em;
+            }
+        }
+    }
 }
+
 .category-nav {
     .category-list {
         -webkit-flex: 1;
@@ -2992,24 +3006,24 @@ h3 {
 
 .motherhood-list {
     .alert-info {
-            position: relative;
-            margin: @padding-base 0 0;
-            padding: @padding-base/2;
-            .shorten {
-                max-height: 2.9em;
-                overflow: hidden;
-                a {
-                    display: inline;
-                }
+        position: relative;
+        margin: @padding-base 0 0;
+        padding: @padding-base/2;
+        .shorten {
+            max-height: 2.9em;
+            overflow: hidden;
+            a {
+                display: inline;
             }
         }
-        .featuring-info {
-            padding: 1px 5px;
-            float: left;
-            font-size: @font-size-xs;
-            color: white;
-            background-color: @BBH-info;
-        }
+    }
+    .featuring-info {
+        padding: 1px 5px;
+        float: left;
+        font-size: @font-size-xs;
+        color: white;
+        background-color: @BBH-info;
+    }
 }
 
 
