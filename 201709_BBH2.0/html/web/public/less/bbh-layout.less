@@ -480,6 +480,10 @@ body {
             letter-spacing: .5em;
             position: relative;
             z-index: 10;
+            &:first-of-type {
+                color: white;
+            }
+
         }
         &:before,
         &:after {
@@ -2185,7 +2189,7 @@ body {
             overflow: hidden;
         }
         &.shorten {
-            height: 4.6em;
+            max-height: 4.6em;
             overflow: hidden;
         }
     }
