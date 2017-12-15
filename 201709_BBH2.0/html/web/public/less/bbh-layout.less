@@ -2505,6 +2505,9 @@ body {
         }
         .profile-avator {
             border: 2px solid @BBH-pink;
+            img {
+                border: 2px solid white;
+            }
         }
     }
     .profile-avator-xs {
@@ -2517,11 +2520,11 @@ body {
     &:before {
         content: "";
         position: absolute;
-        top: 2em;
+        //top: 2em;
         left: 2em;
         .v-seperate-line();
         background: @seperate-line-light;
-        height: 80%;
+        height: 100%;
         z-index: 1;
     }
     .card-span {
@@ -2570,7 +2573,6 @@ body {
 .respond-inner {
     .ms-span {
         text-align: center;
-
         .ms-marks {
             display: inline-block;
             padding: 5px 10px;
@@ -2589,6 +2591,9 @@ body {
 .date-title {
     p {
         margin-bottom: @padding-base*3;
+        background: @bbh-body-bg;
+        position: relative;
+        z-index: 5;
     }
     .svg-holder {
         width: 1em;
