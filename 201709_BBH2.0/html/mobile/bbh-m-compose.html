@@ -442,6 +442,18 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script>
+    var body = document.documentElement;
+    if (body.requestFullscreen) {
+        body.requestFullscreen();
+    } else if (body.webkitrequestFullscreen) {
+        body.webkitrequestFullscreen();
+    } else if (body.mozrequestFullscreen) {
+        body.mozrequestFullscreen();
+    } else if (body.msrequestFullscreen) {
+        body.msrequestFullscreen();
+    }
+    </script>
 </body>
 
 </html>
