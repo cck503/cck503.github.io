@@ -28,69 +28,71 @@
 <body>
     <div class="main-wrapper">
         <div class="content-container flex-v">
-            <div class="content-heading flex-h">
-                <button class="btn btn-link link-blue">刪除</button>
-                <div class="heading-inner">新增網誌</div>
-                <div class="compose-btn">
-                    <button class="btn btn-key-line">草稿</button>
-                    <button class="btn btn-key">發表</button>
-                </div>
-            </div>
-            <div class="content-body card-inner card-input-full">
-                <div class="card-heading">
-                    <div class="profile-avator-xs">
-                        <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+            <form name="edit_subject" id="edit_subject">
+                <div class="content-heading flex-h">
+                    <button class="btn btn-link link-blue">刪除</button>
+                    <div class="heading-inner">新增網誌</div>
+                    <div class="compose-btn">
+                        <button class="btn btn-key-line">草稿</button>
+                        <button class="btn btn-key">發表</button>
                     </div>
-                    <div class="profile-caption">
-                        <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                        <div class="post-detail">
-                            <div class="flex-h dropdown">
-                                <a href="" class="link-blue flex-h" data-toggle="modal" data-target="#privacy-modal"><span>不公開</span><i class="icon-link flex-h"></i></a>
+                </div>
+                <div class="content-body card-inner card-input-full">
+                    <div class="card-heading">
+                        <div class="profile-avator-xs">
+                            <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                        </div>
+                        <div class="profile-caption">
+                            <p><a href="" class="link-profile">小寶真是可愛</a></p>
+                            <div class="post-detail">
+                                <div class="flex-h dropdown">
+                                    <a href="" class="link-blue flex-h" data-toggle="modal" data-target="#privacy-modal"><span>不公開</span><i class="icon-link flex-h"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body blog-editor">
+                        <div class="body-inner">
+                            <div class="post-title">
+                                <input type="text" class="form-control" placeholder="文章標題">
+                            </div>
+                            <div class="post-date flex-h">
+                                <a href="" data-toggle="modal" data-target="#datetimepicker-modal" class="picker"><i class="icon-calendar-line"></i></a>
+                                <div class='input-group date'>
+                                    <input type='text' for='datetimepicker1' class="form-control" placeholder="11/20/2017 3:12 PM" />
+                                </div>
+                            </div>
+                            <div class="post-editor">
+                                <!--ckeditor-->
+                                <div id="editor"></div>
+                                <!--ckeditor end-->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-body blog-editor">
-                    <div class="body-inner">
-                        <div class="post-title">
-                            <input type="text" class="form-control" placeholder="文章標題">
-                        </div>
-                        <div class="post-date flex-h">
-                            <a href="" data-toggle="modal" data-target="#datetimepicker-modal" class="picker"><i class="icon-calendar-line"></i></a>
-                            <div class='input-group date'>
-                                <input type='text' for='datetimepicker1' class="form-control" placeholder="11/20/2017 3:12 PM" />
+                <div class="content-footer">
+                    <div class="tags-sapn flex-h">
+                        <div class="tag-kids"><span>大寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                        <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                        <div class="tag-kids"><span>大寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
+                    </div>
+                    <div class="folder-span">
+                        文章分類：<a href="" data-toggle="modal" data-target="#folder-modal">未分類(1)</a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="respond-span flex-h">
+                            <div class="dropdown respond-drop">
+                                <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#tag-kids-modal"><i class="icon-zface"></i></a>
                             </div>
-                        </div>
-                        <div class="post-editor">
-                            <!--ckeditor-->
-                            <div id="editor"></div>
-                            <!--ckeditor end-->
+                            <a href="" class="btn btn-compose-white"><i class="icon-camera-line"></i></a>
+                            <div class="dropdown respond-drop">
+                                <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#tagmenu-modal">#</a>
+                            </div>
+                            <div class="alert alert-editor fade in" role="alert">已儲存···</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-footer">
-                <div class="tags-sapn flex-h">
-                    <div class="tag-kids"><span>大寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
-                    <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
-                    <div class="tag-kids"><span>大寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
-                </div>
-                <div class="folder-span">
-                    文章分類：<a href="" data-toggle="modal" data-target="#folder-modal">未分類(1)</a>
-                </div>
-                <div class="card-footer">
-                    <div class="respond-span flex-h">
-                        <div class="dropdown respond-drop">
-                            <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#tag-kids-modal"><i class="icon-zface"></i></a>
-                        </div>
-                        <a href="" class="btn btn-compose-white"><i class="icon-camera-line"></i></a>
-                        <div class="dropdown respond-drop">
-                            <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#tagmenu-modal">#</a>
-                        </div>
-                        <div class="alert alert-editor fade in" role="alert">已儲存···</div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
     <!-- Modal -->
@@ -140,7 +142,9 @@
                         <ul>
                             <li>
                                 <a href="#">公開</a>
-                                <p class="privacy-tip">取得連結的人可瀏覽此篇文章；選擇「不公開」發表後，請至文章頁「複製共用連結」。<br>若異動為「公開」完全開放，不限制觀看者身份。<br>若異動為「私密」取得連結的人將無法再觀看。</p>
+                                <p class="privacy-tip">取得連結的人可瀏覽此篇文章；選擇「不公開」發表後，請至文章頁「複製共用連結」。
+                                    <br>若異動為「公開」完全開放，不限制觀看者身份。
+                                    <br>若異動為「私密」取得連結的人將無法再觀看。</p>
                             </li>
                             <li>
                                 <a href="#">私密</a>
@@ -148,7 +152,9 @@
                             </li>
                             <li>
                                 <a href="#">不公開</a>
-                                <p class="privacy-tip">取得連結的人可瀏覽此篇文章；選擇「不公開」發表後，請至文章頁「複製共用連結」。<br>若異動為「公開」完全開放，不限制觀看者身份。<br>若異動為「私密」取得連結的人將無法再觀看。</p>
+                                <p class="privacy-tip">取得連結的人可瀏覽此篇文章；選擇「不公開」發表後，請至文章頁「複製共用連結」。
+                                    <br>若異動為「公開」完全開放，不限制觀看者身份。
+                                    <br>若異動為「私密」取得連結的人將無法再觀看。</p>
                             </li>
                         </ul>
                     </div>

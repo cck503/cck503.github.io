@@ -1120,7 +1120,8 @@ body {
     }
     .body-inner {
         textarea {
-            max-height: 35vh;
+            max-height: 100%;
+            //height: 100%;
             width: 100%;
         }
     }
@@ -2735,6 +2736,7 @@ h3 {
 }
 
 .post-date {
+    border-bottom: 1px solid  @seperate-line-light;
     .form-group {
         margin-bottom: 0;
         .form-control {
@@ -2806,8 +2808,20 @@ h3 {
     }
 }
 
+#edit_subject {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    .flex-v();
+}
+
+
+
 .post-editor {
-    min-height: 30vh;
+    //min-height: 30vh;
+    height: 100%;
     position: relative;
     margin-top: @padding-base;
     .alert-info {
@@ -3339,6 +3353,15 @@ h3 {
         min-width: 48px;
     }
 }
+
+
+
+//ckeditor
+.cke_top {
+    display: none !important;
+}
+
+
 
 //intro
 .intro-list {
