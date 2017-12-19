@@ -11,6 +11,7 @@
     <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/bootstrap-datetimepicker.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -42,9 +43,14 @@
                     </div>
                     <div class="profile-caption">
                         <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                        <div class="post-detail">
-                            <div class="flex-h dropdown">
-                                <a href="" class="link-blue flex-h" data-toggle="modal" data-target="#privacy-modal"><span>公開</span><i class="icon-earth-full flex-h"></i></a>
+                        <div class="flex-h">
+                            <div class="post-detail">
+                                <a href="" data-toggle="modal" data-target="#datetimepicker-modal" class="link-blue flex-h"><span>現在</span><i class="icon-calendar-full"></i></a>
+                            </div>
+                            <div class="post-detail">
+                                <div class="flex-h dropdown">
+                                    <a href="" class="link-blue flex-h" data-toggle="modal" data-target="#privacy-modal"><span>公開</span><i class="icon-earth-full flex-h"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -181,6 +187,26 @@
                                     <a href="" class="btn btn-key-line btn-square">會叫媽媽</a>
                                     <a href="" class="btn btn-key-line link-blue" data-toggle="modal" data-target="#milestoneModal">自訂里程碑</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--datepicker-modal-->
+    <div class="modal drop-modal fade datetimepicker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="datetimepicker-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-line invisible">全選</button>
+                        <button class="btn btn-key" data-dismiss="modal">確定</button>
+                    </div>
+                    <div style="overflow:hidden;">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="datetimepicker"></div>
                             </div>
                         </div>
                     </div>
@@ -438,9 +464,26 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script src="public/js/moment.min.js"></script>
+    <script src="public/js/bootstrap-datetimepicker.min.js"></script>
     <script src="public/js/autosize.min.js"></script>
     <script>
-        autosize(document.querySelectorAll('.autoExpand'));
+    $(function() {
+        $('#datetimepicker').datetimepicker({
+            inline: true,
+            sideBySide: false,
+            icons: {
+                time: "icon-clock-line",
+                date: "icon-calendar-full",
+                up: "icon-arrow-up",
+                down: "icon-arrow-down",
+                previous: 'icon-arrow-left',
+                next: 'icon-arrow-right',
+                close: 'icon-close-full'
+            }
+        });
+    });
+    autosize(document.querySelectorAll('.autoExpand'));
     </script>
 </body>
 
