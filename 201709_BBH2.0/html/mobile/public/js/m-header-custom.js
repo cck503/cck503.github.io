@@ -43,7 +43,7 @@ function hasScrolled() {
 
 
 
-$(document)
+/*$(document)
     .one('focus.autoExpand', 'textarea.autoExpand', function() {
         var savedValue = this.value;
         this.value = '';
@@ -57,7 +57,7 @@ $(document)
         rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
         this.rows = minRows + rows;
     });
-
+*/
 
 
 $(document).ready(function(){

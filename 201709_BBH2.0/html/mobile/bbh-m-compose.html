@@ -58,7 +58,7 @@
                                     <p class="h2"><span class="svg-holder"><img src="public/img/svg/ms-03.svg" alt="" class="img-responsive"></span>第一次自己坐</p>
                                 </div>
                             </div>
-                            <textarea class="form-control autoExpand" id="message_content" rows='4' data-min-rows='4' placeholder="留個話吧‧‧‧"></textarea>
+                            <textarea class="form-control autoExpand" id="message_content" rows='4' placeholder="留個話吧‧‧‧"></textarea>
                         </div>
                     </div>
                 </div>
@@ -438,6 +438,10 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script src="public/js/autosize.min.js"></script>
+    <script>
+        autosize(document.querySelectorAll('.autoExpand'));
+    </script>
 </body>
 
 </html>
