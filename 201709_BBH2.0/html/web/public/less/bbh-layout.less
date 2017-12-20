@@ -2149,7 +2149,7 @@ body {
         }
     }
     .breadcrumb {
-        margin: 10px 0;
+        margin: 0;
         padding-left: @padding-base*2;
         padding-right: @padding-base*2;
         background: transparent;
@@ -2307,7 +2307,7 @@ body {
         background: white;
         padding: @padding-base*1.5;
         border-radius: 0;
-        margin-top: @padding-base*2;
+        //margin-top: @padding-base*2;
         box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0, 0, 0, .15);
         border-radius: 2px;
     }
@@ -2490,8 +2490,12 @@ body {
             padding: @padding-base*2;
         }
         .txt-holder {
+            p {
+                margin-bottom: 0;
+            }
             &.shorten {
-                height: 7em;
+                max-height: 7em;
+                margin-bottom: 0;
             }
         }
 
@@ -2725,7 +2729,7 @@ body {
     ul {
         .ms-selector {
             float: left;
-            width: 20%;
+            width: 16.6666%;
             padding: @padding-base/2;
             a {
                 display: block;
