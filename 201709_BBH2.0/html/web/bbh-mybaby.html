@@ -11,6 +11,7 @@
     <link id="theme" href="public/css/non-responsive.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-main.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/bootstrap-datetimepicker.css">
     <link href="public/css/member_task.css" rel="stylesheet" type="text/css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -322,13 +323,20 @@
                             </div>
                             <div class="profile-caption">
                                 <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                <div class="post-detail">
-                                    <div class="flex-h dropdown">
-                                        <a href="" class="link-blue flex-h" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>公開</span><i class="icon-earth-full flex-h"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">公開</a></li>
-                                            <li><a href="#">私密</a></li>
-                                        </ul>
+                                <div class="flex-h">
+                                    <div class="post-date">
+                                        <div class="date">
+                                            <input type='text' id='datetimepicker-gen' class="form-control width-dynamic" placeholder="現在" />
+                                        </div>
+                                    </div>
+                                    <div class="post-detail">
+                                        <div class="flex-h dropdown">
+                                            <a href="" class="link-blue flex-h" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>公開</span><i class="icon-earth-full flex-h"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">公開</a></li>
+                                                <li><a href="#">私密</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -541,7 +549,7 @@
                     </div>
                     <!--里程碑-->
                     <div class="card-span milestone-span">
-                        <span class="svg-holder ms-pin" data-tooltip="里程碑: 2017/7/12 會叫爸爸"><img src="public/img/svg/ms-pin.svg" alt="" class="img-responsive"></span>
+                        <span class="svg-holder ms-pin" data-tooltip="里程碑: 2y1m20d 會叫爸爸"><img src="public/img/svg/ms-pin.svg" alt="" class="img-responsive"></span>
                         <div class="card-inner">
                             <div class="card-heading">
                                 <div class="profile-caption">
@@ -1531,6 +1539,8 @@
     <script src="public/js/feeds-custom.js"></script>
     <script src="public/js/imagesloaded.pkgd.min.js"></script>
     <script src="public/js/loader-card.js"></script>
+    <script src="public/js/moment.min.js"></script>
+    <script src="public/js/bootstrap-datetimepicker.min.js"></script>
     <script>
     $('#covernav-fix').affix({
         offset: {
@@ -1540,6 +1550,19 @@
             }
         }
     })
+    $(function() {
+        $('#datetimepicker-gen').datetimepicker({
+            icons: {
+                time: "icon-clock-line",
+                date: "icon-calendar-full",
+                up: "icon-arrow-up",
+                down: "icon-arrow-down",
+                previous: 'icon-arrow-left',
+                next: 'icon-arrow-right'
+            },
+            keepOpen: true
+        });
+    });
     </script>
 </body>
 

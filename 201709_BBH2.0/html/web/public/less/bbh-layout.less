@@ -136,6 +136,7 @@ a {
 }
 
 
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -291,6 +292,7 @@ body {
 
 
 
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -341,6 +343,7 @@ body {
 {
     background-color: white;
 }
+
 
 
 
@@ -903,6 +906,38 @@ body {
     }
 }
 
+.card-input-full {
+    .post-date {
+        margin-right: @padding-base;
+        .date {
+            position: relative;
+            .form-control {
+                min-width: 2em;
+                padding: 0;
+                line-height: 1;
+                font-size: 14px;
+                height: auto;
+                border: 0px;
+                box-sizing: initial;
+                -webkit-box-sizing: initial;
+                -moz-box-sizing: initial;
+                .link-blue();
+            }
+            input::-webkit-input-placeholder {
+                .link-blue();
+            }
+            input:-ms-input-placeholder {
+                .link-blue();
+            }
+            input:-moz-placeholder {
+                .link-blue();
+            }
+            input::placeholder {
+                .link-blue();
+            }
+        }
+    }
+}
 
 
 
@@ -2519,8 +2554,7 @@ body {
     position: relative;
     &:before {
         content: "";
-        position: absolute;
-        //top: 2em;
+        position: absolute; //top: 2em;
         left: 2em;
         .v-seperate-line();
         background: @seperate-line-light;
@@ -2708,6 +2742,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -2958,6 +2993,7 @@ body {
 
 
 
+
 /**/
 
 .post-title {
@@ -3113,6 +3149,8 @@ body {
         margin: auto;
     }
 }
+
+
 
 
 //imgloader
