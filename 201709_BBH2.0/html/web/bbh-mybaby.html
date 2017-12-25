@@ -228,7 +228,7 @@
     </div>
     <div class="container bbh-main-container">
         <div class="row">
-            <div class="col-xs-2 col-left">
+            <div class="col-xs-2 col-left col-sticky-inner">
                 <div class="span-profile baby-profile text-left">
                     <div class="card-title">
                         <p><span class="icon-holder holder-pink"><i class="icon-zface-full"></i></span>我的寶貝</p>
@@ -861,7 +861,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3 col-right">
+            <div class="col-xs-3 col-right col-sticky-inner">
                 <div class="card-title">
                     <p><span class="icon-holder"><i class="icon-pin-full"></i></span>里程碑</p>
                 </div>
@@ -887,9 +887,9 @@
                             <div class="panel-heading" role="tab" id="age3">
                                 <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseage3" aria-expanded="true" aria-controls="collapseage3" class="collapsed flex-h flex-between"><span>2~3歲</span><i class="icon-arrow-up"></i></a></h4>
                             </div>
-                            <div id="collapseage3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="age3">
+                            <div id="collapseage3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="age3">
                                 <ul class="list-group">
-                                    <li class="list-group-item"><a href="">2歲11個月</a></li>
+                                    <li class="list-group-item active"><a href="">2歲11個月</a></li>
                                     <li class="list-group-item"><a href="">2歲10個月</a></li>
                                     <li class="list-group-item"><a href="">2歲9個月</a></li>
                                     <li class="list-group-item"><a href="">2歲8個月</a></li>
@@ -1558,6 +1558,8 @@
     <script src="public/js/loader-card.js"></script>
     <script src="public/js/moment.min.js"></script>
     <script src="public/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="public/js/ResizeSensor.js"></script>
+    <script src="public/js/jquery.sticky-sidebar.js"></script>
     <script>
     $('#covernav-fix').affix({
         offset: {
@@ -1579,6 +1581,14 @@
             },
             keepOpen: true
         });
+    });
+    $('.col-left').stickySidebar({
+        topSpacing: 145,
+        bottomSpacing: 0
+    });
+    $('.col-right').stickySidebar({
+        topSpacing: 145,
+        bottomSpacing: 0
     });
     </script>
 </body>
