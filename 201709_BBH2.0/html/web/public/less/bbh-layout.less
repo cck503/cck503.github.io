@@ -106,7 +106,11 @@ a {
     padding-left: 0 !important;
 }
 
-
+.txt-holder {
+    &.shorten {
+        margin-bottom: @padding-base;
+    }
+}
 
 
 .cs-tooltip {
@@ -2641,6 +2645,13 @@ body {
         overflow: hidden;
         padding: 0;
     }
+    /*.card-inner {
+        >div {
+            &:last-of-type {
+                margin-bottom: @padding-base*2;
+            }
+        }
+    }*/
 }
 
 .date-title {
