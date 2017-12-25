@@ -31,4 +31,8 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Dialog windows are also simplified.
 	config.removeDialogTabs = 'link:advanced';
+
+	//placeholder
+	config.extraPlugins = 'confighelper';
+	config.placeholder = '請輸入文字或將圖片拖曳到這裡';
 };
