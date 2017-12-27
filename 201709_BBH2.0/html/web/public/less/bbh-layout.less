@@ -312,6 +312,18 @@ body {
         align-self: flex-start;
         -webkit-align-self: flex-start;
     }
+    &.type-heading {
+        .more-option {
+            align-self: center;
+            -webkit-align-self: center;
+            a {
+                display: block;
+                i {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 
@@ -1376,7 +1388,8 @@ body {
 
 .respond-drop {
     .dropdown-menu {
-        margin-top: 10px;
+        margin-top: @padding-base;
+        margin-bottom: @padding-base*2;
         &:before {
             left: 40px;
         }
@@ -1522,6 +1535,13 @@ body {
     }
 }
 
+
+.type-heading {
+    border-bottom: 1px solid @seperate-line-light;
+    padding: 0 @padding-base @padding-base;
+    margin-left: -@padding-base;
+    margin-right: -@padding-base;
+}
 
 
 //connection
@@ -2035,6 +2055,14 @@ body {
         padding: 0 @padding-base @padding-base;
         margin-left: -10px;
         margin-right: -10px;
+        .more-option {
+            a {
+                display: block;
+                i {
+                    display: block;
+                }
+            }
+        }
     }
     .quotes-inner {
         margin-left: 40px;
@@ -2572,6 +2600,7 @@ body {
     }
     .profile-avator-xs {
         margin-left: 6px;
+        margin-bottom: 8px;
     }
 }
 
@@ -2586,6 +2615,7 @@ body {
         height: 100%;
         z-index: 1;
     }
+    .alert-info,
     .card-span {
         position: relative;
         z-index: 5;
