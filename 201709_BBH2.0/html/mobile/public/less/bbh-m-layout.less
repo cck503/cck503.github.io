@@ -3127,6 +3127,9 @@ h3 {
 //寶寶紀錄  
 .baby-profile {
     text-align: left;
+    &.span-profile {
+        margin-bottom: 0;
+    }
     .card-border {
         border-radius: 0;
         border: 0;
@@ -3159,6 +3162,17 @@ h3 {
     }
     .profile-avator-xs {
         margin-left: 6px;
+    }
+}
+.baby-option {
+    border-top: 1px solid @seperate-line-light;
+    margin-top: @padding-base;
+    padding-top: @padding-base/2;
+    >a {
+        font-size: @font-size-small;
+        display: block;
+        padding-left: 8px;
+        text-align: right;
     }
 }
 
