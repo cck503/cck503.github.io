@@ -3239,6 +3239,9 @@ h3 {
         width: 100px;
         vertical-align: middle;
     }
+    .h2 {
+        //.h4();
+    }
 }
 
 .respond-inner {
@@ -3257,6 +3260,14 @@ h3 {
     &.sp-event {
         overflow: hidden;
         padding: 0;
+    }
+    &.milestone-span {
+        .ms-marks {
+            margin-top: 0;
+        }
+    }
+    .ms-marks {
+        margin-top: -@padding-base*2;
     }
 }
 
