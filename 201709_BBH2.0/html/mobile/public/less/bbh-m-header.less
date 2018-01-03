@@ -53,6 +53,8 @@ body {
 
 
 
+
+
 /*.navbar-header {
     margin-top: 16px;
 }*/
@@ -90,8 +92,7 @@ body {
 
 
 .head-universal {
-    background: white;
-    //min-height: 106px;
+    background: white; //min-height: 106px;
     min-height: 92px;
     .container {
         .flex-h {
@@ -103,8 +104,7 @@ body {
         }
     }
     .navbar-default {
-        background-color: white;
-        //padding: @padding-base;
+        background-color: white; //padding: @padding-base;
         padding: @padding-base @padding-base 0;
         border: 0;
         box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px;
@@ -354,6 +354,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -653,6 +655,8 @@ body {
         cursor: pointer;
     }
 }
+
+
 
 
 
@@ -1251,5 +1255,77 @@ body {
         padding-bottom: 2px;
         top: 0;
         right: 0;
+    }
+}
+
+
+
+//notice
+.notice-body {
+    padding-top: @padding-base;
+    h4 {
+        padding: 0 @padding-base;
+    }
+    .full-list {
+        padding: @padding-base;
+        background: white;
+    }
+    .sort-date {
+        .notice-date {
+            font-weight: 500;
+            padding: @padding-base 0;
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            &:after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                background: #d6d6d3;
+                display: inline-block;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                margin-left: 95px;
+            }
+        }
+        .media {
+            border-bottom: 1px solid #f0f0f0;
+            &:last-of-type {
+                border-color: transparent;
+            }
+        }
+    }
+    .media {
+        >img {
+            width: 30px;
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            padding: 0;
+            margin-right: @padding-base;
+        }
+        .media-body {
+            display: block;
+            width: auto;
+            .notice-option {
+                visibility: hidden;
+                opacity: 0;
+                transition: all .15s linear;
+                float: right;
+                font-size: 16px;
+                padding: 0;
+            }
+            .notice-content {
+                margin-bottom: 0;
+                a {
+                    .link-blue();
+                }
+            }
+            .timeline {
+                font-size: @font-size-small;
+                color: rgba(0,0,0,0.5);
+            }
+        }
     }
 }

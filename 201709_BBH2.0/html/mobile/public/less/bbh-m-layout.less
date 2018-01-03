@@ -2980,6 +2980,104 @@ h3 {
 
 
 
+
+//masonry-layout
+.col-xs-10 {
+    .masonry {
+        /*
+        padding: @padding-base;
+        -moz-column-count: 3;
+        -moz-column-gap: @padding-base*2;
+        -webkit-column-count: 3;
+        -webkit-column-gap: @padding-base*2;
+        column-count: 3;
+        column-gap: @padding-base*2;
+        */
+    }
+}
+
+.masonry {
+    //padding: 0 @padding-base/2;
+    &.m-2 {
+        .masonry-column {
+            width: 50%;
+        }
+    }
+}
+
+.masonry-column {
+    padding: 0 @padding-base/2 @padding-base;
+    display: inline-block;
+    margin-bottom: @padding-base;
+    width: 33.33%;
+    /*
+    &:nth-child(even) {
+        padding-right: 0;
+    }
+    &:nth-child(odd) {
+        padding-left: 0;
+    }
+    */
+    .card-span {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .respond-option {
+            margin-left: -@padding-base;
+            margin-right: -@padding-base;
+        }
+        &.blog-list {
+            .respond-option {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+    .blog-list {
+        //margin: -@padding-base -@padding-base 0;
+        padding: 0;
+        .txt-holder {
+            padding: @padding-base;
+        }
+        .post-img {
+            margin: 0;
+        }
+    }
+    .post-img {
+        display: block;
+        border-radius: 2px 2px 0 0;
+        overflow: hidden;
+        margin-right: -@padding-base;
+        margin-left: -@padding-base;
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+    .txt-holder {
+        .shorten {
+            height: 4.2em;
+            overflow: hidden;
+        }
+        &.shorten {
+            max-height: 4.6em;
+            overflow: hidden;
+        }
+    }
+    .link-description {
+        width: 100%;
+    }
+    .ms-marks {
+        margin-top: -@padding-base*2;
+        .h2 {
+            font-size: @font-size-base*1.2;
+        }
+        .svg-holder {
+            width: 25%;
+        }
+    }
+}
+
+
+
 //媽媽力
 .col-motherhood {
     .txt-holder {
