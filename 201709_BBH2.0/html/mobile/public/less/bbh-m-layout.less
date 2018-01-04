@@ -1546,6 +1546,54 @@ body {
     padding: @padding-base 0;
 }
 
+
+
+
+.comment-option {
+    a {
+        font-weight: 500;
+        cursor: pointer;
+        &:before {
+            content: "・";
+            display: inline-block;
+            padding-right: 2px;
+        }
+        &:hover {
+            &:before {
+                color: initial;
+            }
+        }
+        &:first-of-type {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+.sub-comment {
+    .feed-comment {
+        margin-bottom: 0;
+        background: @info-bg;
+        padding: @padding-base;
+        &:first-of-type {
+            margin-top: @padding-base;
+        }
+        .profile-avator-xs {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .respond-span {
+        margin-top: @padding-base;
+        .respond-inner {
+            margin-right: @padding-base;
+            box-shadow: inset rgba(217,217,217,1) 0 0 0px 1px;
+        }
+    }
+}
+
+
+
 //connection
 .col-xs-10 {
     .card-span {
