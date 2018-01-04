@@ -219,7 +219,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <textarea class="form-control autoExpand" id="message_content-1" rows="1" data-min-rows="1" placeholder="留個話吧‧‧‧"></textarea>
+                                                            <textarea class="form-control autoExpand reply_content" id="message_content-1" rows="1" data-min-rows="1" placeholder="留個話吧‧‧‧"></textarea>
                                                         </div>
                                                         <button class="btn btn-submit btn-compose" type="submit">送出</button>
                                                     </div>
@@ -520,7 +520,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea>
+                                            <textarea class="form-control autoExpand reply_content" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea>
                                         </div>
                                         <button class="btn btn-submit btn-compose" type="submit">送出</button>
                                     </div>
@@ -1464,7 +1464,9 @@
             $(this).addClass('hidden');
         });
     });
-
+    $(".reply_content").on('focus blur', function() {
+        $(this).parents(".respond-inner").toggleClass('focused');
+    })
     </script>
 </body>
 
