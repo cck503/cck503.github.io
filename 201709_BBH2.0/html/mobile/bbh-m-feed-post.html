@@ -219,7 +219,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <textarea class="form-control autoExpand" id="message_content" rows="1" data-min-rows="1" placeholder="留個話吧‧‧‧"></textarea>
+                                                            <textarea class="form-control autoExpand" id="message_content-1" rows="1" data-min-rows="1" placeholder="留個話吧‧‧‧"></textarea>
                                                         </div>
                                                         <button class="btn btn-submit btn-compose" type="submit">送出</button>
                                                     </div>
@@ -1456,8 +1456,8 @@
         $('.comments-list .reply-id').click( function() {
             $('.comment-inner').removeClass('hidden');
             $('.respond-span').removeClass('hidden');
-            $(this).addClass('hidden');
             $('.comments-list .reply-load').addClass('hidden');
+            $('#message_content-1').focus();
         });
         $('.comments-list .reply-load').click( function() {
             $('.comment-inner').removeClass('hidden');
