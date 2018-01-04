@@ -1539,17 +1539,25 @@ body {
 
 .comment-option {
     a {
-        font-weight: 500;
+        //font-weight: 500;
         cursor: pointer;
+        color: @link-key;
         &:before {
             content: "・";
             display: inline-block;
             padding-right: 2px;
         }
         &:hover {
+            color: darken(@link-key, 10%);
             &:before {
                 color: initial;
             }
+        }
+        &:focus {
+            color: darken(@link-key, 10%);
+        }
+        &:active {
+            color: darken(@link-key, 10%);
         }
         &:first-of-type {
             &:before {
