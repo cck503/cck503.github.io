@@ -11,6 +11,7 @@
     <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/css/m-member_task.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -141,6 +142,7 @@
                                 <span class="tcon-visuallyhidden">toggle menu</span>
                             </button>
                             <div class="navbar-header">
+                                <!---->
                                 <a class="navbar-brand bbh-logo-new" href="bbh-m-index.html">
                                     <svg id="babyhome-logo-gray" data-name="babyhome-logo-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 28.96">
                                         <title>bbh-log-gray</title>
@@ -159,12 +161,13 @@
                                         <circle cx="87.67" cy="6.2" r="0.81" />
                                         <circle cx="114.79" cy="6.2" r="0.81" />
                                         <path d="M95.39,5.73a2.62,2.62,0,0,1-2.48,1.43A2.68,2.68,0,0,1,90,4.4,3,3,0,0,1,90.9,2.2a3,3,0,0,1,2-.68c1.26,0,2.29.61,2.33,1.34a.65.65,0,0,1-.74.71c-.26,0-.62-.2-.7-.84s-.37-1-.93-1a1.12,1.12,0,0,0-1,.65,5.07,5.07,0,0,0-.32,1.81A3.61,3.61,0,0,0,91.92,6a1.49,1.49,0,0,0,1.35.8,2,2,0,0,0,1.83-1.2Z" />
-                                    </svg><span class="sr-only">BabyHome.com.tw</span></a>
+                                    </svg><span class="sr-only">BabyHome.com.tw</span>
+                                </a>
                             </div>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
-                                <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
-                                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                                <li><span class="badge badge-notify">5</span><a href="#" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
+                                <li><a href="#" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -174,6 +177,7 @@
                         <div id="navbar" class="main-nav">
                             <ul class="nav navbar-nav">
                                 <li class="bbh-forum"><a href="#">討論</a></li>
+                                <li class="bbh-mama"><a href="bbh-m-motherhood.html">媽媽力</a></li>
                                 <li class="bbh-info"><a href="#">新知</a></li>
                                 <li class="bbh-shop"><a href="#">購物</a></li>
                                 <li class="bbh-group"><a href="#">家族</a></li>
@@ -189,9 +193,13 @@
             <div class="cover-inner">
                 <div class="container edit-mode">
                     <a href="" class="edit-img"><i class="icon-camera-full"></i></a>
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-line">取消</button>
+                        <button class="btn btn-key">確定</button>
+                    </div>
                 </div>
                 <div class="cover-holder">
-                    <img src="http://lorempixel.com/1336/300/nature" alt="">
+                    <img src="public/img/default-bg.jpg" alt="">
                 </div>
             </div>
             <div class="cover-nav">
@@ -218,19 +226,23 @@
                         </div>
                         <div class="span-profile text-center">
                             <div class="card-title text-left">
-                                <p><span class="icon-holder holder-pink"><i class="icon-heart-full"></i></span>我的寶貝</p>
+                                <p><span class="icon-holder holder-pink"><i class="icon-zface-full"></i></span>我的寶貝</p>
                             </div>
                             <div class="profile-avator">
-                                <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="大寶大寶6歲"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                <a href="bbh-m-mybaby.html" data-toggle="tooltip" data-placement="bottom" title="大寶大寶6歲"><img src="http://lorempixel.com/80/80/people" alt=""></a>
                             </div>
                             <div class="profile-avator">
-                                <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="二寶二寶3歲"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                <a href="bbh-m-mybaby.html" data-toggle="tooltip" data-placement="bottom" title="二寶二寶3歲"><img src="http://lorempixel.com/80/80/people" alt=""></a>
                             </div>
                             <div class="profile-avator">
-                                <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="三寶三寶10個月"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                <a href="bbh-m-mybaby.html" data-toggle="tooltip" data-placement="bottom" title="三寶三寶10個月"><img src="http://lorempixel.com/80/80/people" alt=""></a>
                             </div>
-                            <div class="optional-info">
+                            <div class="alert alert-info optional-info">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <!--寶寶設定提示-->
                                 <p>尚未設定寶寶，立即<a href="" class="link-blue">前往設定</a></p>
+                                <!--更換大頭貼提示-->
+                                <p>更換<a href="" class="link-blue">寶貝大頭貼</a></p>
                             </div>
                         </div>
                         <div class="span-detail flex-h">
@@ -245,7 +257,7 @@
                             <li><span class="v-seperate-line"></span></li>
                             <li><a href="bbh-m-myhome-about.html">關於我</a></li>
                             <li><span class="v-seperate-line"></span></li>
-                            <li><a href="">網誌</a></li>
+                            <li><a href="bbh-m-blog-list.html">網誌</a></li>
                             <li><span class="v-seperate-line"></span></li>
                             <li class="dropdown">
                                 <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i></a>
@@ -265,8 +277,12 @@
                 <div class="row">
                     <div class="alert alert-info" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <p>你是否注意到BabyHome有一個服務悄悄上線了呢?
-                            <br>這個服務不僅不需要你安裝任何程式，只要透過勾選同意就可以訂閱你感興趣的內容囉!!</p>
+                        <p>哈囉~歡迎回來！今天發貼文了嗎？趕快來分享你的即時動態，別忘了標註寶寶同步紀錄寶貝的成長過程，
+                            <br>設定最愛相簿時時重溫美好時光！想知道新版個人專頁還有那些你尚未使用的新功能嗎？<a href="https://forum.babyhome.com.tw/topic/4740276" class="link-blue" target="_blank">→立即前往</a>」
+                        </p>
+                    </div>
+                    <div class="mkt-banner mrb-20 calling">
+                        <img src="public/img/mkt-banner-mo.jpg" alt="15周年改版首航" class="img-responsive"></a>
                     </div>
                     <!--發文輸入框-->
                     <div class="card-span">
@@ -287,6 +303,273 @@
                     </div>
                     <!--空白發文skeleton-->
                     <div class="card-span"></div>
+                    <!--寶寶紀錄里程碑發文-->
+                    <div class="card-span">
+                        <div class="card-inner card-share">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">水蜜桃</a> 發佈一篇 <a href="" class="link-profile">寶寶紀錄</a></p>
+                                    <div class="post-detail">
+                                        <span class="time-tage">3小時前</span>
+                                        <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown more-option">
+                                    <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">編輯貼文</a></li>
+                                        <li><a href="#">刪除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="quotes-inner">
+                                        <div class="card-heading">
+                                            <div class="profile-caption">
+                                                <div class="ms-marks">
+                                                    <p class="h2"><span class="svg-holder"><img src="public/img/svg/ms-07.svg" alt="" class="img-responsive"></span>會叫爸爸</p>
+                                                </div>
+                                                <div class="post-detail">
+                                                    <span class="time-tage">3小時前</span>
+                                                    <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="body-inner">
+                                                <div class="txt-holder">
+                                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
+                                                    <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
+                                                </div>
+                                                <div class="img-holder single-img">
+                                                    <a href=""><img class="img-responsive" src="http://lorempixel.com/600/400/city"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="dropdown option-action hover-drop">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
+                                            <div class="dropdown-menu dir-top menu-wide">
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="modal" data-target="#favoriteList"><span class="more">+</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                        <div class="dropdown option-action">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">分享至Facebook</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
+                                                <li><a href="#">複製連結</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--寶寶紀錄發文-->
+                    <div class="card-span">
+                        <div class="card-inner card-share">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">水蜜桃</a> 發佈一篇 <a href="" class="link-profile">寶寶紀錄</a></p>
+                                    <div class="post-detail">
+                                        <span class="time-tage">3小時前</span>
+                                        <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown more-option">
+                                    <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">編輯貼文</a></li>
+                                        <li><a href="#">刪除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="quotes-inner">
+                                        <div class="card-heading">
+                                            <div class="profile-caption">
+                                                <div class="post-detail">
+                                                    <span class="time-tage">3小時前</span>
+                                                    <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="body-inner">
+                                                <div class="txt-holder">
+                                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
+                                                    <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
+                                                </div>
+                                                <div class="img-holder single-img">
+                                                    <a href=""><img class="img-responsive" src="http://lorempixel.com/600/400/city"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="dropdown option-action hover-drop">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
+                                            <div class="dropdown-menu dir-top menu-wide">
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="modal" data-target="#favoriteList"><span class="more">+</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                        <div class="dropdown option-action">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">分享至Facebook</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
+                                                <li><a href="#">複製連結</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--網誌發文-->
+                    <div class="card-span">
+                        <div class="card-inner card-share">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">水蜜桃</a> 發佈一篇 <a href="" class="link-profile">網誌</a></p>
+                                    <div class="post-detail">
+                                        <span class="time-tage">3小時前</span>
+                                        <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown more-option">
+                                    <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">編輯貼文</a></li>
+                                        <li><a href="#">刪除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="txt-holder">
+                                        <div class="link-description blog-description">
+                                            <a href="bbh-m-blog-post.html">
+                                                <img src="https://d1tuuacv99jvh2.cloudfront.net/JCpgApAC3jidm5ez_xxl.jpg" class="img-responsive">
+                                                <h3>逗孩子很好玩？其實是大人的一種惡習！</h3>
+                                                <div class="post-detail">
+                                                    <span class="time-tage">2017年11月6日</span>
+                                                    <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
+                                                    <div class="flex-h"><span>1,515</span><i class="icon-eye flex-h"></i></div>
+                                                </div>
+                                                <p class="shorten">尊敬的尹老師，您好：我女兒一歲半了。昨天晚上我和她爸爸逗她玩，她爸爸伸手做出要抱她的樣子，我女兒已經張開手了，她爸爸又把手縮回去，並做出轉身要走的樣子，我女兒有點莫名其妙。她爸爸第二次伸手做出要抱她的樣子，我女兒猶豫了一下，還是張開了手，但她爸爸又把手縮回去。這時候我女兒帶著點尷尬的表情，當她爸爸再伸手的時候，我女兒搖了搖頭，不看她爸爸了。她爸爸想強行抱她，她就用手撥開爸爸的手，不讓爸爸抱，而且整個晚上都對她爸爸不理不睬，平時她是最喜歡和她爸爸玩了。</p>
+                                            </a>
+                                            <div class=show-more><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="dropdown option-action hover-drop">
+                                            <a href="" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
+                                        </div>
+                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                        <div class="dropdown option-action">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">分享至Facebook</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
+                                                <li><a href="#">複製連結</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--未發文-->
+                    <div class="alert alert-info" role="alert">
+                        <p class="h2">親愛的會員，您好！您還未建立貼文喔，
+                            <br>快來使用新功能吧！</p>
+                        <img src="public/img/post-illustration.png" alt="還未建立貼文" class="img-responsive">
+                    </div>
+                    <!--無公開貼文-->
+                    <div class="alert alert-info" role="alert">
+                        <p class="h2">該會員尚無公開貼文</p>
+                        <img src="public/img/lock-illustration.png" alt="還未建立貼文" class="img-responsive">
+                    </div>
                     <!--一般發文加回應-->
                     <div class="card-span">
                         <div class="card-inner">
@@ -690,363 +973,355 @@
                         </div>
                     </div>
                     <!--官方推薦_討論區-->
-                <div class="card-span">
-                    <div class="card-inner">
-                        <div class="card-heading">
-                            <div class="profile-avator-xs">
-                                <a href="bbh-myhome.html"><img src="public/img/forum112x112.png" alt=""></a>
-                            </div>
-                            <div class="profile-caption">
-                                <p><a href="" class="link-profile">BabyHome討論區</a></p>
-                                <div class="post-detail hidden">
-                                    <span class="time-tage">3小時前</span>
+                    <div class="card-span">
+                        <div class="card-inner">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="public/img/forum112x112.png" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="featuring-tag">熱門推薦</div>
-                            <div class="dropdown more-option hidden">
-                                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">隱藏貼文</a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="body-inner">
-                                <div class="txt-holder shorten">
-                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                    <p class="tag-span"><a href="bbh-feed-hashtag.html">＃兒歌</a><a href="bbh-feed-hashtag.html">＃蝴蝶</a></p>
-                                </div>
-                                <div><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
-                                <div class="respond-option flex-h">
-                                    <div class="dropdown option-action hover-drop">
-                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
-                                        <div class="dropdown-menu dir-top menu-wide">
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="modal" data-target="#favoriteList"><span class="more">+</span></a>
-                                            </div>
-                                        </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">BabyHome討論區</a></p>
+                                    <div class="post-detail hidden">
+                                        <span class="time-tage">3小時前</span>
                                     </div>
-                                    <div class="option-action"><a href="bbh-feed-post.html" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                    <div class="dropdown option-action">
-                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">分享至Facebook</a></li>
-                                            <li><a href="#">分享至My Home</a></li>
-                                            <li><a href="#">複製連結</a></li>
-                                        </ul>
+                                </div>
+                                <div class="featuring-tag">熱門推薦</div>
+                                <div class="dropdown more-option hidden">
+                                    <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">隱藏貼文</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="txt-holder shorten">
+                                        <p class="list-heading"><a href="" class="link-profile">蝴蝶，蝴蝶，生得真美麗。頭戴著金絲</a></p>
+                                        <p><small>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</small></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--官方推薦_新知-->
-                <div class="card-span">
-                    <div class="card-inner">
-                        <div class="card-heading">
-                            <div class="profile-avator-xs">
-                                <a href="bbh-myhome.html"><img src="public/img/forum112x112.png" alt=""></a>
-                            </div>
-                            <div class="profile-caption">
-                                <p><a href="" class="link-profile">BabyHome新知</a></p>
-                                <div class="post-detail hidden">
-                                    <span class="time-tage">3小時前</span>
+                    <!--官方推薦_新知-->
+                    <div class="card-span">
+                        <div class="card-inner">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="public/img/info112x112.png" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="featuring-tag">熱門推薦</div>
-                            <div class="dropdown more-option hidden">
-                                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">隱藏貼文</a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="body-inner">
-                                <div class="txt-holder shorten">
-                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                    <p class="tag-span"><a href="bbh-feed-hashtag.html">＃兒歌</a><a href="bbh-feed-hashtag.html">＃蝴蝶</a></p>
-                                </div>
-                                <div><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
-                                <div class="respond-option flex-h">
-                                    <div class="dropdown option-action hover-drop">
-                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
-                                        <div class="dropdown-menu dir-top menu-wide">
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="modal" data-target="#favoriteList"><span class="more">+</span></a>
-                                            </div>
-                                        </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">BabyHome新知</a></p>
+                                    <div class="post-detail hidden">
+                                        <span class="time-tage">3小時前</span>
                                     </div>
-                                    <div class="option-action"><a href="bbh-feed-post.html" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                    <div class="dropdown option-action">
-                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">分享至Facebook</a></li>
-                                            <li><a href="#">分享至My Home</a></li>
-                                            <li><a href="#">複製連結</a></li>
-                                        </ul>
+                                </div>
+                                <div class="featuring-tag">熱門推薦</div>
+                                <div class="dropdown more-option hidden">
+                                    <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">隱藏貼文</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="txt-holder shorten">
+                                        <p class="list-heading"><a href="" class="link-profile">蝴蝶，蝴蝶，生得真美麗。頭戴著金絲</a></p>
+                                        <p><small>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</small></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--官方推薦_官方小編貼文-->
-                <div class="card-span">
-                    <div class="card-inner">
-                        <div class="card-heading">
-                            <div class="profile-avator-xs">
-                                <a href="bbh-myhome.html"><img src="public/img/forum112x112.png" alt=""></a>
-                            </div>
-                            <div class="profile-caption">
-                                <p><a href="" class="link-profile">官方小編貼文</a></p>
-                                <div class="post-detail hidden">
-                                    <span class="time-tage">3小時前</span>
+                    <!--官方推薦_官方小編貼文-->
+                    <div class="card-span">
+                        <div class="card-inner">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="public/img/forum112x112.png" alt=""></a>
                                 </div>
-                            </div>
-                            <button class="btn btn-xs btn-key">關注</button>
-                            <div class="dropdown more-option">
-                                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">隱藏貼文</a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="body-inner">
-                                <div class="txt-holder shorten">
-                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                    <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                    <p class="tag-span"><a href="bbh-feed-hashtag.html">＃兒歌</a><a href="bbh-feed-hashtag.html">＃蝴蝶</a></p>
-                                </div>
-                                <div><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
-                                <div class="respond-option flex-h">
-                                    <div class="dropdown option-action hover-drop">
-                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
-                                        <div class="dropdown-menu dir-top menu-wide">
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                            </div>
-                                            <div class="profile-avator-xs">
-                                                <a href="＃" data-toggle="modal" data-target="#favoriteList"><span class="more">+</span></a>
-                                            </div>
-                                        </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">官方小編貼文</a></p>
+                                    <div class="post-detail hidden">
+                                        <span class="time-tage">3小時前</span>
                                     </div>
-                                    <div class="option-action"><a href="bbh-feed-post.html" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                    <div class="dropdown option-action">
-                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                </div>
+                                <div class="flex-h self-top">
+                                    <button class="btn btn-xs btn-key">關注</button>
+                                    <div class="dropdown more-option">
+                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">分享至Facebook</a></li>
-                                            <li><a href="#">分享至My Home</a></li>
-                                            <li><a href="#">複製連結</a></li>
+                                            <li><a href="#">隱藏貼文</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#flagModal">檢舉</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="comments-list">
-                                <div><a href="bbh-feed-post.html" class="link-light">查看更多留言</a></div>
-                                <div class="feed-comment">
-                                    <div class="profile-avator-xs">
-                                        <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="txt-holder shorten">
+                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
+                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
+                                        <p class="tag-span"><a href="bbh-feed-hashtag.html">＃兒歌</a><a href="bbh-feed-hashtag.html">＃蝴蝶</a></p>
                                     </div>
-                                    <div class="profile-caption">
-                                        <p><a href="" class="link-profile">魏小小</a></p>
-                                        <div class="post-detail">
-                                            <p>這是小時候第一次學的兒歌捏。</p>
-                                        </div>
-                                    </div>
-                                    <div class="more-option">
-                                        <span class="time-tage">3小時前</span>
-                                        <a href=""><i class="icon-optional-vertical-full"></i></a>
-                                    </div>
-                                </div>
-                                <div class="feed-comment">
-                                    <div class="profile-avator-xs">
-                                        <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                    </div>
-                                    <div class="profile-caption">
-                                        <p><a href="" class="link-profile">魏小小</a></p>
-                                        <div class="post-detail">
-                                            <p>這是小時候第一次學的兒歌捏。</p>
-                                        </div>
-                                    </div>
-                                    <div class="more-option">
-                                        <span class="time-tage">3小時前</span>
-                                        <a href=""><i class="icon-optional-vertical-full"></i></a>
-                                    </div>
-                                </div>
-                                <div class="feed-comment">
-                                    <div class="profile-avator-xs">
-                                        <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                    </div>
-                                    <div class="profile-caption">
-                                        <p><a href="" class="link-profile">魏小小</a></p>
-                                        <div class="post-detail">
-                                            <p>這是小時候第一次學的兒歌捏。</p>
-                                        </div>
-                                    </div>
-                                    <div class="more-option">
-                                        <span class="time-tage">3小時前</span>
-                                        <a href=""><i class="icon-optional-vertical-full"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="respond-span flex-h">
-                                <div class="respond-inner">
-                                    <div class="dropdown emoji-dropdown">
-                                        <a href="" class="btn btn-link link-blue" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-smile-line"></i></a>
-                                        <div class="dropdown-menu emoji-menu dir-top menu-wide" aria-labelledby="emoji-btn">
-                                            <div class="dropdown-menu-inner">
-                                                <div class="layout-f">
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
-                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                    <div><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
+                                    <div class="respond-option flex-h">
+                                        <div class="dropdown option-action hover-drop">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
+                                            <div class="dropdown-menu dir-top menu-wide">
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="tooltip" data-placement="bottom" title="BabyHome活動小編"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                </div>
+                                                <div class="profile-avator-xs">
+                                                    <a href="＃" data-toggle="modal" data-target="#favoriteList"><span class="more">+</span></a>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="option-action"><a href="bbh-feed-post.html" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                        <div class="dropdown option-action">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">分享至Facebook</a></li>
+                                                <li><a href="#">分享至My Home</a></li>
+                                                <li><a href="#">複製連結</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea>
                                 </div>
-                                <button class="btn btn-submit btn-compose" type="submit">送出</button>
+                                <div class="comments-list">
+                                    <div><a href="bbh-feed-post.html" class="link-light">查看更多留言</a></div>
+                                    <div class="feed-comment">
+                                        <div class="profile-avator-xs">
+                                            <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                        </div>
+                                        <div class="profile-caption">
+                                            <p><a href="" class="link-profile">魏小小</a></p>
+                                            <div class="post-detail">
+                                                <p>這是小時候第一次學的兒歌捏。</p>
+                                            </div>
+                                        </div>
+                                        <div class="more-option">
+                                            <span class="time-tage">3小時前</span>
+                                            <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="feed-comment">
+                                        <div class="profile-avator-xs">
+                                            <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                        </div>
+                                        <div class="profile-caption">
+                                            <p><a href="" class="link-profile">魏小小</a></p>
+                                            <div class="post-detail">
+                                                <p>這是小時候第一次學的兒歌捏。</p>
+                                            </div>
+                                        </div>
+                                        <div class="more-option">
+                                            <span class="time-tage">3小時前</span>
+                                            <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="feed-comment">
+                                        <div class="profile-avator-xs">
+                                            <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                        </div>
+                                        <div class="profile-caption">
+                                            <p><a href="" class="link-profile">魏小小</a></p>
+                                            <div class="post-detail">
+                                                <p>這是小時候第一次學的兒歌捏。</p>
+                                            </div>
+                                        </div>
+                                        <div class="more-option">
+                                            <span class="time-tage">3小時前</span>
+                                            <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="respond-span flex-h">
+                                    <div class="respond-inner">
+                                        <div class="dropdown emoji-dropdown">
+                                            <a href="" class="btn btn-link link-blue" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-smile-line"></i></a>
+                                            <div class="dropdown-menu emoji-menu dir-top menu-wide" aria-labelledby="emoji-btn">
+                                                <div class="dropdown-menu-inner">
+                                                    <div class="layout-f">
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea>
+                                    </div>
+                                    <button class="btn btn-submit btn-compose" type="submit">送出</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--intro-->
+    <div class="modal intro-list fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="intro-inner">
+                        <img src="public/img/m-myhome-intro.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="cover-btn-holder text-center">
+                        <a href="" class="btn btn-lg btn-key" data-dismiss="modal" aria-label="Close">開始使用</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--任務清單-->
+    <div class="exitfrom affix fade">
+        <div class="tittle">
+            <button class="btn minify"></button>
+            <p>任務清單</p>
+        </div>
+        <ul class="text">
+            <li>任務完成後，立即發送點數；單項任務完成即呈現<img src="public/img/tick.png" width="24" height="25">狀態。</li>
+            <li>任務所得Q點可至我的Q點查詢</li>
+            <li>任務活動時間：2017/10/31~11/30</li>
+        </ul>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/tick.png" width="38" height="40"></div>
+                <div class="SS">設定會員生日</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">設定會員大頭貼</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">設定寶寶生日</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">設定寶寶大頭貼</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">編輯封面</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">設定關於我介紹詞</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">發表10則公開貼文並使用#功能</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">回應他人貼文20次</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="task">
+            <div class="list">
+                <div class="CC"><img src="public/img/notick.png" width="38" height="40"></div>
+                <div class="SS">至他人貼文按喜歡30次</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="exitfrom-dropback affix fade"></div>
     <!-- Modal -->
     <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -1136,6 +1411,23 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#introModal').modal('show');
+    });
+    $(".exitfrom .minify").click(function() {
+        $(".exitfrom.affix").removeClass("in");
+        $(".exitfrom-dropback").removeClass("in");
+    });
+    $(".exitfrom-dropback").click(function() {
+        $(".exitfrom.affix").removeClass("in");
+        $(".exitfrom-dropback").removeClass("in");
+    });
+    $(".calling").click(function() {
+        $(".exitfrom.affix").addClass("in");
+        $(".exitfrom-dropback").addClass("in");
+    });
+    </script>
 </body>
 
 </html>

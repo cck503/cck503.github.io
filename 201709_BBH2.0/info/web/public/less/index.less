@@ -1,0 +1,315 @@
+
+//共用
+//左右按鈕
+a.prev,
+a.next{
+	display:block;
+	float:left;
+	width:20px;
+	height:30px;
+	color:#ddd;
+	font-size:22px;
+	&:hover{color:@seagreen;}}
+
+
+
+//輪播及新聞
+.info_carousel_news{
+	background-color:#ffffff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	margin-bottom:20px;
+	height:360px;
+	overflow:hidden;
+}
+
+//輪播
+.info_carousel_news .col-xs-8{
+	padding:0;
+}
+.info_carousel_news .carousel{
+	width:780px;
+}
+
+.info_carousel_news .carousel-inner img{
+	width:780px;
+	height:360px;
+}
+
+//輪播標題
+.info_carousel_news .carousel-caption{
+	width:100%;
+	height:50px;
+	margin:0;
+	left: 0;
+  	right: 0;
+ 	padding:0 0 0 20px;
+ 	text-align:left;
+    text-shadow:none;
+	background: rgba(0%,0%,0%,0.6);
+	font-size:20px;
+	line-height:50px;
+	bottom:0;
+	overflow: hidden;
+	}
+
+//輪播按鈕
+.info_carousel_news	.carousel-indicators{
+		width:150px;
+		height:50px;
+	  bottom:0;
+ 	  left:630px;
+ 	  margin:0;
+ 	 
+}
+.info_carousel_news	.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  margin: 20px 5px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.info_carousel_news	.carousel-indicators li.active{
+  border:2px solid @cream;
+  background-color: @cream;
+}
+
+//輪播滑移按鈕
+.info_carousel_news .carousel-control.left,
+.info_carousel_news .carousel-control.right{
+	background:none;
+}
+.info_carousel_news .carousel-control{
+  text-shadow: none;
+  color:@gray_deep;
+  width:30px;
+  height:30px;
+margin:150px 0 0 12px;}
+
+//新聞
+.info_news{
+	padding:5px 25px;
+}
+
+.info_news div{
+	padding:0;
+}
+.info_news div a{
+width:80%;
+color:#000;
+ max-height:44px;
+ overflow: hidden;
+&:hover{color:@pink;}
+}
+
+.info_news div .news_time{
+	float:right;
+	color:@gray;
+}
+
+//六大主題
+.index_sixtheme{padding:10px;}
+
+.index_sixtheme div{
+	float:left;
+	width:260px;
+	height:430px;
+	overflow:hidden;
+	margin:15px 12px 5px;
+}
+
+.index_sixtheme div a{
+	float:left;
+}
+
+.index_sixtheme div img{
+	margin-bottom:15px;
+		width:260px;
+	height:260px;
+}
+
+.index_sixtheme a.theme_btn img
+{	width:60px;
+	height:60px;}
+.index_sixtheme a.theme_btn{
+	width:60px;
+	height:60px;
+	 -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    background-color:@seagreen;
+    &:hover, &:active, &:focus{background-color:@seagreen_dark;}
+}
+
+.index_sixtheme .topic{
+	float:right;
+	width:190px;
+	height:66px;
+	overflow: hidden;
+}
+
+.index_sixtheme ul, .index_sixtheme ul li{float:left;width:260px;}
+
+.index_sixtheme ul{padding:10px 0;}
+.index_sixtheme ul li{line-height:36px;height:36px;overflow: hidden;}
+.index_sixtheme ul li a{
+&:before{content:"";display:inline-block;background:@seagreen;width:4px;height:4px;border-radius:5px;margin:5px 12px;}}
+
+//部落客
+
+
+div.index_blogger{
+	float:left;
+	width:240px;
+	height:100px;
+	margin:10px 12px 15px;
+	overflow:hidden;
+}
+
+div.index_blogger img{
+	width:100px;
+	height:100px;
+	float:left;
+    margin-right:10px;}
+
+div.index_blogger div{
+width:130px;
+float:left;
+margin:0;}
+
+//人物專訪
+//專欄
+
+.index_interview{
+	width:420px;
+	height:350px;
+	overflow: hidden;
+	padding-bottom:0;
+}
+
+.index_interview div{
+	overflow: auto;
+	width:380px;
+	height:185px;
+}
+
+.index_interview div img{
+	width:160px;
+	height:160px;
+	float:left;
+    margin:10px 20px 15px 0;}
+
+.index_interview div div{
+height:160px;
+width:200px;
+float:left;
+overflow:hidden;
+margin:10px 0 15px 0;}
+
+.index_interview div div h5{
+	height:44px;
+	margin-bottom:10px;
+	overflow: hidden;
+	padding-top:0;
+	padding-top:10px \9 ; /*IE*/
+	line-height:20px \9 ; /*IE*/
+}
+
+.index_interview div div a{
+	height:88px;
+	overflow: hidden;
+}
+
+.index_interview ul{
+padding:0;
+margin:0;
+}
+
+.index_interview ul li{
+padding:0;
+margin:0;
+list-style:none;
+height:24px;
+}
+
+.index_interview ul li a{
+padding:0;
+height:24px;
+overflow: hidden;
+margin:0;
+display: inline-block;
+line-height:24px;
+&:before{content:"";display:inline-block;background:@seagreen;width:4px;height:4px;border-radius:5px;margin:5px 12px;}
+}
+
+
+
+
+//影音
+div.index_video{
+width:240px;
+margin:0 14px 5px;
+float:left;
+position:relative;
+}
+div.index_video a.play_video{display:block;
+	position:absolute;
+    width:240px;
+    height:135px;
+    z-index:20;
+    border-radius:5px;}
+div.index_video a.play_video:hover{
+background:rgba(0%,0%,0%,0.3) url(../../public/img/index_video_play.png) no-repeat center center;}     
+
+div.index_video img{
+position:absolute;
+width:240px;
+height:135px;
+z-index:10;
+}
+
+div.index_video p{
+	margin-top:145px;
+	display:block;
+	max-height:44px;
+	overflow:hidden;
+}
+
+
+//專題
+div.index_essentials{
+width:240px;
+margin:0 14px 5px;
+float:left; 
+}
+div.index_essentials img{
+width:240px;
+height:240px;
+margin-bottom:10px;
+}
+div.index_essentials p{
+	display:block;
+	max-height:44px;
+	overflow:hidden;
+}
+
+//精選特輯
+div.index_ad img{
+width:240px;
+height:160px;
+margin-bottom:10px;
+}
+
+//專題
+.thesis div{margin-bottom:15px;}
+.thesis p{margin-bottom:0;}
+.thesis p a{
+height:44px;
+overflow: hidden;
+}
+
+

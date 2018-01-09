@@ -1,0 +1,242 @@
+.tour-backdrop,
+.tour2-backdrop {
+  position: absolute;
+  z-index: 1100;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-animation: backdrop-fade 2s 1;
+  -moz-animation: backdrop-fade 2s 1;
+  animation: backdrop-fade 2s 1;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.popover-navigation {
+  border-top: 1px solid #dfb9ad;
+}
+.popover[class*="tour-"],
+.popover[class*="tour2-"] {
+  min-width: 230px;
+  z-index: 1102;
+}
+.popover[class*="tour-"] .popover-navigation,
+.popover[class*="tour2-"] .popover-navigation {
+  padding: 9px 0;
+  overflow: hidden;
+}
+.popover[class*="tour-"] .popover-navigation *[data-role="end"],
+.popover[class*="tour2-"] .popover-navigation *[data-role="end"] {
+  float: right;
+}
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"],
+.popover[class*="tour2-"] .popover-navigation *[data-role="prev"],
+.popover[class*="tour-"] .popover-navigation *[data-role="next"],
+.popover[class*="tour2-"] .popover-navigation *[data-role="next"],
+.popover[class*="tour-"] .popover-navigation *[data-role="end"],
+.popover[class*="tour2-"] .popover-navigation *[data-role="end"] {
+  cursor: pointer;
+}
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled,
+.popover[class*="tour2-"] .popover-navigation *[data-role="prev"].disabled,
+.popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled,
+.popover[class*="tour2-"] .popover-navigation *[data-role="next"].disabled,
+.popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled,
+.popover[class*="tour2-"] .popover-navigation *[data-role="end"].disabled {
+  cursor: default;
+  display: none;
+}
+.popover[class*="tour-"].orphan,
+.popover[class*="tour2-"].orphan {
+  position: fixed;
+  margin-top: 0;
+}
+.popover[class*="tour-"].orphan .arrow,
+.popover[class*="tour2-"].orphan .arrow {
+  display: none;
+}
+.popover[class*="tour-"] .popover-title,
+.popover[class*="tour2-"] .popover-title {
+  font-size: 20px;
+  border-color: #dfb9ad;
+  background: transparent;
+  color: #6e4733;
+  position: relative;
+}
+.popover[class*="tour-"] .popover-title:after,
+.popover[class*="tour2-"] .popover-title:after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: -46px;
+  right: -18px;
+  background: url("../img/popover-head.png") 0 0 no-repeat;
+}
+.popover[class*="tour-"] .popover-content,
+.popover[class*="tour2-"] .popover-content {
+  font-size: 14px;
+}
+.popover[class*="tour-"] .popover-content a,
+.popover[class*="tour2-"] .popover-content a {
+  color: #5b97d4;
+}
+.popover[class*="tour-"] .popover-content a:hover,
+.popover[class*="tour2-"] .popover-content a:hover {
+  background: transparent;
+  color: #64bd8d;
+}
+.popover[class*="tour-"] .popover-content img,
+.popover[class*="tour2-"] .popover-content img {
+  max-width: 100%;
+}
+.popover[class*="tour-"] .btn,
+.popover[class*="tour2-"] .btn {
+  border: 0;
+  outline: 0;
+  color: #5b97d4;
+}
+.popover[class*="tour-"] .btn:focus,
+.popover[class*="tour2-"] .btn:focus,
+.popover[class*="tour-"] .btn:active,
+.popover[class*="tour2-"] .btn:active,
+.popover[class*="tour-"] .btn:hover,
+.popover[class*="tour2-"] .btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.popover[class*="tour-"] .btn:hover,
+.popover[class*="tour2-"] .btn:hover {
+  background: transparent;
+  color: #64bd8d;
+}
+.popover[class*="tour-"] .btn.disabled,
+.popover[class*="tour2-"] .btn.disabled {
+  cursor: default;
+}
+.popover[class*="tour-"] .btn.disabled:focus,
+.popover[class*="tour2-"] .btn.disabled:focus,
+.popover[class*="tour-"] .btn.disabled:active,
+.popover[class*="tour2-"] .btn.disabled:active,
+.popover[class*="tour-"] .btn.disabled:hover,
+.popover[class*="tour2-"] .btn.disabled:hover {
+  color: #5b97d4;
+}
+.dot {
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #64bd8d;
+  /*-webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            -o-transform: scale(0);
+            transform: scale(0);*/
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.dot:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: cd-pulse 2s infinite;
+  -moz-animation: cd-pulse 2s infinite;
+  animation: cd-pulse 2s infinite;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.dot.stop:after {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+.new-feature {
+  z-index: 1080;
+}
+.new-feature .dot {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+.new-feature:hover .dot:after {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+@media (max-width: 767px) {
+  .popover[class*="tour-"],
+  .popover[class*="tour2-"] {
+    width: 80vw;
+    max-width: 100vw;
+  }
+  .popover[class*="tour-"] .popover-title:after,
+  .popover[class*="tour2-"] .popover-title:after {
+    left: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes cd-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #64bd8d;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(100, 189, 141, 0);
+  }
+}
+@-moz-keyframes cd-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #64bd8d;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(100, 189, 141, 0);
+  }
+}
+@keyframes cd-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #64bd8d;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(100, 189, 141, 0);
+  }
+}
+@-webkit-keyframes backdrop-fade {
+  0% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+@-moz-keyframes backdrop-fade {
+  0% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+@keyframes backdrop-fade {
+  0% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .5;
+  }
+}

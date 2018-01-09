@@ -3,34 +3,6 @@
 }*/
 @padding-base:          10px;
 
-a,
-button,
-.btn,
-.btn.active,
-.btn.focus {
-    &:hover,
-    &:focus,
-    &:active {
-        outline: 0;
-    }
-    &:active {
-        &:focus {
-            outline: 0;
-        }
-    }
-}
-
-a {
-    display: inline-block;
-}
-
-ol,
-ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
 [class*='btn-'],
 [class^='btn-'] {
     border-radius: 50px;
@@ -42,7 +14,7 @@ ul {
 [class*='btn-compose'],
 [class^='btn-compose'] {
     padding: 5px 20px;
-    min-width: 108px;
+    min-width: 60px;
     &.btn-sm,
     &.btn-xs {
         min-width: auto;
@@ -109,7 +81,8 @@ ul {
 }
 
 .link-profile {
-    font-weight: 500;
+    //font-weight: 500;
+    font-weight: bold;
 }
 
 .btn {
@@ -435,14 +408,20 @@ ul {
 }
 
 .flex-h {
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
+    display: flex;
     align-items: center;
     -webkit-align-items: center;
 }
 .flex-v {
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
+    display: flex;
     flex-direction: column;
     -webkit-flex-direction: column;
     
@@ -530,23 +509,24 @@ ul {
 [class*='profile-avator'],
 [class^='profile-avator'] {
     border-radius: 50%;
-    overflow: hidden;
+    //overflow: hidden;
     background-color: #a2a2a0;
     color: #d0d0cf;
     text-align: center;
     line-height: 1;
     display: inline-block;
     a {
-        color: #d0d0cf;
+        color: white;
         &:hover,
         &:focus,
         &:active {
-            color: darken(#d0d0cf, 10%);
+            color: darken(white, 10%);
         }
     }
     img {
         width: 100%;
         height: auto;
+        border-radius: 50%;
     }
     i {
         &:before {
@@ -681,14 +661,16 @@ ul {
         top: -7px;
     }
     &.dir-top {
-        left: -85px;
-        top: -80px;
-        bottom: auto;
+        left: 0;
+        top: auto;
+        bottom: 100%;
+        margin-bottom: 10px;
         &:before {
             border-width: 10px 8px 0 8px;
             border-color: #ffffff transparent transparent transparent;
             bottom: -7px;
             top: auto;
+            left:10px;
         }
     }
 }
@@ -1154,8 +1136,9 @@ ul {
         box-shadow: none;
         background: transparent;
         resize: none;
-        max-height: 100px;
-        width: 95%;
+        max-height: 200px;
+        //max-height: 100px;
+        //width: 95%;
         &:focus,
         &:active {
             outline: none;

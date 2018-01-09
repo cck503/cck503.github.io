@@ -1,0 +1,163 @@
+.article_submenu {
+    &.ec-tag {
+        top: 200px;
+        background: #FE938B;
+        >a {
+            height: auto;
+            text-align: center;
+            color: #fff;
+            border-radius: 0;
+            >i {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            &:hover {
+                border-radius: 0;
+                background: transparent;
+                color: darken(#FE938B, 60%);
+                >i {
+                    //border-radius: 50%;
+                    background: darken(#FE938B, 10%)
+                }
+            }
+        }
+    }
+}
+
+.sticky-footer-ec {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #5385ea;
+    z-index: 100;
+        &.affix {
+            padding: 5px 0;
+            //height: 60px;
+        }
+        &.fade {
+        	height: 0;
+        	&.in {
+        		padding: 5px 0;
+        		height: auto;
+        	}
+        }
+    .media {
+        // Proper spacing between instances of .media
+        margin-top: 15px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .media,
+    .media-body {
+        zoom: 1;
+        overflow: hidden;
+    }
+    .media-body {
+        // width: 80%;
+    }
+    .media-object {
+        display: inline-block;
+        // Fix collapse in webkit from max-width: 100% and display: table-cell.
+        &.img-thumbnail {
+            max-width: none;
+        }
+    }
+    .media-right,
+    .media > .pull-right {
+        padding-left: 10px;
+    }
+    .media-left,
+    .media > .pull-left {
+        padding-right: 10px;
+    }
+    .media-left,
+    .media-right,
+    .media-body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .media-middle {
+        vertical-align: middle;
+    }
+    .media-bottom {
+        vertical-align: bottom;
+    }
+    // Reset margins on headings for tighter default spacing
+    .media-heading {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    // Media list variation
+    //
+    // Undo default ul/ol styles
+    .media-list {
+        padding-left: 0;
+        list-style: none;
+    }
+    .media-left {
+        //width: 20px;
+        > a {
+            display: inline-block;
+        }
+    }
+    .media-body {
+        a {
+            color: #fff;
+            display: inline-block;
+            &:hover {
+                color: darken(#5385ea, 60%);
+            }
+        }
+        .price-tag {
+        	color: #fac109;
+        	font-size: 1.2em;
+        	&:before {
+        		content: "優惠價：";
+        		color: #fff;
+        		font-size: 14px;
+        	}
+        }
+    }
+    .media-object {
+        width: 50px;
+        height: auto;
+    }
+}
+
+.sp-tag {
+    display: inline-block;
+    background: darken(#5385ea, 20%);
+    color: #fff;
+    padding: 5px;
+    height: 34px;
+    position: relative;
+    margin-right: 30px;
+    &:before {
+    	display: inline-block;
+    	content: "";
+    	width: 5px;
+    	height: 5px;
+    	border-radius: 50%;
+    	background: #5385ea;
+    	position: absolute;
+    	right: -10px;
+    	top: 15px;
+    	z-index: 55;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 17px 0 17px 17px;
+        border-color: transparent transparent transparent #1750c0;
+        position: absolute;
+        right: -17px;
+        top: 0;
+        z-index: 50;
+    }
+}

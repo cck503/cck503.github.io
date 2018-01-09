@@ -1,0 +1,279 @@
+//頻道首頁
+//共同
+.info_theme{padding:10px;}
+.info_theme div:first-child{
+	margin:0 12px;
+	width:830px;
+	height:30px;
+}
+
+.info_theme div{
+	float:left;
+	width:260px;
+	margin:15px 12px;
+}
+
+
+.info_theme div img{
+	margin-bottom:15px;
+		width:260px;
+	height:260px;
+}
+
+.info_theme h5, .info_theme p{
+max-height:44px;
+overflow:hidden;
+}
+
+.info_theme p{margin:0;}
+
+//按鈕_看更多文章
+div.btn_readmore{
+width:275px;
+height:40px;
+margin:0 300px 20px;
+line-height:40px;
+background-color:@pink;
+float:left;
+text-align: center;
+   -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+&:hover{background-color:@pink_deep;}
+}
+
+.btn_readmore a{
+	font-size:18px;
+color:#fff;
+padding-top:5px \9 ; /*IE*/
+&:hover{color:#fff;}
+
+}
+
+
+//頻道首頁_育兒
+//育兒日曆
+.theme_parenting ul{
+	padding-left:25px;
+}
+
+.theme_parenting ul li{
+	float:left;
+	height:30px;
+	margin-right:30px;
+	&:first-child{margin-right:0;}
+}	
+.theme_parenting a{
+color:@lapis;
+display: inline-block;
+margin-right:20px;
+&:hover, &:active, &:focus{color:@lapis_light;}}
+
+.theme_parenting a.active{
+	font-size:18px;
+	color:@seagreen;
+	cursor:default;
+	&:hover, &:active, &:focus{
+		color:@seagreen;
+	cursor:default;}}
+
+//頻道首頁_懷孕
+//懷孕日曆	
+
+.theme_pregnant {padding:10px 0 25px;}
+.theme_pregnant h3{margin:10px 0 0 20px;}
+.theme_pregnant div{
+	width:840px;
+	height:40px;
+	margin:5px auto;
+background:url(../../public/img/theme_pregnant_bg.png) no-repeat;
+
+}
+	
+.theme_pregnant div a{
+position:relative;
+float:left;
+font-size:15px;
+width:60px;
+height:40px;
+display: inline-block;
+margin:0;
+padding:0;
+line-height:40px;
+text-align: center;
+color:@lapis;
+&:hover, &:active, &:focus{color:@lapis_light;}}
+
+.theme_pregnant div a span.dot{
+display: block;
+position:absolute;
+width:8px;
+height:8px;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+z-index:10;
+background-color:@seagreen;
+top:30px;
+left:25px;
+
+}
+
+
+
+.theme_pregnant a.active{
+	font-size:18px;
+	line-height:30px;
+	color:@seagreen;
+	cursor:default;
+	&:hover, &:active, &:focus{
+		color:@seagreen;
+	cursor:default;}}
+
+	.theme_pregnant a.active span.dot{
+	width:16px;
+height:16px;
+background-color:#fff;
+border:3px solid @seagreen;	
+top:26px;
+left:21px;
+	}
+
+//頻道首頁_專訪
+//看更多文章_下拉按鈕
+.info_theme div.morearticle_down {
+	width:175px;
+	margin:20px 0 10px 330px;
+}
+.morearticle_down a{
+	font-size:18px;
+color:@pink;
+	line-height:40px;
+&:hover, &:active, &:focus{
+		color:@pink_deep;
+}}
+.morearticle_down .morearticle_down_btn{
+	font-size:20px;
+}
+
+
+//影音頻道
+.info_video h3{line-height:24px;}
+.info_video{overflow:hidden;}
+.info_video div{
+	position:relative;
+    width:260px;
+    height:200px;
+display:inline-block;
+overflow:hidden;
+margin-bottom:30px;}
+.info_video div a.play_video{
+	display:block;
+	position:absolute;
+    width:260px;
+    height:146px;
+    z-index:20;
+    border-radius:5px;
+    }
+.info_video div a.play_video:hover{
+	background:rgba(0%,0%,0%,0.3) url(../../public/img/video_play.png) no-repeat center center;}    
+.info_video div img{
+width:260px;
+    height:146px;
+	position:absolute;z-index:10;}	
+	.info_video div h5{margin-top:160px;}
+
+//影音_大
+	.info_video div.main_video{
+	position:relative;
+    width:620px;
+    height:400px;
+display:inline-block;
+overflow:hidden;
+margin:20px 120px 10px;}
+.info_video div.main_video a.play_video{
+	display:block;
+	position:absolute;
+    width:620px;
+    height:349px;
+    z-index:20;
+    border-radius:5px;
+    }
+.info_video div.main_video a.play_video:hover{
+	background:rgba(0%,0%,0%,0.3) url(../../public/img/main_video_play.png) no-repeat center center;}    
+.info_video div.main_video img{
+width:620px;
+    height:349px;
+	position:absolute;z-index:10;}	
+	.info_video div.main_video h5{margin-top:360px;text-align:center;}
+
+.info_video div.article_pagination{width:100%;height:50px;}
+
+
+//部落客頻道
+
+.info_blogger div{
+	float:left;
+	width:375px;
+	height:100px;
+	margin:20px 20px;
+	overflow:hidden;
+}
+
+.info_blogger div img{
+	width:100px;
+	height:100px;
+	float:left;
+    margin-right:10px;}
+
+.info_blogger div div{
+width:265px;
+float:left;
+margin:0;}
+
+//部落客基本資料
+.blogger_profile{padding:15px 40px;}
+.blogger_profile h2{font-size:16px;line-height:24px;margin:0 0 20px;}
+.blogger_profile div{}
+
+.blogger_profile div img{
+	float:left;
+    margin-right:25px;}
+
+.blogger_profile div div{
+width:500px;
+float:left;
+margin:0;}
+
+.info_blogger div.article_pagination{width:100%;height:50px;}
+
+.profile_article h3{margin-bottom:-20px;}
+
+.profile_article .list_sort{
+	float:right;
+	margin:15px 0 -10px 0;
+}
+
+.blogger_profile h1, .blogger_profile_article h2{
+	margin: 8px 0;
+    font-size: 22px;
+    line-height: 30px;
+    color: #43bfbf;
+    font-weight: 400;
+}
+.blogger_profile_article h2{
+	margin:20px 0 -10px 0 ;
+}
+.blogger_profile_article h3{
+	margin: 0 0 20px;
+	line-height:24px;
+	    font-size: 20px;
+    max-height: 48px;
+    overflow: hidden;}
+
+//專家list
+.info_blogger .morearticle_down{
+		width:175px;
+		height:50px;
+	margin:20px 0 10px 330px;
+}

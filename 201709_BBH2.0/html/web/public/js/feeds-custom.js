@@ -9,7 +9,7 @@ $('.hover-drop.dropdown').hover(function() {
 
 // Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
-  interval: false
+  interval: 6000
 });
 
 // for every slide in carousel, copy the next slide's item in the slide.
@@ -27,3 +27,13 @@ $('.multi-item-carousel .item').each(function(){
   	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
+
+//datepicker width
+function resizable (el, factor) {
+  var int = Number(factor) || 7.7;
+  function resize() {el.style.width = ((el.value.length+1) * int) + 'px'}
+  var e = 'keyup,keypress,focus,blur,change'.split(',');
+  for (var i in e) el.addEventListener(e[i],resize,false);
+  resize();
+}
+resizable(document.getElementById('datetimepicker-gen'),7);

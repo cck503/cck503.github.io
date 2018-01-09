@@ -1,0 +1,272 @@
+
+
+//navbar全站連結
+.info_navbar{
+	background-color:@pink;
+	min-height:40px;
+	height:40px;
+	border:none;
+	margin-bottom:0px;
+	width:100%;
+}
+
+.info_navbar .container{
+    position: relative;
+	background-color:@pink;}
+
+.info_navbar a{
+	float:left;
+	color:#fff;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	margin:0;
+	padding:0 24px 0 0;
+	&:hover, &:active, &:focus{color:@pink_dark;}
+}	
+
+
+.info_navbar .navbar-right a{
+	float:right;
+	background-color:#e06297;
+	background:#e06297;
+	height:24px;
+	line-height:24px;
+	margin:8px 6px;
+	padding:0 10px;
+    padding:4px 10px 0 \9 ; /*IE*/
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	&:hover, &:active, &:focus{background-color:#c23e75;color:#fff;}
+
+}
+
+
+.info_navbar .navbar-right a.btn_fb{
+	background-color:#486eb3;
+	padding:0 8px;
+	width:24px;
+	  padding:4px 8px 0 \9 ; /*IE*/
+	&:hover, &:active, &:focus{background-color:#2d559e;color:#fff;}
+}
+
+
+//headder
+.info_headder{margin:-10px auto 5px;}
+//logo
+.info_headder .logo{margin-right:60px;}
+
+//search
+.info_search{
+	width:380px;
+	height:40px;
+	background-color:#fff;
+	border:none;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	margin:20px auto;
+	box-shadow:inset 1px 1px 2px 1px #efe1e1;
+}
+
+//search下拉選單
+.info_search .nav>li>a {
+  position: relative;
+  display: block;
+  padding: 0px;
+  padding:4px 0 0 \9 ; /*IE*/
+  text-align: center;
+  line-height:38px;
+  height:38px;
+  width:80px;
+  color:#7b7b7b;
+  .caret{margin-left:5px;}
+  &:hover, &:active, &:focus{background: transparent;
+	color:@pink!important;}
+}
+
+.info_search .nav .open>a{
+	background: transparent;
+	color:@pink;
+}
+
+
+.info_search .dropdown-menu{
+  min-width: 80px;
+  border:1px solid @gray_light;
+  margin:0;
+}
+
+keygen, select, select[size="0"], select[size="1"]{border:none;}
+
+
+
+
+//search輸入框
+
+.info_search .form-control{
+	border:0;
+	height:38px;
+	padding:0 12px;
+	background:none;
+	box-shadow:none;
+}
+
+//search放大鏡icon
+.info_search .input-group-addon{
+padding:0;
+border:0;
+color:@gray;
+background:none;
+height:40px;
+}
+
+.info_search .input-group-addon a img:hover{
+ filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    -ms-filter: brightness(80%);
+}
+
+//會員資料
+/*.info_member div{
+	overflow:hidden;
+	float:right;
+}*/
+.info_member >div{
+	overflow:hidden;
+	float:right;
+}
+
+
+.info_member div a img{
+	width:50px;
+	height:50px;
+	margin:15px 10px 0 0;
+}
+
+.info_member div a{
+	display: inline-block;
+	float:left;
+}
+
+
+
+//會員資料bbcall
+/*.info_member>.bbcall{
+	width:100px;position:relative;
+}*/
+.info_member>.bbcall{
+	position:relative;
+	margin-right: 20px;
+	overflow: visible;
+}
+.info_member>.bbcall>.new_bbcall{
+	background:@pink;
+	color:#fff;
+	font-size:13px;
+	line-height:22px;
+	padding:0 2px;
+	text-align:center;
+	border-radius:50px;
+	min-width:22px;
+	position:absolute;
+    top:10px;
+    /*left:40px;*/
+	left:35px;
+}
+//會員資料會員暱稱
+/*.info_member>.member{width:220px;}*/
+
+.info_member>.member>.member_name{
+/*width:150px;*/
+max-width:150px;
+width: "expression( document.body.clientWidth > 149 ? "150px" : "auto" )"; /* sets max-width for IE */
+margin:32px 0 0 0;
+text-align:left;
+line-height:18px;
+color:@pink;
+.caret{
+	margin-left:5px;
+
+}
+	&:hover, &:active, &:focus{
+	color:@pink_deep;
+	text-decoration:none;}}
+
+//會員暱稱下拉選單
+
+.info_member .dropdown-menu{
+  min-width:100px;
+  border:1px solid #gray_light;
+  margin:0 auto;
+  top:65px;
+ left:235px;
+}
+
+.info_member .dropdown-menu>li>a{
+  width:100px;
+  text-align:center;
+  display: block;
+  color:#000;
+}
+
+//尚未登入
+/*.not_logged_in>div{
+	float:right;
+margin:0 0 0 50px;}*/
+.not_logged_in >div{
+	float:right;
+	margin:0 0 0 20px;
+}
+.not_logged_in>div a.login{
+	margin:30px 0 0 0;
+	color:@pink;
+	text-align:left;
+		&:hover, &:active, &:focus{
+	color:@pink_deep;
+	text-decoration:none;}
+}
+//搜尋下拉清單
+#classsort, #title_classsort {
+    border: 0;
+    background: transparent;
+    text-align:center;
+}
+
+#classsort option{padding-left:15px;}
+
+#classsor:visited , #classsor:hover , #classsor:active{border:none;}
+
+#classsort, #title_classsort { 
+ -webkit-appearance:none; 
+    -moz-appearance:none; 
+    appearance:none; 
+    margin-left: 5px;  
+} 
+.all-camera-dropdown { 
+margin-right: 15px;
+ &:after { 
+  content: ""; 
+     width: 0; 
+     height: 0; 
+     border-style: solid; 
+     border-width: 8px 4px 0 4px; 
+     border-color: #000333 transparent transparent transparent; 
+     position: absolute; 
+     top: 3px; 
+     margin-left: 5px; 
+     display: none \9; 
+ } 
+}
+
+//firefox-fix 
+@-moz-document url-prefix() {  
+ .all-camera-dropdown { 
+  &:after { 
+   top: 8px; 
+  } 
+ } 
+}

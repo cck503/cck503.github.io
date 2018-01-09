@@ -1,0 +1,527 @@
+div.loading {
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.modal {
+    display: none;
+    .name {
+        i {
+            margin-right: 15px;
+        }
+        .ion-locked,
+        .ion-unlocked,
+        .ion-link {
+            color: @body-bg;
+            text-align: center;
+            line-height: 20px;
+            background: @link-color;
+            border-radius: 50%;
+            margin-left: 5px;
+            opacity: .6;
+            filter: alpha(opacity=60);
+        }
+    }
+    i {
+        margin-right: 5px;
+    }
+    .ion-ios7-close-empty {
+        margin-right: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+//modale style
+.modal-backdrop {
+    background: @body-bg;
+    &.in {
+        opacity: .7;
+        filter: alpha(opacity=70);
+    }
+}
+
+.modal-dialog {
+    padding-top: 150px;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    background: @modal-red;
+    border-bottom: 0;
+    padding: 0;
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+    .close {
+        color: @body-bg;
+        margin-top: 0;
+        background: @modal-close;
+        font-size: 40px;
+        line-height: 50px;
+        width: 10%;
+        display: block;
+        text-shadow: none;
+        font-weight: normal;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        &:hover {
+            opacity: .5;
+            filter: alpha(opacity=50);
+            transition: border-color 0.5s linear;
+        }
+    }
+}
+
+.modal-title {
+    color: @body-bg;
+    font-size: @nav-font-size;
+    background: @modal-red;
+    width: 90%;
+    padding: 10px 15px;
+}
+
+.modal-body {
+    i {
+        vertical-align: middle;
+    }
+    .form-horizontal {
+        padding: 0;
+        margin-top: 0px;
+        & > .form-group > .col-xs-9 {
+            width: 100%;
+        }
+    }
+    .control-label {
+        font-size: @font-size-folder-title;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.modal-footer {
+    margin-top: 0;
+    padding: 0 20px 20px;
+    text-align: center;
+    border: 0;
+}
+
+.modal-footer .btn {
+    border-radius: 0;
+    //padding: 8px 26px;
+    color: @body-bg;
+    font-size: @font-size-folder-title;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.modal-footer .btn+.btn {
+    margin-left: 20px;
+}
+
+.submit_btn,
+.cancle_btn,
+.delete_btn {
+    font-size: @nav-font-size;
+    color: @body-bg;
+    border-radius: 0;
+    &:hover,
+    &:focus {
+        color: @body-bg;
+    }
+}
+
+.submit_btn {
+    background: @link-hover-color;
+    &:hover,
+    &:focus {
+        background: #f06c6c;
+    }
+}
+
+.cancle_btn {
+    background: #b1b1b1;
+    &:hover,
+    &:focus {
+        background: #aaaaaa;
+    }
+}
+
+.delete_btn {
+    background: #ffb321;
+    &:hover,
+    &:focus {
+        background: #f0a81f;
+    }
+}
+
+.social_option {
+    text-align: center;
+    a {
+        margin-left: 20px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    i {
+        font-size: @nav-font-size;
+        border-radius: 50%;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        color: @body-bg;
+    }
+    .ion-social-facebook {
+        background: #537bbd;
+        &:hover,
+        &:focus {
+            background: #4b6faa;
+        }
+    }
+    .ion-social-googleplus {
+        background: #e9644b;
+        &:hover,
+        &:focus {
+            background: #cf5943;
+        }
+    }
+    .ion-social-twitter {
+        background: #78cdf0;
+        &:hover,
+        &:focus {
+            background: #6fbddd;
+        }
+    }
+    .ion-email {
+        background: #fdc332;
+        &:hover,
+        &:focus {
+            background: #e2ae2d;
+        }
+    }
+}
+
+.privacy_setting {
+    .radio {
+        padding-top: 14px;
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+    i {
+        text-align: center;
+        line-height: 20px;
+        background: @gray-lighter;
+        border-radius: @radius-circle;
+        margin-left: 5px;
+    }
+}
+
+//organize
+.organize_modal,
+.location_modal,
+.file_edit_modal {
+    .modal-body {
+        padding: 20px 0;
+    }
+}
+
+.modal-body {
+    word-break: break-word;
+    .photo_list_option {
+        margin-top: -15px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        h5 {
+            margin: 0;
+            line-height: 46px;
+            font-size: @font-size-folder-title;
+        }
+    }
+    .item {
+        transition: all 0.5s ease;
+        .upload_btn {
+            display: none;
+            font-size: inherit;
+            margin-right: 0;
+            &:hover,
+            &:focus {
+                background: @link-hover-color;
+                color: #b25151;
+            }
+        }
+        &:hover {
+            background: @item-hover;
+            padding: 0 25px;
+            .upload_btn {
+                display: inline-block;
+            }
+        }
+        .name {
+            padding: 8px 25px 8px 35px;
+            width: 85%;
+        }
+    }
+}
+
+//location
+.location_modal {
+    .form-inline {
+        padding: 0 20px;
+        .form-control {
+            width: 70%;
+            margin: 0 10px;
+        }
+        .photo_btn {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            width: 100%;
+        }
+    }
+}
+
+.location_modal {
+    .venueList {
+        &>p {
+            margin-left: 35px;
+            font-weight: bold;
+        }
+        max-height: 400px;
+        overflow-y: auto;
+        .item>a {
+            visibility: hidden;
+        }
+        .item:hover>a {
+            visibility: visible;
+        }
+        .item {
+            .pull-right.tooltip_show {
+                color: #B23F3F;
+                background: #fff;
+                padding: 2px 4px;
+                margin-left: 10px;
+                margin-right: 25px;
+                border-radius: 3px;
+                &:hover,
+                &:focus {
+                    color: @link-hover-color;
+                }
+            }
+            .name {
+                width: 100%;
+                a {
+                    color: @text-color;
+                    &:hover,
+                    &:focus {
+                        color: @link-hover-color;
+                    }
+                }
+                p {
+                    color: @gray-light;
+                }
+            }
+            &:hover {
+                padding: 0 0 0 25px;
+            }
+            .tooltip_show {
+                margin: 8px 0 0;
+            }
+            i.ion-location {
+                font-size: @nav-font-size;
+                vertical-align: middle;
+            }
+        }
+        .this {
+            background: #fbf7bd;
+        }
+    }
+}
+
+//edit_file
+.modal-file-edit-list {
+    .content {
+        .ion-help-circled {
+            font-size: @nav-font-size;
+            color: @gray-light;
+        }
+        .ion-calendar {
+            font-size: @font-size-folder-title;
+            margin-left: -20px;
+            text-decoration: none;
+        }
+        .date-pick {
+            width: 50%;
+            border: 0;
+            border-bottom: 1px solid @btn-default-border;
+            background: @body-bg url("@{img-path}/calendar.png") right center no-repeat;
+            color: #4086d6;
+            padding: 0 5px;
+        }
+        .tooltip_show {
+            margin-right: 0;
+        }
+    }
+}
+
+//survey
+.survey_active {
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    .activated_btn {
+        display: inline-block;
+        width: 130px;
+        height: 120px;
+        background: url("@{img-path}/my_album_btn.png") 0 0 no-repeat;
+        &:hover,
+        &:focus {
+            background: url("@{img-path}/my_album_btn.png") 0 -120px no-repeat;
+        }
+        &:active {
+            background: url("@{img-path}/my_album_btn.png") 0 0 no-repeat;
+        }
+    }
+}
+
+.survey {
+    .modal-dialog {
+        width: 70%;
+    }
+}
+
+.survey_head {
+    background: url("../img/survey_cherry.png") 0 0 no-repeat;
+    p {
+        font-size: @font-size-folder-title;
+        padding: 30px 25px 0 125px;
+        margin-top: -10px;
+        span {
+            color: #e4007f;
+            display: block;
+        }
+    }
+}
+
+.q_cap {
+    font-size: @nav-font-size;
+    color: #f3aecc;
+    margin-right: 10px;
+}
+
+.survey_txt {
+    padding-left: 46px;
+    label {
+        color: #e4007f;
+    }
+}
+
+.sur_q {
+    color: #e4007f;
+    width: 35%;
+}
+
+.mission_head {
+    p {
+        text-align: center;
+        font-size: @font-size-folder-title;
+        font-weight: bold;
+    }
+}
+
+.mission_step {
+    width: 460px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    li {
+        display: block;
+        width: 200px;
+        height: 204px;
+        float: left;
+        margin: 15px;
+        background: url("@{img-path}/survey_mission.gif") 200px 204px no-repeat;
+        a {
+            display: block;
+            width: 200px;
+            height: 204px;
+        }
+    }
+    .step_01 {
+        background-position: 0 0;
+    }
+    .step_02 {
+        background-position: -200px 0;
+    }
+    .step_03 {
+        background-position: -400px 0;
+    }
+    .step_04 {
+        background-position: -600px 0;
+    }
+}
+
+.modal-body {
+    .mission_step {
+        .step_01.non_actived {
+            background-position: 0 -204px;
+        }
+        .step_02.non_actived {
+            background-position: -200px -204px;
+        }
+        .step_03.non_actived {
+            background-position: -400px -204px;
+        }
+        .step_04.non_actived {
+            background-position: -600px -204px;
+        }
+    }
+}
+
+//old_transform
+.survey_mission {
+    .modal-content {
+        background: url("@{img-path}/sticker17.png") right bottom no-repeat #fff;
+    }
+    .modal-body>ul {
+        font-size: @font-size-folder-title;
+        padding-left: 60px;
+        padding-right: 25px;
+        li {
+            margin-bottom: 20px;
+            .list_style {
+                font-size: @font-size-folder-title;
+                color: #fff;
+                border-radius: @border-radius-base;
+                background: @link-hover-color;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                margin-left: -40px;
+                margin-right: 10px;
+            }
+            img {
+                width: 100%;
+            }
+            span {
+                color: #2980b9;
+                font-size: @font-size-base;
+            }
+        }
+    }
+}

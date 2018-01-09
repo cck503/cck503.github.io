@@ -1,0 +1,129 @@
+//文章列表
+//排序下拉選單
+.list_sort{
+	width:120px;
+	margin:20px 0 -15px 680px;
+}
+
+.list_sort button{
+width:120px;
+height:40px;
+color:#545454;
+&:hover, &:active, &:focus{
+background:transparent;
+border:1px solid #9b9b9b;}
+}
+.list_sort button span.caret{margin-left:10px;}
+
+.list_sort ul.dropdown-menu{
+min-width:120px;
+margin:0;
+float:right;}
+
+
+//排序文章
+.article_list{
+	overflow:auto;
+margin:40px 0;
+width:800px;}
+
+.article_list:first-child{
+	margin-top:80px;
+}
+
+.article_list h4{
+	margin:0 0 20px;
+	max-height:44px;
+	overflow: hidden;
+}
+
+.article_list div.pull-right p.article_detail{
+	line-height:20px;
+	margin-bottom:10px;
+	max-height: 38px;
+	overflow: hidden;
+}
+
+.article_list img.pull-left{
+float:left;
+width:200px;
+height:200px;
+}
+
+.article_list div.pull-right{
+	width:570px;}
+
+.article_list div.pull-right p{
+	line-height:24px;
+	max-height: 72px;
+	overflow: hidden;
+}
+.article_list .article_tag{
+	margin:0;
+width:570px;}
+
+
+//搜尋結果
+
+.searchresult{
+margin:25px 0;
+width:620px;
+font-size: 20px;
+line-height:24px;
+}
+
+.searchresult span{
+color:@pink;	
+}
+
+span.keyword{
+color:@pink;
+&:before{content:"【";}	
+&:after{content:"】";}
+}
+
+//側攔_討論區搜尋結果
+.info_sidebar .searchresult{
+width:100%;
+line-height:26px;
+font-size:18px;
+margin:15px 0 20px;}
+
+.info_sidebar ul{margin:20px 0 10px;}
+
+.info_sidebar a.searchresult_link{
+color:@lapis;
+text-align: center;
+margin:15px 0 5px;
+&:hover{color:@lapis_light;}
+}
+
+//側攔_EC搜尋結果
+div.sidebar_search_ec{
+	display: block;
+	overflow:auto;
+	width:245px;
+	margin:20px 0;
+}
+
+
+.sidebar_search_ec a img{
+	width:100px;
+	height:100px;
+	float:left;
+    margin:0 10px 0 0;}
+
+.sidebar_search_ec div{
+width:130px;
+float:left;
+margin:0;
+line-height:24px;
+}
+
+
+.sidebar_search_ec div h3{
+	color:@pink;
+	line-height:24px;
+	margin:0;
+	&:before{content:"$";font-size:18px;padding-right:5px;}	
+}

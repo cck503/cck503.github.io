@@ -1,0 +1,580 @@
+<html lang="en" class="csstransforms csstransforms3d csstransitions" hola_ext_inject="disabled">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome購物</title>
+    <!--<meta name="viewport" content="" />-->
+    <meta name="description" content="好物快找是BabyHome寶貝家庭親子網為回應討論區生活及育兒的購物服務。我們致力於提供高關注度口碑商品，以協助輕鬆幸福生活為使命，讓購物不僅是一種消費更能解決問題創造美好。">
+    <meta name="keywords" content="好康團購,bbh特賣,折扣,母嬰,婦幼,兒童,親子,生活智慧">
+    <!--<meta property="fb:app_id" content="" />-->
+    <meta property="og:title" content="購物車">
+    <meta property="og:image" content="http://m.shop.babyhome.com.tw/resource/base/images/logo_50x50.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://m.shop.babyhome.com.tw/cart">
+    <meta property="og:site_name" content="BabyHome購物">
+    <meta property="og:description" content="好物快找是BabyHome寶貝家庭親子網為回應討論區生活及育兒的購物服務。我們致力於提供高關注度口碑商品，以協助輕鬆幸福生活為使命，讓購物不僅是一種消費更能解決問題創造美好。">
+    <link href="http://m.shop.babyhome.com.tw/resource/base/public/css/m.main.css" rel="stylesheet">
+    <link href="http://m.shop.babyhome.com.tw/resource/base/public/css/m-cart-notification.css" rel="stylesheet">
+    <link href="http://m.shop.babyhome.com.tw/resource/base/public/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="http://m.shop.babyhome.com.tw/resource/base/public/css/masonry-style.css" rel="stylesheet">
+    <link href="http://m.shop.babyhome.com.tw/resource/base/public/css/m.fes-shopping.css" rel="stylesheet">
+    <link href="../../html/mobile/public/css/bbh-m-header-footer.css" rel="stylesheet">
+    <!--[if lt IE 9]><link rel="stylesheet" href="public/css/fix_ie.css"></script><![endif]-->
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <body>
+        <nav class="slide-nav">
+            <a href="#" id="nav-close" class="nav-close"></a>
+            <div class="nav-content">
+                <div class="fixed-top">
+                    <div class="span-profile hidden">
+                        <div class="flex-h">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-m-login.html"><i class="icon-avator-full"></i><span class="sr-only">Hello，您好</span></a>
+                            </div>
+                            <div class="profile-caption">
+                                <p><a href="bbh-m-login.html">Hello，您好</a></p>
+                            </div>
+                        </div>
+                        <div class="cover-btn-holder flex-h">
+                            <a href="bbh-m-index-login.html" class="btn btn-block btn-key">登入</a>
+                            <a href="bbh-m-register.html" class="btn btn-block btn-key-line">註冊</a>
+                        </div>
+                    </div>
+                    <div class="span-profile">
+                        <div class="flex-h">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-m-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                            </div>
+                            <div class="profile-caption">
+                                <p><a href="bbh-m-myhome.html">Hi~ 小寶真是可愛</a></p>
+                            </div>
+                        </div>
+                        <div class="profile-detail flex-h">
+                            <div class="detail-inner"><a href=""><span class="number">20</span><span>貼文</span></a></div>
+                            <div class="detail-inner"><a href=""><span class="number">331</span><span>話題</span></a></div>
+                            <div class="detail-inner"><a href=""><span class="number">1.1K</span><span>關注我</span></a></div>
+                            <div class="detail-inner"><a href=""><span class="number">10K</span><span>Ｑ點</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <ul class="span-personal-nav">
+                        <li class="channel-list hidden">
+                            <ul>
+                                <li><a href="">討論區</a></li>
+                                <li><a href="">新知</a></li>
+                                <li><a href="">購物</a></li>
+                                <li><a href="">活動</a></li>
+                            </ul>
+                        </li>
+                        <li class="channel-list channel-diff">
+                            <ul>
+                                <li class="list-heading">討論區</li>
+                                <li>
+                                    <ul class="customized-list">
+                                        <li><a href="">最愛專區</a></li>
+                                        <li><a href="">我的話題</a></li>
+                                        <li><a href="">話題草稿</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">熱討論</a></li>
+                                <li><a href="">新發表</a></li>
+                                <li><a href="">專區列表</a></li>
+                                <li><a href="">媽咪投票趣</a></li>
+                                <li><a href="">公告與指南</a></li>
+                            </ul>
+                        </li>
+                        <li class="channel-list">
+                            <ul>
+                                <li><a href="">相簿</a></li>
+                            </ul>
+                        </li>
+                        <li class="channel-list">
+                            <ul>
+                                <li><a href="#">部落格(舊)</a></li>
+                                <li><a href="bbh-m-member.html">管理中心</a></li>
+                                <li><a href="#">登出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="nav-footer">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <ul class="secondary-info">
+                                        <li><a href="bbh-m-about.html">關於我們</a></li>
+                                        <li><a href="bbh-m-tos.html">服務條款</a></li>
+                                        <li><a href="bbh-m-policy.html">隱私權政策</a></li>
+                                        <li><a href="">客服信箱</a></li>
+                                        <li><a href="">合作提案</a></li>
+                                        <li><a href="">徵才資訊</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="secondary-info">
+                                        <li><a href="">Q&A</a></li>
+                                        <li><a href="">公告與指南</a></li>
+                                        <li><a href="">客服信箱</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="secondary-info">
+                                        <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12">
+                                    <ul class="secondary-info">
+                                        <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--header-->
+        <!--end_ec_header-->
+        <!--container-->
+        <div class="container fixedmenu">
+            <header class="head-universal">
+                <nav class="navbar navbar-default navbar-fixed-top nav-down">
+                    <div class="container">
+                        <div class="row">
+                            <div class="flex-h">
+                                <button id="nav-expander" type="button" class="tcon tcon-menu-minus nav-expander" aria-label="toggle menu">
+                                    <span class="tcon-menu-lines" aria-hidden="true"></span>
+                                    <span class="tcon-visuallyhidden">toggle menu</span>
+                                </button>
+                                <div class="navbar-header">
+                                    <a class="navbar-brand bbh-logo-new" href="bbh-m-index.html">
+                                        <svg id="babyhome-logo-gray" data-name="babyhome-logo-gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 28.96">
+                                            <title>bbh-log-gray</title>
+                                            <path d="M34.21,23.73h-.83s0-1.49,0-3.69V8.82c0-2.08-.18-2.3-2-2.3V6h5.09v7.09a4.41,4.41,0,0,1,4-2.1C44,11,46,13.27,46,17.2,46,21.48,43.75,24,39.94,24a6.43,6.43,0,0,1-3.81-1.14A2.11,2.11,0,0,1,34.21,23.73Zm2.91-1.87a3,3,0,0,0,2.61,1.61c1.89,0,2.89-2,2.89-5.87s-.95-5.9-2.76-5.9a3,3,0,0,0-2.64,1.85,9.8,9.8,0,0,0-.79,4.28A9.22,9.22,0,0,0,37.13,21.86Z" />
+                                            <path d="M82.16,12.66A6.86,6.86,0,0,1,86.94,11c4,0,6.62,2.56,6.62,6.49a6.84,6.84,0,0,1-1.69,4.68,7.08,7.08,0,0,1-5.07,1.92A6.8,6.8,0,0,1,82,22.26a6.65,6.65,0,0,1-1.77-4.66A7,7,0,0,1,82.16,12.66Zm4.76,10.86c2.22,0,3.22-1.84,3.22-6s-1-6-3.25-6a2.55,2.55,0,0,0-2.38,1.37,9.77,9.77,0,0,0-.82,4.6C83.69,21.58,84.72,23.52,86.92,23.52Z" />
+                                            <path d="M121,17a8.59,8.59,0,0,0,.67,3.76,3.67,3.67,0,0,0,3.48,2.35,4.77,4.77,0,0,0,4.22-2.7l.64.38A5.85,5.85,0,0,1,124.33,24c-4.07,0-6.68-2.53-6.68-6.48S120.18,11,124.07,11c2.61,0,4.45,1.09,5.3,3.12a8.06,8.06,0,0,1,.46,2.91Zm5.68-.69a8.61,8.61,0,0,0-.44-3c-.49-1.25-1.2-1.84-2.2-1.84s-1.95.71-2.48,2.08a9.26,9.26,0,0,0-.54,2.72Z" />
+                                            <path d="M0,23.42c2.07,0,2.3-.29,2.3-2.51V9.12C2.3,6.9,2,6.63,0,6.61V6H8c5.07,0,7.34,1.28,7.34,4.11,0,2.56-1.58,3.79-5.5,4.2v.17c4.09.19,6.17,1.77,6.17,4.69,0,3.47-2.43,4.9-8.44,4.9H0ZM7.75,14c2.66,0,4.07-1.31,4.07-3.79S10.39,6.68,7.57,6.68h-2V14Zm-.2,9.32c3.2,0,4.81-1.45,4.81-4.32a4,4,0,0,0-1.66-3.58,6.08,6.08,0,0,0-3-.65H5.6v8.55Z" />
+                                            <path d="M29.63,14a3,3,0,0,0-.95-2,5.76,5.76,0,0,0-3.79-1,8.38,8.38,0,0,0-4.19.9,3.46,3.46,0,0,0-1.59,2.2A1.54,1.54,0,0,0,20.89,16,1.93,1.93,0,0,0,22.47,14a3.35,3.35,0,0,1,.41-1.68,1.81,1.81,0,0,1,1.71-.81c1.54,0,2,.73,2,3.24V16.3a33.21,33.21,0,0,0-4.2.45c-2.74.5-4.09,1.75-4.09,3.79S19.81,24,22.24,24a5.89,5.89,0,0,0,4.37-1.92,1.81,1.81,0,0,0,2,1.8h1Zm-3,4.7a5.65,5.65,0,0,1-.46,2.75A2.8,2.8,0,0,1,23.65,23c-1.25,0-2.07-1.11-2.07-2.79,0-2.2,1.3-3.07,5-3.34Z" />
+                                            <path d="M115.53,15.54a4.77,4.77,0,0,0-.77-3.2A4,4,0,0,0,111.43,11a4.84,4.84,0,0,0-4.4,2.49c-.46-1.68-1.66-2.49-3.63-2.49a5.07,5.07,0,0,0-4.45,2.39l0-2.34-5,0v.57c1.69,0,1.89.57,1.89,2.55v9.51H99V15.95c0-2.13,1.41-3.88,3.1-3.88,1.41,0,2.07,1.11,2.07,3.48v8.14h3.11V15.75a4,4,0,0,1,.79-2.39,2.66,2.66,0,0,1,2.28-1.3c1.51,0,2.12,1,2.12,3.5v8.12h3.14Z" />
+                                            <path d="M79.75,23.07c-2.1-.07-2.3-.28-2.3-2.46V9c0-2.13.21-2.37,2.23-2.44V6H74.11v7.9H66.87V6H61.34V6.6c2,.07,2.2.3,2.2,2.44V20.61c0,2.17-.21,2.39-2.31,2.46v.62h5.64v-9h7.26v9h5.64Z" />
+                                            <path d="M59.06,11.33l-3.8,8.85-3.74-8.85H46.95v.54c1.2.1,1.43.36,2.3,2.25L53.73,24s-.47,1.11-.75,1.63c-.52,1-.8,1.07-.8,1.07a1.84,1.84,0,0,0-3.59.22,1.8,1.8,0,0,0,1.87,2C52,29,53,28.08,54,25.65l4.35-10.22c1.16-2.68,1.79-3.36,3.22-3.55v-.54Z" />
+                                            <path d="M97,2.24a3.07,3.07,0,0,1,2.12-.72A2.69,2.69,0,0,1,102,4.31a2.9,2.9,0,0,1-.75,2,3.16,3.16,0,0,1-2.24.83,3,3,0,0,1-2.12-.77,2.84,2.84,0,0,1-.78-2A3,3,0,0,1,97,2.24Zm2.1,4.69c1,0,1.43-.79,1.43-2.57s-.45-2.6-1.44-2.6A1.14,1.14,0,0,0,98,2.34a4.13,4.13,0,0,0-.36,2C97.68,6.09,98.13,6.92,99.1,6.92Z" />
+                                            <path d="M119,5.4a2.6,2.6,0,0,0,.11.92.61.61,0,0,0,.56.38,1.43,1.43,0,0,0,.79-.32l.16.25a2.47,2.47,0,0,1-1.55.51,1.41,1.41,0,0,1-1.28-.56,2.85,2.85,0,0,1-.17-1.41V2h-.65v-.3A1.23,1.23,0,0,0,118,1.14a2.59,2.59,0,0,0,.42-1.09L119,0c0,.42,0,.74,0,1.67h1.37V2H119Z" />
+                                            <path d="M123.9,7.07h-.84l-1.41-4.28c-.21-.66-.41-.86-.89-.89V1.67h1.92L124,5.78l1.45-4h.66l1.38,4,1.3-4.11H130V1.9c-.65,0-.93.33-1.24,1.24l-1.32,3.93h-.81l-1.37-3.74Z" />
+                                            <path d="M111.66,5.73V3.48a2.06,2.06,0,0,0-.33-1.38,1.72,1.72,0,0,0-1.44-.59A2.09,2.09,0,0,0,108,2.58a1.43,1.43,0,0,0-1.57-1.07,2.2,2.2,0,0,0-1.92,1v-1h-2.16v.25c.73,0,.82.25.82,1.1V5h0V7h1.34V5h0V3.65A1.55,1.55,0,0,1,105.84,2c.61,0,.9.48.9,1.5V5.73c0,.1,0,.19,0,.27V7h1.34V5.78s0,0,0,0V3.57a1.72,1.72,0,0,1,.34-1,1.15,1.15,0,0,1,1-.56c.65,0,.92.43.92,1.51V5.73c0,.14,0,.27,0,.38V7h1.36V6C111.66,6,111.66,5.85,111.66,5.73Z" />
+                                            <circle cx="87.67" cy="6.2" r="0.81" />
+                                            <circle cx="114.79" cy="6.2" r="0.81" />
+                                            <path d="M95.39,5.73a2.62,2.62,0,0,1-2.48,1.43A2.68,2.68,0,0,1,90,4.4,3,3,0,0,1,90.9,2.2a3,3,0,0,1,2-.68c1.26,0,2.29.61,2.33,1.34a.65.65,0,0,1-.74.71c-.26,0-.62-.2-.7-.84s-.37-1-.93-1a1.12,1.12,0,0,0-1,.65,5.07,5.07,0,0,0-.32,1.81A3.61,3.61,0,0,0,91.92,6a1.49,1.49,0,0,0,1.35.8,2,2,0,0,0,1.83-1.2Z" />
+                                        </svg><span class="sr-only">BabyHome.com.tw</span></a>
+                                </div>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
+                                    <li><span class="badge badge-notify">5</span><a href="#" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
+                                    <li><a href="#" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div id="navbar" class="main-nav">
+                                <ul class="nav navbar-nav">
+                                    <li class="bbh-forum"><a href="#">討論</a></li>
+                                    <li class="bbh-info"><a href="#">新知</a></li>
+                                    <li class="bbh-shop"><a href="#">購物</a></li>
+                                    <li class="bbh-group"><a href="#">家族</a></li>
+                                    <li class="bbh-events"><a href="bbh-m-events.html">活動</a></li>
+                                    <li class="bbh-mama"><a href="">動態分享</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="navbar sec-nav">
+                <div class="navbar navbar-default my-sticky-element">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="bag-li"><a href="/bag/">媽媽包館</a>
+                            </li>
+                            <li><a href="/top_product/">TOP 熱銷</a>
+                            </li>
+                            <li><a href="/promote/">今日促銷</a>
+                            </li>
+                            <li><a href="/allergy/">過敏專區</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-list special-offer">
+                <div id="container" class="row" style="position: relative; height: 0px;">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/82021" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1310/59e9b6952fb2a_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/82021">【限量促銷】【普洛斯Prosi】小蒼蘭蜜絲香水洗衣凝露2000mlx2罐+1800mlx4包(升級新上市)</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1400</del>
+                                優惠價：<span class="offer">699</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81966" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1129/575290f58965e_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81966">【品牌最殺價】OSTER 美國 第二代奶泡大師 義式咖啡機 BVSTEM6602P 靛紫 PRO升級版</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>9900</del>
+                                優惠價：<span class="offer">6980</span>
+                            </p>
+                        </div>
+                    </div>
+                    <script language="javascript" type="text/javascript" src="http://front.adsnew.babyhome.com.tw/slot_gateway.php?mode=materia&amp;slot=129&amp;channel=22&amp;number=1"></script>
+                    <div id="_slot_59fc24db30501" style="width: 100%; padding: 0px; margin: 0px;"><a style="width:100%;height:auto;overflow:hidden;display:block;" href="http://front.adsnew.babyhome.com.tw/click.php?material=24783&amp;fix=12971&amp;slot=129&amp;cue=C10610036&amp;channel=22&amp;op=2356&amp;o=O10610019&amp;url=http://m.shop.babyhome.com.tw/brand/10166?&amp;utm_source=BBH&amp;utm_medium=Banner&amp;utm_term=171026&amp;utm_content=400400_&amp;utm_campaign=201609BBH" target="_blank"><img width="100%" src="https://files-adsnew.babyhome.com.tw/O10610019/material/12971/59f2a4e45469a.jpg"></a><img src="http://front.adsnew.babyhome.com.tw/slotad.php?slot=129&amp;channel=22&amp;material=24783&amp;type=pv" style="display:none;"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81926" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1129/597965ccbc1bd_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81926">【一週限定】KitchenAid 手持料理棒 經典紅 美國百年工藝</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>3990</del>
+                                優惠價：<span class="offer">2580</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81963" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1129/5784abf4d761d_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81963">【限時搶購】BRAUN 德國百靈 德製刮鬍刀 570s</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>10980</del>
+                                優惠價：<span class="offer">4280</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81947" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1129/58d1d3a5637fa_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81947">【限時加贈電池一顆】★三星★ 直立/手持無線吸塵器 VS60K6050KW(摩登白) </a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>12900</del>
+                                優惠價：<span class="offer">8900</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81953" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1129/58d1cafca9eed_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81953">【限時一週】HITACHI 日立 掃地機器人 minimaru 日製 RV-DX1TK 黑</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>26900</del>
+                                優惠價：<span class="offer">19900</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81914" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1240/59f19b0e8353d_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81914">【低價回饋】Q-doh Reinvent 運動黏土-四入組</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1590</del>
+                                優惠價：<span class="offer">1590</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81868" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1287/59f039d624ca7_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81868">【準爸媽清單特賣】naforye 拉孚兒【呼妳靠】好孕舒壓哺乳枕 - 情繫太平洋</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1680</del>
+                                優惠價：<span class="offer">1260</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/82196" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1202/59f83ddd2faae_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/82196">特賣超值組合【大地之愛】有機水果燕麥250g(2罐一組)</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>760</del>
+                                優惠價：<span class="offer">330</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81896" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/Amily/201710/1025-400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81896">iRobot Roomba 880 ‎ 天王級機器人掃地機【免比價全網最低】</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>59990</del>
+                                優惠價：<span class="offer">15488</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="infscr-loading" style="overflow: hidden; display: none;"><img alt="Loading..." src="/resource/base/public/img/loading.gif">
+                        <div><em>讀取中...</em></div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81621" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1306/59f0b202677bb_400.png" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81621">【特賣】修甲神器--Nevi磨甲機+AngelJoy指甲剪組</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1579</del>
+                                優惠價：<span class="offer">890</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81635" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1255/59e8151b8e8c6_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81635">【特賣】韓國鉑金矽膠副食品製冰盒【3入】</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1350</del>
+                                優惠價：<span class="offer">999</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81854" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p106/5824225e301d1_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81854">【超值搶購】MoliFun魔力坊 316旋壓式輕量真空彈蓋杯保冰保溫杯500ml(3色)(MF0500)</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>2290</del>
+                                優惠價：<span class="offer">990</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81748" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1312/59ed818862be5_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81748">【特賣】韓國 BESSON JOUJOU星星保溫保冷兒童包-黑色布面星星</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1680</del>
+                                優惠價：<span class="offer">1480</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81834" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1318/59eef1fac844b_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81834">【特賣】MOTHER-K矽膠奶瓶刷/2入組(2組)</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1398</del>
+                                優惠價：<span class="offer">699</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81732" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/Amily/201405/0684-400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81732">【防潮作戰】JoyLife 超值3入可重複防霉除濕袋~狗狗重量包240克【MP0102】</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>860</del>
+                                優惠價：<span class="offer">339</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81755" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1187/59ed9fff01f53_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81755">【特賣】DreamBra收腰提臀曲線雕塑衣(PS14133)</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>690</del>
+                                優惠價：<span class="offer">179</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81851" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p106/58242fa19b272_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81851">【超值搶購】MoliFun魔力坊 不鏽鋼真空保鮮保溫燜燒食物罐480ml(3色)(MF0320)</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1490</del>
+                                優惠價：<span class="offer">599</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81839" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1265/59ef05e69f20b_400.JPG" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81839">【雙11特價】【薌園】藜麥糙米米果(80g) x6袋</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>720</del>
+                                優惠價：<span class="offer">600</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail ">
+                            <a href="http://m.shop.babyhome.com.tw/product/81745" class="img-holder">
+								<img src="http://d17ymlenvwlt7r.cloudfront.net/files/spmupload/p1312/59ed705844943_400.jpg" alt="110x110" style="opacity: 1;">
+							</a>
+                            <p class="pd-title"><a href="http://m.shop.babyhome.com.tw/product/81745">【特賣】韓國 BESSON JOUJOU星星保溫保冷兒童包-粉色螢光星星</a>
+                            </p>
+                            <p class="price">
+                                市價：
+                                <del>1680</del>
+                                優惠價：<span class="offer">1480</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <nav id="page_nav" style="display: none;">
+                    <a href="/home/index/2"></a>
+                </nav>
+            </div>
+        </div>
+        <!--end_container-->
+        <!---->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/bootstrap.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/transition.js"></script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.easing.1.3.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/waypoints.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/waypoints-sticky.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.scrollUp.js"></script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.hoverIntent.minified.js"></script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.dcjqaccordion.2.7.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.isotope.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.infinitescroll.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/holder.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/jasny-bootstrap.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/offcanvas.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/jquery.slides.min.js"></script>
+        <!-- <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/scrolling.text.js"></script> -->
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/inputsearch.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/js/edm.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/js/masonry.pkgd.min.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/js/imagesloaded.pkgd.js"></script>
+        <script type="text/javascript" src="http://front.adsnew.babyhome.com.tw/bbh_tracking.js"></script>
+        <script src="http://m.shop.babyhome.com.tw/resource/base/public/js/ga_ec.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            if ($('#container .col-sm-6').length > 0) {
+                var $container = $('#container');
+
+                $container.masonry({
+                    itemSelector: '.fake-item'
+                });
+
+                // layout Isotope after each image loads
+                $container.imagesLoaded().progress(function() {
+                    $container.infinitescroll({
+                            navSelector: '#page_nav', // selector for the paged navigation 
+                            nextSelector: '#page_nav a', // selector for the NEXT link (to page 2)
+                            itemSelector: '.col-sm-6', // selector for all items you'll retrieve
+                            loading: {
+                                finishedMsg: '沒有更多商品了',
+                                //img: 'http://i.imgur.com/6RMhx.gif'
+                                img: '/resource/base/public/img/loading.gif'
+                            }
+                        },
+                        // call Isotope as a callback
+                        function(newElements) {
+                            $('.col-sm-6 img').stop(true, true).animate({ opacity: 1 });
+                            $container.masonry('appended', $(newElements))
+                        }
+                    );
+                });
+            }
+        });
+        </script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/js/cart.js?v=1.2"></script>
+        <script type="text/javascript" src="http://m.shop.babyhome.com.tw/resource/base/js/cart_discount.js?v=1.2"></script>
+        <script src="public/js/m-header-custom.js"></script>
+    </body>
+
+</html>

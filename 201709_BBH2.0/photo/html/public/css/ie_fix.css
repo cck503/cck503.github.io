@@ -1,0 +1,6 @@
+.navbar-brand {
+	background: url("../img/bbh_logo_black.png") 0 0 no-repeat;
+}
+.media_full .full_holder img {
+	width:expression(this.width>900 ? 900:true)
+}

@@ -1,0 +1,60 @@
+.exitfrom {
+  &.affix {
+    bottom: 0;
+    -moz-transform: translateY(510px);
+    -webkit-transform: translateY(510px);
+    -o-transform: translateY(510px);
+    -ms-transform: translateY(510px);
+    transform: translateY(510px);
+  }
+  &.fade {
+    -webkit-transition: all .15s ease-in;
+    -moz-transition: all .15s ease-in;
+    -ms-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+    &.in {
+      opcity: 1;
+      -moz-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -o-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      &.min-height {
+        -moz-transform: translateY(510px);
+    -webkit-transform: translateY(510px);
+    -o-transform: translateY(510px);
+    -ms-transform: translateY(510px);
+    transform: translateY(510px);
+    .minify {
+    &:before {
+      content: "\e91f";
+    }
+  }
+      }
+    }
+  }
+  .minify {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    padding: 0;
+    line-height: 30px;
+    &:hover {
+      background: darken(white, 5%)
+    }
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+    &:before {
+      content: "\e91a";
+      font-family: 'bbhiocn';
+  font-size: 28px;
+  line-height: 30px;
+    }
+  }
+}

@@ -27,17 +27,23 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('.navbar-fixed-top').removeClass('nav-down').addClass('nav-up');
+        $('.my-sticky-element').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('.navbar-fixed-top').removeClass('nav-up').addClass('nav-down');
+            $('.my-sticky-element').removeClass('nav-up').addClass('nav-down');
         }
     }
     
     lastScrollTop = st;
 }
 
-$(document)
+
+
+
+
+/*$(document)
     .one('focus.autoExpand', 'textarea.autoExpand', function() {
         var savedValue = this.value;
         this.value = '';
@@ -51,7 +57,7 @@ $(document)
         rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
         this.rows = minRows + rows;
     });
-
+*/
 
 
 $(document).ready(function(){
