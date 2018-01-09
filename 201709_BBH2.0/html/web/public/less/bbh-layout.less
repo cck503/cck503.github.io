@@ -149,6 +149,7 @@ a {
 
 
 
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -308,6 +309,7 @@ body {
 
 
 
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -383,6 +385,7 @@ body {
 {
     background-color: white;
 }
+
 
 
 
@@ -992,6 +995,7 @@ body {
 }
 
 
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1566,6 +1570,7 @@ body {
         }
     }
 }
+
 .sub-comment {
     .feed-comment {
         margin-bottom: 0;
@@ -1583,13 +1588,13 @@ body {
         margin-top: @padding-base;
         .respond-inner {
             margin-right: @padding-base;
-            box-shadow: inset rgba(217,217,217,1) 0 0 0px 1px;
+            box-shadow: inset rgba(217, 217, 217, 1) 0 0 0px 1px;
         }
     }
 }
 
 .focused {
-    box-shadow: inset rgba(155,155,155,1) 0 0 0px 1px !important;
+    box-shadow: inset rgba(155, 155, 155, 1) 0 0 0px 1px !important;
 }
 
 
@@ -2895,6 +2900,7 @@ body {
 
 
 
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3105,6 +3111,11 @@ body {
                 margin-left: 0;
             }
         }
+        .category-list {
+            .btn {
+                margin: 0;
+            }
+        }
     }
     .alert {
         &.alert-editor {
@@ -3115,6 +3126,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -3237,6 +3249,9 @@ body {
         max-height: 600px;
         margin: 0 auto;
     }
+    a {
+        .link-blue();
+    }
 }
 
 .folder-list {
@@ -3256,6 +3271,80 @@ body {
         margin-right: @padding-base;
     }
 }
+
+
+
+
+
+//calendar
+.calendar-heading {
+    .flex-between ();
+    .form-group {
+        margin-bottom: 0;
+    }
+    margin-bottom: @padding-base;
+}
+
+.cal-row {
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    .cal-day {
+        &:first-of-type,
+        &:last-of-type {
+            background: rgba(245, 95, 95, .03);
+        }
+        padding-top: 0;
+    }
+}
+
+.cal-wday,
+.cal-day {
+    .control-flex ();
+    padding: @padding-base/2; //font-weight: 300;
+    margin-right: @padding-base;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.cal-day {
+    font-size: @font-size-xs;
+    border-top: 1px solid @seperate-line-light;
+    &.cal-nonpresent {
+        .cal-date {
+            .greg {
+                opacity: .5;
+            }
+        }
+    }
+}
+.more-events {
+    opacity: .5;
+}
+.cal-wday {
+    font-size: @font-size-small;
+}
+
+.cal-date {
+    span {
+        opacity: .5
+    }
+    .greg {
+        font-size: @font-size-small;
+        padding-right: @padding-base/2;
+        opacity: 1;
+    }
+}
+
+.cal-holiday {
+    color: @brand-danger;
+}
+
+.event-inner {
+    //font-weight: 300;
+}
+
+
 
 
 
