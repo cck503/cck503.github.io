@@ -11,6 +11,7 @@
     <link id="theme" href="public/css/non-responsive.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-main.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/bootstrap-datetimepicker.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -137,7 +138,7 @@
                             <div class="profile-avator-xs">
                                 <a href="bbh-myhome.html">
                                     <i class="icon-avator-full"></i><span class="sr-only">未登入</span>
-                                 </a>
+                                </a>
                             </div>
                         </li>
                         <li class="avator">
@@ -175,39 +176,48 @@
     </header>
     <div class="personal-cover">
         <div class="cover-inner">
+            <div class="container edit-mode">
+                <a href="" class="edit-img"><i class="icon-camera-full"></i>編輯封面</a>
+                <div class="profile-caption">
+                    <p class="h3">Hi~ 小寶真是可愛</p>
+                    <p>人生很簡單，那就是做了決定就不要回頭看！<a href="" class="btn btn-link" data-toggle="modal" data-target="#briefModal" title="編輯短介"><i class="icon-edite-full"></i></a></p>
+                </div>
+                <div class="cover-btn-holder flex-h">
+                    <button class="btn btn-key-line">取消</button>
+                    <button class="btn btn-key">確定</button>
+                </div>
+            </div>
             <div class="cover-holder">
-                <img src="http://lorempixel.com/1336/500/nature" alt="">
+                <img src="public/img/default-bg.jpg" alt="">
             </div>
         </div>
-        <div class="cover-nav">
+        <div class="cover-nav affix" id="covernav-fix">
             <div class="container">
                 <div class="col-xs-12">
-                    <div class="cover-profile">
+                    <!--title加入暱稱-->
+                    <div class="cover-profile" title="小寶真是可愛小寶真是可愛小寶真是可愛">
                         <div class="span-profile text-left flex-h">
                             <div class="profile-avator-lg">
-                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/200/200/people" alt=""></a>
-                            </div>
-                            <div class="profile-caption">
-                                <p class="h3">Hi~ 小寶真是可愛</p>
-                                <p>人生很簡單，那就是做了決定就不要回頭看！</p>
+                                <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a>
+                                <img src="http://lorempixel.com/200/200/people" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="cover-nav-inner flex-h">
                         <div class="cover-nav-holder">
                             <ul class="sub-nav flex-h">
-                                <li><a href="">關於我</a></li>
-                                <li><a href="">網誌</a></li>
+                                <li><a href="bbh-myhome-about.html">關於我</a></li>
+                                <li><a href="bbh-blog-list-masonry.html">網誌</a></li>
                                 <li><a href="bbh-connection.html">社交圈</a></li>
                                 <li><a href="">相簿</a></li>
-                                <li class=active><a href="">行事曆</a></li>
+                                <li calss="active"><a href="bbh-calendar.html">行事曆</a></li>
                                 <li><a href="">店舖</a></li>
                                 <li><a href="">家族</a></li>
                             </ul>
                         </div>
+                        <!--他人-->
                         <div class="cover-btn-holder text-right">
-                            <button class="btn btn-key">關注</button>
-                            <button class="btn btn-key-line">訊息</button>
+                            <button class="btn btn-key" data-toggle="modal" data-target="#calendarModal">新增行事曆</button>
                         </div>
                     </div>
                 </div>
@@ -267,7 +277,10 @@
                     </ul>
                     <ul>
                         <li class="list-heading">關注我們</li>
-                        <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
+                        <li>
+                            <a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a>
+                            <a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a>
+                        </li>
                     </ul>
                     <ul>
                         <li class="list-heading">客服時間</li>
@@ -284,8 +297,18 @@
             <div class="col-xs-10 col-main-card">
                 <div class="flex-h calendar-heading">
                     <a href="" class="btn btn-sm btn-key-line" data-tooltip="1月8日（星期一）">今天</a>
-                    <div class="cal-month-selector">
-                        <a href="" class="btn btn-link"><i class="icon-arrow-left"></i></a><span>2018年1月</span><a href="" class="btn btn-link"><i class="icon-arrow-right"></i></a>
+                    <div class="cal-month-selector flex-h">
+                        <a href="" class="btn btn-link" data-tooltip="上一個月"><i class="icon-arrow-left"></i></a>
+                        <div class='input-group date'>
+                            <input type='text' id='datetimepicker1' class="form-control" placeholder="2018 一月" />
+                        </div><a href="" class="btn btn-link" data-tooltip="下一個月"><i class="icon-arrow-right"></i></a>
+                        <!--
+                        <div class="post-date">
+                            <div class='input-group date'>
+                                <input type='text' id='datetimepicker1' class="form-control" placeholder="11/20/2017 3:12 PM" />
+                            </div>
+                        </div>
+                        -->
                     </div>
                     <div class="form-group">
                         <label for="" class="sr-only">模式</label>
@@ -314,13 +337,12 @@
                                     <span class="greg">31</span><span>十四</span>
                                 </div>
                                 <div class="cal-events">
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
+                                    <div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳中國信託中國信託信用卡</span></a></div>
+                                    <div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div>
+                                    <div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div>
+                                    <div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -331,9 +353,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -344,9 +365,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -357,9 +377,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -370,9 +389,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -383,9 +401,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -396,9 +413,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                         </div>
                         <div class="flex-h cal-row">
@@ -411,9 +427,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day active">
                                 <div class="cal-date">
@@ -424,9 +439,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -437,9 +451,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -450,9 +463,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -463,9 +475,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -476,9 +487,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -489,9 +499,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                         </div>
                         <div class="flex-h cal-row">
@@ -504,9 +513,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -517,9 +525,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -530,9 +537,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -543,9 +549,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -556,9 +561,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -569,9 +573,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -582,9 +585,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                         </div>
                         <div class="flex-h cal-row">
@@ -597,9 +599,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -610,9 +611,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -623,9 +623,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -636,9 +635,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -649,9 +647,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -662,9 +659,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -675,9 +671,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                         </div>
                         <div class="flex-h cal-row">
@@ -690,9 +685,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -703,9 +697,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -716,9 +709,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day">
                                 <div class="cal-date">
@@ -729,9 +721,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day cal-nonpresent">
                                 <div class="cal-date">
@@ -742,9 +733,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day cal-nonpresent">
                                 <div class="cal-date">
@@ -755,9 +745,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                             <div class="cal-day cal-nonpresent">
                                 <div class="cal-date">
@@ -768,9 +757,8 @@
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="more-events"><a href="">其他 2 項</a></div>
                                 </div>
+                                <div class="more-events"><a>其他 2 項</a></div>
                             </div>
                         </div>
                     </div>
@@ -821,14 +809,152 @@
             </div>
         </div>
     </div>
+    <!--行事曆modal-->
+    <div class="modal favorit-list fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">新增行事曆</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="ms-custom">
+                        <div class="control-span">
+                            <p>標題</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="新增標題">
+                            </div>
+                        </div>
+                        <div class="control-span">
+                            <p>日期</p>
+                            <div class="form-group">
+                                <div class='input-group date'>
+                                    <input type='text' id='datetimepicker2' class="form-control" placeholder="2018-1-10" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-span">
+                            <p>說明</p>
+                            <div class="form-group">
+                                <textarea class="form-control autoExpand" rows='3' data-min-rows='3' placeholder="新增說明"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-line" data-dismiss="modal" aria-label="Close">取消</button>
+                        <button class="btn btn-key">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--編輯行事曆modal-->
+    <div class="modal favorit-list fade" id="editecalendarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">行事曆</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="ms-custom">
+                        <div class="control-span">
+                            <p>標題</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="新增標題">
+                            </div>
+                        </div>
+                        <div class="control-span">
+                            <p>日期</p>
+                            <div class="form-group">
+                                <div class='input-group date'>
+                                    <input type='text' id='datetimepicker3' class="form-control" placeholder="2018-1-10" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-span">
+                            <p>說明</p>
+                            <div class="form-group">
+                                <textarea class="form-control autoExpand" rows='3' data-min-rows='3' placeholder="新增說明"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-alt" data-dismiss="modal" aria-label="Close">刪除</button>
+                        <button class="btn btn-key">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>
     <script src="public/js/feeds-custom.js"></script>
+    <script src="public/js/moment-with-locales.min.js"></script>
+    <script src="public/js/bootstrap-datetimepicker.min.js"></script>
     <script>
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    $('#covernav-fix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    });
+    $(".cal-day .more-events a").click(function() {
+        $(this).parents(".cal-day").append('<div class="day-detail"><div class="cal-date"><span class="greg">1</span><span>十五</span></div><div class="cal-events"><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div></div></div>');
+    });
+    $("body").mouseup(function(e) {
+        var subject = $(".day-detail");
+        if (e.target.id != subject.attr('class') && !subject.has(e.target).length) {
+            subject.remove();
+        }
+    });
+    $('#datetimepicker1').datetimepicker({
+        viewMode: 'months',
+        format: 'YYYY MMMM',
+        icons: {
+            time: "icon-clock-line",
+            date: "icon-calendar-full",
+            up: "icon-arrow-up",
+            down: "icon-arrow-down",
+            previous: 'icon-arrow-left',
+            next: 'icon-arrow-right'
+        },
+        keepOpen: true,
+        locale: 'zh-tw'
+    });
+    $('#datetimepicker2').datetimepicker({
+        format: 'YYYY-M-DD',
+            icons: {
+                time: "icon-clock-line",
+                date: "icon-calendar-full",
+                up: "icon-arrow-up",
+                down: "icon-arrow-down",
+                previous: 'icon-arrow-left',
+                next: 'icon-arrow-right'
+            },
+            keepOpen: true,
+            locale: 'zh-tw'
+        });
+    $('#datetimepicker3').datetimepicker({
+        format: 'YYYY-M-DD',
+            icons: {
+                time: "icon-clock-line",
+                date: "icon-calendar-full",
+                up: "icon-arrow-up",
+                down: "icon-arrow-down",
+                previous: 'icon-arrow-left',
+                next: 'icon-arrow-right'
+            },
+            keepOpen: true,
+            locale: 'zh-tw'
+        });
     </script>
 </body>
 

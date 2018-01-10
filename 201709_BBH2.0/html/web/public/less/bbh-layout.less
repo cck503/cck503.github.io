@@ -150,6 +150,7 @@ a {
 
 
 
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -310,6 +311,7 @@ body {
 
 
 
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -385,6 +387,7 @@ body {
 {
     background-color: white;
 }
+
 
 
 
@@ -993,6 +996,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -2901,6 +2905,7 @@ body {
 
 
 
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3154,6 +3159,7 @@ body {
 
 
 
+
 /**/
 
 .post-title {
@@ -3282,6 +3288,47 @@ body {
     .form-group {
         margin-bottom: 0;
     }
+    .cal-month-selector {
+        font-size: @font-size-h3;
+        .input-group {
+            &.date {
+                width: 180px;
+                &:before {
+                    display: none;
+                }
+            }
+            input {
+                border: transparent;
+                cursor: pointer;
+                text-align: center;
+                padding: 6px 0;
+                font-size: @font-size-h3;
+                //width:  -webkit-fill-available;
+                width: inherit;
+            }
+            input::-webkit-input-placeholder {
+                color: @gray-dark;
+            }
+            input::-webkit-input-placeholder {
+                color: @gray-dark;
+            }
+            input:-ms-input-placeholder {
+                color: @gray-dark;
+            }
+            input:-moz-placeholder {
+                color: @gray-dark;
+            }
+            input::placeholder {
+                color: @gray-dark;
+            }
+        }
+        .btn {
+            font-size: @font-size-h3;
+            i {
+                vertical-align: middle;
+            }
+        }
+    }
     margin-bottom: @padding-base;
 }
 
@@ -3308,32 +3355,79 @@ body {
 }
 
 .cal-day {
+    padding-bottom: @padding-base*2;
     font-size: @font-size-xs;
     border-top: 1px solid @seperate-line-light;
+    position: relative;
     &.cal-nonpresent {
+        .greg {
+            opacity: .5;
+        }
+    }
+    /*.day-detail {
         .cal-date {
             .greg {
-                opacity: .5;
+                opacity: 1;
             }
+        }
+        
+    }*/
+    &.active {
+        box-shadow: inset @link-key 0 0 0 1px;
+        border-color: @link-key;
+        .greg {
+            color: @link-key;
         }
     }
 }
+
+.day-detail {
+    position: absolute;
+    top: -@padding-base*2;
+    /* bottom: 0; */
+    left: -@padding-base*2;
+    right: -@padding-base*2;
+    margin: auto;
+    z-index: 500;
+    padding: @padding-base;
+    background: white;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 15px;
+    .cal-date {
+        background: @bbh-body-bg;
+        margin: -@padding-base -@padding-base @padding-base;
+        padding: 0 @padding-base;
+        .greg {
+            opacity: 1;
+            font-size: @font-size-h2;
+        }
+    }
+}
+
 .more-events {
     opacity: .5;
+    cursor: pointer;
+    a {
+        display: block;
+    }
 }
-.cal-wday {
-    font-size: @font-size-small;
-}
+
+.cal-wday {}
 
 .cal-date {
     span {
-        opacity: .5
+        opacity: .5;
+        vertical-align: middle;
     }
     .greg {
-        font-size: @font-size-small;
+        font-size: @font-size-base;
         padding-right: @padding-base/2;
         opacity: 1;
     }
+}
+
+.cal-holiday,
+.event-inner {
+    margin-bottom: @padding-base/2;
 }
 
 .cal-holiday {
@@ -3342,8 +3436,44 @@ body {
 
 .event-inner {
     //font-weight: 300;
+    .flex-h();
+    >a {
+        display: block;
+        .reduce();
+        max-width: 8em;
+    }
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: @BBH-pink;
+        border-radius: 100%;
+        margin-right: @padding-base/2;
+    }
 }
-
+.modal-body {
+    .input-group {
+        .form-control {
+            border-radius: @border-radius-base;
+        }
+        &.date {
+            display: block;
+            &:before {
+                left: @padding-base/2;
+            }
+            .form-control {
+                float: none;
+            }
+        }
+    }
+    .ms-custom {
+        textarea {
+            max-height: 200px;
+            resize: none;
+        }
+    }
+}
 
 
 
