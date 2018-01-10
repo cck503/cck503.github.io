@@ -3309,6 +3309,12 @@ body {
     .btn {
         position: relative;
         .cs-tooltip();
+        &:hover {
+            &:after {
+                top: 110%;
+                left: 0;
+            }
+        }
     }
     .cal-month-selector {
         font-size: @font-size-h3;
