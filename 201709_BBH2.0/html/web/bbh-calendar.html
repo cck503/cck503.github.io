@@ -226,28 +226,32 @@
     </div>
     <div class="container bbh-main-container">
         <div class="row">
-            <div class="col-xs-2 col-left">
+            <div class="col-xs-2 col-left col-sticky-inner">
                 <div class="span-profile text-left">
                     <div class="card-title">
-                        <p><span class="icon-holder"><i class="icon-heart-full"></i></span>我的寶貝</p>
+                        <p><span class="icon-holder holder-pink"><i class="icon-zface-full"></i></span>我的寶貝</p>
                     </div>
                     <div class="profile-avator">
-                        <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="大寶大寶6歲">
+                        <a href="bbh-mybaby.html" title="大寶大寶6歲">
                             <img src="http://lorempixel.com/80/80/people" alt="">
                         </a>
                     </div>
                     <div class="profile-avator">
-                        <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="二寶二寶3歲">
+                        <a href="bbh-mybaby.html" title="二寶二寶3歲">
                             <img src="http://lorempixel.com/80/80/people" alt="">
                         </a>
                     </div>
                     <div class="profile-avator">
-                        <a href="bbh-myhome.html" data-toggle="tooltip" data-placement="bottom" title="三寶三寶10個月">
+                        <a href="bbh-mybaby.html" title="三寶三寶10個月">
                             <img src="http://lorempixel.com/80/80/people" alt="">
                         </a>
                     </div>
-                    <div class="optional-info">
+                    <div class="alert alert-info optional-info">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <!--寶寶設定提示-->
                         <p>尚未設定寶寶，立即<a href="" class="link-blue">前往設定</a></p>
+                        <!--更換大頭貼提示-->
+                        <p>更換<a href="" class="link-blue">寶貝大頭貼</a></p>
                     </div>
                 </div>
                 <div class="span-detail flex-h">
@@ -255,39 +259,44 @@
                     <div class="detail-inner"><span class="number">3318</span><span>話題</span></div>
                     <div class="detail-inner"><span class="number">10</span><span>關注我</span></div>
                 </div>
+                <div class="span-personal-nav">
+                    <ul>
+                        <li class="list-heading">我的最愛
+                            <ul>
+                                <li><a href="">討論專區</a></li>
+                                <li><a href="">追蹤討論</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-heading">我的討論話題
+                            <ul>
+                                <li><a href="">我的發表</a></li>
+                                <li><a href="">我的回應</a></li>
+                                <li><a href="">我的訂閱</a></li>
+                                <li><a href="">話題草稿</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">我的Q點</a></li>
+                        <li><a href="">部落格(舊)</a></li>
+                    </ul>
+                </div>
                 <div class="span-footer">
                     <ul>
-                        <li class="list-heading">關於我們</li>
                         <li><a href="">服務條款</a></li>
                         <li><a href="">隱私權政策</a></li>
-                        <li><a href="">客服信箱</a></li>
-                        <li><a href="">合作提案</a></li>
-                        <li><a href="">徵才資訊</a></li>
-                    </ul>
-                    <ul>
-                        <li class="list-heading">支援服務</li>
                         <li><a href="">Q&A</a></li>
-                        <li><a href="">站務服務區</a></li>
                         <li><a href="">客服信箱</a></li>
-                    </ul>
-                    <ul>
-                        <li class="list-heading">會員服務</li>
-                        <li><a href="">會員註冊</a></li>
-                        <li><a href="">會員登入</a></li>
-                    </ul>
-                    <ul>
-                        <li class="list-heading">關注我們</li>
-                        <li>
-                            <a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a>
-                            <a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a>
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">關於我們</a></li>
+                                <li><a href="">客服信箱</a></li>
+                                <li><a href="">合作提案</a></li>
+                                <li><a href="">徵才資訊</a></li>
+                                <li><a href="">關於我們</a></li>
+                            </ul>
                         </li>
                     </ul>
-                    <ul>
-                        <li class="list-heading">客服時間</li>
-                        <li>週一至週五 9:00 ~ 18:00</li>
-                    </ul>
                     <div class="span-logo">
-                        <a href="" class="bbh-logo-footer"><img src="public/img/bbh-logo-gray.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
                         <ul class="secondary-info">
                             <li>Copyright © 2017 BabyHome. All right reserved.</li>
                         </ul>
@@ -909,7 +918,7 @@
     $(".cal-day .more-events a").click(function() {
         $(this).parents(".cal-day").append('<div class="day-detail"><div class="cal-date"><span class="greg">1</span><span>十五</span></div><div class="cal-events"><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div></div></div>');
     });
-    $("body").mouseup(function(e) {
+    $("html").mouseup(function(e) {
         var subject = $(".day-detail");
         if (e.target.id != subject.attr('class') && !subject.has(e.target).length) {
             subject.remove();
