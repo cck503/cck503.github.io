@@ -154,6 +154,7 @@ a {
 
 
 
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -318,6 +319,7 @@ body {
 
 
 
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -393,6 +395,7 @@ body {
 {
     background-color: white;
 }
+
 
 
 
@@ -1012,6 +1015,7 @@ body {
 
 
 
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1611,6 +1615,15 @@ body {
 
 .focused {
     box-shadow: inset rgba(155, 155, 155, 1) 0 0 0px 1px !important;
+}
+
+.blog-editor {
+    .sub-comment {
+        .form-control {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+    }
 }
 
 
@@ -2921,6 +2934,7 @@ body {
 
 
 
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3146,6 +3160,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -3532,33 +3547,32 @@ body {
     }
 }
 
-.cal-holiday,
-.event-inner {
-    margin-bottom: @padding-base/2;
-}
-
 .cal-holiday {
+    margin-bottom: @padding-base/2;
     color: @brand-danger;
 }
-
-.event-inner {
-    //font-weight: 300;
-    .flex-h();
-    >a {
-        display: block;
-        .reduce();
-        max-width: 8em;
-    }
-    &:before {
-        content: "";
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        background: @BBH-pink;
-        border-radius: 100%;
-        margin-right: @padding-base/2;
+.cal-day {
+    .event-inner {
+        //font-weight: 300;
+        margin-bottom: @padding-base/2;
+        .flex-h();
+        >a {
+            display: block;
+            .reduce();
+            max-width: 8em;
+        }
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: @BBH-pink;
+            border-radius: 100%;
+            margin-right: @padding-base/2;
+        }
     }
 }
+
 
 .modal-body {
     .input-group {
