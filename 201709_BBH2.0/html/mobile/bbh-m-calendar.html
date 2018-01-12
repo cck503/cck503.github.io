@@ -218,7 +218,7 @@
                                     </div>
                                     <a href="" class="btn btn-link" data-tooltip="下一個月"><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="mode-selector">
+                                <div class="mode-selector invisible">
                                     <label for="" class="sr-only">模式</label>
                                     <a href="bbh-m-calendar.html" class="btn btn-link hidden"><i class="icon-cal-tab"></i></a>
                                     <a href="bbh-m-calendar-2.html" class="btn btn-link"><i class="icon-cal-list"></i></a>
@@ -567,8 +567,8 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="cover-btn-holder flex-h">
-                        <button class="btn btn-key-line invisible">全選</button>
-                        <button class="btn btn-key" data-dismiss="modal">確定</button>
+                        <button class="btn btn-link cal-cancel" data-dismiss="modal"><i class="icon-close-full"></i></button>
+                        <button class="btn btn-link cal-check" data-dismiss="modal"><i class="icon-check-full-circle"></i></button>
                     </div>
                     <div style="overflow:hidden;">
                         <div class="form-group">
@@ -622,48 +622,6 @@
             </div>
         </div>
     </div>
-    <div class="modal flag-modal fade" id="flagModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="content-heading flex-h">
-                        <div class="backward">
-                            <a href="bbh-m-myhome.html" class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="icon-arrow-left"></i></a>
-                        </div>
-                        <div class="heading-inner">檢舉貼文</div>
-                        <div class="compose-btn invisible">
-                            <button class="btn btn-key-line">發表</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="radio custum-box">
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                            <label for="optionsRadios1">違反法令規定</label>
-                        </div>
-                        <div class="radio custum-box">
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                            <label for="optionsRadios2">色情貼文</label>
-                        </div>
-                        <div class="radio custum-box">
-                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                            <label for="optionsRadios3">其他，請填入原因</label>
-                        </div>
-                        <div class="respond-inner">
-                            <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="檢舉原因"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="cover-btn-holder flex-h">
-                        <button class="btn btn-key-line">取消</button>
-                        <button class="btn btn-key">確定送出</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
@@ -673,7 +631,8 @@
     <script>
     $(function() {
         $('#datetimepicker').datetimepicker({
-            format: 'YYYY-M-DD',
+            viewMode: 'months',
+            format: 'YYYY MMMM',
             inline: true,
             sideBySide: false,
             icons: {
