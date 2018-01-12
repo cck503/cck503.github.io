@@ -165,6 +165,11 @@ select {
 
 
 
+
+
+
+
+
 /*
 .container {
     padding-left: 0;
@@ -201,6 +206,11 @@ body {
 .list-heading {
     margin-top: 0; //font-size: @font-size-h2;
 }
+
+
+
+
+
 
 
 
@@ -428,6 +438,11 @@ body {
 
 
 
+
+
+
+
+
 /*login*/
 
 .card-inner {
@@ -644,6 +659,11 @@ body {
         }
     }
 }
+
+
+
+
+
 
 
 
@@ -951,6 +971,11 @@ body {
 
 
 
+
+
+
+
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1072,6 +1097,11 @@ body {
         box-shadow: rgba(0, 0, 0, .05) 0 2px 6px;
     }
 }
+
+
+
+
+
 
 
 
@@ -1250,6 +1280,11 @@ body {
         }
     }
 }
+
+
+
+
+
 
 
 
@@ -2927,7 +2962,65 @@ h3 {
     [class*=" icon-"] {
         font-size: 1.4em;
     }
+    .bootstrap-datetimepicker-widget {
+        table {
+            td {
+                &.today {
+                    box-shadow: inset @link-key 0 0 0 1px;
+                    border-color: @link-key;
+                    color: @link-key;
+                    &:before {
+                        display: none;
+                    }
+                }
+                &.active {
+                    border-top-color: @brand-warning;
+                    background: lighten(@brand-warning, 30%); //color: white;
+                    color: @gray-dark;
+                    text-shadow: none;
+                    &:hover {
+                        border-top-color: @brand-warning;
+                        background: lighten(@brand-warning, 30%); //color: white;
+                        color: @gray-dark;
+                    }
+                    &.today {
+                        color: @link-key;
+                    }
+                }
+                span {
+                    &.active {
+                        border-top-color: @brand-warning;
+                        background: lighten(@brand-warning, 30%); //color: white;
+                        color: @gray-dark;
+                        text-shadow: none;
+                        &:hover {
+                            border-top-color: @brand-warning;
+                            background: lighten(@brand-warning, 30%); //color: white;
+                            color: @gray-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+.modal {
+    &.datetimepicker {
+        .modal-body {
+            padding: @padding-base/2 @padding-base @padding-base/1.5;
+        }
+        .cover-btn-holder {
+            margin-right: 0;
+            margin-left: 0;
+            .btn {
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+        }
+    }
+}
+
 
 #edit_subject {
     position: fixed;
@@ -3611,9 +3704,11 @@ h3 {
         position: relative;
     }
 }
+
 .cal-inner {
     //border-bottom: 1px solid lighten(@seperate-line, 10%); 
 }
+
 .cal-month {
     border-bottom: 1px solid lighten(@seperate-line, 10%);
     background: white;
@@ -3635,13 +3730,21 @@ h3 {
     .form-group {
         margin-bottom: 0;
     }
-    .btn {
+    /*.btn {
         position: relative;
         .cs-tooltip();
         &:hover {
             &:after {
                 top: 110%;
                 left: 0;
+            }
+        }
+    }*/
+    .mode-selector {
+        .btn {
+            font-size: @font-size-h3;
+            i {
+                vertical-align: middle;
             }
         }
     }
@@ -3744,18 +3847,14 @@ h3 {
             color: @link-key;
         }
         &.selected {
-            .cal-date {
-                background: @link-key;
-            }
             .greg {
-                color: white;
+                //color: white;
             }
         }
     }
     &.selected {
         border-top-color: @brand-warning;
-        background: lighten(@brand-warning, 30%);
-        //color: white;
+        background: lighten(@brand-warning, 30%); //color: white;
         .cal-date {
             //background: @brand-warning;
             //color: white;
@@ -3839,8 +3938,14 @@ h3 {
     color: @brand-danger;
 }
 
+.datetimepicker {}
 
-.modal-body {
+
+
+
+
+
+/*.modal-body {
     .input-group {
         .form-control {
             border-radius: @border-radius-base;
@@ -3861,7 +3966,7 @@ h3 {
             resize: none;
         }
     }
-}
+}*/
 
 .cal-list {
     //border-top: 1px solid @bbh-body-bg;
@@ -3891,7 +3996,7 @@ h3 {
             min-height: 8em;
             .event-inner {
                 text-align: center;
-                    display: block;
+                display: block;
                 line-height: 8em;
             }
         }
@@ -3901,7 +4006,31 @@ h3 {
     }
 }
 
-
+.calendar-input {
+    .form-group {
+        label {
+            font-size: @font-size-xs;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        textarea {
+            padding-top: @padding-base;
+        }
+    }
+    .input-group {
+        &.date {
+            width: 100%;
+            .picker {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 5;
+            }
+        }
+    }
+}
 
 
 

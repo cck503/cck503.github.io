@@ -29,13 +29,13 @@
     <div class="main-wrapper">
         <div class="content-container flex-v">
             <div class="content-heading flex-h">
-                <div class="backward"><a href="#" class="btn btn-link"><i class="icon-arrow-left"></i></a></div>
+                <div class="backward"><a href="bbh-m-calendar.html" class="btn btn-link"><i class="icon-arrow-left"></i></a></div>
                 <div class="heading-inner">新增行事曆</div>
                 <div class="compose-btn">
                     <button class="btn btn-key">確定</button>
                 </div>
             </div>
-            <div class="content-body card-inner card-input-full">
+            <div class="content-body card-inner card-input-full calendar-input">
                 <form action="">
                     <div class="form-group">
                         <label>標題</label>
@@ -59,22 +59,6 @@
                     </div>
                 </form>
             </div>
-            <!--
-            <div class="content-footer">
-                <div class="card-footer">
-                    <div class="respond-span flex-h">
-                        <div class="dropdown respond-drop">
-                            <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#tag-kids-modal"><i class="icon-zface"></i></a>
-                        </div>
-                        <a href="" class="btn btn-compose-white"><i class="icon-camera-line"></i></a>
-                        <div class="dropdown respond-drop">
-                            <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#tagmenu-modal">#</a>
-                        </div>
-                        <div class="alert alert-editor fade in" role="alert">已儲存···</div>
-                    </div>
-                </div>
-            </div>
-            -->
         </div>
     </div>
     <!-- Modal -->
@@ -88,9 +72,7 @@
                     </div>
                     <div style="overflow:hidden;">
                         <div class="form-group">
-                            <div class="row">
-                                <div id="datetimepicker"></div>
-                            </div>
+                            <div id="datetimepicker"></div>
                         </div>
                     </div>
                 </div>
@@ -107,8 +89,7 @@
     <script type="text/javascript">
     $(function() {
         $('#datetimepicker').datetimepicker({
-            viewMode: 'months',
-            format: 'YYYY MMMM',
+            format: 'YYYY-M-DD',
             inline: true,
             sideBySide: false,
             icons: {
