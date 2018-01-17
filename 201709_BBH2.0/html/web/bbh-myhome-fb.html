@@ -24,7 +24,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="layout-fix">
     <header class="head-universal">
         <nav class="navbar navbar-default navbar-fixed-top nav-down">
             <div class="container">
@@ -194,31 +194,33 @@
         <div class="cover-nav affix" id="covernav-fix">
             <div class="container">
                 <div class="col-xs-12">
-                    <!--title加入暱稱-->
-                    <div class="cover-profile" title="小寶真是可愛小寶真是可愛小寶真是可愛">
-                        <div class="span-profile text-left flex-h">
-                            <div class="profile-avator-lg">
-                                <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a>
-                                <img src="http://lorempixel.com/200/200/people" alt="">
+                    <div class="row">
+                        <!--title加入暱稱-->
+                        <div class="cover-profile" title="小寶真是可愛小寶真是可愛小寶真是可愛">
+                            <div class="span-profile text-left flex-h">
+                                <div class="profile-avator-lg">
+                                    <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a>
+                                    <img src="http://lorempixel.com/200/200/people" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cover-nav-inner flex-h">
-                        <div class="cover-nav-holder">
-                            <ul class="sub-nav flex-h">
-                                <li><a href="bbh-myhome-about.html">關於我</a></li>
-                                <li><a href="bbh-blog-list-masonry.html">網誌</a></li>
-                                <li><a href="bbh-connection.html">社交圈</a></li>
-                                <li><a href="">相簿</a></li>
-                                <li><a href="bbh-calendar.html">行事曆</a></li>
-                                <li><a href="">店舖</a></li>
-                                <li><a href="">家族</a></li>
-                            </ul>
-                        </div>
-                        <!--他人-->
-                        <div class="cover-btn-holder flex-h hidden">
-                            <button class="btn btn-key">關注</button>
-                            <button class="btn btn-key-line">訊息</button>
+                        <div class="cover-nav-inner flex-h">
+                            <div class="cover-nav-holder">
+                                <ul class="sub-nav flex-h">
+                                    <li><a href="bbh-myhome-about.html">關於我</a></li>
+                                    <li><a href="bbh-blog-list-masonry.html">網誌</a></li>
+                                    <li><a href="bbh-connection.html">社交圈</a></li>
+                                    <li><a href="">相簿</a></li>
+                                    <li><a href="bbh-calendar.html">行事曆</a></li>
+                                    <li><a href="">店舖</a></li>
+                                    <li><a href="">家族</a></li>
+                                </ul>
+                            </div>
+                            <!--他人-->
+                            <div class="cover-btn-holder flex-h hidden">
+                                <button class="btn btn-key">關注</button>
+                                <button class="btn btn-key-line">訊息</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -304,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-7 col-main-card">
+            <div class="col-xs-5 col-main-card">
                 <div class="alert alert-info" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <p>哈囉~歡迎回來！今天發貼文了嗎？趕快來分享你的即時動態，別忘了標註寶寶同步紀錄寶貝的成長過程，
@@ -437,11 +439,11 @@
                             <div class="respond-span flex-h">
                                 <div class="respond-inner flex-h">
                                     <div class="dropdown respond-drop">
-                                        <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#babyModal">標註寶寶</a>
+                                        <a href="" class="btn btn-compose-white" data-toggle="modal" data-target="#babyModal" title="標註寶寶"><i class="icon-zface"></i></a>
                                     </div>
-                                    <a href="" class="btn btn-compose-white">照片</a>
+                                    <a href="" class="btn btn-compose-white" title="照片"><i class="icon-camera-line"></i></a>
                                     <div class="dropdown respond-drop">
-                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">表情符號</a>
+                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="表情符號"><i class="icon-smile-line"></i></a>
                                         <div class="dropdown-menu emoji-menu menu-wide" aria-labelledby="emoji-btn">
                                             <div class="dropdown-menu-inner">
                                                 <div class="layout-f">
@@ -512,7 +514,7 @@
                                         </div>
                                     </div>
                                     <div class="dropdown respond-drop">
-                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">里程碑</a>
+                                        <a href="" class="btn btn-compose-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="里程碑"><i class="icon-pin-full"></i></a>
                                         <div class="dropdown-menu menu-wide tag-menu">
                                             <div class="category-list">
                                                 <a href="" class="btn btn-key-line btn-square">驚喜的二條線</a>
@@ -3163,13 +3165,13 @@
     });
     */
     $(function() {
-        $('.comments-list .reply-id').click( function() {
+        $('.comments-list .reply-id').click(function() {
             $('.comment-inner').removeClass('hidden');
             $('.respond-span').removeClass('hidden');
             $('.comments-list .reply-load').addClass('hidden');
             $('#message_content-1').focus();
         });
-        $('.comments-list .reply-load').click( function() {
+        $('.comments-list .reply-load').click(function() {
             $('.comment-inner').removeClass('hidden');
             $(this).addClass('hidden');
         });

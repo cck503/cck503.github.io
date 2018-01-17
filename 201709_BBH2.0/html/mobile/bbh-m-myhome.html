@@ -250,19 +250,19 @@
                             <div class="detail-inner"><span class="number">3318</span><span>話題</span></div>
                             <div class="detail-inner"><span class="number">10</span><span>關注我</span></div>
                         </div>
-                        <ul class="sub-nav flex-h">
-                            <li><a href="">My Home</a></li>
-                            <li><span class="v-seperate-line"></span></li>
-                            <li><a href="">動態</a></li>
+                        <ul class="sub-nav flex-h" id="sub-affix">
+                            <li><a href="">貼文</a></li>
                             <li><span class="v-seperate-line"></span></li>
                             <li><a href="bbh-m-myhome-about.html">關於我</a></li>
                             <li><span class="v-seperate-line"></span></li>
                             <li><a href="bbh-m-blog-list.html">網誌</a></li>
                             <li><span class="v-seperate-line"></span></li>
+                            <li><a href="bbh-m-connection.html">社交圈</a></li>
+                            <li><span class="v-seperate-line"></span></li>
                             <li class="dropdown">
                                 <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="bbh-m-connection.html">社交圈</a></li>
+                                    <li><a href="#">相簿</a></li>
                                     <li><a href="#">店舖</a></li>
                                     <li><a href="#">行事曆</a></li>
                                 </ul>
@@ -280,9 +280,6 @@
                         <p>哈囉~歡迎回來！今天發貼文了嗎？趕快來分享你的即時動態，別忘了標註寶寶同步紀錄寶貝的成長過程，
                             <br>設定最愛相簿時時重溫美好時光！想知道新版個人專頁還有那些你尚未使用的新功能嗎？<a href="https://forum.babyhome.com.tw/topic/4740276" class="link-blue" target="_blank">→立即前往</a>」
                         </p>
-                    </div>
-                    <div class="mkt-banner mrb-20 calling">
-                        <img src="public/img/mkt-banner-mo.jpg" alt="15周年改版首航" class="img-responsive"></a>
                     </div>
                     <!--發文輸入框-->
                     <div class="card-span">
@@ -303,6 +300,49 @@
                     </div>
                     <!--空白發文skeleton-->
                     <div class="card-span"></div>
+                    <!--生日-->
+                    <div class="card-span">
+                        <div class="card-inner">
+                            <div class="card-heading">
+                                <div class="profile-avator-xs">
+                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                </div>
+                                <div class="profile-caption">
+                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
+                                    <div class="post-detail">
+                                        <span class="time-tage">3小時前</span>
+                                        <div class="flex-h"><span>私密</span><i class="icon-lock-line flex-h"></i></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown more-option">
+                                    <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">編輯貼文</a></li>
+                                        <li><a href="#">刪除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-inner">
+                                    <div class="img-holder single-img">
+                                        <a href=""><img class="img-responsive" src="public/img/0117_birthday_828621_04.jpg"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
+                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                        <div class="dropdown option-action">
+                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">分享至Facebook</a></li>
+                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
+                                                <li><a href="#">複製連結</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--寶寶紀錄里程碑發文-->
                     <div class="card-span">
                         <div class="card-inner card-share">
@@ -1230,7 +1270,16 @@
             </div>
         </div>
     </div>
-    <!--intro-->
+    <div class="optional-links affix">
+        <div class="dropdown">
+            <a href="#" class="btn btn-tool btn-add" id="moreLinks" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-plus"></i></a>
+            <div class="dropdown-menu" aria-labelledby="moreLinks">
+                <a href="#" class="btn btn-tool btn-feed"><i class="icon-add-feed"></i>分享生活</a>
+                <a href="#" class="btn btn-tool back2top"><i class="icon-arrow-up"></i>頁首</a>
+            </div>
+        </div>
+    </div>
+    <!--intro
     <div class="modal intro-list fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1245,8 +1294,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--任務清單-->
+    </div>-->
+    <!--任務清單
     <div class="exitfrom affix fade">
         <div class="tittle">
             <button class="btn minify"></button>
@@ -1322,6 +1371,7 @@
         </div>
     </div>
     <div class="exitfrom-dropback affix fade"></div>
+    -->
     <!-- Modal -->
     <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -1427,6 +1477,15 @@
         $(".exitfrom.affix").addClass("in");
         $(".exitfrom-dropback").addClass("in");
     });
+
+    $('#sub-affix').affix({
+        offset: {
+            top: 550,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
     </script>
 </body>
 
