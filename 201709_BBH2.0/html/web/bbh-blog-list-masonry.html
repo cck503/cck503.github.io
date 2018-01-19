@@ -219,7 +219,7 @@
                         </div>
                         <!--他人-->
                         <div class="cover-btn-holder text-right">
-                            <a href="bbh-blog-compose.html" class="btn btn-key">新增網誌</a>
+                            <a href="bbh-blog-compose-mil.html" class="btn btn-key">新增網誌</a>
                         </div>
                     </div>
                 </div>
@@ -336,12 +336,19 @@
                         <li><a href="#">網誌</a></li>
                     </ol>
                     <div class="masonry">
+                        <!--網誌里程碑-->
                         <div class="masonry-column">
                             <div class="card-span blog-list">
                                 <div class="card-inner">
                                     <div class="card-body">
                                         <div class="body-inner">
-                                            <a href="bbh-blog-post.html" class="post-img"><img class="img-responsive" src="https://feed.babyhome.com.tw/public/js/lib/ckeditor/plugins/smiley/images/sticker/sticker_sep_03.png"></a>
+                                            <a href="bbh-blog-post.html" class="post-img">
+                                                <div class="ms-span">
+                                                    <div class="ms-marks">
+                                                        <p class="h2"><span class="svg-holder"><img src="public/img/svg/ms-03.svg" alt="" class="img-responsive"></span>第一次自己坐</p>
+                                                    </div>
+                                                </div>
+                                            </a>
                                             <div class="txt-holder">
                                                 <h3 class="post-title"><a href="bbh-blog-post.html" title="逗孩子很好玩？其實是大人的一種惡習！">逗孩子很好玩？其實是大人的一種惡習！</a></h3>
                                                 <div class="post-detail">
@@ -1000,7 +1007,7 @@
             }
         }
     })
-    
+
     // init Masonry
     var $grid = $('.masonry').masonry({
         // options...
