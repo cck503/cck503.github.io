@@ -81,6 +81,7 @@ a {
 .btn-more {
     i {
         vertical-align: text-top;
+        font-size: 1.2em;
     }
 }
 
@@ -144,6 +145,9 @@ a {
         }
     }
 }
+
+
+
 
 
 
@@ -333,6 +337,9 @@ body {
 
 
 
+
+
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -408,6 +415,9 @@ body {
 {
     background-color: white;
 }
+
+
+
 
 
 
@@ -1054,6 +1064,9 @@ body {
 
 
 
+
+
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1297,7 +1310,7 @@ body {
 }
 
 .bbh-main-container {
-    margin-top: 20px;
+    margin-top: @padding-base;
     &.affix {
         position: relative;
         .col-left {
@@ -2497,25 +2510,26 @@ body {
 
 //媽媽力
 .category-nav {
+    margin-bottom: @padding-base;
     .category-list {
         -webkit-flex: 1;
         flex: 1;
     }
     .cover-btn-holder {
         background: white;
-        padding: 0 @padding-base*1.5;
+        padding: @padding-base/2 @padding-base*1.5;
         border-radius: 0; //margin-top: @padding-base*2;
         box-shadow: inset 0 1px 0 white, 0 1px 2px rgba(0, 0, 0, .15);
         border-radius: 2px;
     }
     .motherhood-btn {
-        font-size: 1.6em;
+        font-size: 1.4em;
         a {
             color: @BBH-pink;
             i {
                 position: relative;
                 top: 4px;
-                font-size: 32px;
+                font-size: 28px;
             }
             &:hover {
                 color: darken(@BBH-pink, 10%)
@@ -2524,7 +2538,7 @@ body {
     }
     .v-seperate-line {
         margin: 0 @padding-base*2;
-        min-height: 80px;
+        min-height: 40px;
         opacity: .7;
         background: @seperate-line-light;
     }
@@ -2533,6 +2547,7 @@ body {
 .category-list {
     .btn-key-line {
         //margin-bottom: @padding-base;
+        font-size: @font-size-small;
         padding-left: @padding-base;
         padding-right: @padding-base;
         border-color: transparent; //font-size: @font-size-small;
@@ -2630,11 +2645,15 @@ body {
     }
 }
 
+.list-heading  {
+    .category-heading {}
+}
+
 .category-heading {
     padding: 0 @padding-base;
     text-align: center;
-    margin-top: @padding-base*2;
-    margin-bottom: @padding-base*2;
+    margin-top: @padding-base;
+    margin-bottom: @padding-base;
     .flex-h();
     &:before,
     &:after {
@@ -2988,6 +3007,9 @@ body {
 
 
 
+
+
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3243,6 +3265,9 @@ body {
 
 
 
+
+
+
 /**/
 
 .post-title {
@@ -3391,14 +3416,14 @@ body {
 }
 
 .masonry-column {
-     .blog-list {
+    .blog-list {
         .post-img {
             .ms-span {
                 margin-top: @padding-base*2;
                 margin-bottom: 0;
             }
         }
-     }
+    }
 }
 
 
@@ -3462,6 +3487,53 @@ body {
     }
     margin-bottom: @padding-base;
 }
+
+.input-group {
+    .bootstrap-datetimepicker-widget {
+        table {
+            td {
+                &.today {
+                    box-shadow: inset @link-key 0 0 0 1px;
+                    border-color: @link-key;
+                    color: @link-key;
+                    &:before {
+                        display: none;
+                    }
+                }
+                &.active {
+                    border-top-color: @brand-warning;
+                    background: lighten(@brand-warning, 30%); //color: white;
+                    color: @gray-dark;
+                    text-shadow: none;
+                    &:hover {
+                        border-top-color: @brand-warning;
+                        background: lighten(@brand-warning, 30%); //color: white;
+                        color: @gray-dark;
+                    }
+                    &.today {
+                        color: @link-key;
+                    }
+                }
+                span {
+                    &:hover {
+                    }
+                    &.active {
+                        border-top-color: @brand-warning;
+                        background: lighten(@brand-warning, 30%); //color: white;
+                        color: @gray-dark;
+                        text-shadow: none;
+                        &:hover {
+                            border-top-color: @brand-warning;
+                            background: lighten(@brand-warning, 30%); //color: white;
+                            color: @gray-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .cal-row {
     align-items: flex-start;
@@ -3824,6 +3896,9 @@ body {
         }
     }
 }
+
+
+
 
 
 
