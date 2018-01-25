@@ -24,7 +24,7 @@
     <![endif]-->
 </head>
 
-<body class="layout-fix">
+<body class="layout-fix layout-dumb">
     <header class="head-universal">
         <nav class="navbar navbar-default navbar-fixed-top nav-down">
             <div class="container">
@@ -191,7 +191,7 @@
                 <img src="public/img/default-bg.jpg" alt="">
             </div>
         </div>
-        <div class="cover-nav affix" id="covernav-fix">
+        <div class="cover-nav affix nav-down" id="covernav-fix">
             <div class="container">
                 <div class="col-xs-12">
                     <div class="row">
@@ -230,10 +230,11 @@
     <div class="container bbh-main-container">
         <div class="row">
             <div class="col-xs-3 col-left col-sticky-inner">
+                
                 <div class="span-profile text-left">
                     <div class="card-title">
-                        <p><span class="icon-holder holder-pink"><i class="icon-zface-full"></i></span>我的寶貝</p>
-                    </div>
+                    <p><span class="icon-holder holder-pink"><i class="icon-zface-full"></i></span>我的寶貝</p>
+                </div>
                     <div class="profile-avator">
                         <a href="bbh-mybaby.html" title="大寶大寶6歲">
                             <img src="http://lorempixel.com/80/80/people" alt="">
@@ -265,17 +266,17 @@
                 <div class="span-personal-nav">
                     <ul>
                         <li class="list-heading">我的最愛
-                            <ul>
-                                <li><a href="">討論專區</a></li>
-                                <li><a href="">追蹤討論</a></li>
+                            <ul class="clearfix">
+                                <li class="pull-left"><a href="">討論專區</a></li>
+                                <li class="pull-left"><a href="">追蹤討論</a></li>
                             </ul>
                         </li>
                         <li class="list-heading">我的討論話題
-                            <ul>
-                                <li><a href="">我的發表</a></li>
-                                <li><a href="">我的回應</a></li>
-                                <li><a href="">我的訂閱</a></li>
-                                <li><a href="">話題草稿</a></li>
+                            <ul class="clearfix">
+                                <li class="pull-left"><a href="">我的發表</a></li>
+                                <li class="pull-left"><a href="">我的回應</a></li>
+                                <li class="pull-left"><a href="">我的訂閱</a></li>
+                                <li class="pull-left"><a href="">話題草稿</a></li>
                             </ul>
                         </li>
                         <li><a href="">我的Q點</a></li>
@@ -1017,6 +1018,113 @@
                     <p class="h2">該會員尚無公開貼文</p>
                     <img src="public/img/lock-illustration.png" alt="還未建立貼文" class="img-responsive">
                 </div>-->
+                <!--生日-->
+                <div class="card-span">
+                    <div class="card-inner">
+                        <div class="card-heading type-heading">
+                            <div class="profile-caption">
+                                <p><img src="public/img/svg/ms-22.svg" alt="">今日壽星</p>
+                            </div>
+                        </div>
+                        <div class="card-heading">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                            </div>
+                            <div class="profile-caption">
+                                <p><a href="" class="link-profile">小寶真是可愛</a></p>
+                                <div class="post-detail">
+                                    <span class="time-tage">3小時前</span>
+                                    <div class="flex-h"><span>私密</span><i class="icon-lock-line flex-h"></i></div>
+                                </div>
+                            </div>
+                            <div class="dropdown more-option">
+                                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">編輯貼文</a></li>
+                                    <li><a href="#">刪除</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="body-inner">
+                                <a href="">
+                                    <div class="img-holder single-img is-loading">
+                                        <img class="img-responsive" src="public/img/0125_birthday_638202_02.jpg">
+                                    </div>
+                                </a>
+                                <div class="respond-option flex-h">
+                                    <div class="option-action"><a href="" class="btn_like"><i class="icon-heart-full"></i></a><span>2</span></div>
+                                    <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
+                                    <div class="dropdown option-action">
+                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">分享至Facebook</a></li>
+                                            <li><a href="#">分享至My Home</a></li>
+                                            <li><a href="#">複製連結</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="respond-span flex-h">
+                                <div class="respond-inner">
+                                    <div class="dropdown emoji-dropdown">
+                                        <a href="" class="btn btn-link link-blue" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-smile-line"></i></a>
+                                        <div class="dropdown-menu emoji-menu dir-top menu-wide" aria-labelledby="emoji-btn">
+                                            <div class="dropdown-menu-inner">
+                                                <div class="layout-f">
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                    <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea>
+                                </div>
+                                <button class="btn btn-submit btn-compose" type="submit">送出</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--一般發文加回應-->
                 <div class="card-span">
                     <div class="card-inner">
@@ -3035,7 +3143,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
-    <script src="public/js/header-custom.js"></script>
+    <script src="public/js/header-custom-2.js"></script>
     <script src="public/js/feeds-custom.js"></script>
     <script src="public/js/imagesloaded.pkgd.min.js"></script>
     <script src="public/js/loader-card.js"></script>
@@ -3046,7 +3154,7 @@
     <script>
     $('#covernav-fix').affix({
         offset: {
-            top: 300,
+            top: 350,
             bottom: function() {
                 return (this.bottom = $('.footer').outerHeight(true))
             }
