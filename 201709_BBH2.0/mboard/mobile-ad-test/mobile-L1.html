@@ -10,22 +10,8 @@
     <link href="public/css/main.css" rel="stylesheet" media="screen">
     <link href="public/css/ver-2016-fix.css" rel="stylesheet" media="screen">
     <link href="public/css/ver2-2017-fix.css" rel="stylesheet" media="screen">
+    <link href="public/css/sp-events.css" rel="stylesheet" media="screen">
     <link id="theme" href="../../html/mobile/public/css/bbh-m-header-footer.css" rel="stylesheet">
-    <style>
-    .sp-content {
-        width: 100vw;
-        height: auto;
-        position: fixed;
-        bottom: -45%;
-        z-index: 1500;
-    }
-    #glob {
-        display: block;
-    }
-    #glob >img {
-        width: 100%;
-    }
-    </style>
 </head>
 
 <body>
@@ -477,7 +463,7 @@
             </div>
         </div>
     </div>
-    <div class="sp-content"><a href="" class="hit"></a><div id="glob"><img src="public/img/cherry.png" alt=""></div></div>
+    <div class="sp-content slideInUp"><a href="#" class="close_it"><i></i></a><div id="glob"><img src="public/img/cherry.png" alt=""></div></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <!--new-->
@@ -487,8 +473,9 @@
     <script src="public/js/events-lib/Draggable.min.js"></script>
     <script src="public/js/events-lib/CSSPlugin.min.js"></script>
     <script type="text/javascript">
-    $(".fake-ad").click(function() {
-        $(".fake-ad").addClass("hidden");
+    $(".sp-content .close_it").click(function() {
+        $(".sp-content").removeClass("slideInUp");
+        $(".sp-content").addClass("slideOutDown");
     });
     </script>
     <script type="text/javascript">
