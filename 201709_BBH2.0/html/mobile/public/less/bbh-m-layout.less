@@ -3790,8 +3790,15 @@ h3 {
 .card-calendar {
     &.card-span {
         margin-bottom: 0;
-        padding: 357px 0 0;
         position: relative;
+        padding: 0;
+        &.affix {
+            padding-top: 357px;
+            .cal-month {
+                position: fixed;
+                top: 44px;
+            }
+        }
     }
 }
 
@@ -3802,8 +3809,8 @@ h3 {
 .cal-month {
     border-bottom: 1px solid lighten(@seperate-line, 10%);
     background: white;
-    position: absolute;
-    top: 0;
+    //position: absolute;
+    //top: 0;
     width: 100%;
     z-index: 500;
     &.affix {
@@ -3916,7 +3923,7 @@ h3 {
     font-size: @font-size-xs;
     border-top: 1px solid @seperate-line-light;
     position: relative;
-    min-height: 54px;
+    min-height: 50px;
     &.cal-nonpresent {
         .greg {
             opacity: .5;
@@ -3956,7 +3963,7 @@ h3 {
     .event-inner {
         //font-weight: 300;
         background: transparent;
-        margin-top: @padding-base/2;
+        //margin-top: @padding-base/2;
         padding: 0;
         .flex-h();
         /*
