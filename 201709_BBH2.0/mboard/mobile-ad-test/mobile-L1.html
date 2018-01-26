@@ -463,7 +463,10 @@
             </div>
         </div>
     </div>
-    <div class="sp-content slideInUp"><a href="#" class="close_it"><i></i></a><div id="glob"><img src="public/img/cherry.png" alt=""></div></div>
+    <div class="sp-content slideInUp">
+        <a href="#" class="close"><i></i></a>
+        <div id="glob"><a href="https://forum.babyhome.com.tw/topic/4755270" class="hit"></a><img src="public/img/cherry.png" alt=""></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <!--new-->
@@ -473,7 +476,7 @@
     <script src="public/js/events-lib/Draggable.min.js"></script>
     <script src="public/js/events-lib/CSSPlugin.min.js"></script>
     <script type="text/javascript">
-    $(".sp-content .close_it").click(function() {
+    $(".sp-content .close").click(function() {
         $(".sp-content").removeClass("slideInUp");
         $(".sp-content").addClass("slideOutDown");
     });
@@ -481,10 +484,9 @@
     <script type="text/javascript">
     var rotationSnap = 180;
     Draggable.create("#glob", {
-        type: "rotation", //instead of "x,y" or "top,left", we can simply do "rotation" to make the object spinnable! 
-        throwProps: true, //enables kinetic-based flicking (continuation of movement, decelerating after releasing the mouse/finger)
+        type: "rotation",
+        throwProps: true,
         snap: function(endValue) {
-            //this function gets called when the mouse/finger is released and it plots where rotation should normally end and we can alter that value and return a new one instead. This gives us an easy way to apply custom snapping behavior with any logic we want. In this case, just make sure the end value snaps to 90-degree increments but only when the "snap" checkbox is selected.
             return Math.round(endValue / rotationSnap) * rotationSnap;
         }
     });
