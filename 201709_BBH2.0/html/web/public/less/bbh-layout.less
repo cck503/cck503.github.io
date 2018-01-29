@@ -3746,14 +3746,18 @@ body {
 }
 
 .cal-holiday {
-    margin-bottom: @padding-base/2;
+    margin-bottom: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     color: @brand-danger;
 }
 
 .cal-day {
     .event-inner {
         //font-weight: 300;
-        margin-bottom: @padding-base/2;
+        margin-bottom: 1px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         .flex-h();
         >a {
             display: block;
@@ -3768,6 +3772,30 @@ body {
             background: @BBH-pink;
             border-radius: 100%;
             margin-right: @padding-base/2;
+        }
+        &.event-notice,
+        &.event-official {
+            //color: white;
+            //display: block;
+            //padding-right: @padding-base/2;
+        }
+        &.event-notice {
+            color: darken(#20c997, 10%);
+            a {
+                color: darken(#20c997, 10%);
+            }
+            &:before {
+                background: darken(#20c997, 10%);
+            }
+        }
+        &.event-official {
+            color: @BBH-yellow;
+            a {
+                color: @BBH-yellow;
+            }
+            &:before {
+                background: @BBH-yellow;
+            }
         }
     }
 }
