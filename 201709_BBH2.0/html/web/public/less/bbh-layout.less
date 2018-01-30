@@ -171,6 +171,7 @@ a {
 
 
 
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -350,6 +351,7 @@ body {
 
 
 
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -425,6 +427,7 @@ body {
 {
     background-color: white;
 }
+
 
 
 
@@ -1065,6 +1068,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -3035,6 +3039,7 @@ body {
 
 
 
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3287,6 +3292,7 @@ body {
         }
     }
 }
+
 
 
 
@@ -3730,10 +3736,17 @@ body {
         display: block;
     }
 }
+.cal-date,
+.cal-events,
+.more-events {
+    position: relative;
+    z-index: 10;
+}
 
 .cal-wday {}
 
 .cal-date {
+
     span {
         opacity: .5;
         vertical-align: middle;
@@ -3759,7 +3772,10 @@ body {
         padding-top: 2px;
         padding-bottom: 2px;
         .flex-h();
-        >a {
+        span {
+            .reduce();
+        }
+        a {
             display: block;
             .reduce();
             max-width: 8em;
@@ -3780,15 +3796,6 @@ body {
             //padding-right: @padding-base/2;
         }
         &.event-notice {
-            color: darken(#20c997, 10%);
-            a {
-                color: darken(#20c997, 10%);
-            }
-            &:before {
-                background: darken(#20c997, 10%);
-            }
-        }
-        &.event-official {
             color: @BBH-yellow;
             a {
                 color: @BBH-yellow;
@@ -3797,6 +3804,24 @@ body {
                 background: @BBH-yellow;
             }
         }
+        &.event-official {
+            color: #53c89a;
+            a {
+                color: #53c89a;
+            }
+            &:before {
+                background: #53c89a;
+            }
+        }
+    }
+    .add-new {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
     }
 }
 
@@ -4030,6 +4055,7 @@ body {
         }
     }
 }
+
 
 
 
