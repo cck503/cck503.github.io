@@ -10,8 +10,8 @@
     <link href="public/css/main.css" rel="stylesheet" media="screen">
     <link href="public/css/ver-2016-fix.css" rel="stylesheet" media="screen">
     <link href="public/css/ver2-2017-fix.css" rel="stylesheet" media="screen">
-    <link href="public/css/sp-events.css" rel="stylesheet" media="screen">
     <link id="theme" href="../../html/mobile/public/css/bbh-m-header-footer.css" rel="stylesheet">
+    <link href="public/css/sp-events.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -467,7 +467,7 @@
     </div>
     <div class="sp-content slideInUp">
         <a href="#" class="close"><i></i></a>
-        <div id="glob"><a href="https://forum.babyhome.com.tw/topic/4755270" class="hit"></a><img src="public/img/cherry.png" alt=""></div>
+        <div id="glob"><img src="public/img/cherry.png" alt=""></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
     <script src="public/js/bootstrap.min.js"></script>
@@ -481,6 +481,9 @@
     $(".sp-content .close").click(function() {
         $(".sp-content").removeClass("slideInUp");
         $(".sp-content").addClass("slideOutDown");
+    });
+    $('#glob').on('click', function() {
+        location.href = 'https://forum.babyhome.com.tw/topic/4755270'
     });
     </script>
     <script type="text/javascript">
