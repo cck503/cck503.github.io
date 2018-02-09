@@ -865,7 +865,7 @@ body {
             .profile-caption {
                 max-height: 2.9em;
                 overflow: hidden;
-                margin-bottom: @padding-base;
+                margin-bottom: @padding-base/2;
             }
             .txt-holder {
                 &.shorten {
@@ -1772,6 +1772,9 @@ body {
         -webkit-align-items: flex-start;
         .profile-avator {
             margin-bottom: 0;
+        }
+        .profile-caption {
+            padding-left: 0;
         }
     }
     .span-inner {
@@ -3109,7 +3112,9 @@ h3 {
 
 
 #edit_subject,
-#modify_note {
+#modify_note,
+#new_calendar_event,
+#modify_calendar_event {
     position: fixed;
     top: 0;
     left: 0;
@@ -3117,6 +3122,7 @@ h3 {
     right: 0;
     .flex-v();
 }
+
 
 #modify_note {
     .ms-span {
