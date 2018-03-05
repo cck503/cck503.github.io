@@ -289,7 +289,7 @@
 [class^='btn-key'],
 [class*='btn-compose'],
 [class^='btn-compose'] {
-    padding: 5px 20px; //min-width: 108px;
+    padding: @padding-base/2 @padding-base; //min-width: 108px;
     &.btn-sm,
     &.btn-xs {
         min-width: auto;
@@ -1328,6 +1328,7 @@ select.form-control:focus+.form-control-placeholder {
 }
 
 .card-span {
+    position: relative;
     background: white;
     border-bottom: 1px solid lighten(@seperate-line, 10%);
     padding: 10px;
@@ -1606,6 +1607,7 @@ select.form-control:focus+.form-control-placeholder {
     right: 0;
     margin: auto;
     background: rgba(0, 0, 0, .4);
+    z-index: 10;
 }
 
 .typing-loader {

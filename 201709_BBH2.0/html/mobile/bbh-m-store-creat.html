@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes,shrink-to-fit=no" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome</title>
+    <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="public/ckeditor/neo.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="content-container flex-v">
+            <form class="form-fixed store-form">
+                <div class="content-heading flex-h">
+                    <button class="btn btn-link link-blue">刪除</button>
+                    <div class="heading-inner">新增物件</div>
+                    <div class="compose-btn">
+                        <button class="btn btn-key">上架</button>
+                    </div>
+                </div>
+                <div class="content-body card-inner card-input-full">
+                    <div class="span-login full-form">
+                        <div class="text-center">
+                            <div class="btn btn-key upload-pic"><i class="icon-camera-full"></i>插入物件照</div>
+                        </div>
+                        <div class="form-group">
+                            <label>上傳商品照(0/6)</label>
+                            <div class="pd-shots-list">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail"><a href="" class="pd-delet"><i class="icon-shopping-delet"></i></a>
+                                            <div class="upload-holder">
+                                                <img src="http://lorempixel.com/400/400/food" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail uploading">
+                                            <a href="" class="pd-delet"><i class="icon-shopping-delet"></i></a>
+                                            <div class="upload-holder">
+                                                <div class="loader-span">
+                                                    <div class="typing-loader"></div>
+                                                </div>
+                                                <img src="http://lorempixel.com/400/400/food" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail empty">
+                                            <div class="upload-holder">
+                                                <p class="text-center">商品詳細照</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail empty">
+                                            <div class="upload-holder">
+                                                <p class="text-center">商品詳細照</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail empty">
+                                            <div class="upload-holder">
+                                                <p class="text-center">商品詳細照</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail empty">
+                                            <div class="upload-holder">
+                                                <p class="text-center">商品詳細照</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>物件名稱</label>
+                            <input type="text" class="form-control" placeholder="物件名稱" value="">
+                            <p class="text-right char-count"><small>0/50</small></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="">物件描述</label>
+                            <textarea rows="10" class="form-control" placeholder="物件描述" value=""></textarea>
+                            <p class="text-right char-count"><small>0/500</small></p>
+                        </div>
+                        <div class="form-group">
+                            <label>物件數量</label>
+                            <input type="number" class="form-control" placeholder="物件數量" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>物件價格</label>
+                            <div class="price-style">
+                                <input type="number" class="form-control" placeholder="物件價格" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">物件分類</label>
+                            <div class="select-style">
+                                <select class="form-control">
+                                    <option value="" hidden="">請選擇</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">物件狀況</label>
+                            <div class="select-style">
+                                <select class="form-control">
+                                    <option value="" hidden="">請選擇</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cover-btn-holder">
+                            <button class="btn btn-block btn-key-alt" type="submit">物件下架</button>
+                            <button class="btn btn-block btn-key-line link-blue" type="submit">移除物件</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/moment.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/m-header-custom.js"></script>
+    <script src="public/js/m-feeds-custom.js"></script>
+</body>
+
+</html>
