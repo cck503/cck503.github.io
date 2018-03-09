@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome</title>
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/non-responsive.css" rel="stylesheet">
+    <link href="public/css/bbh-header-footer.css" rel="stylesheet">
+    <link href="public/css/bbh-main.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="head-universal">
+        <nav class="navbar navbar-default navbar-fixed-top nav-down">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand bbh-logo-new" href="bbh-index.html"><img src="../web/public/img/bbh-logo-new.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="bbh-forum"><a href="#">討論區</a></li>
+                        <li class="bbh-info"><a href="#">新知</a></li>
+                        <!--
+                        <li class="bbh-mama"><a href="#">媽媽力</a></li>
+                        -->
+                        <li class="bbh-shop"><a href="#">購物</a></li>
+                        <li class="bbh-group"><a href="#">家族</a></li>
+                        <li class="bbh-events"><a href="bbh-events.html">活動</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
+                        <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-message-outline"></i><span class="sr-only">訊息</span></a></li>
+                        <li class="push-note dropdown">
+                            <a href="#" title="通知" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="push-notice">
+                                <p class="notice-head">通知</p>
+                                <div class="notice-list">
+                                    <div class="media">
+                                        <p>目前尚無新通知</p>
+                                    </div>
+                                    <div id="li_573add2f38d056b1438b4567" class="media unread">
+                                        <a href="http://photo.babyhome.com.tw/236111/jeUwdjSYCJ1TcYEK" class="notice-link" name="unread" notice_id="573add2f38d056b1438b4567"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="毛寶2次方">
+                                            <div class="media-body">
+                                                <p class="notice-content">毛寶2次方喜歡您的照片。</p>
+                                                <p class="timeline">2016-05-17 16:58:23</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#573add2f38d056b1438b4567" name="notice_read" title="已閱讀"><i class="icon-check-full-circle"></i></a>
+                                            <a href="#573add2f38d056b1438b4567" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="http://member.babyhome.com.tw/notice" class="btn btn-primary btn-lg btn-block">查看更多</a>
+                            </div>
+                        </li>
+                        <li class="avator hidden">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html">
+                                    <i class="icon-avator-full"></i><span class="sr-only">未登入</span>
+                                 </a>
+                            </div>
+                        </li>
+                        <li class="avator">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""><span class="sr-only">Hi~ 小寶真是可愛</span></a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><span class="badge badge-notify"></span><a href="#" class="dropdown-toggle nav-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i><span class="sr-only">更多</span></a>
+                            <!--myhome-->
+                            <ul class="dropdown-menu">
+                                <li class="profile-detail flex-h">
+                                    <div class="detail-inner"><span class="number">20</span><span>貼文</span></div>
+                                    <div class="detail-inner"><span class="number">331</span><span>話題</span></div>
+                                    <div class="detail-inner"><span class="number">1.1K</span><span>關注我</span></div>
+                                    <div class="detail-inner"><span class="number">10K</span><span>Ｑ點</span></div>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><span class="badge badge-notify"></span><a href="#">動態消息</a></li>
+                                        <li><a href="">相簿</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><a href="#">管理中心</a></li>
+                                        <li><a href="#">登出</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="personal-cover">
+        <div class="cover-inner">
+            <div class="container edit-mode">
+                <a href="" class="edit-img"><i class="icon-camera-full"></i>編輯封面</a>
+                <div class="profile-caption">
+                    <p class="h3">Hi~ 小寶真是可愛</p>
+                    <p>人生很簡單，那就是做了決定就不要回頭看！<a href="" class="btn btn-link" data-toggle="modal" data-target="#briefModal" title="編輯短介"><i class="icon-edite-full"></i></a></p>
+                </div>
+                <div class="cover-btn-holder flex-h">
+                    <button class="btn btn-key-line">取消</button>
+                    <button class="btn btn-key">確定</button>
+                </div>
+            </div>
+            <div class="cover-holder">
+                <img src="public/img/default-bg.jpg" alt="">
+            </div>
+        </div>
+        <div class="cover-nav affix" id="covernav-fix">
+            <div class="container">
+                <div class="col-xs-12">
+                    <!--title加入暱稱-->
+                    <div class="cover-profile" title="小寶真是可愛小寶真是可愛小寶真是可愛">
+                        <div class="span-profile text-left flex-h">
+                            <div class="profile-avator-lg">
+                                <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a>
+                                <img src="http://lorempixel.com/200/200/people" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-nav-inner flex-h">
+                        <div class="cover-nav-holder">
+                            <ul class="sub-nav flex-h">
+                                <li><a href="bbh-myhome-about.html">關於我</a></li>
+                                <li><a href="bbh-blog-list-masonry.html">網誌</a></li>
+                                <li><a href="bbh-connection.html">社交圈</a></li>
+                                <li><a href="">相簿</a></li>
+                                <li><a href="">行事曆</a></li>
+                                <li class="active"><a href="bh-store-list.html">店舖</a></li>
+                                <li><a href="">家族</a></li>
+                            </ul>
+                        </div>
+                        <!--他人-->
+                        <div class="cover-btn-holder text-right">
+                            <button class="btn btn-key">關注</button>
+                            <button class="btn btn-key-line">訊息</button>
+                        </div>
+                        <!--自己-->
+                        <div class="cover-btn-holder text-right hidden">
+                            <button class="btn btn-key">新增物件</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--store content-->
+    <div class="container bbh-main-container">
+        <div class="row">
+            <div class="col-xs-2 col-left">
+                <div class="span-personal-nav">
+                    <ul>
+                        <li class="list-heading"><a href="bbh-store-cart.html"><span class="icon-holder holder-key"><i class="icon-shopping-bag"></i></span>我的提袋</a><span class="badge badge-notify">5</span></a>
+                        </li>
+                        <li class="list-heading"><a href="bbh-store-manifest.html"><span class="icon-holder holder-key-line"><i class="icon-shopping-bag-list"></i></span>我的買賣清單</a></li>
+                    </ul>
+                </div>
+                <div class="span-personal-nav">
+                    <ul>
+                        <li class="list-heading">
+                            <div class="dropdown more-option folder-edit pull-right">
+                                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="icon-optional-vertical-full"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="" data-toggle="modal" data-target="#folderModal">變更排序/名稱</a>
+                                    </li>
+                                    <li class="creat-new flex-h">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="新增分類">
+                                        </div>
+                                        <button class="btn btn-sm btn-key">建立</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p><span class="icon-holder"><i class="icon-feed-line"></i></span>店舖分類</p>
+                            <ul>
+                                <li><a href="">全部商品(10)</a></li>
+                                <li><a href="">手工娃娃(7)</a></li>
+                                <li><a href="">未分類(1)</a></li>
+                                <li><a href="">已下架區(7)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span-footer">
+                    <ul>
+                        <li><a href="">服務條款</a></li>
+                        <li><a href="">隱私權政策</a></li>
+                        <li><a href="">Q&A</a></li>
+                        <li><a href="">客服信箱</a></li>
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">關於我們</a></li>
+                                <li><a href="">客服信箱</a></li>
+                                <li><a href="">合作提案</a></li>
+                                <li><a href="">徵才資訊</a></li>
+                                <li><a href="">關於我們</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="span-logo">
+                        <ul class="secondary-info">
+                            <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-main-card">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li><a href="bbh-store-list.html">店舖</a></li>
+                        <li><a href="bbh-store-list.html">二手小物</a></li>
+                        <li class="active">商品名稱 商品名稱商品名稱商品名稱商品名稱商品名稱</li>
+                    </ol>
+                    <div class="pd-main-card">
+                        <div class="card-span">
+                            <div class="card-inner">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="row pd-tp-span">
+                                            <div class="col-xs-6">
+                                                <div class="pd-span pd-carousel">
+                                                    <div class="carousel slide index-carousel" id="theCarousel" data-ride="carousel" data-interval="false">
+                                                        <!--carousel-content-->
+                                                        <div class="carousel-inner">
+                                                            <div class="item active">
+                                                                <div class="text-center">
+                                                                    <img src="http://lorempixel.com/800/800/people" class="img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="text-center">
+                                                                    <img src="http://lorempixel.com/800/800/nature" class="img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="text-center">
+                                                                    <img src="http://lorempixel.com/800/800/city" class="img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="text-center">
+                                                                    <img src="http://lorempixel.com/800/800/food" class="img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="text-center">
+                                                                    <img src="http://lorempixel.com/800/800/sports" class="img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="text-center">
+                                                                    <img src="http://lorempixel.com/800/800/fashion" class="img-responsive">
+                                                                </div>
+                                                            </div>
+                                                            <!-- add  more items here -->
+                                                        </div>
+                                                        <!-- Indicators -->
+                                                        <ol class="carousel-indicators mCustomScrollbar">
+                                                            <li data-target="#theCarousel" data-slide-to="0" class="active"><img src="http://lorempixel.com/800/800/people" class="img-responsive"></li>
+                                                            <li data-target="#theCarousel" data-slide-to="1"><img src="http://lorempixel.com/800/800/nature" class="img-responsive"></li>
+                                                            <li data-target="#theCarousel" data-slide-to="2"><img src="http://lorempixel.com/800/800/city" class="img-responsive"></li>
+                                                            <li data-target="#theCarousel" data-slide-to="3"><img src="http://lorempixel.com/800/800/food" class="img-responsive"></li>
+                                                            <li data-target="#theCarousel" data-slide-to="4"><img src="http://lorempixel.com/800/800/sports" class="img-responsive"></li>
+                                                            <li data-target="#theCarousel" data-slide-to="5"><img src="http://lorempixel.com/800/800/fashion" class="img-responsive"></li>
+                                                        </ol>
+                                                        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><span class="icon-arrow-left" aria-hidden="true"></span></a>
+                                                        <a class="right carousel-control" href="#theCarousel" data-slide="next"><span class="icon-arrow-right" aria-hidden="true"></span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="respond-option flex-h">
+                                                    <div class="dropdown option-action hover-drop">
+                                                        <a href="" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
+                                                    </div>
+                                                    <div class="dropdown option-action">
+                                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">分享至Facebook</a></li>
+                                                            <li><a href="#">分享至My Home</a></li>
+                                                            <li><a href="#">複製連結</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="pd-info">
+                                                    <div class="pd-span">
+                                                        <div class="dropdown more-option pd-option">
+                                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-optional-vertical-full"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">編輯物件</a></li>
+                                                                <li><a href="#">刪除</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="txt-holder">
+                                                            <h1 class="h3 pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</h1>
+                                                            <p class="price-tag">1,300</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pd-span query-span">
+                                                        <div class="flex-h sku-content">
+                                                            <div class="sku-title">數量</div>
+                                                            <div class="sku-number">
+                                                                <a href="" class="quantity-op btn" disabled="disabled"><i class="icon-minus-full"></i></a>
+                                                                <input type="text" value="1" class="quantity-edit">
+                                                                <a href="" class="quantity-op btn"><i class="icon-plus-full"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cover-btn-holder flex-h">
+                                                            <a href="" class="btn btn-block btn-lg btn-key-line"><i class="icon-message-full"></i>訊息詢問</a><a href="" class="btn btn-block btn-lg btn-key"><i class="icon-shopping-bag-add"></i>加入我的提袋</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pd-span">
+                                                        <div class="txt-holder">
+                                                            <p>店面價5900元起跳，限蝦皮特賣!售完漲價!!</p>
+                                                            <p>出國旅遊.冰天雪地.一件搞定!! 要搶要快喔~</p>
+                                                            <p>今年最新款 韓流必備!!!</p>
+                                                            <p>經典再現瘋賣.少量現貨.要買要快!!</p>
+                                                            <p>★尺寸表及商品資訊在圖片介紹倒數2張喔!!!</p>
+                                                            <p>顏色 : 軍綠，卡其，藍色</p>
+                                                            <p>尺寸 : M，L，XL，2XL，3XL，4XL</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="respond-span flex-h">
+                                        <div class="respond-inner">
+                                            <div class="dropdown emoji-dropdown">
+                                                <a href="" class="btn btn-link link-blue" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-smile-line"></i></a>
+                                                <div class="dropdown-menu emoji-menu dir-top menu-wide" aria-labelledby="emoji-btn">
+                                                    <div class="dropdown-menu-inner">
+                                                        <div class="layout-f">
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="留個話吧‧‧‧"></textarea>
+                                        </div>
+                                        <button class="btn btn-submit btn-compose" type="submit">送出</button>
+                                    </div>
+                                    <div class="comments-list">
+                                        <div><a href="" class="link-light">查看更多留言</a></div>
+                                        <div class="feed-comment">
+                                            <div class="profile-avator-xs">
+                                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <div class="flex-h">
+                                                    <p class="control-flex"><a href="" class="link-profile">魏小小</a></p>
+                                                    <div class="more-option dropdown">
+                                                        <span class="time-tage">3小時前</span>
+                                                        <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="icon-optional-vertical-full"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#" class="btn_reply_delete">刪除</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="post-detail shorten">
+                                                    <p>世界上有一種職業工時很長、沒有薪水、狀況很多、責任很大、沒有任何商業模式、算不出什麼獲利方程式，每天工作24小時且年中無休，這個職務叫做…「媽媽」。小孩的成長直接與媽媽人生畫上了等號！雖說一切都是甜蜜的負擔，背後有許多許多犧牲與奉獻是確實存在的。BabyHome的價值主張是珍惜媽媽的分享、創造溫暖的價值！提供媽媽在育兒、持家的基本資訊，溫暖的平台陪伴著「家」的喜怒哀樂。最重要是支持媽媽實現自己的「夢想」、成就他人的「希望」。</p>
+                                                </div>
+                                                <a href="" class="link-light show-more">看更多</a>
+                                                <!--留言回覆-->
+                                                <div class="comment-option">
+                                                    <a class="reply-id">回覆</a>
+                                                    <a class="reply-load">共有3則回覆<i class="icon-arrow-down"></i></a>
+                                                </div>
+                                                <div class="sub-comment">
+                                                    <div class="comment-inner hidden">
+                                                        <div class="feed-comment">
+                                                            <div class="profile-avator-xs">
+                                                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                            </div>
+                                                            <div class="profile-caption">
+                                                                <div class="flex-h">
+                                                                    <p class="control-flex"><a href="" class="link-profile">魏小小</a></p>
+                                                                    <div class="more-option">
+                                                                        <span class="time-tage">3小時前</span>
+                                                                        <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post-detail">
+                                                                    <p>這是小時候第一次學的兒歌捏。</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="feed-comment">
+                                                            <div class="profile-avator-xs">
+                                                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                            </div>
+                                                            <div class="profile-caption">
+                                                                <div class="flex-h">
+                                                                    <p class="control-flex"><a href="" class="link-profile">魏小小</a></p>
+                                                                    <div class="more-option">
+                                                                        <span class="time-tage">3小時前</span>
+                                                                        <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post-detail">
+                                                                    <p>這是小時候第一次學的兒歌捏。</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="feed-comment">
+                                                            <div class="profile-avator-xs">
+                                                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                                            </div>
+                                                            <div class="profile-caption">
+                                                                <div class="flex-h">
+                                                                    <p class="control-flex"><a href="" class="link-profile">魏小小</a></p>
+                                                                    <div class="more-option">
+                                                                        <span class="time-tage">3小時前</span>
+                                                                        <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post-detail">
+                                                                    <p>這是小時候第一次學的兒歌捏。</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="respond-span flex-h hidden">
+                                                        <div class="respond-inner">
+                                                            <div class="dropdown emoji-dropdown">
+                                                                <a href="" class="btn btn-link link-blue" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-smile-line"></i></a>
+                                                                <div class="dropdown-menu emoji-menu dir-top menu-wide" aria-labelledby="emoji-btn">
+                                                                    <div class="dropdown-menu-inner">
+                                                                        <div class="layout-f">
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                            <span class="emoji-img"><img src="public/img/1f60a.png" alt="..." title="..."></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <textarea class="form-control autoExpand reply_content" id="message_content-1" rows="1" data-min-rows="1" placeholder="留個話吧‧‧‧"></textarea>
+                                                        </div>
+                                                        <button class="btn btn-submit btn-compose" type="submit">送出</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="feed-comment">
+                                            <div class="profile-avator-xs">
+                                                <a href=""><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="" class="link-profile">魏小小</a></p>
+                                                <div class="post-detail">
+                                                    <p>這是小時候第一次學的兒歌捏。</p>
+                                                </div>
+                                            </div>
+                                            <div class="more-option">
+                                                <span class="time-tage">3小時前</span>
+                                                <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-comment">
+                                            <div class="profile-avator-xs">
+                                                <a href=""><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="" class="link-profile">魏小小</a></p>
+                                                <div class="post-detail">
+                                                    <p>這是小時候第一次學的兒歌捏。</p>
+                                                </div>
+                                            </div>
+                                            <div class="more-option">
+                                                <span class="time-tage">3小時前</span>
+                                                <a href=""><i class="icon-optional-vertical-full"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-universal">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="span-logo">
+                    <a href="" class="bbh-logo-footer"><img src="public/img/bbh-logo-gray.svg" alt="BabyHome.com.tw"><span class="sr-only">BabyHome.com.tw</span></a>
+                    <ul class="secondary-info">
+                        <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                        <li>客服時間：週一至週五 9:00 ~ 18:00</li>
+                    </ul>
+                </div>
+                <div class="span-footer">
+                    <ul>
+                        <li class="list-heading">關於</li>
+                        <li><a href="bbh-about.html">關於我們</a></li>
+                        <li><a href="bbh-tos.html">服務條款</a></li>
+                        <li><a href="bbh-policy.html">隱私權政策</a></li>
+                        <li><a href="">客服信箱</a></li>
+                        <li><a href="">合作提案</a></li>
+                        <li><a href="">徵才資訊</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-heading">支援服務</li>
+                        <li><a href="">Q&A</a></li>
+                        <li><a href="">站務服務區</a></li>
+                        <li><a href="">客服信箱</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-heading">會員服務</li>
+                        <li><a href="">會員註冊</a></li>
+                        <li><a href="">會員登入</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-heading">關注我們</li>
+                        <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--alertinfo 送出訂單提示-->
+    <div class="store-alert-info fade hidden" tabindex="-1">
+        <div class="alert alert-info" role="alert">
+            <p>此物件已加入你的提袋</p>
+        </div>
+    </div>
+    <!-- linkModal -->
+    <div class="modal favorit-list fade" id="bloglinkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">複製共用連結</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="well">https://info.babyhome.com.tw/article/XXXX</div>
+                    <p><small>不公開，只有取得連結的人看得到。</small></p>
+                </div>
+                <div class="modal-footer">
+                    <div class="cover-btn-holder flex-h">
+                        <button class="btn btn-key-line">取消</button>
+                        <button class="btn btn-key">複製連結</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="input-group content-width search-span">
+                        <span class="input-group-btn list-select">
+                            <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
+                        </span>
+                        <input type="text" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"><span class="input-group-btn"><button class="btn btn-link" type="submit"><i class="icon-magnify-glass-line"></i></button></span> </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-history content-width">
+                        <ul>
+                            <li class="list-heading">熱門搜尋</li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">月子中心</a></li>
+                            <li><a href="">懷孕初期</a></li>
+                            <li><a href="">免費索取</a></li>
+                            <li><a href="">會考成績</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                        </ul>
+                        <span class="seperate-line-light"></span>
+                        <ul>
+                            <li class="list-heading">搜尋紀錄</li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">月子中心</a></li>
+                            <li><a href="">懷孕初期</a></li>
+                            <li><a href="">免費索取</a></li>
+                            <li><a href="">會考成績</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/header-custom.js"></script>
+    <script src="public/js/feeds-custom.js"></script>
+    <script>
+    $('#covernav-fix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+    $(function() {
+        $('.comments-list .reply-id').click(function() {
+            $('.comment-inner').removeClass('hidden');
+            $('.respond-span').removeClass('hidden');
+            $('.comments-list .reply-load').addClass('hidden');
+            $('#message_content-1').focus();
+        });
+        $('.comments-list .reply-load').click(function() {
+            $('.comment-inner').removeClass('hidden');
+            $(this).addClass('hidden');
+        });
+    });
+    $(".reply_content").on('focus blur', function() {
+        $(this).parents(".respond-inner").toggleClass('focused');
+    })
+    </script>
+    <script>
+    $(document).ready(function() {
+        $(".mCustomScrollbar").mCustomScrollbar({ axis: "x" });
+    });
+    </script>
+</body>
+
+</html>
