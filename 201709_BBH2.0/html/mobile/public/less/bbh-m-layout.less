@@ -526,6 +526,9 @@ body {
         .form-control {
             background: @info-bg;
             border-color: transparent;
+            &:focus {
+                border-color: lighten(@link-key,10%);
+            }
         }
     }
 }
@@ -4471,8 +4474,10 @@ h3 {
 }
 
 .char-count {
+    margin-bottom: 0;
     small {
         font-size: @font-size-xs;
+        opacity: .7;
     }
 }
 
@@ -4572,14 +4577,8 @@ h3 {
 }
 
 .pd-thumbnail-df {
-    &:before {
-        content: "";
-        display: block;
-        background: url("../img/svg/shopping-box.svg") center center no-repeat;
-        background-size: 25% 25%;
-        .aspect-inner();
-        z-index: 2;
-    }
+    background: url("../img/svg/shopping-box.svg") center center no-repeat;
+    background-size: 25% 25%;
 }
 
 .pd-span {
@@ -4777,7 +4776,7 @@ h3 {
 
 .order-list {
     border-bottom: 1px solid @seperate-line-light;
-    margin-bottom: @padding-base;
+    padding-top: @padding-base;
     padding-bottom: @padding-base;
 }
 
@@ -4836,8 +4835,9 @@ h3 {
     }
 }
 
-.cart-body {
+.card-span {
     &.cart-body {
+        padding-top: 0;
         margin-bottom: 4em;
     }
 }
@@ -4875,6 +4875,14 @@ h3 {
     .sum-content {
         color: @notify-red;
         margin-bottom: 0;
+    }
+    .lw-key {
+        .price-tag {
+            font-size: 1em;
+        }
+    }
+    .price-tag {
+        font-size: 1.2em;
     }
 }
 

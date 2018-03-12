@@ -1,0 +1,30 @@
+@media (min-width:768px) {
+    .idle-modal .modal-lg {
+        width: 980px
+    }
+}
+
+.idle-modal button.close {
+    float: none;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.idle-modal .modal-lg {
+    width: 980px
+}
+
+.idle-modal .modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0
+}
+
+.idle-modal .modal-body {
+    padding: 0
+}
