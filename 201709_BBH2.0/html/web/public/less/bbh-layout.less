@@ -4347,7 +4347,13 @@ body {
     }
 }
 
-
+.img-holder {
+    .pd-img {
+        img {
+            max-height: 225px;
+        }
+    }
+}
 .pd-img {
     .aspect1-1();
     .pd-thumbnail-df();
@@ -4374,7 +4380,7 @@ body {
         }
     }
     .btn+.btn {
-        margin-right: @padding-base;
+        margin-left: @padding-base;
     }
     .btn-block+.btn-block {
         margin-top: 0;
@@ -4384,6 +4390,10 @@ body {
             &.link-blue {
                 border-color: transparent;
             }
+        }
+        .btn+.btn {
+            margin-right: @padding-base;
+            margin-left: 0;
         }
     }
 }
@@ -4486,6 +4496,7 @@ body {
             right: 0;
             bottom: 0;
             margin: auto;
+            max-height: 244px;
         }
         p {
             position: absolute;
@@ -4494,6 +4505,9 @@ body {
             left: 0;
             margin-bottom: 0;
             opacity: .4;
+            &+p {
+                bottom: 15%;
+            }
         }
     }
 }
@@ -4790,6 +4804,14 @@ body {
             img {
                 width: auto;
                 height: auto;
+                max-height: 480px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 10;
+                margin: auto;
             }
         }
     }
@@ -4805,6 +4827,8 @@ body {
             >.item.prev.right,
             >.item.active {
                 .aspect-inner();
+                .pd-thumbnail-df();
+                background-color: white;
             }
         }
     }
@@ -4852,6 +4876,8 @@ body {
                 bottom: 0;
                 margin: auto;
                 z-index: 5;
+                height: auto;
+                max-height: 72px;
             }
         }
     }
@@ -4951,6 +4977,9 @@ body {
     .pd-img {
         width: 80px; //margin-right: @padding-base/2;
         box-shadow: inset #bbb 0 0 1px; //.pd-thumbnail-df();
+        img {
+            max-height: 80px;
+        }
     }
     .custum-box {
         margin-top: -2px;
