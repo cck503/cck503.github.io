@@ -96,6 +96,10 @@ a {
     align-self: flex-start;
     -webkit-align-self: flex-start;
 }
+.self-center {
+    align-self: center;
+    -webkit-align-self: center;
+}
 
 .flex-between {
     justify-content: space-between;
@@ -179,6 +183,9 @@ a {
     margin: auto;
     z-index: 5;
 }
+
+
+
 
 
 
@@ -425,6 +432,9 @@ body {
 
 
 
+
+
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -500,6 +510,9 @@ body {
 {
     background-color: white;
 }
+
+
+
 
 
 
@@ -1161,6 +1174,9 @@ body {
         }
     }
 }
+
+
+
 
 
 
@@ -3195,6 +3211,9 @@ body {
 
 
 
+
+
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3447,6 +3466,9 @@ body {
         }
     }
 }
+
+
+
 
 
 
@@ -3946,6 +3968,7 @@ body {
         margin-bottom: 1px;
         padding-top: 2px;
         padding-bottom: 2px;
+        position: relative;
         .flex-h();
         span {
             .reduce();
@@ -3954,16 +3977,22 @@ body {
             display: block;
             .reduce();
             max-width: 8em;
+            .flex-h();
         }
-        &:before {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 6px;
-            background: @BBH-pink;
-            border-radius: 100%;
-            margin-right: @padding-base/2;
+        &:not(.event-personal) {
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                background: @BBH-pink;
+                border-radius: 100%;
+                margin-right: @padding-base/2;
+                position: relative;
+                top: -1px;
+            }
         }
+
         &.event-notice,
         &.event-official {
             //color: white;
@@ -3987,6 +4016,38 @@ body {
             &:before {
                 background: #53c89a;
             }
+        }
+        &.event-personal {
+            /*>* {
+                margin-right: @padding-base/2;
+            }*/
+            .reduce {
+                flex: 1 1 0;
+                -webkit-flex: 1 1 0;
+            }
+        }
+        .profile-avator-xxs {
+            margin-right: 3px;
+        }
+        &.event-ms,
+        &.event-blog,
+        &.event-feed {
+            box-shadow: inset 0 0 0 1px @seperate-line-light;
+            padding-left: @padding-base/2;
+        }
+        &.event-ms {
+            border-left: 2px solid @brand-danger;
+        }
+        &.event-blog {
+            border-left: 2px solid @BBH-info;
+        }
+        &.event-feed {
+            border-left: 2px solid @BBH-pink;
+        }
+        .sticker {
+            width: @font-size-base;
+            height: @font-size-base;
+            margin-right: 3px;
         }
     }
     .add-new {
@@ -4024,6 +4085,86 @@ body {
     }
 }
 
+.profile-avator-xxs {
+    width: @font-size-base;
+    height: @font-size-base;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background: @BBH-pink;
+    color: white;
+    position: relative;
+    &:before {
+        content: attr(data-tooltip);
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        display: block;
+    }
+    img {
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.sticker {
+    display: inline-block;
+    vertical-align: middle;
+    img {
+        display: block;
+    }
+}
+
+
+
+.fix-cal {
+    .sticker {
+        width: 24px;
+    }
+    .flex-1 {
+        margin-left: @padding-base*2;
+    }
+    &.flex-h {
+        align-items: start;
+        -webkit-align-items: start;
+    }
+    &+.fix-cal {
+        margin-top: @padding-base*2;
+    }
+    [class*='icon-'],
+    [class^='icon-'] {
+        font-size: 26px;
+        opacity: .7;
+    }
+    [class*='profile-avator-'],
+    [class^='profile-avator-'] {
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+        background: @BBH-pink;
+        color: white;
+        position: relative;
+        &:before {
+            content: attr(data-tooltip);
+            position: absolute;
+            width: 1em;
+            height: 1em;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+            display: block;
+        }
+        img {
+            position: relative;
+            z-index: 5;
+        }
+    }
+}
 
 
 
@@ -4180,7 +4321,6 @@ body {
     .img-holder {
         display: inline-block;
         width: 400px;
-        
     }
 }
 
@@ -4211,10 +4351,17 @@ body {
         }
     }
     .btn+.btn {
-        margin-left: @padding-base;
+        margin-right: @padding-base;
     }
     .btn-block+.btn-block {
         margin-top: 0;
+    }
+    .category-list {
+        .btn-key-line {
+            &.link-blue {
+                border-color: transparent;
+            }
+        }
     }
 }
 
@@ -4571,10 +4718,11 @@ body {
         }
     }
 }
+
 .order-info-detail {
     .list-holder {
         &.flex-h {
-            >* + * {
+            >*+* {
                 margin-left: @padding-base;
             }
         }
@@ -4685,6 +4833,7 @@ body {
         }
     }
 }
+
 .order-list {
     &.list-heading {
         .order-item {
@@ -4692,6 +4841,7 @@ body {
         }
     }
 }
+
 .cart-body {
     .card-body {
         margin-top: 0;
@@ -5144,6 +5294,9 @@ body {
         }
     }
 }
+
+
+
 
 
 

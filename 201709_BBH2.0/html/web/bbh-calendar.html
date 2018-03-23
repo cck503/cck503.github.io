@@ -382,10 +382,29 @@
                                     <span class="greg">3</span><span>十七</span>
                                 </div>
                                 <div class="cal-events">
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
+                                    <div class="event-inner event-personal">
+                                        <a href="" data-toggle="modal" data-target="#personal-calendarModal">
+                                            <div class="profile-avator-xxs" data-tooltip="大寶"><img src="http://lorempixel.com/80/80/people" alt=""></div>
+                                            <div class="profile-avator-xxs " data-tooltip="小寶"></div>
+                                            <i class="sticker"><img src="public/img/svg/ca-1.svg" alt=""></i>
+                                            <span class="reduce">白喉、百日咳、破傷風混合疫苗第三劑</span>
+                                        </a>
+                                    </div>
+                                    <div class="event-inner event-personal">
+                                        <a href="">
+                                            <div class="profile-avator-xxs " data-tooltip="小寶"></div>
+                                            <i class="sticker"><img src="public/img/svg/ca-2.svg" alt=""></i><span>2歲生日</span>
+                                        </a>
+                                    </div>
+                                    <div class="event-inner event-personal">
+                                        <a href=""><i class="sticker"><img src="public/img/svg/ca-3.svg" alt=""></i><span>5週年結婚紀念日</span></a>
+                                    </div>
+                                    <div class="event-inner event-personal">
+                                        <a href="">
+                                            <div class="profile-avator-xxs " data-tooltip="小寶"></div>
+                                            <i class="sticker"><img src="public/img/svg/ca-4.svg" alt=""></i><span>預產期</span>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="more-events"><a>其他 2 項</a></div>
                             </div>
@@ -394,9 +413,19 @@
                                     <span class="greg">4</span><span>十八</span>
                                 </div>
                                 <div class="cal-events">
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
-                                    <div class="event-inner"><a href=""><span>繳電費</span></a></div>
+                                    <div class="event-inner event-personal event-ms" title="里程碑">
+                                        <a href="">
+                                            <div class="profile-avator-xxs" data-tooltip="大寶"><img src="http://lorempixel.com/80/80/people" alt=""></div>
+                                            <div class="profile-avator-xxs " data-tooltip="小寶"></div>
+                                            <span>第一次上學</span>
+                                        </a>
+                                    </div>
+                                    <div class="event-inner event-personal flex-h event-blog" title="網誌">
+                                        <a href=""><span>分享寳寳呱呱落地那一刻的感動</span></a>
+                                    </div>
+                                    <div class="event-inner event-personal flex-h event-feed" title="貼文">
+                                        <a href=""><span>2篇貼文</span></a>
+                                    </div>
                                     <div class="event-inner"><a href=""><span>繳電費</span></a></div>
                                 </div>
                                 <div class="more-events"><a>其他 2 項</a></div>
@@ -818,6 +847,35 @@
             </div>
         </div>
     </div>
+    <!--無編輯行事曆modal-->
+    <div class="modal favorit-list fade" id="personal-calendarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">行事曆</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="fix-cal flex-h">
+                        <i class="sticker"><img src="public/img/svg/ca-1.svg" alt=""></i>
+                        <div class="flex-1">白喉、百日咳、破傷風混合疫苗第三劑</div>
+                    </div>
+                    <div class="fix-cal flex-h">
+                        <i class="icon-zface self-center"></i>
+                        <div class="flex-1">
+                            <div class="profile-avator-xs" data-tooltip="大寶"><a href="bbh-mybaby.html" title="大寶大寶6歲"><img src="http://lorempixel.com/80/80/people" alt=""></a></div>
+                            <div class="profile-avator-xs" data-tooltip="二寶"><a href="bbh-mybaby.html" title="二寶二寶3歲"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fix-cal flex-h">
+                        <i class="icon-calendar-line"></i>
+                        <div class="flex-1">2018-1-10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--行事曆modal-->
     <div class="modal favorit-list fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -916,7 +974,7 @@
         }
     });
     $(".cal-day .more-events a").click(function() {
-        $(this).parents(".cal-day").append('<div class="day-detail"><div class="cal-date"><span class="greg">1</span><span>十五</span></div><div class="cal-events"><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div></div></div>');
+        $(this).parents(".cal-day").append('<div class="day-detail"><div class="cal-date"><span class="greg">1</span><span>十五</span></div><div class="cal-events"><div class="event-inner event-personal"><a href=""><div class="profile-avator-xxs" data-tooltip="大寶"><img src="http://lorempixel.com/80/80/people" alt=""></div><div class="profile-avator-xxs " data-tooltip="小寶"></div><i class="sticker"><img src="public/img/svg/ca-1.svg" alt=""></i><span class="reduce">白喉、百日咳、破傷風混合疫苗第三劑</span></a></div><div class="event-inner event-personal"><a href=""><div class="profile-avator-xxs " data-tooltip="小寶"></div><i class="sticker"><img src="public/img/svg/ca-2.svg" alt=""></i><span>2歲生日</span></a></div><div class="event-inner event-personal"><a href=""><i class="sticker"><img src="public/img/svg/ca-3.svg" alt=""></i><span>5週年結婚紀念日</span></a></div><div class="event-inner event-personal"><a href=""><div class="profile-avator-xxs " data-tooltip="小寶"></div><i class="sticker"><img src="public/img/svg/ca-4.svg" alt=""></i><span>預產期</span></a></div><div class="event-inner event-personal event-ms" title="里程碑"><a href=""><div class="profile-avator-xxs" data-tooltip="大寶"><img src="http://lorempixel.com/80/80/people" alt=""></div><div class="profile-avator-xxs " data-tooltip="小寶"></div><span>第一次上學</span></a></div><div class="event-inner event-personal flex-h event-blog" title="網誌"><a href=""><span>分享寳寳呱呱落地那一刻的感動</span></a></div><div class="event-inner event-personal flex-h event-feed" title="貼文"><a href=""><span>2篇貼文</span></a></div><div class="event-inner"><a href="" data-toggle="modal" data-target="#editecalendarModal"><span>繳電費</span></a></div></div></div>');
     });
     $("html").mouseup(function(e) {
         var subject = $(".day-detail");

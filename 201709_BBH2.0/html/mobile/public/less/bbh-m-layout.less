@@ -129,9 +129,19 @@ select {
     -webkit-align-self: flex-start;
 }
 
+.self-center {
+    align-self: center;
+    -webkit-align-self: center;
+}
+
 .flex-between {
     justify-content: space-between;
     -webkit-justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1 1 0;
+    -webkit-flex: 1 1 0;
 }
 
 .padding-in10 {
@@ -208,6 +218,8 @@ select {
 
 
 
+
+
 /*
 .container {
     padding-left: 0;
@@ -244,6 +256,8 @@ body {
 .list-heading {
     margin-top: 0; //font-size: @font-size-h2;
 }
+
+
 
 
 
@@ -521,6 +535,8 @@ body {
 
 
 
+
+
 /*login*/
 
 .card-inner {
@@ -740,6 +756,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -1108,6 +1126,8 @@ body {
 
 
 
+
+
 /*@media (max-width: 1335px) {
     .cover-holder {
         img {
@@ -1290,6 +1310,8 @@ body {
 
 
 
+
+
 /*
 .cover-nav-inner {
     .cover-nav-holder {
@@ -1331,6 +1353,9 @@ body {
     right: 0;
     word-wrap: break-word;
     word-break: break-word;
+    &.flex-v {
+        z-index: 1000;
+    }
 }
 
 .content-heading {
@@ -1368,7 +1393,7 @@ body {
             width: 100%;
         }
     }
-    &.card-inner {
+    &.card-inner:not(.blog-input) {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
     }
@@ -1445,6 +1470,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -2165,7 +2192,7 @@ body {
             display: none;
         }
         .collapse-list {
-            max-height: 400px;
+            max-height: 100vh;
             opacity: 1;
             transition: all .25s ease-in;
         }
@@ -4224,6 +4251,8 @@ h3 {
 
 
 
+
+
 /*.modal-body {
     .input-group {
         .form-control {
@@ -4247,6 +4276,42 @@ h3 {
     }
 }*/
 
+.profile-avator-xxs {
+    width: 24px;
+    height: 24px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    background: @BBH-pink;
+    color: white;
+    position: relative;
+    &:before {
+        content: attr(data-tooltip);
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        display: block;
+    }
+    img {
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.sticker {
+    display: inline-block;
+    vertical-align: bottom;
+    img {
+        display: block;
+    }
+}
+
+
+
 .cal-list {
     //border-top: 1px solid @bbh-body-bg;
     .cal-events {
@@ -4266,24 +4331,30 @@ h3 {
         }
         .event-inner {
             border-bottom: 1px solid @seperate-line-light;
+            position: relative;
             &:last-of-type {
                 border-bottom: 0;
             }
             .flex-h();
             >a {
-                display: block;
+                .flex-h();
                 flex: 1 1 0;
                 -webkit-flex: 1 1 0;
                 .reduce();
+                >span {
+                    .reduce();
+                }
             }
-            &:before {
-                content: "";
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                background: @BBH-pink;
-                border-radius: 100%;
-                margin-right: @padding-base/2;
+            &:not(.event-personal) {
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    background: @BBH-pink;
+                    border-radius: 100%;
+                    margin-right: @padding-base/2;
+                }
             }
             &.event-notice {
                 color: @BBH-yellow;
@@ -4302,6 +4373,54 @@ h3 {
                 &:before {
                     background: #53c89a;
                 }
+            }
+            &.event-personal {
+                /*>* {
+                    margin-right: @padding-base/2;
+                }*/
+                .reduce {
+                    flex: 1 1 0;
+                    -webkit-flex: 1 1 0;
+                }
+                .profile-avator-xxs {
+                    margin-right: @padding-base/2;
+                }
+            }
+            &.event-ms,
+            &.event-blog,
+            &.event-feed {
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 12px 12px 0 0;
+                    //border-color: #007bff transparent transparent transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                }
+            }
+            &.event-ms {
+                &:before {
+                    border-color: @brand-danger transparent transparent transparent;
+                }
+            }
+            &.event-blog {
+                &:before {
+                    border-color: @BBH-info transparent transparent transparent;
+                }
+            }
+            &.event-feed {
+                &:before {
+                    border-color: @BBH-pink transparent transparent transparent;
+                }
+            }
+            .sticker {
+                width: 1.5em;
+                height: 1.5em;
+                margin-right: @padding-base/2;
             }
         }
         &.empty {
@@ -4347,6 +4466,54 @@ h3 {
     }
 }
 
+.fix-cal {
+    .sticker {
+        width: 24px;
+    }
+    .flex-1 {
+        margin-left: @padding-base*2;
+    }
+    &.flex-h {
+        align-items: start;
+        -webkit-align-items: start;
+    }
+    &+.fix-cal {
+        margin-top: @padding-base*2;
+    }
+    [class*='icon-'],
+    [class^='icon-'] {
+        font-size: 26px;
+        opacity: .7;
+    }
+    [class*='profile-avator-'],
+    [class^='profile-avator-'] {
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+        background: @BBH-pink;
+        color: white;
+        position: relative;
+        &:before {
+            content: attr(data-tooltip);
+            position: absolute;
+            width: 1em;
+            height: 1em;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+            display: block;
+        }
+        img {
+            position: relative;
+            z-index: 5;
+        }
+    }
+}
+
+.personal-inner {
+    font-size: 1.2em;
+}
 
 
 
@@ -5264,7 +5431,7 @@ h3 {
 
     .card-span {
         &.card-calendar {
-            padding-top: 302px;
+            //padding-top: 302px;
         }
     }
 
