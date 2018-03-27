@@ -5142,6 +5142,34 @@ body {
     }
 }
 
+.eulaModal {
+    .modal-content {
+        overflow: hidden;
+    }
+    .modal-body {
+        padding-bottom: @padding-base*1.5;
+    }
+    .eula-content {
+        min-height: 40vh;
+        max-height: 60vh;
+        overflow-y: auto;
+        margin: 0 -@padding-base*1.5;
+        padding: 0 @padding-base*1.5;
+        border-top: 1px solid @seperate-line-light;
+        border-bottom: 1px solid @seperate-line-light;
+    }
+    .custum-box {
+        margin-bottom: 0;
+        font-size: @font-size-base;
+        .just-fix {
+            display: inline-block;
+            position: relative;
+            top: -@padding-base/2;
+        }
+    }
+}
+
+
 
 //intro
 .intro-list {
