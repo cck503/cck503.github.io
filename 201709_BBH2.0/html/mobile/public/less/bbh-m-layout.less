@@ -105,6 +105,10 @@ select {
     margin-top: ceil((@padding-base * 2));
 }
 
+.mrb-10 {
+    margin-bottom: @padding-base;
+}
+
 .mrb-20 {
     margin-bottom: ceil((@padding-base * 2));
 }
@@ -1373,6 +1377,7 @@ body {
 .content-heading {
     height: 58px; //justify-content: space-between;
     font-size: @font-size-h4;
+    box-shadow: rgba(0,0,0,.1) 0 0 8px;
     .backward {
         .btn {
             font-size: @font-size-h2;
@@ -1390,6 +1395,12 @@ body {
         padding-left: 12px;
         min-width: auto;
         margin-right: 10px;
+    }
+    [class^="icon-"], 
+    [class*=" icon-"] {
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
     }
 }
 
@@ -3451,6 +3462,13 @@ h3 {
     .link-description {
         width: 100%;
     }
+    .card-heading {
+        font-size: @font-size-xs;
+        .profile-avator-xs {
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
 
 
@@ -4544,6 +4562,13 @@ h3 {
     &.store-list {
         padding-top: 0;
         padding-bottom: @padding-base/2;
+        .card-heading {
+            padding-top: @padding-base/2;
+            padding-bottom: @padding-base/2;
+        }
+        .card-body {
+            margin-top: 0;
+        }
         .body-inner {
             position: relative;
             .img-holder {
@@ -5175,6 +5200,9 @@ h3 {
 .foot-holder {
     margin: @padding-base 0;
 }
+
+
+
 
 
 
