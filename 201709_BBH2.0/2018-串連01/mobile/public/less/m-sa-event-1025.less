@@ -1,0 +1,69 @@
+.sp-sa-banner {
+    bottom: -120px;
+    -webkit-transition: bottom .35s ease;
+    -moz-transition: bottom .35s ease;
+    -ms-transition: bottom .35s ease;
+    -o-transition: bottom .35s ease;
+    transition: bottom .35s ease;
+     &.min-height {
+        bottom: -150px;
+    }
+    &.affix {
+        background: rgba(0, 0, 0, .6);
+        //height: 88px;
+        z-index: 500;
+        width: 100%;
+        &.max-height {
+            bottom: 0;
+            /*.banner-link {
+                top: -10px;
+            }
+            .trigger {
+                background-position: 0 0;
+            }*/
+        }
+    }
+    .sp-banner-inner {
+        //width: 320px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .trigger {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        //background: url("../img/m-mkt-sp-event.png") 0 -70px no-repeat;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        -webkit-transition: left .35s ease;
+        -moz-transition: left .35s ease;
+        -ms-transition: left .35s ease;
+        -o-transition: left .35s ease;
+        transition: left .35s ease;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .banner-link {
+        display: block;
+        margin-right: 30px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        /*position: absolute;
+        left: 70px;
+        top: 30px;
+        width: 205px;
+        height: 90px;
+        -webkit-transition: top .25s ease;
+        -moz-transition: top .25s ease;
+        -ms-transition: top .25s ease;
+        -o-transition: top .25s ease;
+        transition: top .25s ease;*/
+    }
+}
