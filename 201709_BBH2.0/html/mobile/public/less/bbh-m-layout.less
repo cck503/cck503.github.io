@@ -3412,11 +3412,52 @@ h3 {
 .content-heading {
     &.height-a {
         height: auto;
-        
+        .heading-inner {
+            line-height: 58px;
+        }
+        .title-heading {
+            background: white;
+            padding: @padding-base @padding-base 0;
+            .form-control {
+                border-width: 0;
+                color: #3b3b3b;
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        .post-title {
+            border-bottom: 1px solid @seperate-line-light;
+            font-size: 2.7rem;
+        }
     }
+    /*
     .heading-inner {
         height: 58px;
     }
+    */
+}
+
+.drop-modal {
+    .post-date {
+        margin-bottom: @padding-base*2;
+        .form-control {
+                border-width: 0;
+                color: #3b3b3b;
+                padding-right: 0;
+                padding-left: 0
+        }
+    }
+    .folder-span {
+        padding: 10px 0;
+        + .folder-span {
+            border-top: 1px solid #f0f0f0;
+        }
+    }
+}
+
+.text-label {
+    margin-bottom: 0;
+    font-weight: bold; 
 }
 
 

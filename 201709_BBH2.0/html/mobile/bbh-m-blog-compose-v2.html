@@ -30,23 +30,16 @@
         <div class="content-container flex-v">
             <form name="modify_note" id="modify_note">
                 <div class="content-heading height-a">
-                    <div class="flex-h heading-inner">
+                    <div class="flex-h ">
                         <button class="btn btn-link link-blue">刪除</button>
                         <div class="heading-inner">新增網誌</div>
                         <div class="compose-btn">
-                            <button class="btn btn-key-line">草稿</button>
-                            <button class="btn btn-key">發表</button>
+                            <button class="btn btn-key-line">草稿</button><a class="btn btn-key" data-toggle="modal" data-target="#next-modal">下一步</a>
                         </div>
                     </div>
                     <div class="title-heading">
                         <div class="post-title">
                             <input type="text" class="form-control" placeholder="文章標題">
-                        </div>
-                        <div class="post-date flex-h">
-                            <a href="" data-toggle="modal" data-target="#datetimepicker-modal" class="picker"><i class="icon-calendar-line"></i></a>
-                            <div class='input-group date'>
-                                <input type='text' for='datetimepicker1' class="form-control" placeholder="11/20/2017 3:12 PM" />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,9 +81,6 @@
                         <div class="tag-kids"><span>二寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
                         <div class="tag-kids"><span>大寶</span><a href="" class="icon-close"><i class="icon-close-full"></i></a></div>
                     </div>
-                    <div class="folder-span">
-                        文章分類：<a href="" data-toggle="modal" data-target="#folder-modal">未分類(1)</a>
-                    </div>
                     <div class="card-footer">
                         <div class="respond-span flex-h">
                             <div class="dropdown respond-drop">
@@ -124,6 +114,31 @@
         </div>
     </div>
     <!-- Modal -->
+    <div class="modal drop-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="next-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="text-label">文章發表時間</p>
+                    <div class="post-date flex-h">
+                        <a href="" data-toggle="modal" data-target="#datetimepicker-modal" class="picker"><i class="icon-calendar-line"></i></a>
+                        <div class='input-group date'>
+                            <input type='text' for='datetimepicker1' class="form-control" placeholder="11/20/2017 3:12 PM" />
+                        </div>
+                    </div>
+                    <p class="text-label">文章分類</p>
+                    <div class="folder-span">
+                        站方分類：<a href="" data-toggle="modal" data-target="#folder-modal">選擇分類</a>
+                    </div>
+                    <div class="folder-span">
+                        文章分類：<a href="" data-toggle="modal" data-target="#folder-modal">未分類(1)</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-block btn-key">發表</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal drop-modal fade datetimepicker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="datetimepicker-modal">
         <div class="modal-dialog">
             <div class="modal-content">
