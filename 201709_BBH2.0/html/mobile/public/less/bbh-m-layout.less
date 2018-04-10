@@ -4664,12 +4664,32 @@ h3 {
                 }
             }
         }
+        &.stock-0 {
+            &:before {
+                content: "無庫存";
+                position: absolute;
+                color: white;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 10;
+                width: 6em;
+                height: 1.46em;
+                text-align: center;
+                font-size: @font-size-h3;
+            }
+            .pd-link-btn {
+                background: rgba(0, 0, 0, .35);
+            }
+        }
         .pd-link-btn {
             position: absolute;
-            left: 0;
-            right: 0;
+            left: -@padding-base;
+            right: -@padding-base;
             top: 0;
-            bottom: 0;
+            bottom: -@padding-base/2;
             margin: auto;
             z-index: 5;
         }
