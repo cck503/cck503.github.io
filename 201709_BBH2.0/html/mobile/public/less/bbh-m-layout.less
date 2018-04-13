@@ -4754,7 +4754,36 @@ h3 {
             }
         }
     }
+
 }
+
+.pd-condition {
+    .label {
+        padding: .3em .6em .3em 1.2em;
+        border: 1px solid #eee;
+        //border-left-width: 3px;
+        //border-left-color: #f0ad4e;
+        border-radius: 8px 0 0 8px;
+        color: @gray-dark;
+        font-weight: normal;
+        position: relative;
+        &:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid #f0ad4e;
+            z-index: 2;
+            left: 3px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+}
+
 
 .pd-img {
     .aspect1-1();
