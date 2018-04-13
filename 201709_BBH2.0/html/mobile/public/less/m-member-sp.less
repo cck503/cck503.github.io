@@ -1,46 +1,56 @@
 .member-sp {
-	width: 1000px;
-    margin: 20px auto;
-    background: #f3d792 url("../img/sp-bottom.png") 0 bottom no-repeat;
+	//width: 1000px;
+    //margin: 20px auto;
+    background: #f3d792;
+    background-size: contain;
     color: #000;
     font-size: 18px;
+    //min-height: 100vh;
     .sp-inner {
-    	height: 1700px;
     	background: url("../img/sp-top.png") 0 top no-repeat;
-    	padding: 117px 30px 0;
+    	background-size: contain; 
+    	padding: 40px 5px 20px;
     	position: relative;
     }
-    .inner-top {
-    	border-radius: 30px;
+    .inner-top,
+    .inner-btm {
+    	//border-radius: 30px;
     	background: white;
-    	padding: 40px;
+    	padding: 20px 10px;
     }
 }
 .inner-top {
 	.lead {
-		width: 570px;
-		height: 78px;
-		margin: 0 auto;
+		//width: 570px;
+		//height: 78px;
+		padding-top: 13.68%;
+		margin: 0 0 20px;
 		background: url("../img/sp-title.png") 0 0 no-repeat;
+		background-size: contain; 
 	}
 	.sub-lead {
-		padding: 35px 45px;
+		//padding: 35px 45px;
+	}
+	.panel-info {
+		padding: 10px;
+		//margin: 30px -20px 0;
+		font-size: 16px;
 	}
 	.btn-group {
 		&.flex-h {
 			flex-wrap: wrap;
 			-webkit-flex-wrap: wrap;
-			justify-content: center;
-			-webkit-justify-content: center;
-			margin-bottom: 40px;
+			justify-content: space-around;
+			-webkit-justify-content: space-around;
+			margin-bottom: 20px;
 		}
 		>.btn {
-			border-radius: 0;
-			width: 220px;
-			padding-top: 241px;
+			width: 40%;
+			padding-top: 40%;
+			position: relative;
 			border: 1px solid transparent;
-			margin: 0 30px 20px;
-			font-size: 18px;
+			margin: 0 0 10px;
+			font-size: 14px;
 			transition: all .3s ease-in;
 			border-radius: 6px !important;
 			&.active {
@@ -50,21 +60,33 @@
 			&:active {
 				box-shadow: none;
 			}
+			span {
+				position: absolute;
+				top: 105%;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
 		}
 		.btn-01 {
 			background: url("../img/sp-avator-01.png") 0 0 no-repeat;
+			background-size: contain;
 		}
 		.btn-02 {
 			background: url("../img/sp-avator-02.png") 0 0 no-repeat;
+			background-size: contain;
 		}
 		.btn-03 {
 			background: url("../img/sp-avator-03.png") 0 0 no-repeat;
+			background-size: contain;
 		}
 		.btn-04 {
 			background: url("../img/sp-avator-04.png") 0 0 no-repeat;
+			background-size: contain;
 		}
 		.btn-05 {
 			background: url("../img/sp-avator-05.png") 0 0 no-repeat;
+			background-size: contain;
 		}
 	}
 	.btn-send {
@@ -75,14 +97,10 @@
 	}
 }
 .inner-btm {
-	width: 397px;
-	height: 191px;
-	position: absolute;
-	left: 474px;
-	top: 1335px;
+	margin-top: 10px;
 	.h3 {
 		margin-top: 0;
 		color: #e84f96;
-		font-size: 36px;
+		font-size: 24px;
 	}
 }
