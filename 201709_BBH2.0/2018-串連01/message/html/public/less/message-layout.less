@@ -73,8 +73,7 @@
 //chat-list
 .chat-list {
     flex: 0 0 33.3333333%;
-    max-width: 333px;
-    //border-right: 1px solid #ddd;
+    max-width: 333px; //border-right: 1px solid #ddd;
     overflow: hidden;
     .list-heading {
         height: 50px;
@@ -218,12 +217,14 @@
         left: 45px;
     }
 }
+
 .heading-inner {
     .user-status {
         font-size: @font-size-base;
         margin-left: 3px;
     }
 }
+
 .user-status {
     display: inline-block;
     width: 16px;
@@ -237,9 +238,9 @@
         background: #228b22;
     }
 }
+
 .ion-ios-bolt {
     color: #fff;
-    
 }
 
 
@@ -613,15 +614,23 @@
                 opacity: 1;
             }
         }
+        &.mamimart-bn {
+            padding-top: 20.3%;
+            background: url("../img/mamimart-bn.png") 0 bottom no-repeat #bce2ea;
+            background-size: contain;
+            .btn-link {
+                height: 2.5em;
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                padding-left: 27%;
+                padding-right: 4%;
+                color: #000444;
+            }
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
