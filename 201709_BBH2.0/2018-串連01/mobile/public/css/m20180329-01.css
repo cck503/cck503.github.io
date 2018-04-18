@@ -84,3 +84,29 @@
     margin: 0;
     font-size: .9em;
 }
+
+
+.threads_group .list-group-item.flex-h {
+    align-items: start;
+    -webkit-align-items: start;
+}
+.threads_group .list-group-item.flex-h .author-info {
+    flex: 1 1 0;
+}
+
+.threads_group .list-group-item .list-group-item-heading {
+    word-break: break-all;
+}
+
+.threads_group .list-group .badge-alt {
+    float: right;
+    text-align: right;
+}
+.threads_group .list-group .badge-alt .badge {
+    display: block;
+}
+.threads_group .list-group .badge-alt .mart-icon {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+}
