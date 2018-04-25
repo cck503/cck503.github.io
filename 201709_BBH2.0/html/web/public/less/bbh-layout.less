@@ -1038,7 +1038,7 @@ body {
             }
         }
         .txt-holder {
-            height: 4.8em;
+            height: 4.3em;
             overflow: hidden;
         }
     }
@@ -1772,7 +1772,7 @@ body {
         }
     }
     .shorten {
-        max-height: 7.2em;
+        max-height: 6.7em;
         overflow: hidden;
     }
     .show-more {
@@ -2404,6 +2404,8 @@ body {
     display: block;
     select {
         -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     .form-control {
         padding-right: 24px;
@@ -2711,11 +2713,11 @@ body {
     }
     .txt-holder {
         .shorten {
-            height: 4.2em;
+            height: 3.9em;
             overflow: hidden;
         }
         &.shorten {
-            max-height: 4.6em;
+            max-height: 3.9em;
             overflow: hidden;
         }
     }
@@ -4830,6 +4832,10 @@ body {
                 }
             }
         }
+        .detail-span {
+            height: 295px;
+            overflow-y: auto;
+        }
     }
     .card-footer {
         background: white;
@@ -5014,8 +5020,10 @@ body {
             opacity: .7;
             border-radius: 0;
             border: 0;
+            margin: 0;
             width: 15%;
             height: auto;
+            min-height: 72px;
             position: relative;
             &.active {
                 border: 0;
@@ -5125,7 +5133,9 @@ body {
 
 .order-item,
 .item-detail {
-    align-items: start;
+    &.flex-h {
+        align-items: start;
+    }
 }
 
 .order-item {
@@ -5314,6 +5324,10 @@ body {
         padding: 0 @padding-base*1.5;
         border-top: 1px solid @seperate-line-light;
         border-bottom: 1px solid @seperate-line-light;
+        font-size: @font-size-base;
+    }
+    .statment-list>li {
+        margin-bottom: 1em;
     }
     .custum-box {
         margin-bottom: 0;
@@ -5323,6 +5337,13 @@ body {
             position: relative;
             top: -@padding-base/2;
         }
+    }
+    [class*='bg-'],
+    [class^='bg-'] {
+        padding: @padding-base/4 @padding-base/2;
+    }
+    .danger {
+        color: #ce4844;
     }
 }
 

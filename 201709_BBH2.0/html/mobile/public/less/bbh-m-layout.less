@@ -3439,6 +3439,9 @@ h3 {
 }
 
 .drop-modal {
+    .privacy-tag {
+        padding: @padding-base 0 @padding-base*2;
+    }
     .post-date {
         margin-bottom: @padding-base*2;
         .form-control {
@@ -3452,6 +3455,23 @@ h3 {
         padding: 10px 0;
         + .folder-span {
             border-top: 1px solid #f0f0f0;
+        }
+    }
+}
+
+
+
+
+
+.drop-modal {
+    &.full-height {
+        .modal-dialog {
+            top: 0;
+        }
+        .dropdown-fake{
+             height: 100vh;
+             max-height: 100vh;
+             margin: 0;
         }
     }
 }
@@ -3480,6 +3500,10 @@ h3 {
         }
     }
 }
+
+
+
+
 
 .masonry-column {
     padding: @padding-base;
@@ -5203,7 +5227,9 @@ h3 {
 
 .order-item,
 .item-detail {
-    align-items: start;
+    &.flex-h {
+        align-items: start;
+    }
 }
 
 .order-item {
@@ -5308,6 +5334,20 @@ h3 {
 .eula-content {
     border-bottom: 1px solid @seperate-line;
     margin-bottom: @padding-base; 
+    ul[class*='list-'],
+    ul[class^='list-'] {
+        margin-bottom: @padding-base;
+    }
+    [class*='bg-'],
+    [class^='bg-'] {
+        padding: @padding-base/4 @padding-base/2;
+    }
+    .danger {
+        color: #ce4844;
+    }
+    .statment-list>li {
+        margin-bottom: 1em;
+    }
 }
 .custum-box {
     .just-fix {
