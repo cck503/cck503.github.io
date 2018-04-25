@@ -5331,6 +5331,23 @@ h3 {
 }
 
 
+.additional {
+    font-size: @font-size-small;
+    .custum-box {
+        margin: 2px 0 0;
+        padding-left: 0;
+    }
+    .lw-key {
+        opacity: .8;
+    }
+}
+
+.checkbox [type="checkbox"]:not(:checked)+label:before {
+    border-color: #a94442;
+    border-width: 1px;
+}
+
+
 .eula-content {
     border-bottom: 1px solid @seperate-line;
     margin-bottom: @padding-base; 
