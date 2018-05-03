@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome</title>
+    <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link id="theme" href="public/css/non-responsive.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-header-footer.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-main.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="head-universal">
+        <nav class="navbar navbar-default navbar-fixed-top nav-down">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand bbh-logo-new" href="bbh-index.html"><img src="public/img/bbh-logo-new.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="bbh-forum"><a href="#">討論</a></li>
+                        <li class="bbh-info"><a href="#">新知</a></li>
+                        <!--
+                        <li class="bbh-mama"><a href="#">媽媽力</a></li>
+                        -->
+                        <li class="bbh-shop"><a href="#">購物</a></li>
+                        <li class="bbh-group"><a href="#">家族</a></li>
+                        <li class="bbh-events"><a href="bbh-events.html">活動</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
+                        <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                        <li class="avator hidden">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html">
+                                    <i class="icon-avator-full"></i><span class="sr-only">未登入</span>
+                                 </a>
+                            </div>
+                        </li>
+                        <li class="avator">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""><span class="sr-only">Hi~ 小寶真是可愛</span></a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle nav-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i><span class="sr-only">更多</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">頻道之功能</a></li>
+                                <li><a href="#">頻道之功能</a></li>
+                                <li><a href="#">頻道之功能</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">管理中心</a></li>
+                                <li><a href="#">登出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container bbh-main-container">
+        <div class="row">
+            <div class="col-xs-8 col-center">
+                <div class="card-span statment">
+                    <div class="eula-content">
+                        <ul class="statment-list">
+                            <li>
+                                <p class="h4">BabyHome小鋪服務條款與注意事項</p>
+                                <p class="alert alert-info">歡迎使用BabyHome小鋪服務。為保障您的權益，在使用BabyHome小鋪服務前，請先詳細閱讀所有內容，當您使用小鋪服務時，即表示您已閱讀、瞭解並同意接受本服務條款之所有內容。</p>
+                            </li>
+                            <li>
+                                <p class="bg-warning">會員在使用小鋪功能服務、進行買賣交易前，請先閱讀相關的使用規範與注意事項！</p>
+                                <ul class="list-ideographic">
+                                    <li>
+                                        <p>買方與賣方需提供正確、最新及完整的資料。</p>
+                                    </li>
+                                    <li>
+                                        <p>買方與賣方必須了解並遵守中華民國相關法律規定。</p>
+                                    </li>
+                                    <li>
+                                        <p>買方與賣方需完成手機認證才能開始於BabyHome平台進行買賣行為。</p>
+                                    </li>
+                                    <li>
+                                        <p>商品頁面中的訊息功能提供買賣雙方詢問交流使用，買方與賣方請留意自身權益與買賣安全，若有任何交易糾紛，需由買方與賣方自行協調處理，BabyHome不負擔任何交易上的責任。</p>
+                                    </li>
+                                    <li>
+                                        <p>賣方應避免錯誤的刊登行為。(如在商品名稱中使用與商品本身無關的品牌或關鍵字，誤導會員搜尋、使用與該商品無直接關係的圖片等內容)。</p>
+                                    </li>
+                                    <li>
+                                        <p>買方與賣方必須了解並遵守法律明文規定禁止於網路銷售的商品，以免觸法。</p>
+                                        <p class="bg-warning">法律明文規定禁止於網路銷售的商品如下：</p>
+                                        <p><strong>◎侵害他人著作權、商標、專利等權利之侵權物品</strong></p>
+                                        <p>相關資訊請參考：<a href="http://www.must.org.tw/" class="link-blue" target="_blank">社團法人中華音樂著作權仲介協會</a>、<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=J0070017" class="link-blue" target="_blank">著作權法</a>、<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=J0070001" class="link-blue" target="_blank">商標法</a>、<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=J0070007" class="link-blue" target="_blank">專利法</a></p>
+                                        <ul class="list-decimal">
+                                            <li>盜版軟體、CD、VCD、DVD及其他出版品。</li>
+                                            <li>仿冒品，如仿冒的名牌皮包、衣服等。</li>
+                                            <li>未經授權，使用他人著作、商標與專利之物品。</li>
+                                            <li>逾越授權範圍之物品。</li>
+                                            <li>未經著作財產權人同意而輸入之軟體、CD、VCD、DVD、書籍或其他出版品。</li>
+                                        </ul>
+                                        <p><strong>◎藥品</strong></p>
+                                        <p>相關資訊請參考：<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=L0030001" class="link-blue" target="_blank">藥事法</a>、<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=O0060001" class="link-blue" target="_blank">環境用藥管理法第46條、第48條</a></p>
+                                        <ul class="list-decimal">
+                                            <li>商品包裝上有標示我國藥品許可證字號(如：衛署藥製字第ooo號)，即為藥品。
+                                                <li>包括成藥、指示用藥、處方用藥、管制藥品、動物用藥、或其他任何形式的藥品，如威而剛、RU486、人工淚液、維骨力、善存、眼藥水、落建生髮水、表飛鳴、四物湯、人參、當歸...等。</li>
+                                                <li>未申請衛生署輸入核准，依衛生署藥事法規定，甚至可被認定為禁藥，將受重罰。</li>
+                                                <li>須經醫師處方才能購買的藥品。</li>
+                                                <li>一般成藥及指示用藥。</li>
+                                        </ul>
+                                        <p><strong>◎醫療器材</strong></p>
+                                        <p>相關資訊請參考：<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=L0030001" class="link-blue" target="_blank">藥事法</a></p>
+                                        <p>依衛生署規定，醫療器材不能直接在網路上銷售；醫療器材是指可以診斷、治療、減輕或直接預防人類疾病，或足以影響人類身體結構及機能之儀器、器械、用具及其附件、配件、零件，例如：血壓計、耳溫槍、體溫計、保險套、電療器、低周波治療器、噴霧治療器、採血針、紅外線保健燈、驗孕試紙、排卵測定器、驗孕試劑、生理週期測溫、拐杖、輪椅、K繃、美皮豐疤痕、痠痛貼布...等。（詳細限制品項，請至 衛生署 查詢）</p>
+                                        <p><strong>◎食品</strong></p>
+                                        <ul class="list-alpha">
+                                            <li>
+                                                <p>健康食品管理法：</p>
+                                                <p>除非經核准認定具有【調節血脂】、【調整胃腸】、【調整免疫機能】、【改善骨質疏 鬆】、【牙齒保健】、【調整血糖】、【護肝(化學性肝傷害)】、【延緩老化】或 【抗 疲勞】等，食品廣告或標示不得宣稱具有以上保健功效。</p>
+                                            </li>
+                                            <li>
+                                                <p>食品衛生管理法：</p>
+                                                <ul class="list-decimal">
+                                                    <li>除了不能宣稱以上的保健功效外，依食品衛生管理法規定，食品廣告或標示內容也不得有涉及醫藥效能的詞句，或涉及虛偽不實、誇張的詞句。</li>
+                                                    <li>部分特定食品必須向衛生署申請查驗登記並取得許可後才可以輸入。</li>
+                                                    <li>健康食品外包裝上，應有(一)健康食品標章(二)健康食品字樣以及許可證號碼。(如：衛署健食字第000000號)等標示。）</li>
+                                                    <li>食品之包裝或容器上，應以中文及通用符號顯著標示內容物品名及重量、容量、數量、廠商名稱、電話號碼、地址及有效日期等。</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <p><strong>◎眼鏡</strong></p>
+                                        <p>相關資訊請參考：<a href="http://www.kingnet.com.tw/" class="link-blue" target="_blank">KingNet國家網路醫院</a>、<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=L0030001" class="link-blue" target="_blank">藥事法</a></p>
+                                        <p>必須經過專業人員診斷處方，才能使用之眼鏡，屬於禁止銷售的範圍（不可含有度數鏡片）的權利。</p>
+                                        <p><strong>◎其他</strong></p>
+                                        <ul class="list-decimal">
+                                            <li>菸、酒製品(相關法規刑責：菸害防制法、菸酒管理法)</li>
+                                            <li>色情或暴力出版品(相關法規刑責：中華民國刑法、兒童及少年性交易防制條例)</li>
+                                            <li>毒品、相關產製品及吸毒用品(相關法規刑責：毒品危害防制條例)</li>
+                                            <li>彩券(相關法規刑責：公益彩券發行條例、公益彩券管理辦法)</li>
+                                            <li>警械品(相關法規刑責：警械使用條例)</li>
+                                            <li>贓物、他人物品(相關法規刑責：刑法第三四九條、民法第九百四十九條、第九百五十條、第九百五十一條)</li>
+                                            <li>權利車</li>
+                                            <li>台北市專用垃圾袋、專用垃圾袋§抵價券(相關法規刑責：<a href="https://www.laws.taipei.gov.tw/lawsystem/" class="link-blue" target="_blank">臺北市現行法規查詢系統</a>)</li>
+                                            <li>活體動物、保育類動物及產製品(相關法規刑責：<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=M0120001" class="link-blue" target="_blank">野生動物保育法第40條</a>)</li>
+                                            <li>化粧品衛生管理條例：自製販售手工香皂恐違法需受罰。(相關法規刑責：<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=L0030013" class="link-blue" target="_blank">化粧品衛生管理條例</a>)</li>
+                                            <li>一歲以下的嬰兒配方食品奶粉，不得廣告促銷。</li>
+                                            <li>爆竹煙火(相關法規刑責：<a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=D0120005" class="link-blue" target="_blank">爆竹煙火管理條例第2條、第25條</a>)</li>
+                                            <li>報稅憑證，任何可用來逃稅的憑證都不可以出售，範例：統一發票、回數票收據、捐贈收據。(相關法規刑責：<a href="https://www.etax.nat.gov.tw/etwmain/web/ETW118W/VIEW/489" class="link-blue" target="_blank">稅捐稽徵法</a>)</li>
+                                            <li>人體器官。(相關法規刑責：<a href="http://www.organ.org.tw/JRNL/003/003007.htm" class="link-blue" target="_blank">人體器官移植條例</a>)</li>
+                                            <li>公開個人資料，行銷個人資料名單及相關彙集、發信工具。(相關法規刑責：<a href="https://www.dgbas.gov.tw/mp.asp?mp=1" class="link-blue" target="_blank">行政院主計處</a>)</li>
+                                            <li>農藥（相關法規刑毒：<a href="http://law.coa.gov.tw/GLRSnewsout/LawContentDetails.aspx?id=FL014387&KeyWordHL=%E8%BE%B2%E8%97%A5%25" class="link-blue" target="_blank">農藥管理法</a>）</li>
+                                            <li>流通貨幣、有價證券(相關法規刑責：<a href="http://www.cbc.gov.tw/content.asp?cuItem=2142" class="link-blue" target="_blank">管理外匯條例</a>、<a href="http://www.selaw.com.tw/LawContent.aspx?LawID=G0060038" class="link-blue" target="_blank">國際金融業務條例</a>）</li>
+                                        </ul>
+                                        <p>以上禁止銷售商品並不完全，可利用政府單位的官方網站查詢了解。</p>
+                                        </li>
+                                        <li>
+                                            <p>若違反BabyHome網站規範，BabyHome有權刪除並可斟酌停權該會員帳號，不另行通知。</p>
+                                        </li>
+                                </ul>
+                                <p class="danger">再次提醒您：
+                                    <br>任何會員間的交易請注意自身權益、安全，購物前請謹慎小心評估，BabyHome不負擔任何交易上的風險責任，若有任何交易紛爭，請自行協調處理。</p>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-universal">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="span-logo">
+                    <a href="" class="bbh-logo-footer"><img src="public/img/bbh-logo-gray.svg" alt="BabyHome.com.tw"><span class="sr-only">BabyHome.com.tw</span></a>
+                    <ul class="secondary-info">
+                        <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                        <li>客服時間：週一至週五 9:00 ~ 18:00</li>
+                    </ul>
+                </div>
+                <div class="span-footer">
+                    <ul>
+                        <li><a href="bbh-about.html">關於我們</a></li>
+                        <li><a href="bbh-tos.html">服務條款</a></li>
+                        <li><a href="bbh-policy.html">隱私權政策</a></li>
+                        <li><a href="">客服信箱</a></li>
+                        <li><a href="">合作提案</a></li>
+                        <li><a href="">徵才資訊</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Q&A</a></li>
+                        <li><a href="">站務服務區</a></li>
+                        <li><a href="">客服信箱</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">會員註冊</a></li>
+                        <li><a href="">會員登入</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="" class="facebook-icon"><img src="public/img/facebook-icon.svg" alt="https://www.facebook.com/babyhome/"><span class="sr-only">facebook</span></a><a href="" class="youtube-icon"><img src="public/img/youtube-icon.svg" alt="https://www.youtube.com/user/BabyHomeTV"><span class="sr-only">youtube</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <div class="input-group content-wilih search-span">
+                        <span class="input-group-btn list-select">
+                            <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
+                        </span>
+                        <input type="text" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"><span class="input-group-btn"><button class="btn btn-link" type="submit"><i class="icon-magnify-glass-line"></i></button></span> </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-history content-wilih">
+                        <ul>
+                            <li class="list-heading">熱門搜尋</li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">月子中心</a></li>
+                            <li><a href="">懷孕初期</a></li>
+                            <li><a href="">免費索取</a></li>
+                            <li><a href="">會考成績</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                        </ul>
+                        <span class="seperate-line-light"></span>
+                        <ul>
+                            <li class="list-heading">搜尋紀錄</li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">月子中心</a></li>
+                            <li><a href="">懷孕初期</a></li>
+                            <li><a href="">免費索取</a></li>
+                            <li><a href="">會考成績</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                            <li><a href="">國中會考</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/header-custom.js"></script>
+    <script src="public/js/feeds-custom.js"></script>
+    <script>
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+</body>
+
+</html>
