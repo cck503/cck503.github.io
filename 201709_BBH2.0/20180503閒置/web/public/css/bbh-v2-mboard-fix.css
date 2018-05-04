@@ -1,0 +1,4 @@
+.post-editor .alert-info .close {top:-2px;}
+.modal-alert {display: block; padding-top: 15px;}
+.modal-alert:after {content: "";display: block;background: rgba(0, 0, 0, 0.9);height: 100vh;position: absolute;z-index: 2;right: 0;left: 0;top: 0;bottom: 0;margin: auto;}
+.modal-alert .modal-dialog {z-index: 5;}
