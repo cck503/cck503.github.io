@@ -12,3 +12,13 @@ $(document)
         rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
         this.rows = minRows + rows;
     });
+
+//search
+$(document).ready(function() { 
+    $(".search-glass").click(function(){
+        $(this).toggleClass('toggle');
+    });
+    $(".search-span .form-control").on('focus blur', function() {
+        $(".search-span").toggleClass('focused');
+    }) 
+});

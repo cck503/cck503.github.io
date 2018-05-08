@@ -112,3 +112,14 @@ $(document).ready(function(){
        
 
       });
+
+
+//search
+$(document).ready(function() { 
+    $(".search-glass").click(function(){
+        $(this).toggleClass('toggle');
+    });
+    $(".search-span .form-control").on('focus blur', function() {
+        $(".search-span").toggleClass('focused');
+    }) 
+});
