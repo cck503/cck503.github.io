@@ -490,6 +490,7 @@ body {
 
 
 
+
 /*.push-note {
     >.dropdown-menu {
         >li {
@@ -1548,6 +1549,8 @@ div[class^="info-span-"] {
     .container {
         opacity: 0;
         transition: opacity ease-in .2s;
+        padding-left: 0;
+        padding-right: 0;
     }
     &.in {
         .container {
@@ -1560,7 +1563,7 @@ div[class^="info-span-"] {
         border-radius: @border-radius-base;
         transition: all ease-in .2s;
         &.focused {
-            box-shadow: rgba(0,0,0,0.3) 0 2px 5px !important;
+            box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px !important;
         }
         .list-select {
             width: 13%;
@@ -1576,7 +1579,7 @@ div[class^="info-span-"] {
                 padding-right: @font-size-h4;
             }
             option {
-                color: @gray-base;
+                color: @gray-dark;
             }
         }
         input {
@@ -1591,15 +1594,29 @@ div[class^="info-span-"] {
                     box-shadow: none;
                 }
             }
+            &:last-child {
+                .btn {
+                    border-radius: 50px; 
+                    margin-right: @padding-base/2;
+                }
+            }
+            .btn {
+                font-size: @font-size-base;
+            }
         }
         .form-control {
             background: transparent;
             border-color: transparent;
             height: auto;
+            font-size: @font-size-base;
+            color: @gray-dark;
         }
     }
     .search-history {
         margin: 0 219px @padding-base;
+        a {
+            display: inline-block;
+        }
         ul {
             list-style: none;
             padding: 0;
