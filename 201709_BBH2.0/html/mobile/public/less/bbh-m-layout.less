@@ -5688,6 +5688,60 @@ h3 {
 
 
 
+//poc
+.form-group {
+    label {
+        .required {
+            font-weight: normal;
+            color: #ed2e2e;
+            font-size: .8em;
+            padding-left: @padding-base/2;
+        }
+    }
+    &.has-error {
+        .form-control {
+            border-color: #a94442;
+            box-shadow: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.store-form {
+    .has-error {
+        .form-control {
+            border-color: #a94442;
+        }
+    }
+}
+
+.check-group {
+    .check-title {
+        font-weight: bold;
+        margin-bottom: @padding-base/2;
+        .required {
+            font-weight: normal;
+            color: #ed2e2e;
+            font-size: .8em;
+            padding-left: @padding-base/2;
+        }
+    }
+    .flex-h {
+        flex-wrap: wrap;
+    }
+    .custum-box {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: @padding-base*1.5;
+        width: 50%;
+    }
+}
+
+
+
+
 
 
 

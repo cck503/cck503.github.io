@@ -262,6 +262,8 @@ a {
 
 
 
+
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -472,6 +474,8 @@ body {
 
 
 
+
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -547,6 +551,8 @@ body {
 {
     background-color: white;
 }
+
+
 
 
 
@@ -1064,11 +1070,11 @@ body {
     }
 }
 
+
+
 /*.footer-inner {
     margin-top: -1px;
 }*/
-
-
 
 .sec-motherhood {
     .sec-heading {
@@ -1218,6 +1224,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -2835,7 +2843,7 @@ body {
         padding: 12px;
         width: 54px;
         opacity: .8;
-        z-index: 1200;
+        z-index: 900;
         transition: bottom ease-in .2s;
         i {
             margin: 0;
@@ -3276,6 +3284,8 @@ body {
 
 
 
+
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3528,6 +3538,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -4754,8 +4766,7 @@ body {
 .pd-condition {
     .label {
         padding: .3em .6em .3em 1.2em;
-        border: 1px solid #eee;
-        //border-left-width: 3px;
+        border: 1px solid #eee; //border-left-width: 3px;
         //border-left-color: #f0ad4e;
         border-radius: 8px 0 0 8px;
         color: @gray-dark;
@@ -5570,6 +5581,59 @@ body {
     }
 }
 
+
+
+
+//poc
+.form-group {
+    label {
+        .required {
+            font-weight: normal;
+            color: #ed2e2e;
+            font-size: .8em;
+            padding-left: @padding-base/2;
+        }
+    }
+    &.has-error {
+        .form-control {
+            border-color: #a94442;
+            box-shadow: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.store-form {
+    .has-error {
+        .form-control {
+            border-color: #a94442;
+        }
+    }
+}
+
+
+.check-group {
+    .check-title {
+        font-weight: bold;
+        margin-bottom: @padding-base/2;
+        .required {
+            font-weight: normal;
+            color: #ed2e2e;
+            font-size: .8em;
+            padding-left: @padding-base/2;
+        }
+    }
+    .flex-h {
+        flex-wrap: wrap;
+    }
+    .custum-box {
+        padding-left: 0;
+        margin-top: 0;
+        width: 33.3333%;
+    }
+}
 
 
 
