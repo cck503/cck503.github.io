@@ -1,0 +1,299 @@
+a.btn-url {
+    width: 30%;
+    margin-left: 70%;
+}
+.col_psurl1{
+	padding: 20px 50px;}
+.col_psurl1 p{
+	padding:5px 0;
+	font-size:18px;
+	line-height:40px;}	
+.url_text{
+	float:left;}	
+.set_url{
+	background: #fff;
+	color: #d9534f;
+	box-shadow: rgba(0,0,0,0.4) 0 1px;
+	border: 1 solid #CCC;
+	font-size: 18px;
+	float:left;
+	width:30%;
+	margin-left:5px;
+	}
+.set_url:hover{
+	color: #d9534f;
+	background: #f2f2f2;}
+.set_url:active{
+	color: #d9534f;
+    font-size: 18px;}
+.url_remarks{
+	padding:20px 50px;}
+.mod_url{
+	padding:15px;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #eee;}	
+.mod_url p{
+	font-size:18px;
+	text-align:center;}
+.mod_url .oourl{
+	margin-top: 6px;}
+.url_sentout{
+	margin-top:20px;}
+	
+			
+.col-baby_set{}
+.mobaby_set{
+	width:350px;}
+.btn-active {
+    color: #fff;
+    background-color: #ffadb8;
+    border-color: #ff3f5b;
+}
+.btn-active:hover {
+    color: #fff;}
+.btn-active:active {
+    color: #fff;
+    background-color: #ffadb8;
+    border-color: #ff3f5b;
+}			
+.babyset_edit{
+	background: #fff;
+    border-radius: 3px;
+    padding: 25px 15px;
+	margin-top: 30px;}
+.baby_foto{
+	position:relative;}	
+.baby_foto .baby_fimg{
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	background-color:#CCC;
+	width: 70px;
+    height: 70px;
+	}
+a.baby_camera{
+	width:30px;
+	height:30px;
+	background-image:url(../img/baby_camera.png);
+	position: absolute;
+    z-index: 1;
+	right:0;
+	bottom:0;
+	display:block;
+	}
+.moheader_none{
+	border-bottom:none;}
+.baby_nickname{
+	font-size:18px;
+	line-height:30px;
+	margin-top:10px;}
+.gender{
+	width:20%;
+	float:left;}
+.icon-calendar{
+	float:left;}
+.calendar_text{
+	line-height:20px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.edit_btn{
+	margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;}
+.foto_update span{
+	font-size:18px;
+	line-height:30px;}	
+.foto_update .foto_update_text{
+	float:left;}	
+.foto_update .expend{
+	width:200px;
+	margin-left:10px;
+	float:left;}
+	
+.babyfoto_box.clearfix.line{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F9C;
+	padding-bottom:20px;
+}	
+	
+.foto_update .babyfoto_box{
+	margin:20px 0;}
+.foto_update .babyfoto_box .babyfoto_pic{
+	width: 558px;
+    margin: 15px auto;
+	text-align:center;}
+.foto_update .babyfoto_box .babyfoto_pic img{
+	max-width:558px;}
+a.btns.btn.btn-follow.btn-mem-yellow {
+    font-size: 12px;
+}
+.list_black{
+	list-style-type:decimal;}
+
+.media-object {
+    border-radius: 50%;
+}
+
+ul#myTab {
+    padding: 0 10px;
+}
+
+.baby_tabs>li {
+	width: 22%;
+	margin-left:5px;
+}
+
+.baby_tabs>li>a {
+    padding: 5px 0;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+	color: #333;
+    background-color: #fff;
+}
+
+
+.baby_tabs>li.active {
+	border-top: none;
+	text-align: center;
+}
+
+.baby_tabs>li>a:focus, .baby_tabs>li>a:hover {
+	background: #ffadb8;
+	color:#FFF;
+	border-color: #ff3f5b;
+}
+
+.baby_tabs>li.active>a, .baby_tabs>li.active>a:hover, .baby_tabs>li.active>a:focus {
+    color: #fff;
+    background-color: #ffadb8;
+    border-color: #ff3f5b;
+}
+
+.baby_tabs {
+	border: 0;
+}
+
+
+.tab_mo{
+	margin-top:20px;}
+
+.OR_bb .line {
+    border-bottom: 1px solid #999;
+    margin-top: 26px;
+    margin-bottom: -11px;
+}
+.OR_bb .PP_BG{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 10;}
+.OR_bb p {
+    font-size: 16px;
+	text-align:center;
+}
+.row_privacy{
+	background-color:#FFF;
+	padding: 15px 0 0 15px;
+	margin-top:15px;}
+.privacy_title p{
+	font-size:18px;}
+.privacy_text p{
+	color:#999;
+	line-height:24px;
+	padding:0 10px;}		
+											
+											
+.switch22 {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.5;
+    padding-left: 16px;
+    font-size: 14px;
+    padding-top: 5px
+}
+
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden
+}
+
+.cmn-toggle+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none
+}
+
+input.cmn-toggle-round-flat+label {
+    background-color: #ddd;
+    border-radius: 60px;
+    height: 20px;
+    padding: 2px;
+    transition: background .4s;
+    width: 40px;
+    float: right
+}
+
+input.cmn-toggle-round-flat+label:before {
+    background-color: #fff;
+    border-radius: 60px;
+    bottom: 2px;
+    content: "";
+    display: block;
+    left: 2px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    transition: background .4s
+}
+
+input.cmn-toggle-round-flat+label:after {
+    background-color: #ddd;
+    border-radius: 52px;
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: margin .4s, background .4s;
+    width: 12px
+}
+
+input.cmn-toggle-round-flat:checked+label {
+    background-color: #8ce196
+}
+
+input.cmn-toggle-round-flat:checked+label:after {
+    background-color: #8ce196;
+    margin-left: 20px
+}
+
+.form-inline .kids-data .label_kids label {
+    width: 48px;
+}	
+.form-inline .kids-data .lb-n{
+	width:48px;}
+.form-inline .kids-data .lb-n2{
+	width:50px;}
+.form-inline .form_mc{
+	width:72px;
+	padding:4px;}		
+a.btn.btn-danger.btn-block.btn-transit.edit_btn.edit2_btn {
+    margin-top: 5px;
+}
+a.btn.btn-danger.btn-block.btn-transit.edit_btn.edit2_btn.btn-danger2 {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #236cab;
+}
+.baby_fimg img {
+    width: 100%;
+    height: auto;
+}											

@@ -264,6 +264,8 @@ a {
 
 
 
+
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -476,6 +478,8 @@ body {
 
 
 
+
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -551,6 +555,8 @@ body {
 {
     background-color: white;
 }
+
+
 
 
 
@@ -1072,6 +1078,8 @@ body {
 
 
 
+
+
 /*.footer-inner {
     margin-top: -1px;
 }*/
@@ -1224,6 +1232,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -2191,6 +2201,9 @@ body {
         .optional-info {
             margin-bottom: 0;
             padding: @padding-base; //border-color: @seperate-line;
+            & + .optional-info {
+                margin-top: @padding-base/2;
+            }
             .close {
                 right: -5px;
             }
@@ -3286,6 +3299,8 @@ body {
 
 
 
+
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3538,6 +3553,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -5638,6 +5655,74 @@ body {
 
 
 
+//bookmark
+.masonry-column {
+    .bookmark-list {
+        padding: 0;
+        .post-img {
+            margin: 0;
+            padding-top: 56.25%;
+            position: relative;
+            background: url("../img/svg/bookmark-line.svg") center center no-repeat #d5d5d5;
+            background-size: 50% 50%;
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        .txt-holder {
+            padding: @padding-base;
+        }
+    }
+}
+
+.bookmark-list {
+    &.bookmark-video {
+        .post-img {
+            &:after {
+                content: "";
+                display: block;
+                background: url("../img/svg/play-full.svg") center center no-repeat #000;
+                background-size: 50% 50%;
+                opacity: .5;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                z-index: 5;
+            }
+        }
+    }
+    .h5 {
+        height: 2.1em;
+        margin: @padding-base/2 0;
+        a {
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+.modal-body {
+    .form-control {
+        background: @info-bg;
+        border-color: transparent;
+        resize: none;
+        &:focus {
+            border-color: lighten(@link-key, 10%);
+        }
+    }
+}
 
 
 

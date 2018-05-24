@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes,shrink-to-fit=no" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome</title>
+    <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-m-header-footer.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-m-main.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="content-container flex-v">
+            <div class="content-heading flex-h">
+                <div class="backward">
+                    <a href="bbh-m-member.html" class="btn btn-link"><i class="icon-arrow-left"></i></a>
+                </div>
+                <div class="heading-inner">隱私設定</div>
+                <div class="compose-btn">
+                    <button class="btn btn-key invisible">發表</button>
+                </div>
+            </div>
+            <div class="content-body card-inner">
+                <div class="card-inner card-profile">
+                    <form role="form" data-toggle="validator">
+                        <div class="span-login full-form list-group">
+                            <div class="list-group-item">
+                                <div class="flex-h">
+                                    <p class="h4 list-group-item-heading control-flex">允許他人關注</p>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-1"></label>
+                                    </div>
+                                </div>
+                                <p class="list-group-item-text">當我在My Home發表公開的內容，或在討論區公開發言時，關注我的人就可收到我的動態通知。</p>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="flex-h">
+                                    <p class="h4 list-group-item-heading control-flex">討論區話題列表公開</p>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-2"></label>
+                                    </div>
+                                </div>
+                                <p class="list-group-item-text">其他人可以查看我發表的公開話題列表 (不會顯示匿名話題)</p>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="flex-h">
+                                    <p class="h4 list-group-item-heading control-flex">公開我正在關注的列表</p>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-3"></label>
+                                    </div>
+                                </div>
+                                <p class="list-group-item-text">所有人都可以查看我正在關注誰。</p>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="flex-h">
+                                    <p class="h4 list-group-item-heading control-flex">公開我的寶寶資料</p>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-4"></label>
+                                    </div>
+                                </div>
+                                <p class="list-group-item-text">其他人可以查看我的寶寶資料(大頭貼、小名、年齡)<br>不公開時，其他人看不到有標記寶寶的公開貼文、相片、網誌...</p>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="flex-h">
+                                    <p class="h4 list-group-item-heading control-flex">接收所有訊息</p>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-5"></label>
+                                    </div>
+                                </div>
+                                <p class="list-group-item-text">開放訊息功能，我可以跟所有人互傳訊息<br>關閉時，我將無法發送也不能接收所有訊息</p>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="flex-h">
+                                    <p class="h4 list-group-item-heading control-flex">同意官方推薦</p>
+                                    <div class="switch">
+                                        <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                                        <label for="cmn-toggle-6"></label>
+                                    </div>
+                                </div>
+                                <p class="list-group-item-text">My Home中的公開內容，可以讓BabyHome官方推薦給其他人。</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/m-header-custom.js"></script>
+    <script src="public/js/m-feeds-custom.js"></script>
+</body>
+
+</html>
