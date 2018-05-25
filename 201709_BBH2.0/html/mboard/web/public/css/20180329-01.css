@@ -1,0 +1,28 @@
+div.info-span-mm:before {
+	background: transparent;
+}
+.info-span-mm .thumbnail .btn-link {
+	padding-top: 100%;
+}
+.info-span-mm .mbord-info-articles .thumbnail a img {
+	max-height: 185px;
+}
+div[class^="info-span-"] .price-tag {
+	color: #ed2e2e;
+	padding: 0 9px;
+}
+div[class^="info-span-"] .price-tag:before {
+	content: "$";
+    display: inline-block;
+    margin-right: 3px;
+}
+.post-topic {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.post-topic .alert-info {
+	margin: 0;
+}
+.sp-bn {
+	display: inline-block;
+}
