@@ -5817,6 +5817,28 @@ h3 {
     }
 }
 
+.dropdown-menu {
+    .bookmark {
+        &.flex-h {
+            .flex-h();
+            i {
+                width: 1.3em;
+                height: 1.3em;
+                line-height: 1.3em;
+                text-align: center;
+                border-radius: 50%;
+                background: @link-key;
+                color: white;
+                margin-right: @padding-base/2;
+            }
+            &.active {
+                i {
+                    color: @notify-red;
+                }
+            }
+        }
+    }
+}
 
 
 

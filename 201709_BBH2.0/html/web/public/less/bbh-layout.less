@@ -266,6 +266,8 @@ a {
 
 
 
+
+
 /*
 [class*='profile-avator'],
 [class^='profile-avator'] {
@@ -480,6 +482,8 @@ body {
 
 
 
+
+
 /*
 [class*='icon-'],
 [class^='icon-'] {
@@ -555,6 +559,8 @@ body {
 {
     background-color: white;
 }
+
+
 
 
 
@@ -1080,6 +1086,8 @@ body {
 
 
 
+
+
 /*.footer-inner {
     margin-top: -1px;
 }*/
@@ -1232,6 +1240,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -2201,7 +2211,7 @@ body {
         .optional-info {
             margin-bottom: 0;
             padding: @padding-base; //border-color: @seperate-line;
-            & + .optional-info {
+            &+.optional-info {
                 margin-top: @padding-base/2;
             }
             .close {
@@ -2787,8 +2797,25 @@ body {
             }
         }
     }
+    .mamishow-btn {
+        padding-top: 9%;
+        min-width: 5em;
+        position: relative;
+        a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            opacity: .85;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
     .v-seperate-line {
-        margin: 0 @padding-base*2;
+        margin: 0 @padding-base;
         min-height: 40px;
         opacity: .7;
         background: @seperate-line-light;
@@ -3301,6 +3328,8 @@ body {
 
 
 
+
+
 /*fixed-height
 .blog-inner {
     height: 377px;
@@ -3553,6 +3582,8 @@ body {
         }
     }
 }
+
+
 
 
 
@@ -5713,6 +5744,48 @@ body {
     }
 }
 
+.card-share {
+    >.card-heading {
+        .more-option {
+            .flex-h {
+                .flex-h();
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    .bookmark {
+        &.flex-h {
+            .flex-h();
+            i {
+                width: 1.3em;
+                height: 1.3em;
+                line-height: 1.3em;
+                text-align: center;
+                border-radius: 50%;
+                background: @link-key;
+                color: white;
+                margin-right: @padding-base/2;
+            }
+            &.active {
+                i {
+                    color: @notify-red;
+                }
+            }
+        }
+    }
+}
+
+
+/*.option-action {
+    .active {
+        i {
+            color: @notify-red;
+        }
+    }
+}*/
+
 .modal-body {
     .form-control {
         background: @info-bg;
@@ -5723,6 +5796,8 @@ body {
         }
     }
 }
+
+
 
 
 
