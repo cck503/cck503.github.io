@@ -5797,7 +5797,31 @@ body {
     }
 }
 
-
+.blog-editor {
+    .main-action {
+        margin-bottom: @padding-base*2;
+        .btn-round {
+            line-height: 28px;
+            width: 28px;
+            height: 28px;
+            i {
+                font-size: @font-size-h4;
+            }
+            span {
+                font-size: @font-size-xs;
+            }
+            &:hover {
+                span {
+                    -moz-transform: translateX(-10px);
+                    -webkit-transform: translateX(-10px);
+                    -o-transform: translateX(-10px);
+                    -ms-transform: translateX(-10px);
+                    transform: translateX(-10px);
+                }
+            }
+        }
+    }
+}
 
 
 
