@@ -53,3 +53,25 @@ $back_to_top.on('click', function(event) {
         scrollTop: 0,
     }, scroll_top_duration);
 });
+
+
+
+
+//newdm-carousel
+/*$('.dm-carousel').carousel({
+  interval: 6000
+});*/
+
+$('.dm-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
