@@ -1,0 +1,10 @@
+.grid-item {
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+@media(min-width: 450px) {
+    .grid-item {
+        width: 50%;
+    }
+}

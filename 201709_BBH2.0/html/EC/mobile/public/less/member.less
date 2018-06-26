@@ -1,0 +1,123 @@
+.member_wrap {
+    background: @body-bg;
+}
+.table-responsive {
+    background: @body-bg;
+    .table {
+        font-size: @font-size-base;
+    }
+}
+
+.coupon-list-wrapper {
+	border-bottom:#ddd solid 1px;
+	padding:2%;
+	.clearfix;
+}
+.coupon-ctn-price {
+	width: 18%;
+	float:left;
+    background: @ec-lightred;;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: @font-size-mid2;
+    &:before {
+        content: "折價券";
+        font-size: @font-size-base;
+        //width: 100%;
+        display: block;
+        padding: 0 0 5px;
+        //margin-bottom: 5px;
+        border-bottom: 1px dotted #fff;
+    }
+}
+.coupon-ctn-left {
+	float:left;
+	width:76%;
+	margin:5px 0 0 2%;
+}
+.coupon-ctn-title {
+	font-size:@font-size-mid;
+	color:@gray;
+	a {
+		color:@gray;
+	}
+}
+.coupon-ctn-date {
+	font-size:@font-size-base;
+	color:@gray-light;
+}
+.no-data {
+    img {
+        width: 70%;
+        margin: 20px auto 10px auto;
+    }
+}
+.order-list-table {
+	font-size:@font-size-base;
+	width:100%;
+	margin:15px 0 0;
+	//
+	th, td {
+		padding:10px 5px;
+		width:25%;
+	}
+	thead {
+		color:#666;
+		border-bottom:#aaa solid 1px;
+	}
+	tbody {
+		color:@gray;
+		tr {
+			border-bottom:#ddd solid 1px;
+			&:nth-child(even) {
+		    background: #f3f3f3;
+		    }
+		}
+		a {
+			color:@txt-link;
+		}
+	}
+}
+.align-right { 
+	text-align:right;
+	width:19%;
+}
+.align-center {
+	text-align:center;
+}
+.textfield-wide {
+	width:100%;
+	border:#ddd solid 1px;
+	font-size:@font-size-mid;
+	color:@gray;
+	height:40px;
+	line-height:40px;
+	border-radius:3px;
+	margin:10px 0;
+	padding:0 10px;
+}
+.btn-login {
+    background-color:@ec-pink;
+    color:#fff;
+    font-size:@font-size-mid2;
+    border-radius:3px;
+    margin:20px 0 8px 0;
+    &:active, &:focus {
+    	color:#f7cbce;
+    }
+}
+.btn-fblogin {
+    background-color:#5c74a9;
+    color:#fff;
+    font-size:@font-size-mid2;
+    border-radius:3px;
+    &:active, &:focus {
+    	color:#c8cfdf;
+    }
+}
+.login-btn-divider {
+	text-align:center;
+}
+

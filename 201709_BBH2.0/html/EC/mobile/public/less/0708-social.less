@@ -1,0 +1,40 @@
+.social-span {
+	padding: 10px;
+	border-bottom: 10px solid #eee;
+  	>a {
+  		text-align: center;
+  		margin-right: 10px;
+  	}
+  	a {  		
+  		>i {
+  			width: 42px;
+  			height: 42px;
+  			border-radius: 20%;
+  			color: #fff;
+  			line-height: 42px;
+  			font-size: 21px;
+  			&.social-line {
+  				color: transparent;
+  			}
+  		}
+  	}
+}
+i.ion-social-facebook {
+  background-color: #537bbd;
+}
+i.ion-social-googleplus {
+  background-color: #e9644b;
+}
+i.ion-social-twitter {
+  background-color: #78cdf0;
+}
+i.social-line {
+	background: url("../img/line_icon.svg") 0 0 no-repeat;            
+    display: inline-block;    
+    border-radius: 0;
+    background-size: 42px 42px;
+    color: transparent;
+    &:before {
+    	content: "line";
+    }
+}

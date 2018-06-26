@@ -1,0 +1,738 @@
+.page-header {
+    border-top: 1px solid @dark-separat;
+    border-bottom: 1px solid @dark-separat;
+    background: #f3f3f3;
+    font-size:@font-size-mid;
+    color:@gray;
+    margin:0;
+    padding:5px 10px;
+    //position: relative;
+    >i {
+        position: absolute;
+        display: inline-block;
+        left: 6px;
+        top: 6px;
+        img{
+            width: 18px;
+        }
+    }
+    >p {
+        font-weight: bold;
+        font-size: 15px;
+        background: #fff;
+        margin: 0;
+        padding: 4px 10px;
+        span {
+            color: @ec-lightred;
+        }
+    }
+}
+
+.cart-list {
+    margin:5px;
+    font-size:@font-size-mid;
+}
+.cart-item {
+    margin:5px 5px 20px 5px;
+    position:relative;
+    border-radius:4px;
+    border:@dark-separat solid 1px;
+}
+.cart-item-product-name {
+    border-radius:4px 4px 0 0;
+    background-color:#f3f3f3;
+    line-height:2em;
+    .reduce-length;
+    padding:0 15px 0 5px;
+    margin:0;
+    clear:both;
+}
+.pd-thumb-xs {
+    width: 15%;
+    display:block;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.cart-item-summary {
+    width:60%;
+    margin:0 2%;
+}
+.cart-item-price {
+    width:20%;
+}
+.cart-item-product-note {
+    font-size:@font-size-small;
+    color:@gray-light;
+}
+.cart-item-amount-title {
+    display:inline-block;
+    line-height:3em;
+    margin:0 5px 0 0;
+    color:@gray;
+    vertical-align:top;
+}
+.cart-item-amount {
+    width:30%;
+    display:inline-block;
+    color:#252525;
+}
+.cart-item-summary-price-g {
+    clear:both;
+    margin:0;
+    .price {
+        height:1.5em;
+        line-height:1.5em;
+        color:@gray;
+    }
+}
+.cart-item-summary-price-r {
+    color:@ec-red;
+    font-size:22px;
+    text-align:right;
+    &:before {
+        content:"$";
+        font-size:@font-size-small;
+        margin:0 2px 0 0;
+    }
+}
+.trash_can {
+    font-size:25px;
+    color:#888;
+    position:absolute;
+    top:-16px;
+    right:-10px;
+    display:inline-block;
+    padding:0 5px;
+}
+
+.cart-total {
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    .mr-btm;
+    >div {
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        flex: 1;
+        background: @gray-listline;
+        border-right: 1px solid @gray-listline;
+        border-bottom: 1px solid @gray-listline;
+        &:first-of-type {
+            border-left: 1px solid @gray-listline;
+        }
+        >span {
+            display: block;
+            background: #fff;
+            padding: 5px;
+            &:first-of-type {
+                background: transparent;
+            }
+        }
+        .total-p {
+            color: @ec-red;
+            &:before {
+                content: "$";
+            }
+        }
+    }
+}
+.cart-list-total {
+    margin:10px;
+    border-top:@dark-separat solid 1px;
+    padding:0 5px;
+    text-align:right;
+    font-size:@font-size-mid;
+}
+.mr-left-15 {
+    margin:0 0 0 15px;
+}
+
+.cart-submit {
+    .clearfix();
+    margin:30px 5px;
+    padding:0;
+}
+.btn-checkout-gray {
+    background-color:#e5e5e5;
+    color:@ec-pink !important;
+    border-radius:3px;
+    font-size:@font-size-mid2;
+}
+.btn-next-pink {
+    background-color:@ec-pink;
+    color:#fff !important;
+    border-radius:3px;
+    font-size:@font-size-mid2;
+}
+
+.btn-payment-choice[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ 
+.btn-payment-choice[type=radio] + label {
+    display:block;
+    background-color:#fff;
+    color:@ec-pink !important;
+    border-radius:3px;
+    font-size:@font-size-mid2;
+    line-height:2.5em;
+    border:#e5e5e5 solid 2px;
+    margin:10px 0 15px 0;
+    padding:0 10px;
+}
+
+.btn-payment-choice[type=radio]:checked + label { 
+    background-color:#999;
+    border:#888 solid 2px;
+    color:#fff !important;
+        &:before {
+            font-family: "Ionicons";
+            content: "\f122  ";
+        }
+}
+
+//step-01
+.progress-step {
+    width: 75%;
+    color: @gray-listline;
+    position: relative;
+    margin: 40px auto 20px;
+    >div {
+        position: absolute;
+        width: 80px;
+        top: -18px;
+        margin-left:-40px;
+        &.no1 {
+            lleft: 0%;
+        }
+        &.no2 {
+            left: 50%;
+        }
+        &.no3 {
+            left: 100%;
+        }
+        >span {
+            display: block;
+        }
+    }
+    .progress-head {
+        font-size:@font-size-base;
+        color:#888;
+        
+        &.current {
+            color: @ec-pink;
+        }
+    }    
+    progress[value] {
+        width: 100%;
+        -webkit-appearance: none;
+        appearance: none;
+        background: @dark-separat;
+        height: 2px;
+        vertical-align:middle;
+    }
+    progress[value]::-webkit-progress-bar {
+        background: @dark-separat;
+    }
+    progress[value]::-webkit-progress-value {
+        background: @dark-separat;
+    }
+}
+.circle-no {
+    width: 10px;
+    height: 10px;
+    margin: 4px 0 0 30px;
+    padding: 0;
+    border: 2px solid @dark-separat;
+    border-radius: 100%;
+    background: #fff;
+    &.current {
+        border-color: @ec-pink;
+        background: @ec-pink;
+        color: @ec-pink;
+    }
+}
+
+.discount-option {
+    //background: #fdeaed;
+    margin:-10px 0 0;
+    .clearfix();
+}
+.discount-option-item {
+    font-size:@font-size-mid;
+    font-weight:normal;
+    color:@gray;
+    display:block;
+    padding:5px 0;
+    margin:0 10px;
+    input {
+        margin:0 5px 0 0;
+    }
+}
+
+//step-02
+[class^="payment-info"],
+[class*="payment-info"] {
+    background: #fff;
+    //border: 2px solid #fdeaed;
+    padding-bottom: 5px;
+    .control-label {
+        text-align: right;
+    }
+    >p {
+        //background: #fdeaed;
+        //padding: 2px;
+        margin-bottom: 10px;
+    }
+    select.input-sm {
+        width: auto;
+        display: inline-block;
+    }
+}
+.checkout-form-group {
+    margin:10px 15px;
+    .clearfix;
+    label {
+        display:block;
+        font-size:@font-size-mid;
+        line-height:2em;
+        font-weight:normal;
+    }
+    .mr-right-s {
+        margin:0 5px 0 0;
+    }
+}
+/*
+.payment-info4 {
+    padding-bottom: 15px;
+    .radio,
+    .checkbox, 
+    .form-group {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.payment-info5 {
+    padding: 0 10px 10px;
+    >p {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+*/
+//step-03
+span[class$="-pic"] {
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    background: url("../img/payments.jpg") 105px 105px no-repeat;
+    margin: 0 10px;
+}
+span.atm-pic {
+    background-position: -105px 0;
+}
+span.credit-pic {
+    background-position: -210px 0;
+}
+span.ibon-pic {
+    background-position: -315px 0;
+}
+.payment-method {
+    .radio {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        input[type="radio"] {
+            float: none;
+            margin-left: 0;
+            margin-top: 0;
+            display: block;
+        }
+        span {
+            display: block;
+        }
+        .txt {
+            width: 105px;
+        }
+    }
+}
+//cart-credit-card
+.payment-info {
+    .clearfix();
+    div.form-group {
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+}
+.total-charge {
+    font-size:@font-size-mid;
+    color:@gray;
+    .additional-info {
+        font-size:@font-size-base;
+        color:@gray;
+    }
+}
+.total-p {
+    color: @ec-red;
+    font-size:@font-pd-tilte;
+    &:before {
+        content: "$";
+        color:@gray;
+        font-size:@font-size-mid;
+    }
+}
+@media (min-width: @screen-sm-min) {
+    .form-container {
+        div.form-group {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    }
+}
+
+
+.logo {
+    height: 18px;
+    width: 30px;
+    text-indent: 100%;
+}
+.logo.amex {
+    background: url("../img/amex-icon.svg") 0 0 no-repeat;
+}
+
+.logo.discover {
+    background: url("../img/discover-icon.svg") 0 0 no-repeat;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    .front {
+        .logo {
+            position: absolute;
+            opacity: 0;
+            right: 15px;
+            top: 30px;
+            -webkit-transition: 400ms;
+            transition: 400ms;
+        }
+        .lower {
+            display: none;
+        }
+    }
+    .back {
+        display: none;
+    }
+}
+.logo.visa.visa {
+    background: url("../img/visa-icon.svg") 0 0 no-repeat;
+}
+.logo.mastercard {
+    background: url("../img/master-icon.svg") 0 0 no-repeat;
+}
+.card-container {
+    //-webkit-perspective: 1000px;
+    //perspective: 1000px;
+    //width: 350px;
+    height: 0;
+    //margin: auto;
+    //z-index: 1;
+    //position: relative;
+}
+.card .front, .card .back {
+    width: 100%;
+    height: 100%;
+}
+.card .front .display, .card .back .display {
+    color: white;
+    font-weight: normal;
+    opacity: 0.5;
+    -webkit-transition: opacity 400ms linear;
+    transition: opacity 400ms linear;
+}
+.card .front .display.focused, .card .back .display.focused {
+    opacity: 1;
+    font-weight: 700;
+}
+.card.identified {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.visa.identified {
+    .logo.visa {
+        opacity: 1;
+    }
+}
+.mastercard.identified {
+    .logo.mastercard {
+        opacity: 1;
+    }
+}
+.discover.identified {
+    .logo.discover {
+        opacity: 1;
+    }
+}
+.amex.identified {
+    .logo.amex {
+        opacity: 1;
+    }
+}
+.card.identified .front:before, .card.identified .back:before {
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(315deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), -webkit-repeating-linear-gradient(0deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(240deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(30% 30%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(70% 70%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(90% 20%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(15% 80%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(315deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), -webkit-repeating-linear-gradient(0deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(240deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(30% 30%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(70% 70%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(90% 20%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-radial-gradient(15% 80%, circle, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(115deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    opacity: 1;
+}
+.card.identified .front .logo, .card.identified .back .logo {
+    -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+.card.identified.no-radial-gradient .front:before, .card.identified.no-radial-gradient .back:before {
+    background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(315deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), -webkit-repeating-linear-gradient(0deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(240deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(315deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), -webkit-repeating-linear-gradient(0deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-repeating-linear-gradient(240deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(115deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+    background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+}
+
+
+//cart-final
+.payment-info {
+    .cart-total {
+        margin-bottom: -5px !important;
+    }
+    dt, dd, li {
+        margin-bottom: 0.6em;
+    }
+    .final-info01 {
+        margin-left: 10px;
+        margin-right: 10px;
+        dt {
+            font-weight: normal;
+        }
+        >dd {
+            text-indent: -1.5em;
+            margin-left: 1.5em;
+            &:before {
+                margin-right: 0.4em;
+            }
+            &:first-of-type {
+                &:before {
+                    content: "(1)";
+                }
+            }
+            &:nth-of-type(2) {
+                &:before {
+                    content: "(2)";
+                }
+            }
+            &:nth-of-type(3) {
+                &:before {
+                    content: "(3)";
+                }
+            }
+            &:nth-of-type(4) {
+                &:before {
+                    content: "(4)";
+                }
+            }
+            &:nth-of-type(5) {
+                &:before {
+                    content: "(5)";
+                }
+            }
+            &:nth-of-type(6) {
+                &:before {
+                    content: "(6)";
+                }
+            }
+            >ul {
+                text-indent: 0;
+                margin-left: 1.5em;
+                >li {
+                    list-style: decimal;
+                }
+            }
+        }
+    }
+    .final-info02 {
+        dt {
+            width: 30%;
+        }
+        dd {
+            margin-left: 33%;
+        }
+    }
+}
+.product-list-row {
+    &:nth-child(even) {
+        background: #f3f3f3;
+    }
+    dl {
+        width:100%;
+        .clearfix;
+        border-bottom: 1px solid @dark-separat;
+        position:relative;
+    }
+    dt {
+        width:25%;
+        float:left;
+    }
+    dt img {
+        width:100%;
+        height:auto;
+    }
+    dd  {
+        width:60%;
+        float:left;
+        font-size:@font-size-mid;
+    }
+    .dd-wider {
+        width:70%;
+    }
+    dd p {
+        margin:10px 0 0 10px;
+        //width:75%;
+    }
+    dd a { color:#555;}
+    dd a:active { color:@ec-pink;}
+    .list-delete-icon {
+         position:absolute;
+         right:0;
+         top:50%;
+         font-size:22px;
+         line-height:36px;
+         margin-top:-18px;
+         display:inline-block;
+         width:15%;
+         text-align:center;
+    }
+    .price {
+        height:auto;
+        line-height:1.5em;
+    }
+}
+.padding-side {
+    padding:0 10px;
+}
+.padding-top {
+    padding-top:10px;
+}
+.cart-title-in-brown {
+    font-size:@font-size-mid;
+    color:@dark-brown;
+    margin:20px 10px 10px;
+}
+
+.checkout-list-table {
+    font-size:@font-size-base;
+    width:100%;
+    margin:15px 0;
+    th, td {
+        padding:5px 10px;
+        border-right:@dark-separat solid 1px;
+        &:last-child {
+            border: 0;
+        }
+    }
+    thead {
+        color:#666;
+        background-color:#f3f3f3;
+        border-top:@dark-separat solid 1px;
+        border-bottom:@dark-separat solid 1px;
+    }
+    tbody {
+        color:@gray;
+    }
+    tfoot {
+        background-color:#f3f3f3;
+        text-align:right;
+        tr, td {
+            border: 0;
+        }
+    }
+    tr {
+        border-bottom:@dark-separat solid 1px;
+    }
+    .checkout-list-pd-summary {
+        width:70%;
+    }
+    .checkout-list-pd-amount {
+        width:10%;
+        text-align:center;
+    }
+    .checkout-list-pd-price {
+        width:20%;
+        text-align:right;
+    }
+    .checkout-list-pd-info {
+        width:83%;
+    }
+    .checkout-list-pd-name {
+        line-height:2em;
+        //.reduce-length;
+        margin:5px 0;
+    }
+    .checkout-list-total-price {
+        color:@ec-red;
+        span {font-size:@font-pd-tilte;}
+    }
+}
+.credit-third {
+    width:32%;
+    float:left;
+    margin:10px 2% 10px 0;
+    &:last-child {
+        margin-right:0;
+    }
+}
+.checkout-final-info-wrapper {
+    width:100%;
+}
+.checkout-final-info-twenty {
+    width:10%;
+    white-space:nowrap;
+    padding:3px 5px;
+}
+.checkout-final-info-eighty {
+    width:90%;
+    padding:3px 5px;
+}
+.first-card-address-wrapper {
+    width:100%;
+    margin:0 auto 15px auto;
+}
+.first-card-address-arrow-top {
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #f3f3f3;
+    float:left;
+    margin:0 0 0 4%;
+}
+.first-card-address-content {
+    clear:both;
+    border-radius:3px;
+    background-color:#f3f3f3;
+    padding:10px;
+}

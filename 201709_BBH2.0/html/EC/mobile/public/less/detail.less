@@ -1,0 +1,253 @@
+.pd_slide {
+    padding: 10px 0 10px;
+    border-right: 1px solid @gray-separat;
+    .ei-slider {
+        width: 385px;
+        max-width: 1920px;
+        height: 385px;
+        margin: 0 auto;
+        .ei-slider-thumbs {
+            height: auto;
+            li {
+                width: auto;
+                img {
+                    position: initial;
+                    opacity: 100;
+                    -webkit-box-reflect: initial;
+                }
+            }
+        }
+    }
+    .social_span {
+        margin: 80px 0 0;
+        >.col-xs-4 {
+            background: transparent;
+            border: 0;
+            border-right: 1px solid @gray-separat;
+            padding: 8px 0;
+        }
+        .dl-horizontal {
+            dt {
+                width: 140px;
+                text-align: left;
+                padding-left: 10px;
+                >span {
+                    color: @ec-red;
+                }
+            }
+            dd {
+                margin-left: 140px;
+                line-height: 38px;
+                >a {
+                    .text-center;
+                    >i {
+                        width: 21px;
+                        height: 21px;
+                        border-radius: @border-radius-round;
+                        color: @txt-white;
+                        &:before {
+                            line-height: 21px;
+                        }
+                    }
+                    .ion-social-googleplus {
+                        .gplus-link;
+                    }
+                    .ion-email {
+                        .email-link;
+                    }
+                }
+            }
+        }
+    }
+    .bookmark {
+        padding: 0 10px;
+        i {
+            margin-left: 5px;
+            color: @ec-pink;
+            font-size: @font-size-mid;
+        }
+    }
+}
+.product_lead, .product_info {
+    .block_module;
+    //border: 1px solid @pink-separat;
+    //margin-bottom: 10px;
+}
+.product_lead {
+    background: #fdf4f6;
+    .countdown_clock {
+        background: #eee;
+        text-align: center;
+        line-height: 34px;
+        height: 34px;
+        border: 0;
+        .time_section {
+            background: transparent;
+            .time_note {
+                span {
+                    .font-mid;
+                }
+            }
+            .clock_icon {
+                height: 32px;
+            }
+        }
+    }
+    >.row {
+        overflow: hidden;
+        >.col-xs-10 {
+            box-shadow: rgba(0,0,0,0.1) 2px 0 5px;
+            position: relative;
+            z-index: 25;
+            background: @body-bg;
+        }
+        >.col-xs-2 {
+            background: #fdf4f6;
+            padding: 0 10px;
+            >p {
+                margin: 12px -10px 10px;
+                background: @body-bg;
+                .text-center;
+                .font-mid;
+            }
+        }
+    }
+}
+.pd_action {
+    padding: 10px;
+    >h1 {
+        margin-top: 0;
+        .font-pdh1;
+    }
+    >.label-default {
+        background: @tags-bg;
+        a {
+            color: #6c565b;
+            &:hover,
+            &:focus {
+                color: @link-hover-color;
+            }
+        }
+        font-weight: normal;
+    }
+    .pricenfb {
+        margin: 20px -10px 5px -10px;
+        background: #f7f7f7;
+        padding: 5px 10px 15px 10px;
+        >dl {
+            >dt {
+                width: 60px;
+                .text-left;
+            }
+            .limited {
+                color: @ec-red;
+            }
+            dt.limited {
+                height: 50px;
+                padding-top: 26px;
+            }
+            dd.limited {
+                .font-hot;
+            }
+            >dd {
+                margin-left: 65px;;
+            }
+        }
+        >p {
+            >span {
+                background: @body-bg;
+                padding: 2px 4px;
+                border: 1px dashed @ec-red;
+                .font-nomid;
+                color: @ec-red;
+                margin: 0 5px;
+            }
+            a {
+                color: @ec-blue;
+            }
+        }
+        .fb_couponn {
+            >a {
+                display: inline-block;
+                width: 202px;
+                height: 82px;
+                text-indent: -999999px;
+                background: url("../img/share_coupon.png") 0 0 no-repeat;
+            }
+        }
+    }
+    .pd_feature {
+        border-bottom: 1px solid @gray-separat;
+        margin: 0 -10px;
+        padding: 10px;
+        .font-mid;
+        >li {
+            margin-left: 20px;
+            list-style: disc;
+        }
+    }
+    .cart_zone {
+        padding-top: 20px;
+        .form-inline {
+            >.controls {
+                margin-bottom: 20px;
+            }
+        }
+        .btn-confirm {
+            font-size: @font-size-h2;
+        }
+    }
+}
+.product_info {
+    background: @body-bg;
+    .nav-tabs {
+        margin-bottom: 10px; 
+        border-bottom: 1px solid @gray-listline;
+        >li.active {
+            >a {
+                background: @ec-pink;
+                color: @txt-white;
+                position: relative;
+                &:hover,
+                &:focus {
+                    background: @ec-pink;
+                    color: @txt-white;
+                }
+                &:after {
+                    content: "\f10d";
+                    font-family: @icon-font-name-2;
+                    font-size: 8px;
+                    position: absolute;
+                    bottom: -9px;
+                    right: 45%;
+                }
+            }
+        }
+        >li {
+            margin-bottom: 0;
+            background: @gray-separat;
+            border-right: 1px solid @gray-listline;
+            >a {
+                padding: 2px 15px;
+                .font-mid;
+                border: 0;
+                margin: 0;
+                &:hover {
+                    border: 0;
+                }
+                &:hover,
+                &:focus {
+                    color: @gray-dark;
+                    background: @ec-pink;
+                }
+            }
+        }
+    }
+    .tab-content {
+        padding: 25px 30px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

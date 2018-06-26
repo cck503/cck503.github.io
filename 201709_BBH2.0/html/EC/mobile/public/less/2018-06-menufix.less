@@ -1,0 +1,42 @@
+@import "icons-variables.less";
+@import "bbh-icons.less";
+
+.container {
+    .sec-nav {
+        .navbar-default {
+            .navbar-collapse {
+                overflow-x: scroll !important;
+                -webkit-overflow-scrolling: touch;
+                border-top: 1px solid #fac109;
+            }
+            .navbar-nav {
+                white-space: nowrap;
+                >li {
+                    display: inline-block;
+                    float: none;
+                    width: 22%;
+                    >a {
+                        i {
+                            line-height: inherit;
+                        }
+                        .icon-mamishow {
+                            line-height: inherit;
+                            color: #ee87b4;
+                            &:before {
+                                -moz-transform: scale(1.2);
+                                -webkit-transform: scale(1.2);
+                                -o-transform: scale(1.2);
+                                -ms-transform: scale(1.2);
+                                transform: scale(1.2);
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
