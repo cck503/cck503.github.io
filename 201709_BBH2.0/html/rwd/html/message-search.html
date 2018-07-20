@@ -318,20 +318,23 @@
     <!--end-->
     <div class="container message-main">
         <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1 layout-f message-stage">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 layout-f message-stage">j
                 <div class="layout-f flex-col chat-list">
                     <div class="layout-f list-heading">
-                        <em class="em-hi">BabyHome訊息</em>
+                        <em class="em-hi">訊息</em>
                         <ul class="layout-f">
                             <li class="act-chat">
-                                <a href="#" data-toggle="modal" data-target="#chatlistModal" title="聊天" alt="聊天"><i class="ion-chatbubble-working"></i></a>
+                                <a href="#" data-toggle="modal" data-target="#chatlistModal" title="聊天" alt="聊天"><i class="icon-mg-new"></i></a>
+                            </li>
+                            <li class="act-chat">
+                                <a href="#" data-toggle="modal" data-target="#chatlistModal" title="建立群組" alt="建立群組"><i class="icon-mg-gpcreate"></i></a>
                             </li>
                             <li class="act-bbcall">
                                 <span class="blinking-red"></span>
                                 <a href="#">BBCall</a>
                             </li>
                             <li class="act-setup">
-                                <a href="#" title="設定" alt="設定"><i class="ion-ios-gear"></i></a>
+                                <a href="#" title="設定" alt="設定"><i class="icon-more-horizontal-full"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -359,11 +362,11 @@
                         </div>
                         <div class="list-group active">
                             <a href="#" class="layout-f list-group-item">
-                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                <div class="profile-holder"><img src="public/img/default-group.png" alt="群組" class="media-object">
                                 </div>
                                 <div class="list-txt-holder">
                                     <div class="layout-f list-text">
-                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <span class="list-group-item-heading">群組名稱(8)</span>
                                         <div class="time-stamp">4:12 PM</div>
                                     </div>
                                     <div class="layout-f list-text">
@@ -375,15 +378,15 @@
                         </div>
                         <div class="list-group">
                             <a href="#" class="layout-f list-group-item">
-                                <div class="profile-holder"><span class="user-status" title="離線中"><i class="ion-ios-bolt"></i></span><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                <div class="profile-holder"><img src="public/img/default-group.png" alt="群組" class="media-object">
                                 </div>
                                 <div class="list-txt-holder">
                                     <div class="layout-f list-text">
-                                        <span class="list-group-item-heading">yuiyuime</span>
+                                        <span class="list-group-item-heading">群組名稱</span>
                                         <div class="time-stamp">2017-4-3</div>
                                     </div>
                                     <div class="layout-f list-text">
-                                        <span class="list-group-item-text">萌主爭霸戰 左左右右等你來挑戰！</span>
+                                        <span class="list-group-item-text">會員暱稱 邀請您加入群組</span>
                                         <span></span>
                                     </div>
                                 </div>
@@ -509,16 +512,19 @@
                             <a href="#" class="btn btn-back"><i class="ion-ios-arrow-left"></i></a>
                         </div>
                         <div class="heading-inner">
-                            <h4>yuiyuime<span class="user-status active" title="上線中"><i class="ion-ios-bolt"></i></span><span class="name-note">不同於前一場苦拼至最後一刻至終目，由於柯潔第二戰失誤較多，在棋局第三個小時時就棄子認輸了。</span></h4>
+                            <h4>已加入群組名稱<span class="name-note">共?位成員</span></h4>
                         </div>
                         <div class="dropdown">
                             <a id="option-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn link-btn option-btn">
                                 <i class="ion-android-more-vertical"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="option-drop">
-                                <li><a data-toggle="modal" data-target=".contact-block-modal">加到通訊錄</a></li>
-                                <li><a data-toggle="modal" data-target=".contact-block-modal">封鎖訊息</a></li>
-                                <li><a data-toggle="modal" data-target=".contact-block-modal">刪除訊息</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal"><i class="icon-mg-group"></i>更換群組大頭貼</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal"><i class="icon-mg-edit"></i>更換群組名稱</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal"><i class="icon-mg-member"></i>查看成員</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal"><i class="icon-mg-add"></i>加入新成員</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal"><i class="icon-mg-delete"></i>刪除訊息</a></li>
+                                <li><a data-toggle="modal" data-target=".contact-block-modal"><i class="icon-mg-leave"></i>退出群組</a></li>
                             </ul>
                         </div>
                     </div>
@@ -526,9 +532,16 @@
                         <div class="dialogue-inner">
                             <p class="text-center time-tag">
                                 <time>2017/4/7(五)</time>
+                                <br>
+                                <span>管理者暱稱 建立群組</span>
+                                <br>
+                                <span>邀請  A會員暱稱, B會員暱稱, C會員暱稱  加入群組</span>
                             </p>
                             <div class="chat-bubble-list">
+                                <div class="profile-holder"><img src="http://bb5.babyhome.com.tw/PPIC/my/03/230103.jpg?v=1" alt="米米魯將" class="media-object">
+                                </div>
                                 <div class="bubble-container msg-received">
+                                    <div class="nickname"><small>yuiyuime</small></div>
                                     <div class="bubble-body">
                                         <p>從小就是被媽媽情緒化打大的孩子，現在即便我的孩子都上小學了，還是常為了小到不能再小的事來教訓我，昨晚又來了，想說久久回家看她一次，果然隔天又因為她看不順眼我跟我兒子，打電話來罵。</p>
                                     </div>
@@ -577,57 +590,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="chat-bubble-list">
-                                <div class="bubble-container msg-sent">
-                                    <div class="emoji-container">
-                                        <div class="bubble-body">
-                                            <p><img src="public/img/sticker06.png" alt="" class="emoji-bbh"></p>
-                                        </div>
-                                        <div class="bubble-footer">
-                                            <div class="status-option">
-                                                <p>4:12 PM</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat-bubble-list msg_from_text">
-                                <div class="bubble-container msg-sent">
-                                    <div class="bubble-body">
-                                        <p>
-                                            <a href="https://info.babyhome.com.tw/article/16081" target="_blank" class="btn-link">https://info.babyhome.com.tw/article/16081</a>
-                                            <div class="link-description">
-                                                <a href="https://info.babyhome.com.tw/article/16081" target="_blank">
-                                                    <img class="img-responsive" src="https://d1tuuacv99jvh2.cloudfront.net/YsinFJl66oJCfrBe_xxl.jpg" alt="">
-                                                    <h5>讓孩子專心吃飯　從拿湯匙吃副食品開始 - BabyHome 新知大耳朵</h5>
-                                                </a>
-                                                <div>很多媽咪都有這樣的經驗，很難讓孩子專心吃飯，不是吃飯時要玩玩具，就...</div>
-                                            </div>
-                                        </p>
-                                    </div>
-                                    <div class="bubble-footer">
-                                        <div class="status-option">
-                                            <p>下午 5:53<span class="read-status"></span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat-bubble-list msg_from_text">
-                                <div class="bubble-container msg-sent">
-                                    <div class="bubble-body">
-                                        <p>
-                                            <a href="https://info.babyhome.com.tw/article/16081" target="_blank" class="btn-link">https://info.babyhome.com.tw/article/16081</a> 讓孩子專心吃飯　從拿湯匙吃副食品開始
-                                            <br>
-                                            <a href="https://info.babyhome.com.tw/article/16081" target="_blank" class="btn-link">https://info.babyhome.com.tw/article/16081</a> 讓孩子專心吃飯　從拿湯匙吃副食品開始
-                                        </p>
-                                    </div>
-                                    <div class="bubble-footer">
-                                        <div class="status-option">
-                                            <p>下午 5:53<span class="read-status"></span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="dialogue-inner hidden">
+                            <p class="text-center time-tag">
+                                <time>2017/4/7(五)</time>
+                                <br>
+                                <span>會員暱稱 邀請您加入群組</span>
+                            </p>
+                            <ul class="nav-justified">
+                                <li>
+                                    <button type="button" class="btn btn-cancel btn-block">拒絕</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-post btn-block">加入群組</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="layout-f content-inputer">

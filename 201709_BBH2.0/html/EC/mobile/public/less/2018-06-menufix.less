@@ -14,8 +14,10 @@
                 >li {
                     display: inline-block;
                     float: none;
-                    width: 22%;
+                    width: 24%;
+                    height: 54px;
                     >a {
+                        position: relative;
                         i {
                             line-height: inherit;
                         }
@@ -34,6 +36,16 @@
                     }
                     &:last-child {
                         background: none;
+                    }
+                    &.active {
+                        >a {
+                            &:after {
+                                position: absolute;
+                                bottom: 4px;
+                                right: 0;
+                                left: 0;
+                            }
+                        }
                     }
                 }
             }
