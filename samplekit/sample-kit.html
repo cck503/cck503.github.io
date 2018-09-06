@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="public/css/photoswipe.css">
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="public/css/default-skin/default-skin.css">
+    <style>
+    .my-gallery {
+        width: 100%;
+        float: left;
+    }
+    
+    .my-gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .my-gallery figure {
+        display: block;
+        float: left;
+        margin: 0 5px 5px 0;
+        width: 150px;
+    }
+    
+    .my-gallery figcaption {
+        display: none;
+    }
+    </style>
+    <!-- Core JS file -->
+    <script src="public/js/photoswipe.min.js"></script>
+    <!-- UI JS file -->
+    <script src="public/js/photoswipe-ui-default.min.js"></script>
+</head>
+
+<body>
+    <h2>暖色系:</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/01.jpg" itemprop="contentUrl" data-size="1200x1900">
+                <img src="public/img/warm-color/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/02.jpg" itemprop="contentUrl" data-size="600x2300">
+                <img src="public/img/warm-color/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/03.jpg" itemprop="contentUrl" data-size="600x1120">
+                <img src="public/img/warm-color/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/04.jpg" itemprop="contentUrl" data-size="800x3118">
+                <img src="public/img/warm-color/04thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/05.jpg" itemprop="contentUrl" data-size="600x1000">
+                <img src="public/img/warm-color/05thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/06.jpg" itemprop="contentUrl" data-size="600x1760">
+                <img src="public/img/warm-color/06thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/07.jpg" itemprop="contentUrl" data-size="990x850">
+                <img src="public/img/warm-color/07thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/08.jpg" itemprop="contentUrl" data-size="600x2800">
+                <img src="public/img/warm-color/08thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/09.jpg" itemprop="contentUrl" data-size="990x600">
+                <img src="public/img/warm-color/09thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/10.jpg" itemprop="contentUrl" data-size="990x3448">
+                <img src="public/img/warm-color/10thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm-color/11.jpg" itemprop="contentUrl" data-size="600x3050">
+                <img src="public/img/warm-color/11thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>冷色系</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cold/01.jpg" itemprop="contentUrl" data-size="600x5710">
+                <img src="public/img/cold/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cold/02.jpg" itemprop="contentUrl" data-size="1200x770">
+                <img src="public/img/cold/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cold/03.jpg" itemprop="contentUrl" data-size="600x2750">
+                <img src="public/img/cold/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cold/04.jpg" itemprop="contentUrl" data-size="600x3265">
+                <img src="public/img/cold/04thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cold/05.jpg" itemprop="contentUrl" data-size="600x2800">
+                <img src="public/img/cold/05thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cold/06.jpg" itemprop="contentUrl" data-size="600x3850">
+                <img src="public/img/cold/06thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>粉嫩</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/pink/01.jpg" itemprop="contentUrl" data-size="600x2250">
+                <img src="public/img/pink/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/pink/02.png" itemprop="contentUrl" data-size="650x2670">
+                <img src="public/img/pink/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/pink/03.jpg" itemprop="contentUrl" data-size="600x3170">
+                <img src="public/img/pink/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/pink/04.jpg" itemprop="contentUrl" data-size="600x350">
+                <img src="public/img/pink/04thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/pink/05.jpg" itemprop="contentUrl" data-size="600x2750">
+                <img src="public/img/pink/05thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/pink/06.jpg" itemprop="contentUrl" data-size="600x3265">
+                <img src="public/img/pink/06thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>清新</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/fresh/01.jpg" itemprop="contentUrl" data-size="600x3310">
+                <img src="public/img/fresh/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/fresh/02.jpg" itemprop="contentUrl" data-size="600x2720">
+                <img src="public/img/fresh/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/fresh/03.jpg" itemprop="contentUrl" data-size="990x700">
+                <img src="public/img/fresh/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/fresh/04.jpg" itemprop="contentUrl" data-size="990x1100">
+                <img src="public/img/fresh/04thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/fresh/05.jpg" itemprop="contentUrl" data-size="600x4030">
+                <img src="public/img/fresh/05thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>漫畫、插畫</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/01.jpg" itemprop="contentUrl" data-size="600x3830">
+                <img src="public/img/cartoon/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/02.jpg" itemprop="contentUrl" data-size="1200x3000">
+                <img src="public/img/cartoon/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/03.jpg" itemprop="contentUrl" data-size="600x4500">
+                <img src="public/img/cartoon/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/04.jpg" itemprop="contentUrl" data-size="990x720">
+                <img src="public/img/cartoon/04thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/05.jpg" itemprop="contentUrl" data-size="990x700">
+                <img src="public/img/cartoon/05thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/06.jpg" itemprop="contentUrl" data-size="600x2700">
+                <img src="public/img/cartoon/06thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/07.jpg" itemprop="contentUrl" data-size="600x2430">
+                <img src="public/img/cartoon/07thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/cartoon/08.jpg" itemprop="contentUrl" data-size="510x1750">
+                <img src="public/img/cartoon/08thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>簡潔</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/clean/01.png" itemprop="contentUrl" data-size="1899x1229">
+                <img src="public/img/clean/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/clean/02.jpg" itemprop="contentUrl" data-size="600x3242">
+                <img src="public/img/clean/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/clean/03.jpg" itemprop="contentUrl" data-size="990x660">
+                <img src="public/img/clean/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/clean/04.jpg" itemprop="contentUrl" data-size="990x600">
+                <img src="public/img/clean/04thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/clean/05.jpg" itemprop="contentUrl" data-size="600x2800">
+                <img src="public/img/clean/05thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>科技</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/tech/01.jpg" itemprop="contentUrl" data-size="600x3110">
+                <img src="public/img/tech/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/tech/02.jpg" itemprop="contentUrl" data-size="510x2300">
+                <img src="public/img/tech/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/tech/03.jpg" itemprop="contentUrl" data-size="600x4050">
+                <img src="public/img/tech/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <h2>溫馨、溫暖</h2>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm/01.jpg" itemprop="contentUrl" data-size="600x682">
+                <img src="public/img/warm/01thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm/02.jpg" itemprop="contentUrl" data-size="600x4000">
+                <img src="public/img/warm/02thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="public/img/warm/03.jpg" itemprop="contentUrl" data-size="990x764">
+                <img src="public/img/warm/03thumbs.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+            <!--<figcaption itemprop="caption description">Image caption 1</figcaption>-->
+        </figure>
+    </div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function() {
+        var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+            // parse slide data (url, title, size ...) from DOM elements 
+            // (children of gallerySelector)
+            var parseThumbnailElements = function(el) {
+                var thumbElements = el.childNodes,
+                    numNodes = thumbElements.length,
+                    items = [],
+                    figureEl,
+                    linkEl,
+                    size,
+                    item;
+
+                for (var i = 0; i < numNodes; i++) {
+
+                    figureEl = thumbElements[i]; // <figure> element
+
+                    // include only element nodes 
+                    if (figureEl.nodeType !== 1) {
+                        continue;
+                    }
+
+                    linkEl = figureEl.children[0]; // <a> element
+
+                    size = linkEl.getAttribute('data-size').split('x');
+
+                    // create slide object
+                    item = {
+                        src: linkEl.getAttribute('href'),
+                        w: parseInt(size[0], 10),
+                        h: parseInt(size[1], 10)
+                    };
+
+
+
+                    if (figureEl.children.length > 1) {
+                        // <figcaption> content
+                        item.title = figureEl.children[1].innerHTML;
+                    }
+
+                    if (linkEl.children.length > 0) {
+                        // <img> thumbnail element, retrieving thumbnail url
+                        item.msrc = linkEl.children[0].getAttribute('src');
+                    }
+
+                    item.el = figureEl; // save link to element for getThumbBoundsFn
+                    items.push(item);
+                }
+
+                return items;
+            };
+
+            // find nearest parent element
+            var closest = function closest(el, fn) {
+                return el && (fn(el) ? el : closest(el.parentNode, fn));
+            };
+
+            // triggers when user clicks on thumbnail
+            var onThumbnailsClick = function(e) {
+                e = e || window.event;
+                e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                var eTarget = e.target || e.srcElement;
+
+                // find root element of slide
+                var clickedListItem = closest(eTarget, function(el) {
+                    return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                });
+
+                if (!clickedListItem) {
+                    return;
+                }
+
+                // find index of clicked item by looping through all child nodes
+                // alternatively, you may define index via data- attribute
+                var clickedGallery = clickedListItem.parentNode,
+                    childNodes = clickedListItem.parentNode.childNodes,
+                    numChildNodes = childNodes.length,
+                    nodeIndex = 0,
+                    index;
+
+                for (var i = 0; i < numChildNodes; i++) {
+                    if (childNodes[i].nodeType !== 1) {
+                        continue;
+                    }
+
+                    if (childNodes[i] === clickedListItem) {
+                        index = nodeIndex;
+                        break;
+                    }
+                    nodeIndex++;
+                }
+
+
+
+                if (index >= 0) {
+                    // open PhotoSwipe if valid index found
+                    openPhotoSwipe(index, clickedGallery);
+                }
+                return false;
+            };
+
+            // parse picture index and gallery index from URL (#&pid=1&gid=2)
+            var photoswipeParseHash = function() {
+                var hash = window.location.hash.substring(1),
+                    params = {};
+
+                if (hash.length < 5) {
+                    return params;
+                }
+
+                var vars = hash.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    if (!vars[i]) {
+                        continue;
+                    }
+                    var pair = vars[i].split('=');
+                    if (pair.length < 2) {
+                        continue;
+                    }
+                    params[pair[0]] = pair[1];
+                }
+
+                if (params.gid) {
+                    params.gid = parseInt(params.gid, 10);
+                }
+
+                return params;
+            };
+
+            var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                var pswpElement = document.querySelectorAll('.pswp')[0],
+                    gallery,
+                    options,
+                    items;
+
+                items = parseThumbnailElements(galleryElement);
+
+                // define options (if needed)
+                options = {
+
+                    // define gallery index (for URL)
+                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                    getThumbBoundsFn: function(index) {
+                        // See Options -> getThumbBoundsFn section of documentation for more info
+                        var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                            rect = thumbnail.getBoundingClientRect();
+
+                        return {
+                            x: rect.left,
+                            y: rect.top + pageYScroll,
+                            w: rect.width
+                        };
+                    }
+
+                };
+
+                // PhotoSwipe opened from URL
+                if (fromURL) {
+                    if (options.galleryPIDs) {
+                        // parse real index when custom PIDs are used 
+                        // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                        for (var j = 0; j < items.length; j++) {
+                            if (items[j].pid == index) {
+                                options.index = j;
+                                break;
+                            }
+                        }
+                    } else {
+                        // in URL indexes start from 1
+                        options.index = parseInt(index, 10) - 1;
+                    }
+                } else {
+                    options.index = parseInt(index, 10);
+                }
+
+                // exit if index not found
+                if (isNaN(options.index)) {
+                    return;
+                }
+
+                if (disableAnimation) {
+                    options.showAnimationDuration = 0;
+                }
+
+                // Pass data to PhotoSwipe and initialize it
+                gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+
+            // loop through all gallery elements and bind events
+            var galleryElements = document.querySelectorAll(gallerySelector);
+
+            for (var i = 0, l = galleryElements.length; i < l; i++) {
+                galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                galleryElements[i].onclick = onThumbnailsClick;
+            }
+
+            // Parse URL and open gallery if it contains #&pid=3&gid=1
+            var hashData = photoswipeParseHash();
+            if (hashData.pid && hashData.gid) {
+                openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+            }
+        };
+
+        // execute above function
+        initPhotoSwipeFromDOM('.my-gallery');
+
+    })();
+    </script>
+</body>
+
+</html>
