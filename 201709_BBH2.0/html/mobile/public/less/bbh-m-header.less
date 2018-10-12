@@ -67,7 +67,8 @@ body {
 }*/
 
 .bbh-logo-new {
-    width: 140px;
+    //width: 140px;
+    width: 120px;
     margin-right: 10px; //background: url("../img/bbh-pngset.png") 0 0 no-repeat;
     padding: 0;
     height: auto;
@@ -1011,10 +1012,10 @@ body.nav-expanded {
 //iphone-5
 @media (max-width: 340px) {
     .navbar-header {
-        width: 108px;
+        width: 68px;
     }
     .bbh-logo-new {
-        width: 108px;
+        width: 68px;
     }
 }
 
@@ -1454,7 +1455,7 @@ body {
             >li {
                 .search-glass {
                     transition: all ease-in .2s;
-                    padding: @padding-base/2 @padding-base;
+                    //padding: @padding-base/2 @padding-base @padding-base/2 0;
                     &.toggle {
                         color: white;
                         i {
@@ -1796,6 +1797,12 @@ body {
     &:hover {
         background: darken(@link-key, 10%);
         color: white;
+    }
+    &.btn-bbh {
+        background: @BBH-pink;
+        &:hover {
+            background: darken(@BBH-pink, 10%);
+        }
     }
     &.btn-line {
         background: #42b72a;

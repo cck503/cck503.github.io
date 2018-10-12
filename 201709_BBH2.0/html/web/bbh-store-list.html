@@ -11,7 +11,7 @@
     <link id="theme" href="public/css/non-responsive.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-header-footer.css" rel="stylesheet">
     <link id="theme" href="public/css/bbh-main.css" rel="stylesheet">
-    <link href="public/css/member_task.css" rel="stylesheet" type="text/css">
+    <link id="theme" href="public/css/bbh-newstore.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -20,8 +20,7 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>     
     <![endif]-->
 </head>
 
@@ -34,14 +33,12 @@
                 </div>
                 <div id="navbar">
                     <ul class="nav navbar-nav">
+                        <li class="bbh-mama"><a href="bbh-motherhood.html">媽媽力</a></li>
+                        <li class="bbh-shop"><a href="#">媽咪市集</a></li>
                         <li class="bbh-forum"><a href="#">討論區</a></li>
-                        <li class="bbh-info"><a href="#">新知</a></li>
-                        <!--
-                        <li class="bbh-mama"><a href="#">媽媽力</a></li>
-                        -->
-                        <li class="bbh-shop"><a href="#">購物</a></li>
-                        <li class="bbh-group"><a href="#">家族</a></li>
                         <li class="bbh-events"><a href="bbh-events.html">活動</a></li>
+                        <li class="bbh-info"><a href="#">新知</a></li>
+                        <li class="bbh-group"><a href="#">家族</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
@@ -208,21 +205,23 @@
                     <div class="cover-nav-inner flex-h">
                         <div class="cover-nav-holder">
                             <ul class="sub-nav flex-h">
+                                <li><a href="#">貼文</a></li>
                                 <li><a href="bbh-myhome-about.html">關於我</a></li>
                                 <li><a href="">網誌</a></li>
                                 <li><a href="bbh-connection.html">社交圈</a></li>
                                 <li><a href="">相簿</a></li>
-                                <li><a href="">行事曆</a></li>
-                                <li class="active"><a href="">店舖</a></li>
-                                <li><a href="">家族</a></li>
                             </ul>
+                        </div>
+                        <div class="cover-btn-holder text-right">
+                            <button class="btn btn-key">關注</button>
+                            <button class="btn btn-key-line">訊息</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container bbh-main-container">
+    <div class="container bbh-main-container bbh-main-renovate">
         <div class="row">
             <div class="col-xs-2 col-left">
                 <div class="alert alert-info optional-info">
@@ -231,8 +230,6 @@
                 </div>
                 <div class="span-personal-nav">
                     <ul>
-                        <li class="list-heading"><a href="bbh-store-cart.html"><span class="icon-holder holder-key"><i class="icon-shopping-bag"></i></span>我的提袋</a><span class="badge badge-notify">5</span></a>
-                        </li>
                         <li class="list-heading"><a href="bbh-store-manifest.html"><span class="icon-holder holder-key-line"><i class="icon-shopping-bag-list"></i></span>我的買賣清單</a></li>
                     </ul>
                 </div>
@@ -253,7 +250,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p><span class="icon-holder"><i class="icon-feed-line"></i></span>店舖分類</p>
+                            <p><span class="icon-holder"><i class="icon-feed-line"></i></span>分類</p>
                             <ul>
                                 <li><a href="">全部商品(10)</a></li>
                                 <li><a href="">手工娃娃(7)</a></li>
@@ -267,7 +264,7 @@
                     <ul>
                         <li><a href="">服務條款</a></li>
                         <li><a href="">隱私權政策</a></li>
-                        <li><a href="">Q&A</a></li>
+                        <li><a href="">Q&amp;A</a></li>
                         <li><a href="">客服信箱</a></li>
                         <li class="dropdown">
                             <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
@@ -288,361 +285,402 @@
                 </div>
             </div>
             <div class="col-xs-10 col-main-card">
-                <div class="row">
-                    <ol class="breadcrumb">
-                        <li><a href="#">店舖</a></li>
-                    </ol>
-                    <div class="masonry m-4">
-                        <!--新增物件-->
-                        <div class="masonry-column">
-                            <div class="card-span store-list creat-new">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <a href="bbh-store-create.html" class="pd-link-btn"></a>
-                                        </div>
+                <ol class="breadcrumb">
+                    <li><a href="#">BabyHome</a></li>
+                    <li class="active">媽咪市集</li>
+                </ol>
+                <div class="grid">
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list creat-new">
+                            <div class="card-inner">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <a href="bbh-store-create.html" class="pd-link-btn"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="start-info hidden">
-                            <div class="img-holder"><img src="public/img/store-illustration.png" alt="" class="img-responsive"></div>
-                            <p class="text-center lw-key">親愛的會員，您好！
-                                <br>您還未建立店舖喔，快來使用新功能吧！</p>
-                        </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list stock-0">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img src="public/img/Death_to_Stock_cover.jpg" class="img-responsive"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-txt-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img src="public/img/Death_to_Stock_2.jpg" class="img-responsive"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
                                         </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-store-detail.html" class="pd-link-btn"></a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="masonry-column">
-                            <div class="card-span store-list">
-                                <div class="card-inner">
-                                    <div class="card-body">
-                                        <div class="body-inner">
-                                            <div class="img-holder single-img">
-                                                <div class="pd-img"><img class="img-responsive" src="http://lorempixel.com/400/400/food"></div>
-                                            </div>
-                                            <div class="txt-holder">
-                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
-                                                <p><span class="price-tag">1,300</span></p>
-                                                <div class="post-detail flex-between">
-                                                    <div class="flex-h"><i class="icon-heart-full"></i><span>150</span></div>
-                                                    <div class="flex-h"><i class="icon-eye"></i><span>1,515</span></div>
-                                                </div>
-                                            </div>
-                                            <a href="bbh-store-detail.html" class="pd-link-btn"></a>
-                                        </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--
+                <!---->
                 <ul class="pagination pagination-bbh">
                     <li><a href="#" class="prev"><i class="icon-arrow-left"></i></a></li>
                     <li class="active"><a href="#">1</a></li>
@@ -656,11 +694,10 @@
                     <li> <a href="#">9</a></li>
                     <li><a href="#" class="next"><i class="icon-arrow-right"></i></a></li>
                 </ul>
-                -->
+                
             </div>
         </div>
     </div>
-    <footer class="footer-universal"></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/header-custom.js"></script>

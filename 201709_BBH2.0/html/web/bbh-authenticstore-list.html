@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BabyHome</title>
+    <link id="theme" href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link id="theme" href="public/css/non-responsive.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-header-footer.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-main.css" rel="stylesheet">
+    <link id="theme" href="public/css/bbh-newstore.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="public/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>     
+    <![endif]-->
+</head>
+
+<body>
+    <header class="head-universal">
+        <nav class="navbar navbar-default navbar-fixed-top nav-down">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand bbh-logo-new" href="bbh-index.html"><img src="../web/public/img/bbh-logo-new.svg" alt="BabyHome.com.tw" class="img-responsive"><span class="sr-only">BabyHome.com.tw</span></a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="bbh-mama"><a href="bbh-motherhood.html">媽媽力</a></li>
+                        <li class="bbh-shop"><a href="#">媽咪市集</a></li>
+                        <li class="bbh-forum"><a href="#">討論區</a></li>
+                        <li class="bbh-events"><a href="bbh-events.html">活動</a></li>
+                        <li class="bbh-info"><a href="#">新知</a></li>
+                        <li class="bbh-group"><a href="#">家族</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><span class="badge badge-notify">17</span><a href="#" title="購物車" data-toggle="modal" data-target="#shoppingModal"><i class="icon-shopping-cart-line"></i><span class="sr-only">購物車</span></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
+                        <li><span class="badge badge-notify">5</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-message-outline"></i><span class="sr-only">訊息</span></a></li>
+                        <li class="push-note dropdown">
+                            <a href="#" title="通知" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="push-notice">
+                                <p class="notice-head">通知</p>
+                                <div class="notice-list">
+                                    <div class="media">
+                                        <p>目前尚無新通知</p>
+                                    </div>
+                                    <div id="li_573add2f38d056b1438b4567" class="media unread">
+                                        <a href="http://photo.babyhome.com.tw/236111/jeUwdjSYCJ1TcYEK" class="notice-link" name="unread" notice_id="573add2f38d056b1438b4567"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="毛寶2次方">
+                                            <div class="media-body">
+                                                <p class="notice-content">毛寶2次方喜歡您的照片。</p>
+                                                <p class="timeline">2016-05-17 16:58:23</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#573add2f38d056b1438b4567" name="notice_read" title="已閱讀"><i class="icon-check-full-circle"></i></a>
+                                            <a href="#573add2f38d056b1438b4567" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                    <div id="li_546ae13339d05606598b4568" class="media ">
+                                        <a href="http://photo.babyhome.com.tw/236111/7xfhTn3cJQnsvQzX" class="notice-link" name="" notice_id="546ae13339d05606598b4568"><img src="http://bb5.babyhome.com.tw/PPIC/my/11/236111.jpg" class="media-object pull-left" data-src="holder.js/30x30" alt="家有毛寶">
+                                            <div class="media-body">
+                                                <p class="notice-content">家有毛寶回應您的照片「Cute」</p>
+                                                <p class="timeline">2014-11-18 14:03:31</p>
+                                            </div>
+                                        </a>
+                                        <p class="notice-option">
+                                            <a href="#546ae13339d05606598b4568" name="notice_delele" title="刪除"><i class="icon-close-full"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="http://member.babyhome.com.tw/notice" class="btn btn-primary btn-lg btn-block">查看更多</a>
+                            </div>
+                        </li>
+                        <li class="avator hidden">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html">
+                                    <i class="icon-avator-full"></i><span class="sr-only">未登入</span>
+                                 </a>
+                            </div>
+                        </li>
+                        <li class="avator">
+                            <div class="profile-avator-xs">
+                                <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""><span class="sr-only">Hi~ 小寶真是可愛</span></a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><span class="badge badge-notify"></span><a href="#" class="dropdown-toggle nav-more" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-more-horizontal-full"></i><span class="sr-only">更多</span></a>
+                            <!--myhome-->
+                            <ul class="dropdown-menu">
+                                <li class="profile-detail flex-h">
+                                    <div class="detail-inner"><span class="number">20</span><span>貼文</span></div>
+                                    <div class="detail-inner"><span class="number">331</span><span>話題</span></div>
+                                    <div class="detail-inner"><span class="number">1.1K</span><span>關注我</span></div>
+                                    <div class="detail-inner"><span class="number">10K</span><span>Ｑ點</span></div>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><span class="badge badge-notify"></span><a href="#">動態消息</a></li>
+                                        <li><a href="">相簿</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-heading">
+                                    <ul>
+                                        <li><a href="#">管理中心</a></li>
+                                        <li><a href="#">登出</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="personal-cover">
+        <div class="cover-inner">
+            <div class="container edit-mode">
+                <a href="" class="edit-img"><i class="icon-camera-full"></i>編輯封面</a>
+                <div class="profile-caption">
+                    <p class="h3">Hi~ 小寶真是可愛<span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span><span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span><span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span></p>
+                    <p>人生很簡單，那就是做了決定就不要回頭看！<a href="" class="btn btn-link" data-toggle="modal" data-target="#briefModal" title="編輯短介"><i class="icon-edite-full"></i></a></p>
+                </div>
+                <div class="cover-btn-holder flex-h">
+                    <button class="btn btn-key-line">取消</button>
+                    <button class="btn btn-key">確定</button>
+                </div>
+            </div>
+            <div class="cover-holder">
+                <img src="public/img/default-bg.jpg" alt="">
+            </div>
+        </div>
+        <div class="cover-nav affix" id="covernav-fix">
+            <div class="container">
+                <div class="col-xs-12">
+                    <!--title加入暱稱-->
+                    <div class="cover-profile" title="小寶真是可愛小寶真是可愛小寶真是可愛">
+                        <div class="span-profile text-left flex-h">
+                            <div class="profile-avator-lg">
+                                <a href="bbh-myhome.html" class="edit-img"><i class="icon-camera-full"></i></a>
+                                <img src="http://lorempixel.com/200/200/people" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-nav-inner flex-h">
+                        <div class="cover-nav-holder">
+                            <ul class="sub-nav flex-h">
+                                <li><a href="bbh-authenticstore-about.html">品牌故事</a></li>
+                                <li><a href="#">粉絲<span class="badge badge-warning">1.K</span></a></li>
+                                <li><a href="#">貼文</a></li>
+                                <li><a href="#">內容/開箱</a></li>
+                                <li><a href="#">相簿</a></li>
+                                <li><a href="bbh-authenticstore-list.html">商店</a></li>
+                            </ul>
+                        </div>
+                        <div class="cover-btn-holder text-right">
+                            <a href="" class="btn btn-key">成為粉絲</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bbh-main-container bbh-main-renovate">
+        <div class="row">
+            <div class="col-xs-2 col-left">
+                <div class="alert alert-info optional-info">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <p><a href="" class="link-blue" target="_blank">小鋪操作指南</a></p>
+                </div>
+                <div class="span-personal-nav">
+                    <ul>
+                        <li class="list-heading"><a href="bbh-authenticstore-manifest.html"><span class="icon-holder holder-key-line"><i class="icon-shopping-bag-list"></i></span>我的買賣清單</a></li>
+                    </ul>
+                </div>
+                <div class="span-detail flex-h">
+                    <div class="detail-inner"><a href=""><span class="number">102</span><span>貼文</span></a></div>
+                    <div class="detail-inner"><a href=""><span class="number">3318</span><span>商品</span></a></div>
+                    <div class="detail-inner"><a href=""><span class="number">10</span><span>粉絲</span></a></div>
+                </div>
+                <div class="span-personal-nav">
+                    <ul>
+                        <li class="list-heading">
+                            <div class="dropdown more-option folder-edit pull-right">
+                                <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="icon-optional-vertical-full"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="" data-toggle="modal" data-target="#folderModal">變更排序/名稱</a>
+                                    </li>
+                                    <li class="creat-new flex-h">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="新增分類">
+                                        </div>
+                                        <button class="btn btn-sm btn-key">建立</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p><span class="icon-holder"><i class="icon-feed-line"></i></span>分類</p>
+                            <ul>
+                                <li><a href="">全部商品(10)</a></li>
+                                <li><a href="">手工娃娃(7)</a></li>
+                                <li><a href="">未分類(1)</a></li>
+                                <li><a href="">已下架區(7)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span-footer">
+                    <ul>
+                        <li><a href="">服務條款</a></li>
+                        <li><a href="">隱私權政策</a></li>
+                        <li><a href="">Q&amp;A</a></li>
+                        <li><a href="">客服信箱</a></li>
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">關於我們</a></li>
+                                <li><a href="">客服信箱</a></li>
+                                <li><a href="">合作提案</a></li>
+                                <li><a href="">徵才資訊</a></li>
+                                <li><a href="">關於我們</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="span-logo">
+                        <ul class="secondary-info">
+                            <li>Copyright © 2017 BabyHome. All right reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-main-card">
+                <ol class="breadcrumb">
+                    <li><a href="#">BabyHome</a></li>
+                    <li class="active">商店</li>
+                </ol>
+                <div class="grid">
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list creat-new">
+                            <div class="card-inner">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <a href="bbh-store-create.html" class="pd-link-btn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_2.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-txt-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-width5">
+                        <div class="card-span store-list">
+                            <div class="card-inner card-share">
+                                <div class="card-body">
+                                    <div class="body-inner">
+                                        <div class="img-holder single-img">
+                                            <div class="pd-img"><img src="public/img/Death_to_Stock_1.jpg" class="img-responsive"></div>
+                                        </div>
+                                        <div class="txt-holder">
+                                            <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                            <div class="flex-h flex-between">
+                                                <span class="price-tag">1,300</span>
+                                                <div class="flex-h lw-key"><i class="icon-eye"></i><span>1,515</span></div>
+                                            </div>
+                                        </div>
+                                        <a href="bbh-authenticstore-detail.html" class="pd-link-btn"></a>
+                                    </div>
+                                    <div class="respond-option flex-h">
+                                        <div class="option-action"><a href="#" role="button" title="收藏"><i class="icon-bookmark-line"></i></a></div>
+                                        <!--
+                                            <div class="option-action"><a href="" role="button" title="購物車"><i class="icon-share-line"></i></a></div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <ul class="pagination pagination-bbh">
+                    <li><a href="#" class="prev"><i class="icon-arrow-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li> <a href="#">2</a></li>
+                    <li> <a href="#">3</a></li>
+                    <li> <a href="#">4</a></li>
+                    <li> <a href="#">5</a></li>
+                    <li> <a href="#">6</a></li>
+                    <li> <a href="#">7</a></li>
+                    <li> <a href="#">8</a></li>
+                    <li> <a href="#">9</a></li>
+                    <li><a href="#" class="next"><i class="icon-arrow-right"></i></a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal favorit-list fade" id="shoppingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
+                    <h4 class="modal-title text-center" id="myModalLabel">結帳</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="flex-h flex-between">
+                        <div class="flex-1 text-center shoppingcart-type">
+                            <a href="">小鋪我的提袋<span class="badge badge-notify">11</span></a>
+                        </div>
+                        <div class="flex-1 text-center shoppingcart-type">
+                            <a href="">商店購物車<span class="badge badge-notify">2</span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/header-custom.js"></script>
+    <script src="public/js/feeds-custom.js"></script>
+    <script src="public/js/imagesloaded.pkgd.min.js"></script>
+    <script src="public/js/masonry.pkgd.min.js"></script>
+    <script>
+    $('#covernav-fix').affix({
+        offset: {
+            top: 300,
+            bottom: function() {
+                return (this.bottom = $('.footer').outerHeight(true))
+            }
+        }
+    })
+
+    // init Masonry
+    var $grid = $('.masonry').masonry({
+        // options...
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress(function() {
+        $grid.masonry('layout');
+    });
+    </script>
+</body>
+
+</html>

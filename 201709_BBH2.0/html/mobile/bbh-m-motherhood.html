@@ -131,7 +131,7 @@
             </div>
         </div>
     </nav>
-    <div class="main-wrapper">
+    <div class="main-wrapper bbh-main-renovate">
         <header class="head-universal">
             <nav class="navbar navbar-default navbar-fixed-top nav-down">
                 <div class="container">
@@ -165,9 +165,14 @@
                                 </a>
                             </div>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#" data-toggle="modal" data-target="#searchList"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
-                                <li><span class="badge badge-notify">5</span><a href="#" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
-                                <li><a href="#" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                                <li><a role="button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseExample" class="search-glass"><i class="icon-magnify-glass-line"></i><span class="sr-only">搜尋</span></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="訊息"><i class="icon-envelope-line"></i><span class="sr-only">訊息</span></a></li>
+                                <li><span class="badge badge-notify">55</span><a href="#" data-toggle="tooltip" data-placement="bottom" title="通知"><i class="icon-bell-line"></i><span class="sr-only">通知</span></a></li>
+                                <li>
+                                    <div class="profile-avator-xs">
+                                        <a href="bbh-m-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -176,13 +181,35 @@
                     <div class="row">
                         <div id="navbar" class="main-nav">
                             <ul class="nav navbar-nav">
-                                <li class="bbh-forum"><a href="#">討論</a></li>
                                 <li class="bbh-mama"><a href="bbh-m-motherhood.html">媽媽力</a></li>
-                                <li class="bbh-info"><a href="#">新知</a></li>
-                                <li class="bbh-shop"><a href="#">購物</a></li>
-                                <li class="bbh-group"><a href="#">家族</a></li>
+                                <li class="bbh-shop"><a href="#">媽咪市集</a></li>
+                                <li class="bbh-forum"><a href="#">討論</a></li>
                                 <li class="bbh-events"><a href="bbh-m-events.html">活動</a></li>
-                                <li class="bbh-mama"><a href="">動態分享</a></li>
+                                <li class="bbh-info"><a href="#">新知</a></li>
+                                <li class="bbh-group"><a href="#">家族</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse search-collapse" id="collapseSearch">
+                    <div class="container">
+                        <div class="input-group content-width search-span">
+                            <span class="input-group-btn list-select">
+                            <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
+                        </span>
+                            <input type="text" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword"><span class="input-group-btn"><button class="btn btn-sm btn-key" type="submit">搜尋</span>
+                        </div>
+                        <div class="search-history content-width">
+                            <ul>
+                                <li>熱門搜尋：</li>
+                                <li><a href="">國中會考</a></li>
+                                <li><a href="">月子中心</a></li>
+                                <li><a href="">懷孕初期</a></li>
+                                <li><a href="">免費索取</a></li>
+                                <li><a href="">會考成績</a></li>
+                                <li><a href="">國中會考</a></li>
+                                <li><a href="">國中會考</a></li>
+                                <li><a href="">國中會考</a></li>
                             </ul>
                         </div>
                     </div>
@@ -192,415 +219,712 @@
         <div class="sec-row col-main-card col-motherhood">
             <div class="container">
                 <div class="row">
-                    <div class="section-heading">
-                        <div class="text-center"><span class="lead">最美媽媽力</span></div>
-                        <div class="cover-btn-holder flex-h flex-between mrb-10">
-                            <a href="bbh-m-motherhood-list.html" class="btn btn-link bbh-pink"><i class="icon-motherhood-vr"></i>媽媽力人物<i class="icon-arrow-right"></i></a>
-                            <a href="bbh-m-motherhood-store.html" class="btn btn-link bbh-pink btn-mamishow"><i class="icon-mamishow"></i></a>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="sr-only">tags分類</label>
-                            <span class="select-style">
-                                <select class="form-control">
-                                <option value="">最新分享</option>
-                                <option value="">#孕期紀錄</option>
-                                <option value="">#新手媽媽</option>
-                                <option value="">#新生兒</option>
-                                <option value="">#萌娃紀錄</option>
-                                <option value="">#收納整理</option>
-                                <option value="">#親子旅遊</option>
-                                <option value="">#造型便當</option>
-                                <option value="">#開胃食譜</option>
-                                <option value="">#減肥食譜</option>
-                                <option value="">#減肥瘦身</option>
-                                <option value="">#養顏美容</option>
-                                <option value="">#美魔女</option>
-                                <option value="">#時尚穿搭</option>
-                                <option value="">#清潔打掃</option>
-                            </select>
-                            </span>
-                        </div>
+                    <div class="page-title">
+                        <h1 class="category-heading"><span>媽媽力</span></h1>
+                        <h2>我們需要更善於傾聽。孩子有能力自行做某件事，並不表示當他向你尋求協助時，你就拒絕伸出援手。能夠分辨左右腳的三歲孩子，仍舊不夠熟練。也許他只是覺得不好意思開口，因為自己忘記哪隻腳該穿哪隻鞋。也許只是單純缺乏安全感。</h2>
                     </div>
-                    <!--里程碑-->
                     <div class="card-span">
-                        <div class="card-inner">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                </div>
-                                <div class="profile-caption">
-                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
-                                </div>
+                        <div class="block-title">
+                            <div class="card-title flex-h flex-between mami-show">
+                                <p><span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>媽媽力人物</p>
+                                <a href="bbh-m-motherhood-list.html" class="btn-more"><i class="icon-plus"></i></a>
                             </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="ms-marks">
-                                        <p class="h2"><span class="svg-holder"><img src="public/img/svg/ms-23.svg" alt="" class="img-responsive"></span>第一天上學第一天上學</p>
-                                    </div>
-                                    <div class="img-holder single-img">
-                                        <a href=""><img class="img-responsive" src="https://d1tuuacv99jvh2.cloudfront.net/o4LN2nIM0ZCJDL4Z_xxl.jpg"></a>
-                                    </div>
-                                    <div class="txt-holder shorten">
-                                        <a href="">
-                                            <p>小毛制服秀，都忘了小學生衣服要紮進去(-｡-;</p>
-                                        </a>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
+                            <div class="category-list">
+                                <a href="bbh-m-motherhood-list.html" class="btn btn-sm btn-key-line">創業</a><a href="bbh-m-motherhood-list.html" class="btn btn-sm btn-key-line">自媒</a><a href="bbh-m-motherhood-list.html" class="btn btn-sm btn-key-line">專業</a><a href="bbh-m-motherhood-list.html" class="btn btn-sm btn-key-line">才藝</a><a href="bbh-m-motherhood-list.html" class="btn btn-sm btn-key-line">愛心</a><a href="bbh-m-motherhood-list.html" class="btn btn-sm btn-key-line">名人</a>
+                            </div>
+                        </div>
+                        <div class="slider-block profile-slider">
+                            <div class="item">
+                                <ul id="profile-slider" class="content-slider">
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--有link預覽-->
-                    <div class="card-span">
-                        <div class="card-inner">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                </div>
-                                <div class="profile-caption">
-                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="txt-holder shorten">
-                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                        <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
-                                    </div>
-                                    <div class="link-description">
-                                        <a href="https://info.babyhome.com.tw/article/12890" target="_blank">
-                                            <img src="https://d1tuuacv99jvh2.cloudfront.net/JCpgApAC3jidm5ez_xxl.jpg" class="img-responsive">
-                                            <h5>節約瓦斯費＆縮短料理時間◎知道的話就會很方便4個平底鍋調理技巧♪ - BabyHome 新知大耳朵</h5>
-                                        </a>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
                                         </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="span-profile">
+                                            <div class="profile-avator">
+                                                <a href="#">
+                                                        <span class="icon-holder"><img src="public/img/clover-icon.png" alt=""></span>
+                                                        <div class="mami-tags">
+                                                            <span>創業</span><span>自媒</span><span>專業</span><span>才藝</span>
+                                                        </div>
+                                                        <img src="http://lorempixel.com/200/200/people" alt="">
+                                                    </a>
+                                            </div>
+                                            <div class="profile-caption">
+                                                <p><a href="">諾卓米 nozomi</a></p>
+                                            </div>
+                                            <button class="btn btn-sm btn-key">關注</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-span mami-feature">
+                        <div class="block-title">
+                            <div class="card-title flex-h flex-between">
+                                <p>媽媽力專訪</p>
+                                <a href="#" class="btn-more"><i class="icon-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qY0DXJXXj24" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="media feature-story">
+                                    <div class="media-body">
+                                        <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人為何當婆婆的人說的跟做的都是不一樣的人為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                    </div>
+                                </div>
+                                <div class="media feature-story">
+                                    <div class="media-body">
+                                        <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--網誌發文-->
                     <div class="card-span">
-                        <div class="card-inner card-share">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                        <div class="block-title flex-h flex-between">
+                            <div class="card-title">
+                                <p>網誌</p>
+                            </div>
+                        </div>
+                        <div class="blog-feature">
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
                                 </div>
-                                <div class="profile-caption">
-                                    <p><a href="" class="link-profile">水蜜桃</a> 發佈一篇 <a href="" class="link-profile">網誌</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="txt-holder">
-                                        <div class="link-description blog-description">
-                                            <a href="bbh-m-blog-post.html">
-                                                <img src="https://d1tuuacv99jvh2.cloudfront.net/JCpgApAC3jidm5ez_xxl.jpg" class="img-responsive">
-                                                <h3>逗孩子很好玩？其實是大人的一種惡習！</h3>
-                                                <div class="post-detail">
-                                                    <span class="time-tage">2017年11月6日</span>
-                                                    <div class="flex-h"><span>公開</span><i class="icon-earth-full flex-h"></i></div>
-                                                    <div class="flex-h"><span>1,515</span><i class="icon-eye flex-h"></i></div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                    <span class="pull-right featuring-tag">贊助廣告</span>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mamimart-feafure">
+                            <div class="block-title">
+                                <div class="card-title flex-h flex-between">
+                                    <p>媽咪市集</p>
+                                    <a href="#" class="btn-more"><i class="icon-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="slider-block ec-slider">
+                                <div class="item">
+                                    <ul id="ec-slider" class="content-slider flex-h">
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <p class="shorten">尊敬的尹老師，您好：我女兒一歲半了。昨天晚上我和她爸爸逗她玩，她爸爸伸手做出要抱她的樣子，我女兒已經張開手了，她爸爸又把手縮回去，並做出轉身要走的樣子，我女兒有點莫名其妙。她爸爸第二次伸手做出要抱她的樣子，我女兒猶豫了一下，還是張開了手，但她爸爸又把手縮回去。這時候我女兒帶著點尷尬的表情，當她爸爸再伸手的時候，我女兒搖了搖頭，不看她爸爸了。她爸爸想強行抱她，她就用手撥開爸爸的手，不讓爸爸抱，而且整個晚上都對她爸爸不理不睬，平時她是最喜歡和她爸爸玩了。</p>
-                                            </a>
-                                            <div class=show-more><a href="bbh-feed-post.html" class="link-light">看更多</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="dropdown option-action hover-drop">
-                                            <a href="" class="pre-act"><i class="icon-heart-line"></i></a><span>2</span>
-                                        </div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-span store-list">
+                                                <div class="card-inner card-share">
+                                                    <div class="card-body">
+                                                        <div class="body-inner">
+                                                            <div class="img-holder single-img">
+                                                                <div class="pd-img"><img src="https://f-photo.babyhome.com.tw/aaaaaaC7SVvtGmTw_xl.jpg" class="img-responsive"></div>
+                                                            </div>
+                                                            <div class="txt-holder">
+                                                                <p class="pd-heading">歐舒丹～室內香氛～蜜餞果子/玫瑰家居空間香氛100ml～每瓶850元～造型典雅</p>
+                                                            </div>
+                                                            <a href="#" class="pd-link-btn"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-feature">
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
+                                </div>
+                            </div>
+                            <div class="media feature-story">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="http://placehold.it/122x64/8bc34a/000000" alt="..."></a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="media-heading"><a href="" title="為何當婆婆的人說的跟做的都是不一樣的人">為何當婆婆的人說的跟做的都是不一樣的人</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--動態-->
-                    <div class="card-span">
-                        <div class="card-inner">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                    <div class="card-span col-right-uni">
+                        <div class="block-title">
+                            <div class="card-title">
+                                <p>BabyHome懶人報</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul class="list-link">
+                                <li><a href="" class="reduce" title="">No.1 標題標題標題標題標題標題</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-span col-right-uni">
+                        <div class="card-content flex-h flex-around">
+                            <div class="span-profile officail-profile">
+                                <div class="profile-avator">
+                                    <a href="bbh-myhome.html"><img src="https://f-member.babyhome.com.tw/avatar/03/1088803.jpg" alt=""></a>
                                 </div>
                                 <div class="profile-caption">
-                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
+                                    <p><a href="">橘子太太</a></p>
                                 </div>
+                                <button class="btn btn-sm btn-key">關注</button>
                             </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="img-holder single-img">
-                                        <a href=""><img class="img-responsive" src="http://lorempixel.com/900/750/city"></a>
-                                    </div>
-                                    <div class="txt-holder shorten">
-                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                        <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-span">
-                        <div class="card-inner">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
+                            <div class="span-profile officail-profile">
+                                <div class="profile-avator">
+                                    <a href="bbh-myhome.html"><img src="https://f-member.babyhome.com.tw/avatar/46/577146.jpg?7-20-15" alt=""></a>
                                 </div>
                                 <div class="profile-caption">
-                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
+                                    <p><a href="">官方小編</a></p>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="img-holder single-img">
-                                        <a href=""><img class="img-responsive" src="http://lorempixel.com/900/750/city"></a>
-                                    </div>
-                                    <div class="txt-holder shorten">
-                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                        <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <button class="btn btn-sm btn-key">關注</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-span">
-                        <div class="card-inner">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                </div>
-                                <div class="profile-caption">
-                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="img-holder single-img">
-                                        <a href=""><img class="img-responsive" src="http://lorempixel.com/900/750/city"></a>
-                                    </div>
-                                    <div class="txt-holder shorten">
-                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                        <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="card-span col-right-uni">
+                        <div class="block-title">
+                            <div class="card-title">
+                                <p>本日熱門</p>
                             </div>
                         </div>
+                        <div class="card-content">
+                            <ul class="list-link">
+                                <li><a href="" class="reduce" title="標題標題標題標題標題標題標題標題標標題標題標題標題標題標題標題標題標">標題標題標題標題標題標題標題標題標標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="標題標題標題標題標題標題標題標題標標題標題標題標題標題標題標題標題標">標題標題標題標題標題標題標題標題標標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                                <li><a href="" class="reduce" title="">標題標題標題標題標題標題標題標題標</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card-span">
-                        <div class="card-inner">
-                            <div class="card-heading">
-                                <div class="profile-avator-xs">
-                                    <a href="bbh-myhome.html"><img src="http://lorempixel.com/80/80/people" alt=""></a>
-                                </div>
-                                <div class="profile-caption">
-                                    <p><a href="" class="link-profile">小寶真是可愛</a></p>
-                                    <div class="post-detail">
-                                        <span class="time-tage">3小時前</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="body-inner">
-                                    <div class="img-holder single-img">
-                                        <a href=""><img class="img-responsive" src="http://lorempixel.com/900/750/city"></a>
-                                    </div>
-                                    <div class="txt-holder shorten">
-                                        <p>蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。蝴蝶，蝴蝶，生得真美麗。頭戴著金絲，身穿花花衣。你愛花兒，花兒也愛你，你會跳舞，它有甜蜜。</p>
-                                        <p class="tag-span"><a href="">＃兒歌</a><a href="">＃蝴蝶</a></p>
-                                    </div>
-                                    <div class="respond-option flex-h">
-                                        <div class="option-action"><a href=""><i class="icon-heart-full"></i></a><span>2</span></div>
-                                        <div class="option-action"><a href="" data-toggle="tooltip" data-placement="bottom" title="留言"><i class="icon-chat-line"></i></a><span>2</span></div>
-                                        <div class="dropdown option-action">
-                                            <a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-share-line"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">分享至Facebook</a></li>
-                                                <li><a href="bbh-m-compose-share.html">分享至My Home</a></li>
-                                                <li><a href="#">複製連結</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="card-span col-right-uni">
+                        <div class="block-title">
+                            <div class="card-title">
+                                <p>媽咪投票趣</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="optional-links affix">
-        <div class="dropdown">
-            <a href="#" class="btn btn-tool btn-add" id="moreLinks" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-plus"></i></a>
-            <div class="dropdown-menu" aria-labelledby="moreLinks">
-                <a href="#" class="btn btn-tool btn-feed"><i class="icon-add-feed"></i>分享生活</a>
-                <a href="#" class="btn btn-tool back2top"><i class="icon-arrow-up"></i>頁首</a>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal search-list fade" id="searchList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-close-line"></i></span></button>
-                    <span class="input-group-btn list-select">
-                            <select name="classsort" class="form-control"> <option value="forum" selected="">討論</option> <option value="info">新知</option> <option value="name">作者</option> </select>
-                        </span>
-                    <div class="input-group content-width search-span">
-                        <input type="search" class="form-control" placeholder="搜尋，就從BabyHome開始。" name="keyword">
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="search-history content-width">
-                        <ul>
-                            <li class="list-heading">熱門搜尋</li>
-                            <li><a href="">國中會考</a></li>
-                            <li><a href="">月子中心</a></li>
-                            <li><a href="">懷孕初期</a></li>
-                            <li><a href="">免費索取</a></li>
-                            <li><a href="">會考成績</a></li>
-                            <li><a href="">國中會考</a></li>
-                            <li><a href="">國中會考</a></li>
-                            <li><a href="">國中會考</a></li>
-                        </ul>
-                        <span class="seperate-line-light"></span>
-                        <ul>
-                            <li class="list-heading">搜尋紀錄</li>
-                            <li><a href="">國中會考</a></li>
-                            <li><a href="">月子中心</a></li>
-                            <li><a href="">懷孕初期</a></li>
-                            <li><a href="">免費索取</a></li>
-                            <li><a href="">會考成績</a></li>
-                            <li><a href="">國中會考</a></li>
-                            <li><a href="">國中會考</a></li>
-                            <li><a href="">國中會考</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal flag-modal fade" id="flagModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="content-heading flex-h">
-                        <div class="backward">
-                            <a href="bbh-m-myhome.html" class="btn btn-link" data-dismiss="modal" aria-label="Close"><i class="icon-arrow-left"></i></a>
-                        </div>
-                        <div class="heading-inner">檢舉貼文</div>
-                        <div class="compose-btn invisible">
-                            <button class="btn btn-key-line">發表</button>
+                        <div class="card-content">
+                            <p><a href="#" target="_blank">您印象中是在什麼媒體接觸到滴雞精、熬雞精?</a></p>
+                            <p class="text-right"><a href="" class="btn-link link-blue" target="_blank">前往投票</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="radio custum-box">
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                            <label for="optionsRadios1">違反法令規定</label>
+                    <div class="card-span col-right-uni">
+                        <div class="block-title">
+                            <div class="card-title">
+                                <p>熱門搜尋</p>
+                            </div>
                         </div>
-                        <div class="radio custum-box">
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                            <label for="optionsRadios2">色情貼文</label>
+                        <div class="card-content">
+                            <div class="flex-h list-wrap">
+                                <a href="" target="_blank" class="link-blue">關鍵字1</a><a href="" target="_blank" class="link-blue">關鍵字2</a><a href="" target="_blank" class="link-blue">關鍵字3</a><a href="" target="_blank" class="link-blue">關鍵字4</a><a href="" target="_blank" class="link-blue">關鍵字5</a><a href="" target="_blank" class="link-blue">關鍵字6</a><a href="" target="_blank" class="link-blue">關鍵字7</a><a href="" target="_blank" class="link-blue">關鍵字8</a>
+                            </div>
                         </div>
-                        <div class="radio custum-box">
-                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                            <label for="optionsRadios3">其他，請填入原因</label>
-                        </div>
-                        <div class="respond-inner">
-                            <textarea class="form-control autoExpand" id="message_content" rows='1' data-min-rows='1' placeholder="檢舉原因"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="cover-btn-holder flex-h">
-                        <button class="btn btn-key-line">取消</button>
-                        <button class="btn btn-key">確定送出</button>
                     </div>
                 </div>
             </div>
@@ -610,6 +934,37 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/m-header-custom.js"></script>
     <script src="public/js/m-feeds-custom.js"></script>
+    <script src="public/js/lightslider.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#profile-slider").lightSlider({
+            item: 4,
+            loop: false,
+            slideMove: 3,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed: 600,
+            pager: false,
+            controls: false,
+            autoWidth:true,
+            onSliderLoad: function() {
+                $('#profile-slider').removeClass('cS-hidden');
+            }
+        });
+        $("#ec-slider").lightSlider({
+            item: 4,
+            loop: false,
+            slideMove: 3,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed: 600,
+            pager: false,
+            controls: false,
+            autoWidth:true,
+            onSliderLoad: function() {
+                $('#ec-slider').removeClass('cS-hidden');
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
