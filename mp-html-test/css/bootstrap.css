@@ -6963,6 +6963,7 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 80px;
 }
 .slogo {
   -webkit-order: 0;
