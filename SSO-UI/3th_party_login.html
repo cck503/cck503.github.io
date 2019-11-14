@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="logo">
+			<img src="images/logo.png" />
+		</div>
+		<div class="weui-cell topTips">
+			<div class="weui-cell__hd">連結帳號：<img src="images/icon-fb.png"></div>
+			<div class="weui-cell__bd">
+				<p>王大明</p>
+			</div>
+		</div>
+		<div class="weui-tab loginThird">
+			<div class="weui-navbar">
+				<div class="weui-navbar__item weui-bar__item_on">
+					<em></em>已是會員，請綁定
+				</div>
+				<div class="weui-navbar__item">
+					<em></em><a href="not_member.html">還不是會員</a>
+				</div>
+			</div>
+			<div class="weui-tab__panel">
+				<div id="form">
+					<div class="weui-cells weui-cells_form">
+						<div class="input-element">
+							<label for="js_input">手機號碼 / Email</label>
+							<div class="inputbox">
+								<input id="tel" class="weui-input" type="text">
+								<button id="tel_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+							</div>
+						</div>
+						<div class="input-element">
+							<label for="js_input">密碼</label>
+							<div class="inputbox">
+								<input id="psd" class="weui-input" type="password"><button id="tel_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="weui-cell forgetpsd">
+					<div class="weui-cell__bd">
+					</div>
+					<div class="weui-cell__ft">
+						<a href="forget_password.html">忘記密碼</a>
+					</div>
+				</div>
+				<a href="profile_completion.html" class="weui-btn weui-btn_primary">立即連結</a>
+			</div>
+		</div>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/base.js"></script>
+	</body>
+
+</html>

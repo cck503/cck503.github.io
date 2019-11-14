@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="logo">
+			<img src="images/logo.png" />
+		</div>
+		<div class="weui-flex prg">
+			<div class="weui-flex__item">
+				<em>1</em>建立帳戶
+			</div>
+			<div class="weui-flex__item current">
+				<em>2</em>填寫帳戶訊息
+			</div>
+			<div class="weui-flex__item">
+				<em>3</em>註冊完成
+			</div>
+		</div>
+		<div class="logobox">
+			<div class="bigTitle" style="height:20px;">
+
+			</div>
+			<div id="form">
+				<div class="weui-cells weui-cells_form">
+					<div class="input-element">
+						<label for="js_input">姓名</label>
+						<div class="inputbox">
+							<input id="name" class="weui-input" type="text">
+							<button id="name_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+						</div>
+					</div>
+					<div class="input-element select" id="showDatePicker">
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd">
+								出生日期
+							</div>
+							<div class="weui-cell__ft">
+							</div>
+						</div>
+					</div>
+					<div class="input-element">
+						<label>Email</label>
+						<div class="inputbox">
+							<input id="email" class="weui-input" type="text">
+							<button id="email_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+						</div>
+					</div>
+					<div class="input-element">
+						<label>密碼</label>
+						<div class="inputbox">
+							<input id="psd" class="weui-input" type="password">
+						</div>
+						<p class="inputTips">請混合使用8個子元以上英文字母，數字和符號</p>
+					</div>
+					<div class="input-element">
+						<label>確認密碼</label>
+						<div class="inputbox">
+							<input id="psd2" class="weui-input" type="password">
+						</div>
+					</div>
+				</div>
+				<div class="frmTips">
+					點選「註冊」,即表示您同意接受<a href="">服務條款</a>及 <a href="">隱私權保護政策</a>
+				</div>
+			</div>
+			<div style="margin-top: 10px; padding-bottom:30px">
+				<a href="member_infomation_maintenance.html" class="weui-btn weui-btn_primary">注册</a>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript">
+			$('#showDatePicker').on('click', function() {
+				weui.datePicker({
+					start: 1990,
+					end: new Date().getFullYear(),
+					onChange: function(result) {
+						console.log(result);
+					},
+					onConfirm: function(result) {
+						console.log(result);
+					},
+					title: '选择日期'
+				});
+			});
+		</script>
+	</body>
+
+</html>

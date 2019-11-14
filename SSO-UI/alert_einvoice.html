@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>会员资料维护</title>
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body style="background: #f4f4f4;">
+		<div class="header">
+			<a href="" class="back"></a>
+			會員資料維護
+		</div>
+		<div class="infoModify">
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						0999999999
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>姓名</p>
+					</div>
+					<div class="weui-cell__ft">
+						王大明
+					</div>
+				</div>
+				<a href="" class="weui-cell weui-cell_access">
+					<div class="weui-cell__bd">
+						<p>修改手機號碼</p>
+					</div>
+					<div class="weui-cell__ft">
+						0999999999
+					</div>
+				</a>
+				<a href="" class="weui-cell weui-cell_access">
+					<div class="weui-cell__bd">
+						<p>Email</p>
+					</div>
+					<div class="weui-cell__ft">
+						John@carrefour.com
+					</div>
+				</a>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>身分證字號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_access" id='showDatePicker'>
+					<div class="weui-cell__bd">
+						<p>⽣⽇</p>
+					</div>
+					<div class="weui-cell__ft">
+						<label for="">1999/12/31</label>
+					</div>
+				</div>
+				<a href="" class="weui-cell weui-cell_access">
+					<div class="weui-cell__bd">
+						<p>地址</p>
+					</div>
+					<div class="weui-cell__ft">
+						臺北市大同區大龍街100號10樓之110樓之110樓之1
+					</div>
+				</a>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>好康卡綁定</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>電子發票載具</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="images/icon-fb.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>連結Facebook帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="images/icon-line.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>連結LINE帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="images/icon-google.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>連結Google帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_checkbox agreebox">
+				<label class="weui-cell weui-check__label" for="s12">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>不列印紙本券</p>
+                </div>
+            </label>
+				<label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>我願意收到電子報並享多重會員折扣訊息</p>
+                </div>
+            </label>
+
+			</div>
+			<div class="btnArea">
+				<a href="" class="weui-btn weui-btn_primary">确定</a>
+			</div>
+		</div>
+
+		<!--弹层-->
+		<div class="pop">
+			<div class="weui-mask weui-animate-fade-in"></div>
+			<div class="weui-half-screen-dialog weui-picker weui-animate-slide-up">
+				<div class="weui-half-screen-dialog__hd">
+					<div class="weui-half-screen-dialog__hd__side"> <button class="weui-icon-btn weui-icon-btn_close weui-picker__btn">关闭</button> </div>
+					<div class="weui-half-screen-dialog__hd__main"> <strong class="weui-half-screen-dialog__title">電子發票載具</strong> </div>
+				</div>
+				<div class="weui-half-screen-dialog__bd">
+					<div class="weui-cells weui-cells_form" style="height: 240px;">
+
+						<div class="input-element select">
+							<div class="weui-cell weui-cell_access selectAndInput">
+								<div class="weui-cell__hd" id="showInvoicePicker">
+									請選擇
+								</div>
+								<div class="weui-cell__ft">
+								</div>
+								<div class="weui-cell__bd">
+									<input id="addr" class="weui-input" type="text" value="" placeholder="請輸入">
+								</div>
+							</div>
+						</div>
+						<div style="margin-top: 30px;">
+							<a href="member_infomation_maintenance.html" class="weui-btn weui-btn_primary">確認</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--弹层end-->
+		<script src="js/zepto.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript">
+			$('#showDatePicker').on('click', function() {
+				weui.datePicker({
+					start: 1990,
+					end: new Date().getFullYear(),
+					onChange: function(result) {
+						console.log(result);
+					},
+					onConfirm: function(result) {
+						console.log(result);
+					},
+					title: '选择日期'
+				});
+			});
+			$('#showInvoicePicker').on('click', function() {
+				weui.picker([{
+					label: '飞机票',
+					value: 0
+				}, {
+					label: '火车票(disabled)',
+					disabled: true,
+					value: 1
+				}, {
+					label: '的士票',
+					value: 2
+				}, {
+					label: '通讯费',
+					value: 8
+				}, {
+					label: '其他',
+					value: 9
+				}], {
+					defaultValue: [2],
+					className: 'custom-classname',
+					onChange: function onChange(result) {
+						//console.log(item, index);
+						console.log(result);
+					},
+					onConfirm: function onConfirm(result) {
+						console.log('confirm');
+						console.log(result);
+					},
+					id: 'picker',
+					title: '请选择'
+				});
+			});
+		</script>
+	</body>
+
+</html>

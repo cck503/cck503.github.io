@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>資料補全</title>
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="" class="back"></a>
+			資料補全
+		</div>
+		<div class="logobox" style="border: none;">
+			<div id="form">
+				<div class="weui-cells weui-cells_form">
+					<div class="input-element">
+						<label for="js_input">姓名</label>
+						<div class="inputbox">
+							<input id="name" class="weui-input" type="text">
+							<button id="name_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+						</div>
+					</div>
+					<div class="input-element select" id="showDatePicker">
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd">
+								出生日期
+							</div>
+							<div class="weui-cell__ft">
+							</div>
+						</div>
+					</div>
+					<div class="input-element">
+						<label>Email</label>
+						<div class="inputbox">
+							<input id="email" class="weui-input" type="text" value="">
+							<button id="email_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="margin-top: 30px;">
+				<a href="member_infomation_maintenance.html" class="weui-btn weui-btn_primary">確認</a>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript">
+			$('#showDatePicker').on('click', function() {
+				weui.datePicker({
+					start: 1990,
+					end: new Date().getFullYear(),
+					onChange: function(result) {
+						console.log(result);
+					},
+					onConfirm: function(result) {
+						console.log(result);
+					},
+					title: '选择日期'
+				});
+			});
+		</script>
+	</body>
+
+</html>

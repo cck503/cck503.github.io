@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>會員信息確認</title>
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body style="background: #f4f4f4;">
+		<div class="header">
+			<a href="" class="back"></a>
+			會員信息確認
+		</div>
+		<div class="infoModify">
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>身分證字號</p>
+					</div>
+					<div class="weui-cell__ft">
+						6392729001850830
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>姓名</p>
+					</div>
+					<div class="weui-cell__ft">
+						王大明
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>生日</p>
+					</div>
+					<div class="weui-cell__ft">
+						1999/12/31
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_form frmModify">
+				<div class="input-element active">
+					<label>手機號碼</label>
+					<div class="inputbox">
+						<input id="tel" class="weui-input" type="text" value="0999999999">
+						<button id="tel_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+					</div>
+				</div>
+				<div class="input-element active">
+					<label>Email</label>
+					<div class="inputbox">
+						<input id="email" class="weui-input" type="text" value="13838183155@139.com">
+						<button id="email_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+					</div>
+				</div>
+				<div class="input-element select" id="showCityPicker">
+					<div class="weui-cell weui-cell_access">
+						<div class="weui-cell__bd">
+							市/区
+						</div>
+						<div class="weui-cell__ft">
+						</div>
+					</div>
+				</div>
+				<div class="input-element">
+					<label>詳細地址</label>
+					<div class="inputbox">
+						<input id="addr" class="weui-input" type="text" value="">
+						<button id="addr_clear" class="weui-btn_reset weui-btn_icon weui-btn_input-clear">
+                  <i class="weui-icon-clear"></i>
+                </button>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_checkbox agreebox">
+				<label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>我願意收到電子報並享多重會員折扣訊息</p>
+                </div>
+            </label>
+
+			</div>
+		</div>
+		<div class="btnArea">
+			<a href="member_infomation_maintenance.html" class="weui-btn weui-btn_primary">確認</a>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript">
+			$('#showCityPicker').on('click', function() {
+				weui.picker([{
+					label: '广东',
+					value: 0,
+					children: [{
+						label: '广州',
+						value: 0,
+						children: [{
+							label: '海珠',
+							value: 0
+						}, {
+							label: '番禺',
+							value: 1
+						}]
+					}, {
+						label: '佛山',
+						value: 1,
+						children: [{
+							label: '禅城',
+							value: 0
+						}, {
+							label: '南海',
+							value: 1
+						}]
+					}]
+				}, {
+					label: '广西',
+					value: 1,
+					children: [{
+						label: '南宁',
+						value: 0,
+						children: [{
+							label: '青秀',
+							value: 0
+						}, {
+							label: '兴宁',
+							value: 1
+						}]
+					}, {
+						label: '桂林',
+						value: 1,
+						children: [{
+							label: '象山',
+							value: 0
+						}, {
+							label: '秀峰',
+							value: 1
+						}]
+					}]
+				}], {
+					depth: 3,
+					defaultValue: [0, 1, 1],
+					onChange: function onChange(result) {
+						console.log(result);
+					},
+					onConfirm: function onConfirm(result) {
+						console.log(result);
+					},
+					id: 'cascadePicker',
+					title: '选择地址'
+				});
+			});
+		</script>
+	</body>
+
+</html>

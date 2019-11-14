@@ -1,0 +1,93 @@
+body{ background: #fff; font-family: "Microsoft JhengHei"; }
+.frmpage{}
+.logo{ padding:5px 0; text-align: center;}
+.logo img{ width: 160px;}
+.logobox{ margin:5px 15px; border: 1px solid #EBEAE8; padding: 10px;border-radius: 3px;}
+.bigTitle{font-size: 18px; text-align: center; line-height: 40px;}
+.weui-cells:before,.weui-cells:after{ border: none;}
+.weui-cells{font-size: 16px;}
+.weui-cells_form { margin-top: 0;}
+.weui-cells_form .weui-input{ line-height:50px;height:40px; text-indent: 15px;}
+.weui-cells_form .weui-cell{padding: 0px;}
+.weui-cells_form .inputbox{  background:rgba(255,254,252,1);border:1px solid rgba(235,234,232,1);border-radius:3px; padding:0 10px; padding-left: 0; height:44px; line-height:50px; display: flex;box-sizing: border-box; width: 100%;}
+.input-element {margin: 0 auto;padding-top: 12px;position: relative;overflow: visible; margin-bottom: 5px;}
+.input-element:last-child {margin-bottom: 0;}
+.input-element.right:before {left: 0;-webkit-transform: translateX(0);transform: translateX(0);}
+.input-element label {-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;transform: translateZ(0);color: #999;top: 22px;left: 15px;position: absolute;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;display: inline-block;}
+.input-element.active label {top: 2px;color: #3B7FC4;font-size: 12px;background: #fff;display: inline-block;width: auto;padding: 0 5px; left: 10px;}
+.input-element.active:before {width: 100%;}
+.input-element.active.right label {top: 42px;left: 100%;font-size: 18px;}
+.input-element.active.bottom label {top: calc(100% + 5px);font-size: 14px;}
+.select .weui-cell{background:rgba(255,254,252,1);border:1px solid rgba(235,234,232,1);border-radius:3px; padding:0 10px; padding-left: 0; height:44px; line-height:50px; display: flex;box-sizing: border-box; width: 100%;}
+.select .weui-cell{ color:#999 ; padding-left: 15px;}
+.select .weui-cell__ft:after{ transform: rotate(90deg);}
+.forgetpsd{ padding: 10px 0;font-size: 14px; line-height: 40px;}
+.weui-cell a{ color: #2E5BFF;}
+.btnArea{ padding: 10px 15px;}
+.weui-loadmore{ width: 100%; margin-bottom: 5px;}
+.ortherLoginStyle img{width: 60px;}
+.ortherLoginStyle .weui-flex__item{ text-align: center;}
+.weui-btn_primary{ width: 100%;background:rgba(46,91,255,1);border-radius:5px; line-height: 44px;font-size: 18px; color: #fff; font-weight: normal; padding: 0;}
+.weui-btn_plain-primary{background:rgba(255,255,255,1);border:1px solid rgba(46,91,255,1);border-radius:5px; color: #2E5BFF; width: 100%;font-weight: normal;}
+.weui-btn_primary:not(.weui-btn_disabled):active {color: rgba(255, 255, 255, 0.6);background:rgba(46,91,255,1);}
+.weui-btn_plain-primary:not(.weui-btn_plain-disabled):active {color: rgba(58, 177, 252, 0.6);border-color: rgba(46, 91, 255, 0.6);}
+.btnReg{ padding-top: 50px;padding-bottom: 20px;}
+.prg{ padding: 0px;  padding-bottom: 10px;}
+.prg .weui-flex__item{ text-align: center;font-size: 14px;font-size: 14px; color: #808080;}
+.prg .weui-flex__item em{display: inline-block;  width: 18px; height: 18px; text-align: center; line-height: 16px; color: #fff;font-size: 12px; margin-right: 5px;font-style: normal; background: #999;border-radius: 50px;}
+.prg .weui-flex__item.current{ color: #1E5BC6;}
+.prg .weui-flex__item.current  em{ background: #1E5BC6;}
+.agreebox .weui-check__label:before{ border: none;}
+.agreebox .weui-cell{ padding:8px 0;}
+.agreebox .weui-cell .weui-cell__hd{ padding-right:5px;}
+.weui-cells_checkbox .weui-icon-checked{ width:16px;height: 16px; background: url(../images/icon-check.png) no-repeat; background-size: 100%; -webkit-mask-image:none}
+.agreebox .weui-cell__bd{font-size: 14px; color: #333;}
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked{ background-image: url(../images/icon-checked.png);-webkit-mask-image:none}
+.regTips{ padding: 30px 0;text-align: center; line-height: 20px;font-size: 12px; color: #333;}
+.regTips a,.frmTips a{ color: #2E5BFF;}
+.inputTips{font-size: 12px; line-height: 1.2; color: #333;padding-top:5px;}
+.frmTips{font-size: 12px; line-height: 1.2; color: #333; padding-top:20px;}
+.sendmsg{ padding:10px; text-align: center;}
+.sendmsg img{width: 90px; margin: 10px auto;}
+.sendmsg p{ line-height:25px; font-size: 14px; color: #333;}
+.btnSendCode{ width: 170px; height:30px;background:rgba(204,204,204,1);border-radius:3px; color: #fff;font-size: 13px; line-height: 30px; padding: 0 10px; margin-top: 5px;}
+.header{ height: 44px; line-height: 44px; text-align: center; position: relative;font-size: 16px; background: #fff;}
+.back{display: block; width: 44px; height: 44px; position: absolute;top:0px; left:0px; background: url(../images/icon_back.png);background-size: 100%;}
+.infoModify .weui-cell__hd img{ width:20px; height: 20px; padding-right:5px; vertical-align: middle; margin-top: -3px;}
+.infoModify .weui-cell__ft{ max-width: 80%; color:#000;}
+.infoModify .agreebox{ padding: 5px 0;}
+.infoModify .agreebox .weui-cell{ padding:10px 15px;}
+.infoModify .weui-cell{ padding: 12px 15px;}
+.topTips{ padding: 10px; padding-top: 0; color: #555;font-size: 16px;}
+.topTips:before { border: none;}
+.topTips img{ margin-top: -3px; vertical-align: middle; margin-right: 3px;}
+.topTips img{ width: 16px;}
+.loginThird{margin:5px 10px; border: 1px solid #EBEAE8;border-radius: 3px;}
+.weui-navbar__item{font-size: 16px; line-height: 1.5; padding:10px 0; color: #999;font-weight: 500;}
+.weui-navbar__item em{ display: inline-block; width: 16px; height: 16px; background: url(../images/icon-radio.png) no-repeat; background-size: 100%; margin-right: 5px; vertical-align: middle; margin-top: -3px;}
+.weui-navbar__item.weui-bar__item_on{ background: #fff; color: #1E5BC6; border-bottom: 3px solid  #1E5BC6;}
+.weui-navbar__item:after{ border: none;}
+.weui-navbar__item.weui-bar__item_on em{ background-image: url(../images/icon-radio-checked.png);}
+.weui-tab__panel{ padding:10px; padding-bottom:50px;}
+.loginThird .forgetpsd{ padding-top: 0;}
+.infoTxt{ line-height: 1.5; color: #333; text-align: center;}
+.infoTxt b{ color: #2E5BFF;}
+.frmModify{ padding: 10px; margin-top: 10px;}
+.weui-half-screen-dialog__hd{ height: 5em;}
+.pop .weui-dialog{ width: 90%;top:35%}
+.weui-dialog__hd{ padding: 10px; line-height: 1.2; text-align: left;}
+.weui-dialog__bd{font-size: 16px; color: #333; padding: 10px;}
+.weui-dialog__bd p{ text-align: left; font-size: 12px;}
+.weui-dialog__ft:after{ border: none;}
+.weui-dialog__ft{ text-align: center; display: block; padding-bottom: 20px;}
+.weui-dialog__btn{display:inline-block; flex: auto; padding: 0 50px;  background:rgba(46,91,255,1);border-radius:5px; line-height:44px;font-size: 16px; color: #fff; font-weight: normal; }
+.weui-dialog{ background: url(../images/pop-line.png ) #fff top center no-repeat;background-size: 100%;border-radius: 5px;}
+.selectAndInput .weui-cell__ft{ padding-left: 10px;}
+.selectAndInput .weui-cell__bd{ border-left: 1px solid #EBEAE8; margin-left:10px;}
+.btnCancel{ background: #fff;color: #2E5BFF;}
+.custom .weui-half-screen-dialog__hd{display: none;}
+.card-haokang{ width:50%; margin: 0 auto; border: 1px solid #ddd; border-left:5px solid #FD0202; border-right:5px solid #1E5BC6; border-radius: 3px; padding: 10px; height: 80px;}
+.card-haokang p{font-size: 16px; margin-bottom: 8px; color: #333;}
+.errorInfo{background: #F2DEDE 0% 0% no-repeat padding-box;border: 1px solid #EBCCD1;border-radius: 5px; line-height: 40px; text-align: center;font-size: 14px; color: #A94442; margin: 0 15px;}
+.errorInfo font{ color:#2E5BFF;font-size: 12px;}
+.sendmsg p{ text-align: center; color: #333; font-size: 14px;}

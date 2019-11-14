@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>会员资料维护</title>
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body style="background: #f4f4f4;">
+		<div class="header">
+			<a href="" class="back"></a>
+			會員資料維護
+		</div>
+		<div class="infoModify">
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						0999999999
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>姓名</p>
+					</div>
+					<div class="weui-cell__ft">
+						王大明
+					</div>
+				</div>
+				<a href="" class="weui-cell weui-cell_access">
+					<div class="weui-cell__bd">
+						<p>修改手機號碼</p>
+					</div>
+					<div class="weui-cell__ft">
+						0999999999
+					</div>
+				</a>
+				<a href="" class="weui-cell weui-cell_access">
+					<div class="weui-cell__bd">
+						<p>Email</p>
+					</div>
+					<div class="weui-cell__ft">
+						John@carrefour.com
+					</div>
+				</a>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>身分證字號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_access" id='showDatePicker'>
+					<div class="weui-cell__bd">
+						<p>⽣⽇</p>
+					</div>
+					<div class="weui-cell__ft">
+						<label for="">1999/12/31</label>
+					</div>
+				</div>
+				<a href="" class="weui-cell weui-cell_access">
+					<div class="weui-cell__bd">
+						<p>地址</p>
+					</div>
+					<div class="weui-cell__ft">
+						臺北市大同區大龍街100號10樓之110樓之110樓之1
+					</div>
+				</a>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>好康卡綁定</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<p>電子發票載具</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="images/icon-fb.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>連結Facebook帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="images/icon-line.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>連結LINE帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<img src="images/icon-google.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<p>連結Google帳號</p>
+					</div>
+					<div class="weui-cell__ft">
+						<a href="">立刻設定</a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_checkbox agreebox">
+				<label class="weui-cell weui-check__label" for="s12">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>不列印紙本券</p>
+                </div>
+            </label>
+				<label class="weui-cell weui-check__label" for="s11">
+                <div class="weui-cell__hd">
+                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+                    <i class="weui-icon-checked"></i>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>我願意收到電子報並享多重會員折扣訊息</p>
+                </div>
+            </label>
+
+			</div>
+			<div class="btnArea">
+				<a href="" class="weui-btn weui-btn_primary">确定</a>
+			</div>
+		</div>
+
+		<!--弹层-->
+		<div class="pop">
+			<div class="weui-mask weui-animate-fade-in"></div>
+			<div class="weui-dialog weui-animate-fade-in" style="top:30%">
+				<div class="weui-dialog__hd">好康卡手機驗證碼</div>
+				<div class="weui-dialog__bd" style="margin-bottom: 10px;">
+					<div class="errorInfo">
+						錯誤訊息(
+						<font>範例-限定時間或次數內未回應失敗</font>)
+					</div>
+					<div class="sendmsg">
+						<img src="images/icon-msg.png" />
+						<p>請輸入簡訊傳送的驗證碼，謝謝。</p>
+					</div>
+					<div id="form">
+						<div class="weui-cells weui-cells_form">
+							<div class="input-element">
+								<label for="js_input">驗證碼</label>
+								<div class="inputbox" style="padding-right:5px;">
+									<input id="tel" class="weui-input" type="text">
+									<a href="" class="weui-btn btnSendCode">重新發送(100)</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="weui-dialog__ft"><a href="member_infomation_maintenance.html" class="weui-dialog__btn btnCancel">取消</a> <a href="member_infomation_confirm.html" class="weui-dialog__btn weui-dialog__btn_primary">確定</a> </div>
+			</div>
+		</div>
+		<!--弹层end-->
+		<script src="js/zepto.min.js"></script>
+		<script src="js/weui.min.js"></script>
+		<script src="js/base.js"></script>
+		<script type="text/javascript">
+			$('#showDatePicker').on('click', function() {
+				weui.datePicker({
+					start: 1990,
+					end: new Date().getFullYear(),
+					onChange: function(result) {
+						console.log(result);
+					},
+					onConfirm: function(result) {
+						console.log(result);
+					},
+					title: '选择日期'
+				});
+			});
+		</script>
+	</body>
+
+</html>
