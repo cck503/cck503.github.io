@@ -10,16 +10,8 @@ Copyright 2010, KISSY UI Library v1.0.8
 MIT Licensed
 build: 871 Jul 19 08:51
 */
-    /*
-KISSY CSS Reset
-理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
-     2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
-     3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
-特色：1. 适应中文；2. 基于最新主流浏览器。
-维护：玉伯<lifesinger@gmail.com>, 正淳<ragecarrier@gmail.com>
-*/
 
-    /** 清除内外边距 **/
+    /** margin **/
     body,
     h1,
     h2,
@@ -30,33 +22,33 @@ KISSY CSS Reset
     hr,
     p,
     blockquote,
-    /* structural elements 结构元素 */
+    /* structural elements */
     dl,
     dt,
     dd,
     ul,
     ol,
     li,
-    /* list elements 列表元素 */
+    /* list elements */
     pre,
-    /* text formatting elements 文本格式元素 */
+    /* text formatting elements */
     form,
     fieldset,
     legend,
     button,
     input,
     textarea,
-    /* form elements 表单元素 */
+    /* form elements */
     th,
     td
 
-    /* table elements 表格元素 */
+    /* table elements */
         {
         margin: 0;
         padding: 0;
     }
 
-    /** 设置默认字体 **/
+    /** default font **/
     body,
     button,
     input,
@@ -85,7 +77,6 @@ KISSY CSS Reset
         font-style: normal;
     }
 
-    /* 将斜体扶正 */
     code,
     kbd,
     pre,
@@ -93,12 +84,12 @@ KISSY CSS Reset
         font-family: courier new, courier, monospace;
     }
 
-    /* 统一等宽字体 */
     small {
         font-size: 12px;
     }
 
-    /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+    /* 小於 12px 的中文很難閲讀，讓 small 正常化 */
 
     /** 重置列表元素 **/
     ul,
@@ -119,12 +110,12 @@ KISSY CSS Reset
         vertical-align: text-top;
     }
 
-    /* 重置，减少对行高的影响 */
+    /* 重置，減少對行高的影響 */
     sub {
         vertical-align: text-bottom;
     }
 
-    /** 重置表单元素 **/
+    /** 重置表單元素 **/
     legend {
         color: #000;
     }
@@ -135,7 +126,7 @@ KISSY CSS Reset
         border: 0;
     }
 
-    /* img 搭车：让链接里的 img 无边框 */
+    /* img 搭車：讓連結裡的 img 無邊框 */
     button,
     input,
     select,
@@ -143,8 +134,8 @@ KISSY CSS Reset
         font-size: 100%;
     }
 
-    /* 使得表单元素在 ie 下能继承字体大小 */
-    /* 注：optgroup 无法扶正 */
+    /* 使得表單元素在 ie 下能繼承字體大小 */
+    /* 註：optgroup 無法扶正 */
 
     /** 重置表格元素 **/
     table {
